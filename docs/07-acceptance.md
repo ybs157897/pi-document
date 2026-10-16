@@ -1,6 +1,6 @@
 # 验收标准与证据要求
 
-**当前状态：以下全部是未来门槛，未运行产品测试。** 本轮仅检查文档、Schema和样例一致性。每个AC最终填 `passed / failed / not_run / blocked`，不得用“实现了”或模型说“完成”替代观察结果。
+**当前状态：P0 代码已实现，实际通过/失败门槛见 [实施与验收报告](11-implementation-acceptance.md) 与 [验收状态](../evidence/final/acceptance.json)。** 每个AC填 `passed / failed / not_run / blocked`，不得用“实现了”或模型说“完成”替代观察结果；局部技术试验不自动覆盖完整 AC。
 
 ## 1. 环境与固定评估集
 
@@ -77,6 +77,8 @@ P0验收使用独立测试库/临时blob目录/实际Pi持久存储；记录OS�
 | AC-28 | 扩展格式/OCR | 每格式正常/损坏/布局/中文样本，正文准确率与表格结构阈值在开工前冻结 |
 | AC-29 | 管理UI | 实际浏览器完成KB→上传→任务状态→检索引用→更新→删除；响应式与权限检查 |
 | AC-30 | 同步/Wiki/图谱/多节点等 | 每项独立增量/冲突/恢复/授权用例；01映射逐项有证据，不能只演示理想路径 |
+
+AC-29 是独立的 P1 管理界面门槛，不计入 P0 AC-01 至 AC-26。当前同源 `/ui/` 已完成本地浏览器验收，机器记录 `status` 为 `passed`；验收范围和限制见 [管理 UI 状态](12-management-ui.md)、[浏览器记录](../evidence/ui/browser.json) 和 [总验收状态](../evidence/final/acceptance.json)。这不代表 AC-27、28、30 或 WeKnora 全量能力已完成。
 
 如要宣称“WeKnora同等检索质量”，需在同一语料、相同Embedding/Rerank预算与过滤条件下运行原版对照，公开差异。原版未能启动时写 `parity not_run`，可报告P0绝对指标但不能宣称同等。
 

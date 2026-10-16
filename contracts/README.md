@@ -1,6 +1,6 @@
 # 契约文件说明
 
-这些文件定义拟实施的接口，当前没有运行中的服务。
+这些文件说明当前 A2A DataPart 业务合同。管理界面使用的 `/api/manage/*` 是同源 HTTP 管理 API，不属于 `Part.data` Schema；路由与权限边界见 [管理 UI 使用与边界](../docs/12-management-ui.md)。
 
 - `document-request.schema.json`：A2A `Part.data` 内的业务请求；JSON Schema Draft 2020-12，包含P0操作与标明为P1的 `document.answer`。
 - `document-result.schema.json`：Task Artifact的业务结果；`outcome` 区分业务成功/失败，不能覆盖A2A Task状态。
@@ -21,13 +21,19 @@ Schema中的default不会被JSON Schema自动填入，应用验证后显式补�
 
 ## 结果规则
 
-- `save/update`：ready表示索引已发布；非ready成功仅对应waitFor=stored，必须给独立ingestionTaskId。该字段是服务端创建的公共A2A task ID，可直接用于标准GetTask/SubscribeToTask/CancelTask，绝不是Pi内部taskId；它绑定同一principal/context/文档版本，并与父落盘任务通过parentTaskId关联。这个已完成的“落盘任务”不再被改为working；调用方观察/取消后续ingestionTaskId。
-- `get`：返回固定版本source hash、有限content、truncated/nextCursor。`downloadUri`不是宿主机路径。
+- `save/update`：成功结果的`indexState`只允许`stored`或`ready`。`stored`表示仅完成原文落盘（对应`waitFor=stored`），必须带独立`ingestionTaskId`；它是服务端创建的公共A2A task ID，可用标准GetTask/SubscribeToTask/CancelTask查询或取消，绝不是Pi内部taskId。该任务绑定同一principal/context/文档版本，并与已完成的父落盘任务通过`parentTaskId`关联；父任务不再改回working。`ready`表示索引已发布，必须带`generationId`。解析/切块/Embedding/索引中的进度通过任务状态查询；失败或取消不能作为成功结果的`indexState`。
+- `get`：返回固定版本source hash、有限content、truncated/nextCursor。请求 `input.limit` 为1至16,384个Unicode code point，缺省100；调用方可选择更小分页。`downloadUri`不是宿主机路径。
 - `list`：返回文档摘要和可选nextCursor，cursor过期/不匹配使用明确错误。
 - `search`：results为空是正常成功；scoreType说明排序来源，不表示真实性概率。降级必须提供degradationReason。
 - `delete`：deleted=true表示逻辑不可访问，purgeState明确物理清理是否完成。同一requestId重放原结果；新requestId删除已删除资源返回DOCUMENT_NOT_FOUND，不泄露删除历史。
 - `knowledge_base.create/list`：只返回调用方有权限的KB；P0不宣告KB更新/删除接口。
 - `answer`：P1；未实现前不得放入Agent Card skills，也不能通过Schema验证就当作可用。
+
+## 管理 API 与界面
+
+Web界面由同一服务在 `/ui/` 提供，Bearer token 通过 `GET /api/manage/me` 验证。管理API每次请求重新认证并从认证主体绑定tenant；不接受客户端传入 `tenantId`，管理响应均为 `Cache-Control: no-store`，不返回token hash或模型密钥。创建主体时，明文token仅在创建响应中返回一次。
+
+`GET /api/manage/knowledge-bases/:id/permissions` 对普通主体返回当前主体的有效权限，即全局scopes与该KB membership grants的交集；管理员返回全部KB scopes。管理员 `/members` 列表保留原始grants，以便管理授权配置。`POST /api/manage/tasks/:id/retry` 只接受 `{requestId}`；结果不确定时必须复用同一requestId才可幂等重放。重试仅适用于当前主体仍有写权限、源版本有效且服务标记为可重试的失败保存/索引任务，不是通用任务重跑接口。
 
 ## 稳定业务错误
 
@@ -48,6 +54,6 @@ Schema中的default不会被JSON Schema自动填入，应用验证后显式补�
 
 ## 兼容与验证边界
 
-Schema检查能验证业务payload形状，不能验证A2A外壳、SDK路由、认证、状态机或实际能力。A2A示例还须在M0用锁定SDK、官方规范/可用conformance工具及独立客户端检验。
+Schema检查能验证业务payload形状，不能验证A2A外壳、SDK路由、认证、状态机或实际能力。示例已使用锁定SDK、原始HTTP客户端和Python客户端验证协议表面；未运行官方A2A TCK，不宣称完整A2A v1.0.1一致性认证。
 
 新增字段优先走显式合同版本；不得静默放开additionalProperties让客户端误以为功能可用。实现时为成功、失败及所有操作补充独立fixture，最终契约测试与运行测试均以07验收标准为准。

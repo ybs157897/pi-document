@@ -1,0 +1,124 @@
+{
+  "status": "passed",
+  "startedAt": "2026-10-16T04:20:43.727Z",
+  "modelId": "qwen3.7-text-embedding-flash",
+  "samples": [
+    {
+      "format": "markdown",
+      "sample": 0,
+      "byteSize": 512000,
+      "pages": null,
+      "chunks": 2679,
+      "elapsedMs": 7644.199666999999,
+      "providerRequests": 17,
+      "providerTokens": 6848
+    },
+    {
+      "format": "markdown",
+      "sample": 1,
+      "byteSize": 512000,
+      "pages": null,
+      "chunks": 2679,
+      "elapsedMs": 9068.61625,
+      "providerRequests": 17,
+      "providerTokens": 6848
+    },
+    {
+      "format": "markdown",
+      "sample": 2,
+      "byteSize": 512000,
+      "pages": null,
+      "chunks": 2679,
+      "elapsedMs": 8402.009583,
+      "providerRequests": 17,
+      "providerTokens": 6848
+    },
+    {
+      "format": "markdown",
+      "sample": 3,
+      "byteSize": 512000,
+      "pages": null,
+      "chunks": 2679,
+      "elapsedMs": 7841.54925,
+      "providerRequests": 17,
+      "providerTokens": 6848
+    },
+    {
+      "format": "markdown",
+      "sample": 4,
+      "byteSize": 512000,
+      "pages": null,
+      "chunks": 2679,
+      "elapsedMs": 7864.273459000004,
+      "providerRequests": 17,
+      "providerTokens": 6848
+    },
+    {
+      "format": "pdf",
+      "sample": 0,
+      "byteSize": 42746,
+      "pages": 10,
+      "chunks": 60,
+      "elapsedMs": 1760.6257499999992,
+      "providerRequests": 7,
+      "providerTokens": 2742
+    },
+    {
+      "format": "pdf",
+      "sample": 1,
+      "byteSize": 42746,
+      "pages": 10,
+      "chunks": 60,
+      "elapsedMs": 1641.1203339999993,
+      "providerRequests": 7,
+      "providerTokens": 1801
+    },
+    {
+      "format": "pdf",
+      "sample": 2,
+      "byteSize": 42746,
+      "pages": 10,
+      "chunks": 60,
+      "elapsedMs": 1641.586292,
+      "providerRequests": 7,
+      "providerTokens": 1801
+    },
+    {
+      "format": "pdf",
+      "sample": 3,
+      "byteSize": 42746,
+      "pages": 10,
+      "chunks": 60,
+      "elapsedMs": 1596.4460829999953,
+      "providerRequests": 7,
+      "providerTokens": 1801
+    },
+    {
+      "format": "pdf",
+      "sample": 4,
+      "byteSize": 42746,
+      "pages": 10,
+      "chunks": 60,
+      "elapsedMs": 2137.7821669999976,
+      "providerRequests": 7,
+      "providerTokens": 1801
+    }
+  ],
+  "limitation": "Five samples per format, p95 is the maximum of this small set. Synthetic 500 KiB Markdown repeats 128 paragraphs; the embedding cache can reuse repeats within a document. PDF has ten pages of 46 text lines. These are size regressions, not representative production throughput.",
+  "markdown": {
+    "samples": 5,
+    "p95Ms": 9068.61625,
+    "targetMs": 60000
+  },
+  "pdf": {
+    "samples": 5,
+    "p95Ms": 2137.7821669999976,
+    "targetMs": 60000
+  },
+  "provider": {
+    "requests": 120,
+    "reportedTokens": 44186,
+    "maxRequests": 300
+  },
+  "completedAt": "2026-10-16T04:21:39.421Z"
+}

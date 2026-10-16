@@ -1,0 +1,14 @@
+
+> pi-document-agent@0.1.0 build:ui
+> vite build --config web/vite.config.ts
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 1928 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/ui/index.html                   0.53 kB │ gzip:   0.34 kB
+dist/ui/assets/index-Bmrw8qlu.css   46.63 kB │ gzip:  10.76 kB
+dist/ui/assets/index-BZ3ietfA.js   339.62 kB │ gzip: 102.00 kB
+
+✓ built in 266ms

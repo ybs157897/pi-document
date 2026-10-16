@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-10-16",
+  "review": "Public-source review of A2A v1.0.0 to v1.0.1, the installed JavaScript SDK, and official TCK availability.",
+  "a2aProtocol": {
+    "fromTag": "v1.0.0",
+    "toTag": "v1.0.1",
+    "v1_0_1ReleaseDate": "2026-05-26",
+    "v1_0_1ReleaseCommit": "3303592588e388e62e0f69f701af531d2f4e3991",
+    "releaseNoteItems": [
+      "Prefer application/a2a+json in the HTTP+JSON binding.",
+      "Correct recent transcoding-related error mappings.",
+      "Correct TaskStatus values and examples in the specification text."
+    ],
+    "wireSchemaComparison": {
+      "source": "https://raw.githubusercontent.com/a2aproject/A2A/v1.0.0/specification/a2a.proto",
+      "target": "https://raw.githubusercontent.com/a2aproject/A2A/v1.0.1/specification/a2a.proto",
+      "method": "Compared all non-empty, non-comment lines from both tagged proto files.",
+      "result": "identical",
+      "normalizedCharacterCountEach": 13506
+    },
+    "specTextDifferences": {
+      "httpJsonContentType": "The v1.0.1 HTTP+JSON examples use application/a2a+json where the corresponding v1.0.0 request example used application/json. This probe exercises JSON-RPC and does not test HTTP+JSON.",
+      "errorMappings": [
+        {
+          "error": "TaskNotCancelableError",
+          "httpStatus": "409 Conflict -> 400 Bad Request"
+        },
+        {
+          "error": "PushNotificationNotSupportedError",
+          "grpcStatus": "UNIMPLEMENTED -> FAILED_PRECONDITION"
+        },
+        {
+          "error": "UnsupportedOperationError",
+          "grpcStatus": "UNIMPLEMENTED -> FAILED_PRECONDITION"
+        },
+        {
+          "error": "ContentTypeNotSupportedError",
+          "httpStatus": "415 Unsupported Media Type -> 400 Bad Request"
+        },
+        {
+          "error": "InvalidAgentResponseError",
+          "httpStatus": "502 Bad Gateway -> 500 Internal Server Error"
+        },
+        {
+          "error": "VersionNotSupportedError",
+          "grpcStatus": "UNIMPLEMENTED -> FAILED_PRECONDITION"
+        }
+      ],
+      "taskStateText": "v1.0.1 examples and error descriptions use explicit ProtoJSON enum names such as TASK_STATE_COMPLETED and TASK_STATE_CANCELED. The protobuf definitions are unchanged."
+    },
+    "primarySources": [
+      "https://github.com/a2aproject/A2A/blob/v1.0.1/CHANGELOG.md",
+      "https://raw.githubusercontent.com/a2aproject/A2A/v1.0.0/docs/specification.md",
+      "https://raw.githubusercontent.com/a2aproject/A2A/v1.0.1/docs/specification.md",
+      "https://raw.githubusercontent.com/a2aproject/A2A/v1.0.0/specification/a2a.proto",
+      "https://raw.githubusercontent.com/a2aproject/A2A/v1.0.1/specification/a2a.proto"
+    ]
+  },
+  "javascriptSdk": {
+    "installedPackage": "@a2a-js/sdk",
+    "installedVersion": "1.3.0",
+    "localReadmeStates": "Implements A2A Protocol Specification v1.0.0.",
+    "readmeLocation": "node_modules/@a2a-js/sdk/README.md",
+    "runtimeProbe": "evidence/m0/a2a-runtime.json",
+    "runtimeConclusion": "The SDK client and SDK server completed local HTTP tests using a protocolVersion 1.0 Agent Card. This confirms the exercised v1.0 JSON-RPC surface only; it does not establish v1.0.1 conformance."
+  },
+  "officialTck": {
+    "repository": "https://github.com/a2aproject/a2a-tck",
+    "publicSourceAvailable": true,
+    "githubReleasesApiResult": [],
+    "sourceInstallInstructions": "The main-branch README describes a source checkout with Python 3.11+ and uv, editable installation, and ./run_tck.py --sut-host URL.",
+    "sourceDeclaredPackageVersion": "1.0.0",
+    "checkedInSpecPin": {
+      "repositoryFile": "https://github.com/a2aproject/a2a-tck/blob/main/specification/version.json",
+      "protocolTag": "v1.0.0",
+      "protocolCommit": "173695755607e884aa9acf8ce4feed90e32727a1",
+      "downloadTime": "2026-03-13T07:43:14Z"
+    },
+    "openIssue": {
+      "url": "https://github.com/a2aproject/a2a-tck/issues/231",
+      "createdAt": "2026-09-01T07:13:09Z",
+      "stateAtReview": "open",
+      "reportedProblem": "The TCK's vendored specification and expected §5.4 error mappings remain pinned to v1.0.0; the issue reports six changed rows that can reject a v1.0.1-conforming server."
+    },
+    "assessment": "The TCK source is available to install and run, but the reviewed main snapshot is not a reliable v1.0.1 conformance oracle until its protocol snapshot and error expectations are refreshed. No TCK run was performed."
+  },
+  "boundary": "The local executor is in-memory and exists only for protocol transport testing. These checks do not prove durable task storage, document business operations, cross-language interoperability, or complete A2A service conformance."
+}

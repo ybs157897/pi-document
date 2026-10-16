@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "postgres": "PostgreSQL 17.10 on aarch64-apple-darwin27.0.0, compiled by Apple clang version 21.0.0 (clang-2100.3.34.2), 64-bit",
+  "pgvector": "0.8.2",
+  "rows": [
+    {
+      "id": "near",
+      "distance": 0
+    },
+    {
+      "id": "far",
+      "distance": 1
+    }
+  ],
+  "source": {
+    "postgres": "25c49f3a4a742ba283f5cc43cc7f1d361552e917",
+    "pgvector": "cab9da72c04353f143bb06b42ab70a403daac64a"
+  },
+  "limitation": "Native PostgreSQL + cosine operator; not full retrieval evaluation."
+}

@@ -1,0 +1,1449 @@
+{
+  "schemaVersion": 1,
+  "runId": "retrieval-2026-10-16T04-22-32-396Z-e8b71b",
+  "status": "failed",
+  "startedAt": "2026-10-16T04:23:40.119Z",
+  "results": {
+    "documents": [
+      {
+        "key": "doc-001",
+        "documentId": "bfebf309-5b09-4284-bc38-38357db4af6d",
+        "version": 1,
+        "sha256": "a7c00063572ea4d3954e25eba3b4350eb73e77e82a70959f7e309cbdcfeca09b",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "edaa3596-9db9-4d7c-ab63-2bff040b2b77",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-002",
+        "documentId": "17383040-032d-440d-9fff-c0e682cef339",
+        "version": 1,
+        "sha256": "97e18dd657ffe89976affa85f398980a25d7677d52e557f2bd041a9836f24709",
+        "format": "txt",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "3925c48e-70c5-4134-859c-bdd81aa19afe",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-003",
+        "documentId": "33ca842f-a504-497e-a97f-6436c62223e0",
+        "version": 1,
+        "sha256": "2beef041d01c64bf31d131e9d206c093f5a72056b86d013997029fc400c790fe",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "c54bc686-0de2-40fd-956b-692c1f3294b3",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-004",
+        "documentId": "30efcb01-57d9-4d7c-bb7c-69e2d6948994",
+        "version": 1,
+        "sha256": "45cca3ce3e8344bfe78745ad5a38f60a3f86d2cba3c5107d48a9a19f5338165b",
+        "format": "txt",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "c5417907-59ca-497b-922d-8dc8adf6faa5",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-005",
+        "documentId": "170c4bee-d506-4a5b-b0dd-d03f60bebed0",
+        "version": 1,
+        "sha256": "a1874ed3209ac287ff25b7f4b60d6a4dea451a1e545677cc0ce539e0bb0d1917",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "d5eb690c-e74d-499e-862b-0c071b6bff39",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-006",
+        "documentId": "15eb0cfd-b913-4e43-be97-44c4177259e7",
+        "version": 1,
+        "sha256": "9ad689647ce71fac8f61d4c388bdaca56e57556533593e4a1ed56e19fd37fc29",
+        "format": "txt",
+        "language": "en",
+        "knowledgeBaseRole": "restricted",
+        "taskId": "ce8dc19b-46bb-4275-9087-d90e7c3a1488",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-007",
+        "documentId": "c2b32fb8-c459-44c4-a872-28dd4471fa5c",
+        "version": 1,
+        "sha256": "fcf7aa519dd1c3a90dd075403992aabe811f872858f56641180e12138553329b",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "restricted",
+        "taskId": "b01c4175-451e-4ef5-84a4-62d58b98fc2c",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-008",
+        "documentId": "994e8fcf-75d4-4c50-9c4a-77464c5af57a",
+        "version": 1,
+        "sha256": "60fdc29d0dd9a9e90c162bb5f6c81d1badf0c56e33243dfbe7b22e63a51e8e0c",
+        "format": "txt",
+        "language": "en",
+        "knowledgeBaseRole": "restricted",
+        "taskId": "963dbe35-9597-4d0b-b67e-4ab5ffe5bf71",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-009",
+        "documentId": "2ff9276f-0d7b-42b8-b599-3f93c9bbe1f0",
+        "version": 1,
+        "sha256": "5a21d52c1795cba65f3537af6301bb41a00d142dca58738e43dc3d1e080bdd8e",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "restricted",
+        "taskId": "c7bde792-c7ef-45a0-a54e-e7137f3c9cc7",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-010",
+        "documentId": "b3de747d-81d1-45f6-8467-dda890f72279",
+        "version": 1,
+        "sha256": "b29e50e375108b0b52c86241733595a45c909a42cd7abec799092ce5af534457",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "restricted",
+        "taskId": "414b48d2-a4af-4098-85d1-ed40c246c9ae",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-011",
+        "documentId": "d76a7aa3-e2b4-41b8-96c0-ea542265a48a",
+        "version": 1,
+        "sha256": "334407ca33b48d32a73cee3b8cded2ca5f6b41d5ef70a283c8dbeacbf71c999b",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "b7c7f561-990c-443f-9d7e-8a7a8c6e2c47",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-012",
+        "documentId": "0a091f1f-f8b9-4755-bc9b-2de2190fa9a2",
+        "version": 1,
+        "sha256": "f50830408a835d7b12d952f48934190c365d2622de160c5c43fec142b8838217",
+        "format": "txt",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "51499e2c-2c34-4377-b455-e6a22bdd23c3",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-013",
+        "documentId": "175fde62-ee58-4dbd-955a-8b50004ec4f5",
+        "version": 1,
+        "sha256": "c9200c12239400f414dd544e80127dbcf6f212ce168f381ff03989877a0e09e4",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "6a9c27e8-7f10-4dd5-8167-a6d2bdffac09",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-014",
+        "documentId": "6c2e651d-11fa-4322-979a-b6fcccd93408",
+        "version": 1,
+        "sha256": "ffa3eb4285055969e7bf4359317140412586059afdcc79f84fde0246d212b39e",
+        "format": "txt",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "f4f078a8-30ef-4a85-b9a7-da4ae761cb6e",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-015",
+        "documentId": "5b04970a-854b-4a10-ab65-2b87e0e1c105",
+        "version": 1,
+        "sha256": "7d6ec4a946883a674279508f86c2b6c47d08e0bd678eb56ea0aadfae0a4e1e81",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "05ab9ce4-0d8c-4e51-928d-03004fdc73eb",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-016",
+        "documentId": "8cbfc2ac-3d58-4631-87eb-3875a8ac578d",
+        "version": 1,
+        "sha256": "1b191250f084dd010cf6e40fa79b90a8e88cc58412296d9bdb858332645ba6ce",
+        "format": "txt",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "f096f728-d23f-439f-a1e2-9e5221e046d0",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-017",
+        "documentId": "b4c61c5f-39c1-4eac-84dd-f35985e6e568",
+        "version": 1,
+        "sha256": "dfc48c6da6a4f099bd3dc101f905dfedacf6407790989f561322ae6a0b6aaa8c",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "efb641e2-1dc9-42ba-8fd2-fd601bab5287",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-018",
+        "documentId": "3f1d68e4-8a9d-486d-a34f-95cd0cd89616",
+        "version": 1,
+        "sha256": "e5a6ee9df68ac28dd87f329f1152cc50a0c5914a20652fd42958572ea85d13f8",
+        "format": "txt",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "a7f5f610-d0ca-489b-a4b7-46561c188d46",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-019",
+        "documentId": "8824c093-a632-4bed-89c3-f89cc8efded0",
+        "version": 1,
+        "sha256": "f24545bd6e6b94fe0311f4a5f786ff833ac24eeda5a045bff996f9f7759474f0",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "7d17a9f4-3050-4999-90e4-b63e1bfd05f5",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-020",
+        "documentId": "cf8e37a7-11fb-463c-92b8-8a18d43953c8",
+        "version": 1,
+        "sha256": "453b8988025d3e1018da9abc963a9bb2f719b5725177f18888c478b2ded66548",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "2926f141-cae5-4134-ae3e-6569fe3856fe",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-021",
+        "documentId": "9034d624-2da1-4e83-85ff-1378379109ca",
+        "version": 1,
+        "sha256": "8f5c5b13af1295910cb9c3ef3952a1291f519037c8714847432fae4b8d74a1b8",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "d7c0649f-5216-4c02-96ce-5f6035f7cd6c",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-022",
+        "documentId": "14504a84-93aa-40ae-9d89-cc97adedb240",
+        "version": 1,
+        "sha256": "292b8a709ceee94704443e108c13980a6c6e46863c7316aed12ade644255326b",
+        "format": "md",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "2dc10153-05a6-4fa0-ba4a-b769e93b3970",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-023",
+        "documentId": "5252cf80-8c29-4c09-9487-25d360394607",
+        "version": 1,
+        "sha256": "97c2370f7519925453eb3d75b493776e5d3f2d2de0fdc87743c57343e728ee88",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "1bfbc0e9-8bbb-4f8b-80b5-b5337c318e95",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-024",
+        "documentId": "eba3a096-6011-49f3-a9d4-96d4c38e4cd3",
+        "version": 1,
+        "sha256": "f0dc02ac3ca203f06e7670dcf24ee057c16684decf9fe416b6c079881339e021",
+        "format": "md",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "d949f7d3-e35a-4fc4-bfce-17b78c587bcf",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-025",
+        "documentId": "9938fac8-8339-41a2-99af-ee0f65048b00",
+        "version": 1,
+        "sha256": "e44de879d73971cc3ec11ae8969f747989cee7c638da9fb899c1e0bbada1809b",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "efe91542-3cd9-456e-b15f-d7eef6ad743e",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-026",
+        "documentId": "2de909e9-a369-4efe-a327-c481ab06feaa",
+        "version": 1,
+        "sha256": "d059612e1745504b9493e6370ee9bb1196c169a6246039ea3b432ee5adbf6747",
+        "format": "md",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "3446772c-70fd-461f-9cb7-584869d69a63",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-027",
+        "documentId": "85539545-d84a-4454-9d4e-6489e8bcb720",
+        "version": 1,
+        "sha256": "09c32c9374de01b7553320c2b9286aef1336d22398ebd814eeaea52bf0373f78",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "6635a2f5-ea75-4b96-90ee-9dacee97c090",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-028",
+        "documentId": "c2d2682a-db2d-48c1-99af-13ed76926078",
+        "version": 1,
+        "sha256": "7c33ce3b2b0351183220c244eaa254a4eb2312c39847e91b5fd2a9b379034763",
+        "format": "md",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "9cc7dc05-4a2a-485c-b6e1-b2b792808c5f",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-029",
+        "documentId": "84ba67b5-0bf6-4301-90a8-e07440bd7503",
+        "version": 1,
+        "sha256": "c71eaa4cb47a0dfc05c1dd4f0a8ddc58ce5a5ec35b231eac85a5a0d4deeaaceb",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "2a4d0df5-71ed-44e4-8517-e44be5619eba",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-030",
+        "documentId": "04ba75ae-352b-4986-ad1e-4458049e4f77",
+        "version": 1,
+        "sha256": "73b247fe1b342831639508ac494b22f249cada39dde93875d6666fdf907a7d44",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "d54a520e-4d48-4bbd-83d8-ebb3e60dc0e2",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-031",
+        "documentId": "834f79f5-86ce-4ccc-a348-bc431a2e866c",
+        "version": 1,
+        "sha256": "cfa495f4818bebc503b1567cce14490f1658c1c4faee399002ea413b1c47a813",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "e32afa8a-5aea-4bac-9d35-4f46be507f28",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-032",
+        "documentId": "3442ceda-0748-44f6-bd00-4ed2b25edaa2",
+        "version": 1,
+        "sha256": "083bed56fc1b18fc49896b36955c64cc972085b8ea649343c2392b747e701c4d",
+        "format": "md",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "0779cae9-11ab-4357-96df-d4a2d2b78300",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-033",
+        "documentId": "0f5934cf-78fb-4d4d-8bb5-2389385ecf75",
+        "version": 1,
+        "sha256": "0a86aea1f334707086a1eb401edd7d7755937942fecac6ad9ee2761361e23ff7",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "36d0b9f4-be08-465e-a86a-73a9538e09c4",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-034",
+        "documentId": "4e9940aa-ab60-4806-8428-374834ee89cd",
+        "version": 1,
+        "sha256": "3da6c49abdd181f8ceaaf02aba2436aea71fd8248020d08d1055e41ffd83b47b",
+        "format": "md",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "54211c34-59b8-4342-b72b-f681d579aa8d",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-035",
+        "documentId": "2fc51e09-70a5-485b-992d-65e839716320",
+        "version": 1,
+        "sha256": "9d0bb4e80d02e7a89a8b2f139b1a7151943ee27de681595f74d248838d3f6628",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "90ef857c-599b-4e32-ba9a-d9fab630583a",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-036",
+        "documentId": "5acda706-4174-4cdb-ba15-b4b9c86c35bd",
+        "version": 1,
+        "sha256": "791b2691e7f2f08488cb466217382ac3711100e4eb444e9da4044c68fbe70cb1",
+        "format": "md",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "b4f78640-e769-429c-9fdd-7450b54af8d2",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-037",
+        "documentId": "a763d24f-61b0-4194-9352-2338704c5905",
+        "version": 1,
+        "sha256": "588b3e376637b02bc88c47f6e801bffdc08c3a558f2662a684818f8f39d196c1",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "3428bfec-b788-4f92-bd67-f25a45b7082f",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-038",
+        "documentId": "0b79c1cb-37fd-4b27-a95a-5d2282fbc041",
+        "version": 1,
+        "sha256": "44523dc7243d3d765b6217bb90583983226f9c97d6630bd710465ee933d5bde9",
+        "format": "md",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "f4e5b3dc-f6fd-46bb-aaa0-8e41398eb723",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-039",
+        "documentId": "b190363c-ec2d-47e3-961b-ff6ddea79258",
+        "version": 1,
+        "sha256": "a3531b62549ba2e640b19ec7016a259e80b11af15764fe3dc1a97b6081504e89",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "451da66b-39b7-45a8-b18c-0523f900a009",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-040",
+        "documentId": "1355c669-c882-4e33-be6c-c6428cc9fe12",
+        "version": 1,
+        "sha256": "ea70651e0240e13e4be38727b24c497f2b6a3fa14e7585e3059146e5096086ca",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "54c93e65-5e55-4465-ba7b-b6e631195872",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-041",
+        "documentId": "539188a0-d9aa-4a60-aab2-59eaf807d9ef",
+        "version": 1,
+        "sha256": "104e51ab58568070abc7b6c43b24d29c405d494e72f488ef285a0d6c5d4e9509",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "0ef67dc1-3f79-46a2-84de-7e8bf108de97",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-042",
+        "documentId": "6f26aef1-7cba-44d7-af10-19a82781c18a",
+        "version": 1,
+        "sha256": "96d169a0f52ad291395024c5a14a9a9b4bf5c9bfec5898226037a52c167b1e45",
+        "format": "md",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "f1d4737d-b0cc-4451-b08e-180eccac1c9a",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-043",
+        "documentId": "73264b7f-6e06-4c59-a93a-52b7a1efd475",
+        "version": 1,
+        "sha256": "a430c32cfa3c07c4aca537ae12fec6420829a7f119f7691c7455cbe52725441d",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "bd45684b-17f1-48c9-a12f-3e3c1966a9e6",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-044",
+        "documentId": "536c0c56-74ea-402e-a9fd-15f5895a997e",
+        "version": 1,
+        "sha256": "7e732481be285200fcb7862080fcc4e826b5a2b7765f0aa018753120b82c87c0",
+        "format": "md",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "466a1f7c-502a-4fa5-9d61-0b44fc54a9fb",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-045",
+        "documentId": "67eda594-2655-44cb-b01e-870fc231a7ca",
+        "version": 1,
+        "sha256": "fb1a7c66243d89167985f826d3b350d6603fd6df4ba24ab13313c79f21d3c085",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "0a1139d4-8cb6-4462-ab33-0e06299079a6",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-046",
+        "documentId": "fdd0ae5e-1139-42ba-9dcb-6decee583aee",
+        "version": 1,
+        "sha256": "a1e12aff7e7243b10c4765f5f227d90426a1ac89bb1a7c50e436b6c3f2740871",
+        "format": "md",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "4722c798-fbcc-42a2-b750-d555f883c175",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-047",
+        "documentId": "a6f0ddb4-d14c-475a-8bad-9f9da79e8a1f",
+        "version": 1,
+        "sha256": "f222815fc91a3139a077d28fec6debbaf30cb657ee8959277959766dac345472",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "71b400be-b197-4652-a351-fa88d299cb78",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-048",
+        "documentId": "0e6a925e-3ded-49e9-a71c-5e707539ea6c",
+        "version": 1,
+        "sha256": "d238b2c3975e13434df5305e5dfa986547c4c4f573e0e7ee9464668a8b3c74d4",
+        "format": "md",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "7856ec41-bb94-49c3-9132-3dc9631f84f7",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-049",
+        "documentId": "6572a842-c6d1-4c52-a527-e04d459d245a",
+        "version": 1,
+        "sha256": "b21d1ebb458ec87e600a8665b887101b5a6244fd925e5090b6517985cca25df7",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "fdc95a9b-072d-4da1-93a8-a3a37ba6e44d",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-050",
+        "documentId": "1d7bf4f2-1bef-445d-a54a-065b69519184",
+        "version": 1,
+        "sha256": "ad159cbc6111fc5fd65aff16a44fae0a85682981d91acfb660f64b113f711664",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "4543682b-8c84-46bb-af9d-949c04d5dacd",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-051",
+        "documentId": "ef0dfcb2-9995-4cd5-abb1-7d2aa9569a29",
+        "version": 1,
+        "sha256": "f9b192f17a1e67d77b641454b3d73b85b6b8af656107730ba53d3332dd2ebd33",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "ed5d1ec2-ce75-4428-a41d-7999db01641b",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-052",
+        "documentId": "38dfc879-bae0-4ef6-8626-81cc9ca10602",
+        "version": 1,
+        "sha256": "ba18209f06953c45172f46446027f707e39963f2c95bd3f011c099debe0c6bed",
+        "format": "pdf",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "99f7a0b9-dabc-4ac2-9be6-2857f6a66832",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-053",
+        "documentId": "86cfd1de-cc33-439e-af7d-f4502bda38fa",
+        "version": 1,
+        "sha256": "a477274a5107616ad66eb93464703318f6d335fd1a2226671083f171bb3bd71d",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "ebf4ae82-da55-441f-89fe-8e2331219ff1",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-054",
+        "documentId": "4c9a0df5-7f6f-4b1e-855d-cd9bcb1c10d8",
+        "version": 1,
+        "sha256": "3da19e482733109cbc60a750d4aac242f2d655be663190079d61523d14056205",
+        "format": "pdf",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "f38a65ea-fb19-4e42-8837-b4b32a4f1c7e",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-055",
+        "documentId": "84383b17-3dfb-4af2-8f10-5c0ee9a0a030",
+        "version": 1,
+        "sha256": "2eb58607bbff59b7a789e5aad459d36efeba8d10eac49676f070f5d1d5d3e0e0",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "2636885f-72da-4c93-8707-487a3e0e8d7d",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-056",
+        "documentId": "31c5c167-629f-4ff1-b274-2b31b0f0ca2d",
+        "version": 1,
+        "sha256": "ed6ec695494dda4f07a1dd0c3fe5ed7c6bbb4845157b9c00a5b01ed2e3f55c55",
+        "format": "pdf",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "7849b466-00b3-4e5c-9061-d51ac7395f90",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-057",
+        "documentId": "2cf9a180-13ec-4bd4-b5eb-9e01c406b56f",
+        "version": 1,
+        "sha256": "701f5f3cede9102e8dc759e0c4040ffa997a392f87eb636c25e19ff750355fcd",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "12005b8c-dfc3-407f-9c0e-fd88120d82d9",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-058",
+        "documentId": "7baa3be4-5e1c-49fa-bbb0-98ea74a9b19d",
+        "version": 1,
+        "sha256": "59713717e3d83d94d9d7deb5a40b0b05fac212cefe935f87bf561a15e190c8e5",
+        "format": "pdf",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "557bfd79-b4d9-46b7-a4bb-c57d4eff8ee5",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-059",
+        "documentId": "ce8dd29a-001b-4095-9960-294b7816af4d",
+        "version": 1,
+        "sha256": "c85b2be0a110c27e9cc886c6ce313dfdfdb0e997e169b70577fc3e17f1ab4fc3",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "b9aac303-d6d4-4829-8941-29a57607bcff",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-060",
+        "documentId": "9daacd10-f4dd-4ea4-9c02-b41b086c7b75",
+        "version": 1,
+        "sha256": "52f7e7e3a2fe8eb826ae3ff114dec4bd0437724596290d3da9779018897c61b4",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "572b6e2b-f5e9-4bea-adbc-64d100b4ebe2",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-061",
+        "documentId": "2773f290-73d8-4583-a195-6eea355c0ffa",
+        "version": 1,
+        "sha256": "1c6db6dfe9e43c1414ec3b5e1d1bcc4bb904e53ec3a4fb4c58414c68aad327eb",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "06824c26-a8fe-4490-934f-0f610f6af2f6",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-062",
+        "documentId": "674f01c7-947c-4fad-8739-ccc4b23d0eed",
+        "version": 1,
+        "sha256": "013957467e299261e7a78afd28a9eea510289cc48f453abd21c255f848217350",
+        "format": "pdf",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "15630f9c-1e01-4e60-87d7-4817c2da8f67",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-063",
+        "documentId": "ed9d400d-3553-4d54-9bb3-fa4b70496dda",
+        "version": 1,
+        "sha256": "db072ca681ef5fbc223f322d3c84779a4cf3313f21f0f497e9a27f476bbe1972",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "f27631fe-ef9f-4ae3-a172-dff64962b197",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-064",
+        "documentId": "0aa5b5d1-4418-4fcb-b6fe-75ac45e13ed0",
+        "version": 1,
+        "sha256": "146c024108a8fa869f7a66c1e0be75ebe300e4b5d4024d0161cf338fc073b3fa",
+        "format": "pdf",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "f3c337c4-3cbd-4f4b-9262-91d0a631486e",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-065",
+        "documentId": "d700d8d3-dd15-4c71-981b-42f6a50ce2f4",
+        "version": 1,
+        "sha256": "78c59cac656c0518f1f3e1d90438c27fba4e26627ab66a23875e536fa4495541",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "6ce7e93c-e936-489d-97ed-d681e5d8eb80",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-066",
+        "documentId": "c3dc553b-29e2-4f09-be1b-d51cbb3a890b",
+        "version": 1,
+        "sha256": "4124d3fc32bca659999fed60daa2784bd3f173d7fab655f4247978b106299271",
+        "format": "pdf",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "e9967a41-755e-4e52-a962-0b8a16302368",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-067",
+        "documentId": "78fadb2b-e6bf-4381-85eb-0adc4b20ce97",
+        "version": 1,
+        "sha256": "09ff2b37b107b554c584bb87653617f0dd3f04f720ac2e35534923a8fceba779",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "1738f404-bcf6-4e63-b937-80b9eb0e1451",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-068",
+        "documentId": "9be2df83-0008-4bc0-a5fa-9a7023c5a733",
+        "version": 1,
+        "sha256": "4620e37f5ecd46cd4ab2b6bc52c34af8531c15e6562d1f8c724927771062307e",
+        "format": "pdf",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "bec81a78-c358-4f5a-87c4-5da2236ed472",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-069",
+        "documentId": "65810803-2440-449f-915e-3dba33749849",
+        "version": 1,
+        "sha256": "17c226a4a1c275de719f1fef6c9b1045532db55cf004da4129e83d5172638d2e",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "d72071c7-b06c-4c3f-86bc-ef58a59973fd",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-070",
+        "documentId": "ecbf11ec-db47-49c8-b719-f74f12ac1687",
+        "version": 1,
+        "sha256": "e2088414433a9032db8664d00e44e0307a51e941e2f0a580917807e92bb5c1c7",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "ba5d397e-ac93-4226-b9ee-40b84b814d05",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-071",
+        "documentId": "3797425e-3cb6-4b58-aae8-05ef7c3ae3d8",
+        "version": 1,
+        "sha256": "0a7ab13f688a2a7074775f60b4e4e536922b8e55beb749defa2fbe90a01d814f",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "96ea756c-02a5-439e-ad69-ba8e5df2dde4",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-072",
+        "documentId": "0c9bf79f-12d1-4e71-84d1-32988c7e6a30",
+        "version": 1,
+        "sha256": "834c612a940c703064ee0006074be11b33178765ebdf321d632b386b042aa7c4",
+        "format": "pdf",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "3ca9cdea-b1ce-43e5-8bd2-f40985dba316",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-073",
+        "documentId": "9ac62560-ad22-4f3a-8818-d13229795c2a",
+        "version": 1,
+        "sha256": "1f57458df7bc3c11ae58fdd8ffa1b652f810eded0aff4f2f295b9f1b4da8a4e7",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "0afa8c32-ccac-4802-a67d-71735eb90b31",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-074",
+        "documentId": "6ba78ac6-4976-4333-98e4-bd4a1e185d34",
+        "version": 1,
+        "sha256": "8af9a50f197d7e1916473ae8c0754db21f1b1397767fe2bb987728b69b3d8831",
+        "format": "pdf",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "d2aa742f-a86e-42e7-b604-c2a8ddbc1a70",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-075",
+        "documentId": "edb8d7e4-43e0-4c13-9d95-00822552106e",
+        "version": 1,
+        "sha256": "f4c65d8465aed012b5fccfca9eb96e232b662a926dae646400ca0535a2308057",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "06108339-6805-4e7e-97a6-b322cf53b64c",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-076",
+        "documentId": "aecc0bd2-eab7-48c0-a66b-3849434b747c",
+        "version": 1,
+        "sha256": "ace889bae74943d5cf481df3a466be0752d3f933f6aff1ca3e03854f7c2f5da9",
+        "format": "pdf",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "5017afd2-e791-457c-bb54-3c5c60d2971a",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-077",
+        "documentId": "2957064d-036f-4965-acb3-ae45c297f364",
+        "version": 1,
+        "sha256": "9bf7881b807d74252aaebfc3ff17375af1b85a36876a31f761f217b145613417",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "7aef059d-4b78-485c-8b95-b1ed419b9220",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-078",
+        "documentId": "089ccc96-e828-4b17-b93e-37151a431a72",
+        "version": 1,
+        "sha256": "25397541a2d8b19b1e6ca7b6ebe3eedc341c2a77a90df1d492dde410d83eaf15",
+        "format": "pdf",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "0a96acd3-153a-4d14-85f4-0de47a0cd9a8",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-079",
+        "documentId": "7348f5d3-05e7-46ab-8f47-331d66162a29",
+        "version": 1,
+        "sha256": "a1da5d90ffecd09a086fdd4c1212c6313f41cd1437298066927f1676daec6820",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "059d578b-f5e4-4d94-b530-fa19922a1cd5",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-080",
+        "documentId": "127f6e52-2511-4269-a578-faf0e9cb6039",
+        "version": 1,
+        "sha256": "20fca64038c68a8b28968485a6abe51cef378b0bfc5a7294bb88eb5964e1e297",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "3b426fbf-fd6d-49e7-822d-bee6e1ecc48b",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-081",
+        "documentId": "b4e52977-df4e-4da1-8b65-4e702b56b767",
+        "version": 1,
+        "sha256": "ca83c8e86e29088414a3e0a86589150145fcf4e1f55376d6cf64cadae2f36da7",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "7897ae25-0dd8-46e2-9ce5-96de1a013d06",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-082",
+        "documentId": "ea97a240-e7b1-41f0-81d4-d8cc0bfc5c35",
+        "version": 1,
+        "sha256": "0047c9e786b6f43890c63a22fe7004d5fcd16f2dfa8b4927a9e9f58daf6bb564",
+        "format": "docx",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "d9e7f864-d797-47ed-84fd-86075ad86430",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-083",
+        "documentId": "6eee3db0-04a4-470e-af2d-06a1abae1502",
+        "version": 1,
+        "sha256": "b326719e5dcbcb34154eae0b684b5ee75e832c706583bc2a9d5628e95d924841",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "d570c684-7591-40da-a1ca-a63260a6300c",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-084",
+        "documentId": "215f25c3-814f-4d9e-abd7-f44f4e259df3",
+        "version": 1,
+        "sha256": "e3c5a971c097bef65117264457fbe8e6646bf6a7840397e1b0862c7490363e8c",
+        "format": "docx",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "d025ebdf-55df-404e-9c8a-4c60944f1171",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-085",
+        "documentId": "eb07e839-45ab-4a99-a841-bed0aaa1c329",
+        "version": 1,
+        "sha256": "29e5c0b21375f75deb6919a72eeb650192d19955c59169bc812b4680121c64f9",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "47e7dffe-3bbc-466a-ae4f-f0185de7963f",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-086",
+        "documentId": "62e41417-0103-40b0-a094-178728e94eda",
+        "version": 1,
+        "sha256": "049f340878bf3ce39fa814282655b7670c30e7d9001a5520cb6281fc2dfb6aa4",
+        "format": "docx",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "7bc79e66-be28-4ab9-9a73-198e81ad7e5b",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-087",
+        "documentId": "7e5d6d5b-df8a-4043-84d3-1d35e9e69f94",
+        "version": 1,
+        "sha256": "53cfd0e7be2b75b26cad36720c33fb327eb27d8cfd7676047040518526722c45",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "fb7e8b54-95ca-414d-bd04-e5838fb543be",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-088",
+        "documentId": "102db437-5b9b-4e66-802f-10f58b0a7861",
+        "version": 1,
+        "sha256": "cae9f042a6257c62fa62eccb8895d43aefe5e88b1e5866c3263dc0a6235730ee",
+        "format": "docx",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "532e7c59-f935-4fe2-8770-03764ac3785b",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-089",
+        "documentId": "6c326b5c-5253-47f6-8634-d9bcfa41b944",
+        "version": 1,
+        "sha256": "cdf7f9c43e3452e39a4cef9e056471c8c44d86c61b3abebd3eeef94bf3962b58",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "01dc5bc6-3167-426d-b6f3-7930eb082f2b",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-090",
+        "documentId": "cb7827fb-5e6b-43eb-a2c5-cba0fcdef909",
+        "version": 1,
+        "sha256": "594bd1d954a12dd3d61fa457d2e67687178df158e2befc56084d9f13defda287",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "5b0745d3-80c1-4080-8bf6-73408c9bfb97",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-091",
+        "documentId": "7bd13bc9-ff9a-4f80-8cb6-22fd49c38860",
+        "version": 1,
+        "sha256": "a8c9300514f447f87b7d9ba1709fe0a7c667675a1b06f2433052ac234dfe5d07",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "83931b69-db02-4c46-bf1c-a5a219bd7905",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-092",
+        "documentId": "b9cfd647-b9ea-439d-9293-7981ed105643",
+        "version": 1,
+        "sha256": "634cb4481cd23592bdd0a3865391c9c8d578012dc9f839e5f0068cd39e700f14",
+        "format": "docx",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "4a166b29-5945-4333-8f4e-bdcc79cc13ab",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-093",
+        "documentId": "f003dd0d-f184-4e1c-96ba-24d5cdcb2b83",
+        "version": 1,
+        "sha256": "8fbffcdb686958310a9e8ed63dcd3bf9978b716d7c27a069b82bd8a54e968d82",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "ce722af8-e737-47c9-947b-fd2f0dd804fa",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-094",
+        "documentId": "44058b4f-c6e8-484c-bc85-50d6a94f9754",
+        "version": 1,
+        "sha256": "adbf418e7091857521844106e7f760d11a50321476e2d3857207616a3e71fff3",
+        "format": "docx",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "0efaadbe-b12d-4a53-889a-db4fe2f48ade",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-095",
+        "documentId": "56702b2c-f22b-42e9-b236-3608e5601e34",
+        "version": 1,
+        "sha256": "a3e85c5814adf9c7362768d33333398e880ded397afcef85aa68da0cc8a3051c",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "46495a0b-f4ea-4909-8962-bb0b586f832a",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-096",
+        "documentId": "829ebb92-f2b0-43e4-85f8-65b7e25a646a",
+        "version": 1,
+        "sha256": "bacf023fd5065b8112c758b3aafab2d2dc7b1b9bcb2f4cfd1111ef6c10d601fd",
+        "format": "docx",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "52a279e1-377e-4d07-acf2-9beb0e69aedd",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-097",
+        "documentId": "4bb5f9af-de73-49f4-b099-3a57fbdd4d14",
+        "version": 1,
+        "sha256": "a127f5fc7d620916826814c884f20ddb3a96cb775c5ead9812f0a4aeaf0a8c54",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "e7105cd5-a333-4243-ab08-af7c3e1ec2f7",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-098",
+        "documentId": "75bb5434-cb46-41f5-952d-d16a84680f09",
+        "version": 1,
+        "sha256": "505e88af12bdeaab4cb743303a5716acddb15ff0afc3bb6e64dca0163c305688",
+        "format": "docx",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "23e7b150-c8f1-4928-ac7e-e6d3a7754e39",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-099",
+        "documentId": "10ee86f1-2144-40d1-99f1-1d4435f3bbc6",
+        "version": 1,
+        "sha256": "3e9da0f1b3becfaf7fcb6312ced99b6e274e01a1e127be0eb9e888e8c233a3c4",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "c0bc6538-5b40-4540-99cd-26177aba9d26",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-100",
+        "documentId": "081d8930-a718-4020-a1dc-4de05b1883f5",
+        "version": 1,
+        "sha256": "9b5cfae8b4f9aeb861c185533498f2736f847738cffc5db0edbd5ceb98ed3943",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "3e44ecd4-fd13-4c05-86f1-d1c558c594b5",
+        "indexState": "ready"
+      }
+    ],
+    "versionUpdates": [
+      {
+        "documentKey": "doc-091",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "7bd13bc9-ff9a-4f80-8cb6-22fd49c38860",
+        "updateTaskId": "beba24a5-c46e-451e-b084-91a4009e15e9",
+        "resultVersion": 2,
+        "sha256": "78b39cd412476a5142f58c85c950eb895d7ff05a5e5788322c9321f4e4563781",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 0,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 0
+      },
+      {
+        "documentKey": "doc-092",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "b9cfd647-b9ea-439d-9293-7981ed105643",
+        "updateTaskId": "957a41b9-3077-400c-9c15-1b9d6bce729c",
+        "resultVersion": 2,
+        "sha256": "3bfc065d78838b938cf93f53ccf5ace4c5cf7bae7ccdc68f69ba15a8a505a557",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 0,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 0
+      },
+      {
+        "documentKey": "doc-093",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "f003dd0d-f184-4e1c-96ba-24d5cdcb2b83",
+        "updateTaskId": "4b71cfa9-b296-42d0-aec8-ceb959c4a7fc",
+        "resultVersion": 2,
+        "sha256": "ee784ee9e789acd9df36c76d196971c86f7c6d2aab6e27fe4d84a5955934dbc2",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 0,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 0
+      },
+      {
+        "documentKey": "doc-094",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "44058b4f-c6e8-484c-bc85-50d6a94f9754",
+        "updateTaskId": "43747a0d-40b9-4923-8b31-0cee8a643175",
+        "resultVersion": 2,
+        "sha256": "63317ac28e2b20e4b9aa17eb6683cfe2e4d09380c02239fac3635e0193c79273",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 0,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 0
+      },
+      {
+        "documentKey": "doc-095",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "56702b2c-f22b-42e9-b236-3608e5601e34",
+        "updateTaskId": "e927355e-21ab-45cc-8053-4fa44db725bc",
+        "resultVersion": 2,
+        "sha256": "e783e8b20cd454645f3c21a79c870a27940b009fdd0a48fd61ffbf7483fcda93",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 0,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 0
+      },
+      {
+        "documentKey": "doc-096",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "829ebb92-f2b0-43e4-85f8-65b7e25a646a",
+        "updateTaskId": "ff722e7d-916b-430d-b512-4fd2d8973eeb",
+        "resultVersion": 2,
+        "sha256": "2854e7cb869a292005a3f79e56a4810b5220d9c13fff5b0f698494904e76de75",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 0,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 0
+      },
+      {
+        "documentKey": "doc-097",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "4bb5f9af-de73-49f4-b099-3a57fbdd4d14",
+        "updateTaskId": "a6912fa3-a4ca-41fe-b0f1-ecc63e68472d",
+        "resultVersion": 2,
+        "sha256": "9c7350515ead777eb3dbf8934f46ae6790e5b4f0ee94fc342cbbf10cb8747c67",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 0,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 0
+      },
+      {
+        "documentKey": "doc-098",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "75bb5434-cb46-41f5-952d-d16a84680f09",
+        "updateTaskId": "f6924264-6c1b-4dc6-9fed-fdbb0100ea3b",
+        "resultVersion": 2,
+        "sha256": "a26f8fb46ef071ca267809f42167e3f660aa96b9cb42e93d6a0c382aac5989a8",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 0,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 0
+      },
+      {
+        "documentKey": "doc-099",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "10ee86f1-2144-40d1-99f1-1d4435f3bbc6",
+        "updateTaskId": "0a485a58-a88c-4da4-a680-cbb700b4861f",
+        "resultVersion": 2,
+        "sha256": "fb3737f515d6d966eb077531087457587a77b1f709b3cb83bab6a8550832c200",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 0,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 0
+      },
+      {
+        "documentKey": "doc-100",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "081d8930-a718-4020-a1dc-4de05b1883f5",
+        "updateTaskId": "7c7417f5-23a0-4be1-8b66-912f9b112f73",
+        "resultVersion": 2,
+        "sha256": "f991df1e1b3eb5c79fc046cc620b277c48ce2b675926b4240458cb1a7f9cc375",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 0,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 0
+      }
+    ],
+    "htmlSnapshots": [
+      {
+        "key": "html-snap-001",
+        "status": "failed",
+        "sourceTransport": "upload_snapshot",
+        "failureCode": "EVAL_HTML_LOCATOR_NOT_VERIFIED"
+      }
+    ],
+    "queries": [],
+    "versionUpdateSummary": {
+      "fixtureCount": 10,
+      "passedCount": 10,
+      "sameDocumentIdCount": 10,
+      "activeVersion2Count": 10,
+      "staleVersionSearchHitCount": 0
+    }
+  },
+  "fixtureSha256": "da6a450c6f813ce99b1d26acd3e88863c689bc200e7bb2ee3c14ecb580a89c74",
+  "fixtureCounts": {
+    "documents": 100,
+    "documentsByFormat": {
+      "txt": 20,
+      "md": 30,
+      "pdf": 30,
+      "docx": 20
+    },
+    "documentsByLanguage": {
+      "zh": 60,
+      "en": 30,
+      "mixed": 10
+    },
+    "formatLanguageMatrix": {
+      "txt": {
+        "zh": 12,
+        "en": 6,
+        "mixed": 2
+      },
+      "md": {
+        "zh": 18,
+        "en": 9,
+        "mixed": 3
+      },
+      "pdf": {
+        "zh": 18,
+        "en": 9,
+        "mixed": 3
+      },
+      "docx": {
+        "zh": 12,
+        "en": 6,
+        "mixed": 2
+      }
+    },
+    "queries": 100,
+    "queriesByCategory": {
+      "exact": 20,
+      "synonym": 30,
+      "cross_passage_document": 20,
+      "version": 10,
+      "no_answer": 10,
+      "filter_permission": 10
+    },
+    "queriesByLanguage": {
+      "zh": 59,
+      "en": 31,
+      "mixed": 10
+    },
+    "queriesBySplit": {
+      "development": 80,
+      "blind": 20
+    },
+    "versionTransitions": 10
+  },
+  "htmlSnapshotSha256": "07b825d3fb539ad10ab55b97f1b136bbcda31ed92fe9da5903f487aefde641ae",
+  "htmlSnapshotCount": 20,
+  "environment": {
+    "platform": "darwin 27.0.0",
+    "architecture": "arm64",
+    "cpuModel": "Apple M2",
+    "cpuCount": 8,
+    "memoryTotalBytes": 17179869184,
+    "memoryFreeBytesAtStart": 801259520,
+    "node": "v24.15.0",
+    "lockSha256": "b849100f7c1521b3a365abd6a25e278ed9e1062fad241e599a733784095c02f4",
+    "piDurableVersion": "1.3.0",
+    "a2aSdkVersion": "1.3.0",
+    "git": {
+      "head": "a2f1c03a10596207b8d18973ef43a5ecdf9b769e",
+      "dirtyPathCount": 300
+    },
+    "postgresToolVersion": "postgres (PostgreSQL) 17.10",
+    "embedding": {
+      "origin": "https://maas.qianwenaiapi.com",
+      "modelId": "qwen3.7-text-embedding-flash",
+      "dimensions": 1024,
+      "version": "1",
+      "normalization": "l2",
+      "credentialsEnv": "PI_DOCUMENT_AGENT_API_KEY"
+    },
+    "embeddingConfigSha256": "c54a38437fca4ddadc78a473fd38a9b20a976ef2809340db18105adb24b09b9d",
+    "fixtureSha256": "da6a450c6f813ce99b1d26acd3e88863c689bc200e7bb2ee3c14ecb580a89c74",
+    "fixtureCounts": {
+      "documents": 100,
+      "documentsByFormat": {
+        "txt": 20,
+        "md": 30,
+        "pdf": 30,
+        "docx": 20
+      },
+      "documentsByLanguage": {
+        "zh": 60,
+        "en": 30,
+        "mixed": 10
+      },
+      "formatLanguageMatrix": {
+        "txt": {
+          "zh": 12,
+          "en": 6,
+          "mixed": 2
+        },
+        "md": {
+          "zh": 18,
+          "en": 9,
+          "mixed": 3
+        },
+        "pdf": {
+          "zh": 18,
+          "en": 9,
+          "mixed": 3
+        },
+        "docx": {
+          "zh": 12,
+          "en": 6,
+          "mixed": 2
+        }
+      },
+      "queries": 100,
+      "queriesByCategory": {
+        "exact": 20,
+        "synonym": 30,
+        "cross_passage_document": 20,
+        "version": 10,
+        "no_answer": 10,
+        "filter_permission": 10
+      },
+      "queriesByLanguage": {
+        "zh": 59,
+        "en": 31,
+        "mixed": 10
+      },
+      "queriesBySplit": {
+        "development": 80,
+        "blind": 20
+      },
+      "versionTransitions": 10
+    },
+    "htmlSnapshotSha256": "07b825d3fb539ad10ab55b97f1b136bbcda31ed92fe9da5903f487aefde641ae",
+    "htmlSnapshotCount": 20,
+    "htmlSnapshotCoverage": "uploaded synthetic HTML parser/locator smoke; public URL fetch is not covered by these snapshots",
+    "embeddingBudget": {
+      "parsedDocumentCount": 130,
+      "mainCorpusDocumentCount": 100,
+      "versionUpdateDocumentCount": 10,
+      "htmlSnapshotCount": 20,
+      "chunkCount": 540,
+      "ingestionEmbeddingBatchCount": 131,
+      "searchEmbeddingRequestCount": 95,
+      "worstCaseEmbeddingAttempts": 1130
+    },
+    "runtimeBudgets": {
+      "maxDocuments": 100,
+      "maxQueries": 100,
+      "maxFileBytes": 1048576,
+      "maxTotalFileBytes": 5242880,
+      "maxTaskWaitMs": 120000,
+      "supplementalVersionUpdates": 10,
+      "supplementalHtmlSnapshots": 20,
+      "supplementalHtmlLocatorSearches": 20,
+      "maxTotalRuntimeMs": 3600000,
+      "maxRunnerHttpRequests": 25000,
+      "maxEmbeddingAttemptBudget": 1500,
+      "indexingWaitFor": "indexed",
+      "searchMode": "hybrid",
+      "searchTopK": 10,
+      "rerank": false,
+      "htmlLocatorSearchMode": "keyword",
+      "embeddingBatchSize": 8,
+      "embeddingMaxAttemptsPerRequest": 5
+    },
+    "runnerHttpRequests": 474,
+    "postgres": {
+      "binDir": ".cache/postgres/bin",
+      "serverVersion": "17.10",
+      "pgvectorVersion": "0.8.2"
+    }
+  },
+  "failureCode": "EVAL_HTML_LOCATOR_NOT_VERIFIED",
+  "completedAt": "2026-10-16T04:25:05.031Z"
+}

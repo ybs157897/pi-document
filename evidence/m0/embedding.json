@@ -1,0 +1,23 @@
+{
+  "phase": "M0",
+  "requestBudget": 1,
+  "rerank": "not_configured",
+  "semanticQuality": "not_evaluated",
+  "status": "passed",
+  "modelId": "qwen3.7-text-embedding-flash",
+  "baseUrl": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+  "dimensions": 1024,
+  "returnedVectors": 3,
+  "dimensionsSource": "configured_and_verified",
+  "inputSha256": "4c3d5a8a751a840b8306ffb8219e575e7f0b871bd45efcf729492f0162b77e0a",
+  "vectorNorms": [
+    1.0002196873875284,
+    0.9999735841064135,
+    0.9996221189398581
+  ],
+  "usage": {
+    "prompt_tokens": 68,
+    "total_tokens": 68
+  },
+  "limitation": "Interface, dimensions and finite non-zero vectors only; not retrieval quality or pgvector integration."
+}

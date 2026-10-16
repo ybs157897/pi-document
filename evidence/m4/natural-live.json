@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "writerTaskId": "agt_2a14e584-9182-4114-9b76-f4fe80e794c9",
+  "readerTaskId": "agt_735d8fdc-cdb7-47ef-a242-6f3b96240c38",
+  "operations": [
+    "document.save",
+    "document.search",
+    "document.get"
+  ],
+  "readerOperations": [
+    "document.get",
+    "document.get"
+  ],
+  "turns": [
+    {
+      "task_id": "agt_2a14e584-9182-4114-9b76-f4fe80e794c9",
+      "model_requests": 4,
+      "tool_calls": 3,
+      "state": "completed"
+    },
+    {
+      "task_id": "agt_735d8fdc-cdb7-47ef-a242-6f3b96240c38",
+      "model_requests": 3,
+      "tool_calls": 2,
+      "state": "completed"
+    }
+  ],
+  "messageReplayStable": true,
+  "revokedArtifactHidden": true
+}

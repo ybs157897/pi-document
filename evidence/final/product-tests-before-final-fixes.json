@@ -1,0 +1,10 @@
+{
+  "command": "npm test",
+  "startedAt": "2026-10-16T04:54:38.838Z",
+  "completedAt": "2026-10-16T05:03:10.849Z",
+  "durationMs": 512010.0405,
+  "exitCode": 1,
+  "signal": null,
+  "status": "failed",
+  "log": "product-tests.log"
+}

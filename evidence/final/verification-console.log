@@ -1,0 +1,314 @@
+
+> pi-document-agent@0.1.0 verify:product
+> tsx scripts/verify-product.ts
+
+
+> pi-document-agent@0.1.0 test
+> npm run typecheck && npm run test:contract && npm run test:runtime && npm run test:protocol && npm run test:parsers && npm run test:retrieval && npm run test:ingestion && npm run test:security && npm run test:a2a && npm run test:integration && npm run test:natural && npm run test:evaluation && npm run test:ops
+
+
+> pi-document-agent@0.1.0 typecheck
+> tsc --noEmit
+
+
+> pi-document-agent@0.1.0 test:contract
+> tsx --test tests/contract/*.test.ts
+
+✔ all business payload fixtures match the published contract (9.801167ms)
+✔ rejects forged identity, oversized topK, missing receipt and unsupported source (1.634709ms)
+✔ stored result requires a public ingestion task; indexed result requires ready (0.183708ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 212.027334
+
+> pi-document-agent@0.1.0 test:runtime
+> tsx --test tests/runtime/*.test.ts
+
+✔ real Pi SQLite survives SIGKILL after external receipt and reuses one task/effect (367.54125ms)
+✔ canceling a waiter leaves the durable task running; explicit abort settles separately (8.218084ms)
+✔ limits actual concurrent work and releases permits after failures (26.702042ms)
+✔ an aborted queued operation never enters and does not consume a permit (0.357625ms)
+✔ exclusive Pi owner rejects another process and symlink alias; SIGKILL releases ownership (112.357458ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 876.125834
+
+> pi-document-agent@0.1.0 test:protocol
+> tsx --test tests/protocol/*.test.ts
+
+✔ official SDK discovers Card and performs SendMessage, GetTask, and CancelTask (40.00875ms)
+✔ raw JSON-RPC SendMessage, GetTask, and CancelTask operate over HTTP (9.054875ms)
+✔ raw SSE streaming starts with a task snapshot and ends at a terminal state (6.282083ms)
+Unhandled error in JSON-RPC POST handler: VersionNotSupportedError: The requested A2A protocol version '1.0.1' is not supported. Supported versions: 1.0
+    at validateVersion (file:///Users/yin/Documents/ybs/code/pi-document/node_modules/@a2a-js/sdk/dist/server/express/index.js:2167:11)
+    at file:///Users/yin/Documents/ybs/code/pi-document/node_modules/@a2a-js/sdk/dist/server/express/index.js:3425:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  reason: 'VERSION_NOT_SUPPORTED',
+  metadata: undefined
+}
+Unhandled error in JSON-RPC POST handler: VersionNotSupportedError: The requested A2A protocol version '0.3' is not supported. Supported versions: 1.0
+    at validateVersion (file:///Users/yin/Documents/ybs/code/pi-document/node_modules/@a2a-js/sdk/dist/server/express/index.js:2167:11)
+    at file:///Users/yin/Documents/ybs/code/pi-document/node_modules/@a2a-js/sdk/dist/server/express/index.js:3425:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  reason: 'VERSION_NOT_SUPPORTED',
+  metadata: undefined
+}
+✔ server rejects unsupported protocol versions and malformed JSON-RPC parameters (3.721334ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 272.439958
+
+> pi-document-agent@0.1.0 test:parsers
+> tsx --test tests/parsers/*.test.ts
+
+✔ all five real formats preserve non-empty text and source spans (1245.101417ms)
+✔ valid empty documents fail instead of reporting parsed (1232.954ms)
+✔ corrupt input is reported as a parser failure (1230.843667ms)
+✔ each over-limit fixture is a real format and hits the intended guard (1235.805833ms)
+✔ DOCX bounded inflate rejects bytes that ZIP metadata understates (465.441792ms)
+✔ production 50 MiB byte boundary rejects before parsing (4.935458ms)
+✔ PDF and DOCX workers enforce timeout and terminate cleanly (2.774792ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5942.926333
+
+> pi-document-agent@0.1.0 test:retrieval
+> tsx --test tests/retrieval/*.test.ts
+
+✔ fixed lexical fixture covers at least 20 exact-term and identifier cases (1.393292ms)
+✔ synonym probes are explicit no-hit observations, not semantic acceptance cases (0.242ms)
+✔ Chinese tokenizer and tsquery builder use the same stable token sequence (4.46375ms)
+✔ temporary PostgreSQL 17 executes the real lexical corpus and records evidence (861.311083ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1016.363667
+
+> pi-document-agent@0.1.0 test:ingestion
+> tsx --test tests/ingestion/*.test.ts
+
+✔ Chinese CID-font PDF resolves bundled CMaps without fetching external font assets (1028.813333ms)
+✔ chunk byte budget, overlap, offsets, and text coverage use Unicode code points (2.592334ms)
+✔ chunks retain Markdown heading paths and do not cross source spans (746.983375ms)
+✔ PDF page and DOCX paragraph locators survive splitting with global source ranges (1448.235208ms)
+✔ OpenAI-compatible embeddings validate indexes and normalize aligned 1024D vectors (21.355041ms)
+✔ embedding retries only 429/5xx and stops after five attempts (23.342625ms)
+✔ embedding retries transient network failures (1117.154208ms)
+✔ authentication and malformed vector responses fail without retry or secret disclosure (3.133542ms)
+✔ embedding rejects count, index, non-finite, and zero-vector responses (6.101833ms)
+✔ caller cancellation aborts an in-flight embedding request (24.023333ms)
+✔ profile enforces dimensions, version, normalization, and request budgets (0.417625ms)
+✔ compound identifiers remain exact conjunctions despite conversational filler (5.126583ms)
+✔ ordinary lexical terms preserve conjunction precision without accepting query operators (0.160334ms)
+✔ the parser worker uses a verified per-process macOS network deny profile (48.302167ms)
+✔ the parser isolation helper fails closed on platforms without a verified network sandbox (0.319875ms)
+✔ parseSource uses MIME types and preserves source spans for text formats (760.71775ms)
+✔ PDF and DOCX parse in worker processes with page-local and original paragraph locators (1440.300375ms)
+✔ empty, corrupt, unsupported, and over-limit sources fail with explicit codes (1211.082458ms)
+✔ AbortSignal terminates a running heavy parser worker (1.47525ms)
+✔ Chinese Intl.Segmenter tokenizer has stable word-like tokens (1.467667ms)
+✔ RRF deduplicates within rankings and sorts score ties by chunkId (0.206542ms)
+✔ RRF rejects invalid ranking entries and reciprocal-rank constants (0.207333ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4057.169166
+
+> pi-document-agent@0.1.0 test:security
+> tsx --test tests/security/*.test.ts
+
+✔ public fetch rejects local, private, metadata, encoded, credentialed, fragment, and PDF URLs (2.483292ms)
+✔ low-level transport uses its pinned lookup and checks the connected address (11.129709ms)
+✔ DNS results must all be public and each redirect performs a fresh pinned lookup (0.562708ms)
+✔ redirects are bounded to five and each connection reports the pinned remote address (1.073916ms)
+✔ non-HTML, compressed, PDF, oversized, and canceled responses are rejected (3.219125ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 130.803542
+
+> pi-document-agent@0.1.0 test:a2a
+> tsx --test tests/a2a/*.test.ts
+
+✔ Card, health, readiness, Bearer auth, and M1 capabilities are accurate (39.540125ms)
+✔ Card advertises search and indexed saves only when the backend enables indexing (4.126542ms)
+Pre-stream error for request rpc-SubscribeToTask: UnsupportedOperationError: A terminal task cannot be subscribed to
+    at Object.resubscribe (/Users/yin/Documents/ybs/code/pi-document/src/a2a/gateway.ts:487:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async jsonRpcEventStream (file:///Users/yin/Documents/ybs/code/pi-document/node_modules/@a2a-js/sdk/dist/server/express/index.js:1933:28)
+    at async file:///Users/yin/Documents/ybs/code/pi-document/node_modules/@a2a-js/sdk/dist/server/express/index.js:3466:25 {
+  reason: 'UNSUPPORTED_OPERATION',
+  metadata: undefined
+}
+✔ JSON-RPC maps stored tasks, scopes, cross-principal visibility, and M1 indexing failures (132.376125ms)
+Unhandled error in JSON-RPC POST handler: VersionNotSupportedError: The requested A2A protocol version '1.0.1' is not supported. Supported versions: 1.0
+    at validateVersion (file:///Users/yin/Documents/ybs/code/pi-document/node_modules/@a2a-js/sdk/dist/server/express/index.js:2167:11)
+    at file:///Users/yin/Documents/ybs/code/pi-document/node_modules/@a2a-js/sdk/dist/server/express/index.js:3425:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  reason: 'VERSION_NOT_SUPPORTED',
+  metadata: undefined
+}
+Unhandled error in JSON-RPC POST handler: VersionNotSupportedError: The requested A2A protocol version '0.3' is not supported. Supported versions: 1.0
+    at validateVersion (file:///Users/yin/Documents/ybs/code/pi-document/node_modules/@a2a-js/sdk/dist/server/express/index.js:2167:11)
+    at file:///Users/yin/Documents/ybs/code/pi-document/node_modules/@a2a-js/sdk/dist/server/express/index.js:3425:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  reason: 'VERSION_NOT_SUPPORTED',
+  metadata: undefined
+}
+✔ strict v1.0 JSON-RPC rejects unknown fields, legacy methods, and unsupported versions (6.015375ms)
+✔ SendStreamingMessage and SubscribeToTask emit Task first, Artifact before terminal, and close (162.355541ms)
+✔ disconnect stops polling without canceling the durable task (309.030292ms)
+✔ multipart upload authenticates, validates one bounded supported file, and passes backend identity (77.983417ms)
+✔ upload route returns 501 when a backend has no upload implementation (2.019208ms)
+✔ upload concurrency slots enforce principal and global limits and release after completion (16.796958ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1022.006666
+
+> pi-document-agent@0.1.0 test:integration
+> tsx --test tests/storage/*.test.ts tests/integration/*.test.ts
+
+✔ real HTTP + Pi + PostgreSQL: create/save/read, 20 retries, isolation, ACL revocation and reopen (1423.98075ms)
+✔ task admission enforces global, tenant, and principal active limits under concurrent PostgreSQL transactions (1179.219834ms)
+✔ task pages use persistent keyset cursors and exclude tasks created after the snapshot (37.662458ms)
+✔ task pages union natural metadata and invalidate cursors when source documents are tombstoned (81.251833ms)
+✔ pending task pump excludes natural action children until natural runtime dispatches them (12.574792ms)
+✔ pending task action barrier hides natural operation parents while preserving ingestion and purge children (25.710917ms)
+✔ a stale natural dispatch cannot execute an operation after its parent fence is canceled (8.325083ms)
+✔ task page cursors expire after membership revocation hides natural child artifacts (43.75875ms)
+✔ PostgreSQL admits KBs, stores source atomically, and exposes a real failed ingestion task (21.225291ms)
+✔ 20 identical retries reuse one task, version, blob, and hash; changed payload conflicts (55.393792ms)
+✔ indexed default and invalid uploads fail before writing any document or blob (9.5195ms)
+✔ current DB scopes and KB membership are checked for execution, task reads, and content reads (32.31825ms)
+✔ cancel and execute serialize without reverting terminal state; canceled work leaves no content (119.962584ms)
+✔ document and knowledge-base lists paginate with principal/filter-bound cursors (78.708166ms)
+✔ indexed text saves publish ready generations and keyword, cosine, and RRF retrieval use pgvector (1023.081791ms)
+✔ hybrid search degrades to real lexical hits on embedding failure and fails on lexical SQL errors (55.803917ms)
+✔ indexed publication persists all 10,000 chunks in bounded PostgreSQL insert batches (7274.052875ms)
+✔ frozen doc-091 DOCX v1 to v2 upload update publishes with deterministic embeddings (1058.920958ms)
+✔ indexed updates honor the absolute task deadline and do not publish after it (3030.993417ms)
+✔ pipeline task duration accepts a bounded millisecond override (531.643ms)
+✔ document updates stage a new version while the old active version stays searchable, then publish with CAS (78.193292ms)
+✔ stored document updates keep the old active version until the public ingestion child publishes (45.102667ms)
+✔ canceling or failing an update releases its version reservation so the active version can be retried (93.530167ms)
+✔ document.get cursors page Unicode code points and bind principal, version, and page size (87.587959ms)
+✔ delete tombstones immediately, hides historical document artifacts, and purges only unshared blobs (50.318542ms)
+✔ upload IDs are owner and KB bound, expire after one hour, and keep replayed results stable (18.194917ms)
+✔ the shared parser indexes and preserves source bytes for TXT, Markdown, PDF, DOCX, and HTML uploads (5376.403083ms)
+✔ stored saves stay invisible until the public ingestion task publishes its generation (32.0365ms)
+✔ admission caps active per-principal ingestion at two and checks idempotent replay first (20.568125ms)
+✔ embedding cache is scoped by tenant, profile, and content hash (51.332084ms)
+✔ parse and completed embedding batches survive Pi checkpoint failure and are reused on replay (35.098958ms)
+✔ canceling an in-flight ingestion prevents staging generation publication (20.877167ms)
+✔ empty parser output and malformed embedding vectors cannot publish a ready generation (25.324917ms)
+✔ migration and pipeline reject a dimension that differs from the configured pgvector schema (13.644167ms)
+✔ a real public HTML URL is fetched outside PostgreSQL, indexed, and retains final source provenance (3106.07ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 22897.214625
+
+> pi-document-agent@0.1.0 test:natural
+> tsx --test tests/natural/*.test.ts
+
+✔ natural TextParts create, interrupt, continue, query, list, subscribe, and cancel one A2A task (50.15ms)
+✔ natural TextPart parsing rejects missing media types, mixed parts, and context changes (10.373417ms)
+✔ read-only requests and negated write verbs do not authorize writes (2.551709ms)
+✔ operation-specific negation does not block a separate explicit save (1.057375ms)
+✔ a later read-only instruction does not erase an earlier explicit save (0.158709ms)
+✔ affirmative create, update, and delete wording remains recognized (0.398625ms)
+✔ read operations return false so their caller path remains unchanged (0.059833ms)
+✔ real Pi request_clarification yields INPUT_REQUIRED, same-task continuation completes, and crossed contexts are rejected (1241.604292ms)
+✔ natural turn concurrency reaches only its configured peak and a full principal queue returns 429 (2710.037958ms)
+✔ same-context tasks stay FIFO while the active Pi turn is waiting on its model request (1606.547708ms)
+✔ real Pi runs deterministic document.save, document.search, and document.get against PostgreSQL (1138.70025ms)
+✔ an explicitly requested unrelated document ID is never rebound to the saved document (1062.649459ms)
+✔ document deletion retires a Pi context, preserves only a safe receipt, and drains queued turns (1123.963041ms)
+✔ cancel fences an intent before admission, an admitted unlinked child, and a dispatching child (2833.914167ms)
+✔ read-only requests ignore destructive or URL-saving instructions returned from a stored document (1105.045166ms)
+✔ graceful Pi storage close/reopen resumes a persisted active natural turn before any Pi submission (not SIGKILL) (981.326208ms)
+✔ graceful Pi storage close/reopen replays a linked natural child before dispatch without generic-pump publication (not SIGKILL) (929.959667ms)
+✔ A2A advertises and routes indexed upload, update, and delete through the real PostgreSQL backend (1087.928292ms)
+✔ real Pi Harness runs the registered natural tool against PostgreSQL with a deterministic model fixture (1139.549625ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 16686.246167
+
+> pi-document-agent@0.1.0 test:evaluation
+> tsx --test tests/evaluation/*.test.ts
+
+✔ frozen retrieval fixtures have the required document, query, blind, and version counts (4908.395209ms)
+✔ the separate HTML snapshot set verifies parser fragments without claiming public URL fetch coverage (9660.707625ms)
+✔ HTML citation validation searches every parser span sharing the section locator (10357.267125ms)
+✔ Recall@10 and MRR@10 count each document once even when multiple chunks rank first (0.698875ms)
+✔ no-answer and permission rows stay outside the authorized answerable metric denominator (1.167083ms)
+✔ failed answerable queries remain in the core denominator and contribute zero (0.140125ms)
+✔ support coverage gates separately without erasing correct document ranking metrics (0.166333ms)
+✔ legacy support-miss rows preserve persisted ranking scores but remain a failed gate (0.109959ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 25864.346292
+
+> pi-document-agent@0.1.0 test:ops
+> tsx --test tests/ops/*.test.ts
+
+✔ offline backup restores Pi, PostgreSQL, and source bytes and rejects unsafe restore inputs (2420.620917ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2837.911542

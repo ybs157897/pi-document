@@ -1,0 +1,1174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-16T07:09:12.754Z",
+  "scope": "Local development spike only; no product schema, PG service, or pgvector extension was changed.",
+  "runtime": {
+    "node": "v24.15.0",
+    "icu": "78.2",
+    "platform": "darwin",
+    "architecture": "arm64",
+    "segmenterLocale": "zh",
+    "segmenterGranularity": "word"
+  },
+  "instance": {
+    "host": "127.0.0.1",
+    "port": 62121,
+    "database": "postgres",
+    "temporaryDataDirectory": true,
+    "persistent": false
+  },
+  "postgres": {
+    "version": "PostgreSQL 17.10 on x86_64-apple-darwin24.6.0, compiled by Apple clang version 17.0.0 (clang-1700.6.3.2), 64-bit",
+    "server_version": "17.10",
+    "server_version_num": "170010",
+    "server_encoding": "UTF8",
+    "default_text_search_config": "pg_catalog.english",
+    "database_collation": "C.UTF-8",
+    "database_ctype": "C.UTF-8"
+  },
+  "strategy": {
+    "textSearchConfiguration": "simple",
+    "tokenizer": "Intl.Segmenter('zh', { granularity: 'word' })",
+    "indexing": "Insert spaces between word-like segments before to_tsvector so query and document use identical token boundaries.",
+    "query": "to_tsquery('simple', quoted_tokens_joined_with_&) ; all query tokens are required.",
+    "nativeComparison": {
+      "native_vector": "'任务恢复':1",
+      "segmented_vector": "'任务':1 '恢复':2",
+      "parsed_query": "'任务' & '恢复'",
+      "native_match": false,
+      "segmented_match": true
+    },
+    "semanticLimitation": "No embeddings, synonym dictionary, or reranker were run. synonym_probe no-hits are lexical observations only; semantic retrieval remains unverified."
+  },
+  "fixture": {
+    "corpusCount": 24,
+    "queryCount": 46,
+    "exactAndIdentifierCases": 40,
+    "synonymProbeCases": 6
+  },
+  "summary": {
+    "casesRun": 46,
+    "segmentedExpectedHits": 40,
+    "synonymProbesWithNoLiteralHit": 6,
+    "cases": [
+      {
+        "id": "zh-task-recovery",
+        "kind": "exact_terms",
+        "query": "任务恢复",
+        "queryTokens": [
+          "任务",
+          "恢复"
+        ],
+        "tsQuery": "'任务' & '恢复'",
+        "expectedDocumentIds": [
+          "task-recovery"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "task-recovery",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-index-publish",
+        "kind": "exact_terms",
+        "query": "索引发布",
+        "queryTokens": [
+          "索引",
+          "发布"
+        ],
+        "tsQuery": "'索引' & '发布'",
+        "expectedDocumentIds": [
+          "index-publish"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "index-publish",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-tenant-isolation",
+        "kind": "exact_terms",
+        "query": "租户隔离",
+        "queryTokens": [
+          "租",
+          "户",
+          "隔离"
+        ],
+        "tsQuery": "'租' & '户' & '隔离'",
+        "expectedDocumentIds": [
+          "tenant-acl"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "tenant-acl",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-tokenization",
+        "kind": "exact_terms",
+        "query": "中文分词",
+        "queryTokens": [
+          "中文",
+          "分词"
+        ],
+        "tsQuery": "'中文' & '分词'",
+        "expectedDocumentIds": [
+          "chinese-segmentation"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "chinese-segmentation",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-checkpoint-execution",
+        "kind": "exact_terms",
+        "query": "检查点继续执行",
+        "queryTokens": [
+          "检查",
+          "点",
+          "继续",
+          "执行"
+        ],
+        "tsQuery": "'检查' & '点' & '继续' & '执行'",
+        "expectedDocumentIds": [
+          "task-recovery"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "task-recovery",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-transaction-switch",
+        "kind": "exact_terms",
+        "query": "事务切换",
+        "queryTokens": [
+          "事务",
+          "切换"
+        ],
+        "tsQuery": "'事务' & '切换'",
+        "expectedDocumentIds": [
+          "index-publish"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "index-publish",
+            "rank": 0.05000000074505806
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-read-output-check",
+        "kind": "exact_terms",
+        "query": "读取输出检查",
+        "queryTokens": [
+          "读",
+          "取",
+          "输出",
+          "检查"
+        ],
+        "tsQuery": "'读' & '取' & '输出' & '检查'",
+        "expectedDocumentIds": [
+          "tenant-acl"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "tenant-acl",
+            "rank": 0.009999999776482582
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-index-query",
+        "kind": "exact_terms",
+        "query": "索引查询",
+        "queryTokens": [
+          "索引",
+          "查询"
+        ],
+        "tsQuery": "'索引' & '查询'",
+        "expectedDocumentIds": [
+          "chinese-segmentation"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "chinese-segmentation",
+            "rank": 0.05000000074505806
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-idempotency-conflict",
+        "kind": "exact_terms",
+        "query": "幂等冲突",
+        "queryTokens": [
+          "幂",
+          "等",
+          "冲突"
+        ],
+        "tsQuery": "'幂' & '等' & '冲突'",
+        "expectedDocumentIds": [
+          "payload-hash"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "payload-hash",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-version-conflict",
+        "kind": "exact_terms",
+        "query": "版本冲突",
+        "queryTokens": [
+          "版本",
+          "冲突"
+        ],
+        "tsQuery": "'版本' & '冲突'",
+        "expectedDocumentIds": [
+          "version-cas"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "version-cas",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-read-physical-cleanup",
+        "kind": "exact_terms",
+        "query": "读取物理清理",
+        "queryTokens": [
+          "读",
+          "取",
+          "物理",
+          "清理"
+        ],
+        "tsQuery": "'读' & '取' & '物理' & '清理'",
+        "expectedDocumentIds": [
+          "document-tombstone"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "document-tombstone",
+            "rank": 0.03333333507180214
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-delivery-repair",
+        "kind": "exact_terms",
+        "query": "可靠投递修复",
+        "queryTokens": [
+          "可靠",
+          "投",
+          "递",
+          "修复"
+        ],
+        "tsQuery": "'可靠' & '投' & '递' & '修复'",
+        "expectedDocumentIds": [
+          "outbox-recovery"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "outbox-recovery",
+            "rank": 0.02500000037252903
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-reject-private-network",
+        "kind": "exact_terms",
+        "query": "拒绝私网",
+        "queryTokens": [
+          "拒绝",
+          "私",
+          "网"
+        ],
+        "tsQuery": "'拒绝' & '私' & '网'",
+        "expectedDocumentIds": [
+          "ssrf-guard"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "ssrf-guard",
+            "rank": 0.05000000074505806
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-vector-index",
+        "kind": "exact_terms",
+        "query": "向量索引",
+        "queryTokens": [
+          "向量",
+          "索引"
+        ],
+        "tsQuery": "'向量' & '索引'",
+        "expectedDocumentIds": [
+          "pgvector-index"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "pgvector-index",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-candidate-ranking",
+        "kind": "exact_terms",
+        "query": "候选排名",
+        "queryTokens": [
+          "候选",
+          "排名"
+        ],
+        "tsQuery": "'候选' & '排名'",
+        "expectedDocumentIds": [
+          "rrf-ranking"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "rrf-ranking",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-heading-paragraph",
+        "kind": "exact_terms",
+        "query": "标题路径段落",
+        "queryTokens": [
+          "标题",
+          "路径",
+          "段落"
+        ],
+        "tsQuery": "'标题' & '路径' & '段落'",
+        "expectedDocumentIds": [
+          "docx-locator"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "docx-locator",
+            "rank": 0.01666666753590107
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-page-offset",
+        "kind": "exact_terms",
+        "query": "页码偏移",
+        "queryTokens": [
+          "页码",
+          "偏移"
+        ],
+        "tsQuery": "'页码' & '偏移'",
+        "expectedDocumentIds": [
+          "pdf-locator"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "pdf-locator",
+            "rank": 0.02500000037252903
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-cancel-intent",
+        "kind": "exact_terms",
+        "query": "取消意图",
+        "queryTokens": [
+          "取消",
+          "意图"
+        ],
+        "tsQuery": "'取消' & '意图'",
+        "expectedDocumentIds": [
+          "cancel-task"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "cancel-task",
+            "rank": 0.20000000298023224
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-inline-size-limit",
+        "kind": "exact_terms",
+        "query": "内联文本上限",
+        "queryTokens": [
+          "内",
+          "联",
+          "文本",
+          "上限"
+        ],
+        "tsQuery": "'内' & '联' & '文本' & '上限'",
+        "expectedDocumentIds": [
+          "inline-size-limit"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "inline-size-limit",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "zh-task-stable-mapping",
+        "kind": "exact_terms",
+        "query": "任务稳定映射",
+        "queryTokens": [
+          "任务",
+          "稳定",
+          "映射"
+        ],
+        "tsQuery": "'任务' & '稳定' & '映射'",
+        "expectedDocumentIds": [
+          "a2a-task-mapping"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "a2a-task-mapping",
+            "rank": 0.02500000037252903
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "exact-payload-hash",
+        "kind": "exact_terms",
+        "query": "payloadHash",
+        "queryTokens": [
+          "payloadhash"
+        ],
+        "tsQuery": "'payloadhash'",
+        "expectedDocumentIds": [
+          "payload-hash"
+        ],
+        "nativeHits": [
+          {
+            "id": "payload-hash",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "segmentedHits": [
+          {
+            "id": "payload-hash",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "exact-request-id",
+        "kind": "exact_terms",
+        "query": "requestId",
+        "queryTokens": [
+          "requestid"
+        ],
+        "tsQuery": "'requestid'",
+        "expectedDocumentIds": [
+          "request-id"
+        ],
+        "nativeHits": [
+          {
+            "id": "payload-hash",
+            "rank": 0.10000000149011612
+          },
+          {
+            "id": "request-id",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "segmentedHits": [
+          {
+            "id": "payload-hash",
+            "rank": 0.10000000149011612
+          },
+          {
+            "id": "request-id",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "exact-expected-version",
+        "kind": "exact_terms",
+        "query": "expectedVersion",
+        "queryTokens": [
+          "expectedversion"
+        ],
+        "tsQuery": "'expectedversion'",
+        "expectedDocumentIds": [
+          "version-cas"
+        ],
+        "nativeHits": [
+          {
+            "id": "version-cas",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "segmentedHits": [
+          {
+            "id": "version-cas",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "exact-tombstone",
+        "kind": "exact_terms",
+        "query": "tombstone",
+        "queryTokens": [
+          "tombstone"
+        ],
+        "tsQuery": "'tombstone'",
+        "expectedDocumentIds": [
+          "document-tombstone"
+        ],
+        "nativeHits": [
+          {
+            "id": "document-tombstone",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "segmentedHits": [
+          {
+            "id": "document-tombstone",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "exact-outbox",
+        "kind": "exact_terms",
+        "query": "outbox",
+        "queryTokens": [
+          "outbox"
+        ],
+        "tsQuery": "'outbox'",
+        "expectedDocumentIds": [
+          "outbox-recovery"
+        ],
+        "nativeHits": [
+          {
+            "id": "outbox-recovery",
+            "rank": 0.20000000298023224
+          }
+        ],
+        "segmentedHits": [
+          {
+            "id": "outbox-recovery",
+            "rank": 0.20000000298023224
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "exact-localhost",
+        "kind": "exact_terms",
+        "query": "localhost",
+        "queryTokens": [
+          "localhost"
+        ],
+        "tsQuery": "'localhost'",
+        "expectedDocumentIds": [
+          "ssrf-guard"
+        ],
+        "nativeHits": [
+          {
+            "id": "ssrf-guard",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "segmentedHits": [
+          {
+            "id": "ssrf-guard",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "exact-pgvector",
+        "kind": "exact_terms",
+        "query": "pgvector",
+        "queryTokens": [
+          "pgvector"
+        ],
+        "tsQuery": "'pgvector'",
+        "expectedDocumentIds": [
+          "pgvector-index"
+        ],
+        "nativeHits": [
+          {
+            "id": "pgvector-index",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "segmentedHits": [
+          {
+            "id": "pgvector-index",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "exact-tsvector",
+        "kind": "exact_terms",
+        "query": "to_tsvector",
+        "queryTokens": [
+          "to_tsvector"
+        ],
+        "tsQuery": "'to' <-> 'tsvector'",
+        "expectedDocumentIds": [
+          "postgres-lexical"
+        ],
+        "nativeHits": [
+          {
+            "id": "postgres-lexical",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "segmentedHits": [
+          {
+            "id": "postgres-lexical",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "exact-a2a-version",
+        "kind": "exact_terms",
+        "query": "A2A-Version",
+        "queryTokens": [
+          "a2a",
+          "version"
+        ],
+        "tsQuery": "'a2a' & 'version'",
+        "expectedDocumentIds": [
+          "a2a-version"
+        ],
+        "nativeHits": [
+          {
+            "id": "a2a-version",
+            "rank": 0.13333334028720856
+          }
+        ],
+        "segmentedHits": [
+          {
+            "id": "a2a-version",
+            "rank": 0.13333334028720856
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "exact-pi-task-id",
+        "kind": "exact_terms",
+        "query": "taskId",
+        "queryTokens": [
+          "taskid"
+        ],
+        "tsQuery": "'taskid'",
+        "expectedDocumentIds": [
+          "pi-task-id"
+        ],
+        "nativeHits": [
+          {
+            "id": "a2a-task-mapping",
+            "rank": 0.20000000298023224
+          },
+          {
+            "id": "pi-task-id",
+            "rank": 0.20000000298023224
+          }
+        ],
+        "segmentedHits": [
+          {
+            "id": "a2a-task-mapping",
+            "rank": 0.20000000298023224
+          },
+          {
+            "id": "pi-task-id",
+            "rank": 0.20000000298023224
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "identifier-task-001",
+        "kind": "identifier",
+        "query": "TASK-001",
+        "queryTokens": [
+          "task",
+          "001"
+        ],
+        "tsQuery": "'task' & '001'",
+        "expectedDocumentIds": [
+          "task-recovery"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "task-recovery",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "identifier-request-017",
+        "kind": "identifier",
+        "query": "REQ-017",
+        "queryTokens": [
+          "req",
+          "017"
+        ],
+        "tsQuery": "'req' & '017'",
+        "expectedDocumentIds": [
+          "payload-hash"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "payload-hash",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "identifier-index-004",
+        "kind": "identifier",
+        "query": "P0-INDEX-004",
+        "queryTokens": [
+          "p0",
+          "index",
+          "004"
+        ],
+        "tsQuery": "'p0' & 'index' & '004'",
+        "expectedDocumentIds": [
+          "index-publish"
+        ],
+        "nativeHits": [
+          {
+            "id": "index-publish",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "segmentedHits": [
+          {
+            "id": "index-publish",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "identifier-m0-lex-019",
+        "kind": "identifier",
+        "query": "M0-LEX-019",
+        "queryTokens": [
+          "m0",
+          "lex",
+          "019"
+        ],
+        "tsQuery": "'m0' & 'lex' & '019'",
+        "expectedDocumentIds": [
+          "chinese-segmentation"
+        ],
+        "nativeHits": [
+          {
+            "id": "chinese-segmentation",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "segmentedHits": [
+          {
+            "id": "chinese-segmentation",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "identifier-docx-017",
+        "kind": "identifier",
+        "query": "DOCX-017",
+        "queryTokens": [
+          "docx",
+          "017"
+        ],
+        "tsQuery": "'docx' & '017'",
+        "expectedDocumentIds": [
+          "docx-locator"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "docx-locator",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "identifier-pdf-018",
+        "kind": "identifier",
+        "query": "PDF-018",
+        "queryTokens": [
+          "pdf",
+          "018"
+        ],
+        "tsQuery": "'pdf' & '018'",
+        "expectedDocumentIds": [
+          "pdf-locator"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "pdf-locator",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "identifier-kb-rag",
+        "kind": "identifier",
+        "query": "KB-3-RAG-2026",
+        "queryTokens": [
+          "kb",
+          "3",
+          "rag",
+          "2026"
+        ],
+        "tsQuery": "'kb' & '3' & 'rag' & '2026'",
+        "expectedDocumentIds": [
+          "knowledge-base-id"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "knowledge-base-id",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "identifier-a2a-exec",
+        "kind": "identifier",
+        "query": "A2A-EXEC-022",
+        "queryTokens": [
+          "a2a",
+          "exec",
+          "022"
+        ],
+        "tsQuery": "'a2a' & 'exec' & '022'",
+        "expectedDocumentIds": [
+          "a2a-task-mapping"
+        ],
+        "nativeHits": [
+          {
+            "id": "a2a-task-mapping",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "segmentedHits": [
+          {
+            "id": "a2a-task-mapping",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "identifier-limits",
+        "kind": "identifier",
+        "query": "LIMIT-023",
+        "queryTokens": [
+          "limit",
+          "023"
+        ],
+        "tsQuery": "'limit' & '023'",
+        "expectedDocumentIds": [
+          "inline-size-limit"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "inline-size-limit",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "identifier-rerank",
+        "kind": "identifier",
+        "query": "RERANK-024",
+        "queryTokens": [
+          "rerank",
+          "024"
+        ],
+        "tsQuery": "'rerank' & '024'",
+        "expectedDocumentIds": [
+          "reranker-limit"
+        ],
+        "nativeHits": [],
+        "segmentedHits": [
+          {
+            "id": "reranker-limit",
+            "rank": 0.10000000149011612
+          }
+        ],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "expected_hit",
+        "semanticOutcome": "not_evaluated_without_embedding"
+      },
+      {
+        "id": "synonym-revoke-cancel",
+        "kind": "synonym_probe",
+        "query": "撤销后台索引任务",
+        "queryTokens": [
+          "撤销",
+          "后台",
+          "索引",
+          "任务"
+        ],
+        "tsQuery": "'撤销' & '后台' & '索引' & '任务'",
+        "expectedDocumentIds": [],
+        "nativeHits": [],
+        "segmentedHits": [],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "no_literal_match",
+        "semanticOutcome": "not_evaluated_without_embedding",
+        "note": "撤销与取消表达相近意图；此处只验证字面词法命中，不代表语义模型的结果。"
+      },
+      {
+        "id": "synonym-permission-review",
+        "kind": "synonym_probe",
+        "query": "权限审查",
+        "queryTokens": [
+          "权限",
+          "审查"
+        ],
+        "tsQuery": "'权限' & '审查'",
+        "expectedDocumentIds": [],
+        "nativeHits": [],
+        "segmentedHits": [],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "no_literal_match",
+        "semanticOutcome": "not_evaluated_without_embedding",
+        "note": "权限审查与 ACL 校验相关；无同义词字典或 embedding 时不应声称识别了同义关系。"
+      },
+      {
+        "id": "synonym-material-delete",
+        "kind": "synonym_probe",
+        "query": "资料删除",
+        "queryTokens": [
+          "资料",
+          "删除"
+        ],
+        "tsQuery": "'资料' & '删除'",
+        "expectedDocumentIds": [],
+        "nativeHits": [],
+        "segmentedHits": [],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "no_literal_match",
+        "semanticOutcome": "not_evaluated_without_embedding",
+        "note": "资料与文档相关；本词法试验不做概念扩展。"
+      },
+      {
+        "id": "semantic-vector-search",
+        "kind": "synonym_probe",
+        "query": "语义检索",
+        "queryTokens": [
+          "语",
+          "义",
+          "检索"
+        ],
+        "tsQuery": "'语' & '义' & '检索'",
+        "expectedDocumentIds": [],
+        "nativeHits": [],
+        "segmentedHits": [],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "no_literal_match",
+        "semanticOutcome": "not_evaluated_without_embedding",
+        "note": "语义检索需由真实 embedding/Reranker 验证；本 fixture 不模拟语义能力。"
+      },
+      {
+        "id": "semantic-power-loss",
+        "kind": "synonym_probe",
+        "query": "断电恢复",
+        "queryTokens": [
+          "断电",
+          "恢复"
+        ],
+        "tsQuery": "'断电' & '恢复'",
+        "expectedDocumentIds": [],
+        "nativeHits": [],
+        "segmentedHits": [],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "no_literal_match",
+        "semanticOutcome": "not_evaluated_without_embedding",
+        "note": "断电与进程重启属于相关但不同故障条件；词法结果不能推导故障语义。"
+      },
+      {
+        "id": "synonym-schedule-task",
+        "kind": "synonym_probe",
+        "query": "任务排程",
+        "queryTokens": [
+          "任务",
+          "排",
+          "程"
+        ],
+        "tsQuery": "'任务' & '排' & '程'",
+        "expectedDocumentIds": [],
+        "nativeHits": [],
+        "segmentedHits": [],
+        "expectedHitPresent": true,
+        "lexicalOutcome": "no_literal_match",
+        "semanticOutcome": "not_evaluated_without_embedding",
+        "note": "排程与调度相关；无词汇规则时该表达应作为未命中记录。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "phase": "M0",
+  "provider": "qwen-maas",
+  "modelId": "qwen3.8-flash",
+  "baseUrl": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+  "modelProfileSha256": "ea60b579f968b21d46599664ce894186517b6333fef88b929fe849f6d0b0c842",
+  "maxModelRequests": 1,
+  "maxOutputTokens": 1024,
+  "timeoutMs": 60000,
+  "costStatus": "pricing_not_verified",
+  "limitation": "One real Pi tool call probe; not the AC-20 complete document service workflow.",
+  "status": "passed",
+  "requests": 1,
+  "toolTrace": [
+    {
+      "name": "probe_store",
+      "taskId": 12,
+      "operationKey": "6ca88f23642f2528ca0668a08e5a7e532c244f5ce49fa30397dfcb5e53c25b6f",
+      "storedText": "M0 编号 PI-2026-001，重启后资料仍可读取。"
+    }
+  ],
+  "submissionId": 8,
+  "submissionStatus": "done",
+  "receiptCount": 1,
+  "usage": {
+    "models": {
+      "qwen-maas/qwen3.8-flash": {
+        "input": 345,
+        "output": 45,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "reasoning": 0,
+        "totalTokens": 390
+      }
+    },
+    "tools": {}
+  },
+  "storageDirectory": "data/m0-model/1792117140653"
+}

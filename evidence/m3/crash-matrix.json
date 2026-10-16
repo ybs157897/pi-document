@@ -1,0 +1,392 @@
+{
+  "status": "passed",
+  "repeatsPerWindow": 3,
+  "cases": [
+    {
+      "point": "admission-committed",
+      "repeat": 1,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 953.8398330000005,
+      "recoveryTerminalMs": 1032.7524170000002,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "admission-committed",
+      "repeat": 2,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 959.3434580000003,
+      "recoveryTerminalMs": 1080.130333,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "admission-committed",
+      "repeat": 3,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 1158.6440830000001,
+      "recoveryTerminalMs": 1277.6816660000013,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "pi-admitted",
+      "repeat": 1,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 987.923499999999,
+      "recoveryTerminalMs": 1128.538375,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "pi-admitted",
+      "repeat": 2,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 918.7885830000014,
+      "recoveryTerminalMs": 1052.6698750000014,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "pi-admitted",
+      "repeat": 3,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 917.9695420000007,
+      "recoveryTerminalMs": 1024.5355,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "blob-written",
+      "repeat": 1,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 1035.2567080000008,
+      "recoveryTerminalMs": 1112.845874999999,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "blob-written",
+      "repeat": 2,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 861.9269999999997,
+      "recoveryTerminalMs": 964.0768329999992,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "blob-written",
+      "repeat": 3,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 861.8812909999979,
+      "recoveryTerminalMs": 963.0503749999989,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "parse-finished",
+      "repeat": 1,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 838.4319160000014,
+      "recoveryTerminalMs": 940.7848750000012,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "parse-finished",
+      "repeat": 2,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 829.2212499999987,
+      "recoveryTerminalMs": 905.9804999999978,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "parse-finished",
+      "repeat": 3,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 961.9775829999999,
+      "recoveryTerminalMs": 1111.6650829999999,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "embedding-batch-finished",
+      "repeat": 1,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 1160.565999999999,
+      "recoveryTerminalMs": 1236.288540999998,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 3
+    },
+    {
+      "point": "embedding-batch-finished",
+      "repeat": 2,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 1000.9197500000046,
+      "recoveryTerminalMs": 1084.302749999999,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 3
+    },
+    {
+      "point": "embedding-batch-finished",
+      "repeat": 3,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 850.4258330000011,
+      "recoveryTerminalMs": 933.1449999999968,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 3
+    },
+    {
+      "point": "index-staged",
+      "repeat": 1,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 813.2456670000029,
+      "recoveryTerminalMs": 871.1335000000036,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "index-staged",
+      "repeat": 2,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 803.8005419999972,
+      "recoveryTerminalMs": 853.9002089999994,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "index-staged",
+      "repeat": 3,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 816.4310410000035,
+      "recoveryTerminalMs": 873.0950000000012,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "index-published",
+      "repeat": 1,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 804.4522079999952,
+      "recoveryTerminalMs": 828.5277079999942,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "index-published",
+      "repeat": 2,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 810.7703750000001,
+      "recoveryTerminalMs": 834.8034170000028,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "index-published",
+      "repeat": 3,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 793.2728340000031,
+      "recoveryTerminalMs": 824.820749999999,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "outbox-handled",
+      "repeat": 1,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 820.1807499999995,
+      "recoveryTerminalMs": 932.0583330000009,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "outbox-handled",
+      "repeat": 2,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 868.1045830000003,
+      "recoveryTerminalMs": 985.0499999999956,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    },
+    {
+      "point": "outbox-handled",
+      "repeat": 3,
+      "signal": "SIGKILL",
+      "taskIdStable": true,
+      "recoveryReadyMs": 787.156415999998,
+      "recoveryTerminalMs": 904.3517500000016,
+      "counts": {
+        "documents": 1,
+        "versions": 1,
+        "ready_generations": 1,
+        "chunks": 12,
+        "save_tasks": 1
+      },
+      "modelCalls": 2
+    }
+  ],
+  "provider": "local deterministic HTTP embedding fixture; no quality claims",
+  "limitation": "Cancel-accepted and tombstone-vs-publish windows are verified separately; outbox-handled shares the Pi-admission-before-PG-ACK boundary."
+}

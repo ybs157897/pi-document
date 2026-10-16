@@ -1,0 +1,79 @@
+{
+  "request": {
+    "schemaVersion": "1.0",
+    "operation": "knowledge_base.create",
+    "requestId": "f657d61f-2d2c-40c7-bde4-174cae5f9113",
+    "input": {
+      "name": "网络中断恢复验收"
+    }
+  },
+  "response": {
+    "jsonrpc": "2.0",
+    "id": "ui-6079995d-dad0-4dec-a18c-9b63f0db54ca",
+    "result": {
+      "task": {
+        "id": "2c147661-8359-43c9-8914-52180015c34b",
+        "contextId": "0e71f10a-11d6-41cd-bf69-dd2523f121fc",
+        "status": {
+          "state": "TASK_STATE_SUBMITTED",
+          "timestamp": "2026-10-16T06:54:20.408Z"
+        },
+        "metadata": {
+          "operation": "knowledge_base.create",
+          "requestId": "f657d61f-2d2c-40c7-bde4-174cae5f9113"
+        }
+      }
+    }
+  },
+  "resumed": {
+    "request": {
+      "schemaVersion": "1.0",
+      "operation": "knowledge_base.create",
+      "requestId": "f657d61f-2d2c-40c7-bde4-174cae5f9113",
+      "input": {
+        "name": "网络中断恢复验收"
+      }
+    },
+    "response": {
+      "jsonrpc": "2.0",
+      "id": "ui-3e1e6744-251e-422e-9e68-da33087d97d9",
+      "result": {
+        "task": {
+          "id": "2c147661-8359-43c9-8914-52180015c34b",
+          "contextId": "0e71f10a-11d6-41cd-bf69-dd2523f121fc",
+          "status": {
+            "state": "TASK_STATE_COMPLETED",
+            "timestamp": "2026-10-16T06:54:20.408Z"
+          },
+          "artifacts": [
+            {
+              "artifactId": "result-2c147661-8359-43c9-8914-52180015c34b",
+              "name": "knowledge_base.create result",
+              "parts": [
+                {
+                  "data": {
+                    "result": {
+                      "name": "网络中断恢复验收",
+                      "knowledgeBaseId": "31465db6-1537-45ae-96bc-cbcc812aef42"
+                    },
+                    "outcome": "succeeded",
+                    "operation": "knowledge_base.create",
+                    "requestId": "f657d61f-2d2c-40c7-bde4-174cae5f9113",
+                    "schemaVersion": "1.0"
+                  },
+                  "mediaType": "application/json"
+                }
+              ]
+            }
+          ],
+          "metadata": {
+            "operation": "knowledge_base.create",
+            "requestId": "f657d61f-2d2c-40c7-bde4-174cae5f9113"
+          }
+        }
+      }
+    }
+  },
+  "sameRequestId": true,
+  "sameTaskId": true
+}

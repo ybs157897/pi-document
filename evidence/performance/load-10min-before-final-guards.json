@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "concurrency": 5,
+  "durationMs": 600000,
+  "wavePeriodMs": 1000,
+  "dataset": "10,000 repeated public synthetic paragraphs; real cached embeddings. This is a load corpus, not a quality corpus.",
+  "maxProviderRequests": 3200,
+  "modelId": "qwen3.7-text-embedding-flash",
+  "dimensions": 1024,
+  "costStatus": "pricing_not_verified",
+  "indexingMs": 22328.627708,
+  "chunks": 10000,
+  "actualDurationMs": 600004,
+  "peakConcurrentQueries": 5,
+  "keyword": {
+    "samples": 2995,
+    "p95Ms": 194.971292000002,
+    "p50Ms": 116.64024999999674
+  },
+  "hybrid": {
+    "samples": 2995,
+    "p95Ms": 447.5340829999768,
+    "p50Ms": 315.67916600001627
+  },
+  "provider": {
+    "requests": 3001,
+    "reportedTokens": 81312,
+    "samples": 2995,
+    "p95Ms": 101.16691700000956
+  },
+  "limitation": "Five synchronized clients, each issuing keyword+hybrid once per one-second wave. Does not claim peak saturation throughput. Rerank is disabled; provider latency is reported separately.",
+  "providerRequests": 3001,
+  "providerTokens": 81312
+}

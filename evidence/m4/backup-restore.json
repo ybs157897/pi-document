@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "generatedAt": "2026-10-16T07:10:30.548Z",
+  "node": "v24.15.0",
+  "postgresTools": "pg_dump (PostgreSQL) 17.10",
+  "test": "real Pi Durable SQLite + M1 PostgreSQL/blob backup and restore",
+  "results": {
+    "livePiOwnerRefusesBackup": true,
+    "backupAndRestoreCliCommandsPassed": true,
+    "backupManifestVerifiedBeforeRestore": true,
+    "sourceChangedAfterBackupWithoutChangingSnapshot": true,
+    "postBackupTaskAbsentFromRestoredStores": true,
+    "backupBlobCount": 1,
+    "restoredPostgresTasksAndDocumentMetadata": true,
+    "restoredPiTaskMapping": true,
+    "restoredOriginalBytesAndMimeType": true,
+    "newWriteAfterRestore": true,
+    "reconcileIssueCount": 0,
+    "reconcileReadOnly": true,
+    "nonEmptyPostgresTargetRejected": true,
+    "modifiedBlobBackupRejectedByVerifyAndRestore": true
+  },
+  "limitation": "This test validates an offline logical backup and restore flow; it does not prove zero data loss during host power loss."
+}

@@ -1,0 +1,5805 @@
+{
+  "schemaVersion": 1,
+  "runId": "retrieval-2026-10-16T04-54-08-511Z-88b142",
+  "status": "failed",
+  "startedAt": "2026-10-16T04:55:08.700Z",
+  "results": {
+    "documents": [
+      {
+        "key": "doc-001",
+        "documentId": "39162025-41d5-4888-b13b-2f316eb7401a",
+        "version": 1,
+        "sha256": "a7c00063572ea4d3954e25eba3b4350eb73e77e82a70959f7e309cbdcfeca09b",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "5bb6e201-b1cb-4807-8d26-cc3867524728",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-002",
+        "documentId": "068e2240-cff0-47fb-bc25-692aca0cd9dc",
+        "version": 1,
+        "sha256": "97e18dd657ffe89976affa85f398980a25d7677d52e557f2bd041a9836f24709",
+        "format": "txt",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "1974255d-c439-412b-b273-3214182ba5cd",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-003",
+        "documentId": "51c377b0-ab29-442d-9338-ee83ca53f296",
+        "version": 1,
+        "sha256": "2beef041d01c64bf31d131e9d206c093f5a72056b86d013997029fc400c790fe",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "f939ba16-8c38-44c2-bcc0-17fb2d489d46",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-004",
+        "documentId": "d8724f7b-cb16-4075-88e1-e9d6ca551fa4",
+        "version": 1,
+        "sha256": "45cca3ce3e8344bfe78745ad5a38f60a3f86d2cba3c5107d48a9a19f5338165b",
+        "format": "txt",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "2e274c55-1ec6-4986-bf37-16ce7993b95d",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-005",
+        "documentId": "64d61383-159f-411e-ab82-eb2eb63b6a86",
+        "version": 1,
+        "sha256": "a1874ed3209ac287ff25b7f4b60d6a4dea451a1e545677cc0ce539e0bb0d1917",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "f4d665c3-626f-4e7e-872b-9f9fbae81024",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-006",
+        "documentId": "42287505-f06d-4d1d-a03e-be1fa3fc4964",
+        "version": 1,
+        "sha256": "9ad689647ce71fac8f61d4c388bdaca56e57556533593e4a1ed56e19fd37fc29",
+        "format": "txt",
+        "language": "en",
+        "knowledgeBaseRole": "restricted",
+        "taskId": "66e17779-f77e-4b0e-99fe-22ee9af340c1",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-007",
+        "documentId": "3eed5cc3-7e92-4be7-a476-09bf78a78f40",
+        "version": 1,
+        "sha256": "fcf7aa519dd1c3a90dd075403992aabe811f872858f56641180e12138553329b",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "restricted",
+        "taskId": "b759743f-e8d7-464c-a5f9-57a8a4df65f8",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-008",
+        "documentId": "e9f87c46-0312-4b58-9c5f-c4ce62be305e",
+        "version": 1,
+        "sha256": "60fdc29d0dd9a9e90c162bb5f6c81d1badf0c56e33243dfbe7b22e63a51e8e0c",
+        "format": "txt",
+        "language": "en",
+        "knowledgeBaseRole": "restricted",
+        "taskId": "a323ef85-fe0e-4ad7-8792-6c010bc248b8",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-009",
+        "documentId": "b0873e16-694e-4904-9a78-7e090e46a20c",
+        "version": 1,
+        "sha256": "5a21d52c1795cba65f3537af6301bb41a00d142dca58738e43dc3d1e080bdd8e",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "restricted",
+        "taskId": "20db8438-979d-4afc-aeeb-727f32725fab",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-010",
+        "documentId": "bac8f08a-b65d-4774-bbc5-b47cf2763c0d",
+        "version": 1,
+        "sha256": "b29e50e375108b0b52c86241733595a45c909a42cd7abec799092ce5af534457",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "restricted",
+        "taskId": "54b8b089-7c2b-4477-89bb-d405d2b47792",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-011",
+        "documentId": "04907f1e-0b1e-4fd4-87af-19cba12dbceb",
+        "version": 1,
+        "sha256": "334407ca33b48d32a73cee3b8cded2ca5f6b41d5ef70a283c8dbeacbf71c999b",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "106f5258-7377-4425-af33-f794c729c695",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-012",
+        "documentId": "373581b1-afae-4036-9df4-e765f1a5962e",
+        "version": 1,
+        "sha256": "f50830408a835d7b12d952f48934190c365d2622de160c5c43fec142b8838217",
+        "format": "txt",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "5f9b196b-2554-45f3-975d-a5273848d61a",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-013",
+        "documentId": "a1ee619d-7125-4b8b-bb7f-0e3f2b4e6a65",
+        "version": 1,
+        "sha256": "c9200c12239400f414dd544e80127dbcf6f212ce168f381ff03989877a0e09e4",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "ada7acc7-17ae-4f6a-a0a3-52f422051604",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-014",
+        "documentId": "d743e589-193f-482a-bc7f-3fab0a5a548b",
+        "version": 1,
+        "sha256": "ffa3eb4285055969e7bf4359317140412586059afdcc79f84fde0246d212b39e",
+        "format": "txt",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "c3b83517-b872-42dc-a72d-e1670c30f0a7",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-015",
+        "documentId": "e08fbb0f-cd99-4d80-884d-52fe7fd45fe1",
+        "version": 1,
+        "sha256": "7d6ec4a946883a674279508f86c2b6c47d08e0bd678eb56ea0aadfae0a4e1e81",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "c47c7d9b-b48c-48cc-a171-283ec9ef447f",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-016",
+        "documentId": "acf40cab-70d3-4b66-b75a-086c0a7b3c31",
+        "version": 1,
+        "sha256": "1b191250f084dd010cf6e40fa79b90a8e88cc58412296d9bdb858332645ba6ce",
+        "format": "txt",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "11f43af7-bc2c-4f12-a549-775f825f8a81",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-017",
+        "documentId": "49636938-615b-4f9d-b500-a6aadaf99358",
+        "version": 1,
+        "sha256": "dfc48c6da6a4f099bd3dc101f905dfedacf6407790989f561322ae6a0b6aaa8c",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "767299ee-8dbe-4804-9a77-4b37a0176066",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-018",
+        "documentId": "f6f29482-142f-4dde-a5f1-cdad19a98988",
+        "version": 1,
+        "sha256": "e5a6ee9df68ac28dd87f329f1152cc50a0c5914a20652fd42958572ea85d13f8",
+        "format": "txt",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "2ed306c3-1730-465f-95fb-117d03ab1060",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-019",
+        "documentId": "e11b9cd9-6e54-457b-83ba-a5175c1b9613",
+        "version": 1,
+        "sha256": "f24545bd6e6b94fe0311f4a5f786ff833ac24eeda5a045bff996f9f7759474f0",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "fd27b32f-ca4e-43ee-bf63-2e35cd139d2c",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-020",
+        "documentId": "eeff379c-f4d5-44fb-b849-9dfe2200e1e2",
+        "version": 1,
+        "sha256": "453b8988025d3e1018da9abc963a9bb2f719b5725177f18888c478b2ded66548",
+        "format": "txt",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "ba913801-5f47-4377-93f2-c4c888de258a",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-021",
+        "documentId": "daea555b-2b2a-4f28-8c20-4853ea100519",
+        "version": 1,
+        "sha256": "8f5c5b13af1295910cb9c3ef3952a1291f519037c8714847432fae4b8d74a1b8",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "3fb3ebe4-3dbe-4e34-aa85-b2c3278e223a",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-022",
+        "documentId": "c3047c3c-ec48-4e53-b3db-1b7a6b003af1",
+        "version": 1,
+        "sha256": "292b8a709ceee94704443e108c13980a6c6e46863c7316aed12ade644255326b",
+        "format": "md",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "36bc470d-01f8-4f57-9ce2-73261b09516b",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-023",
+        "documentId": "af82702a-1440-4f76-8c07-400954a35632",
+        "version": 1,
+        "sha256": "97c2370f7519925453eb3d75b493776e5d3f2d2de0fdc87743c57343e728ee88",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "a523a06c-344f-40a0-a176-b7d9e13eb5c0",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-024",
+        "documentId": "15183374-f97d-478f-aeb9-0035c214e755",
+        "version": 1,
+        "sha256": "f0dc02ac3ca203f06e7670dcf24ee057c16684decf9fe416b6c079881339e021",
+        "format": "md",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "527deabf-c789-4f63-bc35-37bc3fa4c4da",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-025",
+        "documentId": "0b0de784-7338-420a-9474-24d9146f653e",
+        "version": 1,
+        "sha256": "e44de879d73971cc3ec11ae8969f747989cee7c638da9fb899c1e0bbada1809b",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "cf10ab02-e4cc-42dd-8355-d0b55125e5aa",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-026",
+        "documentId": "1f8d26fe-293b-454e-9999-4fafde2733cc",
+        "version": 1,
+        "sha256": "d059612e1745504b9493e6370ee9bb1196c169a6246039ea3b432ee5adbf6747",
+        "format": "md",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "4d039b49-1de3-4714-94a4-c5296349aee2",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-027",
+        "documentId": "2f964408-12a6-4b93-a2b3-57072e55cfaa",
+        "version": 1,
+        "sha256": "09c32c9374de01b7553320c2b9286aef1336d22398ebd814eeaea52bf0373f78",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "552d23d9-b364-404c-a17e-d703e8772b5e",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-028",
+        "documentId": "4391cf5c-edcf-4706-aa42-7c5d93070f8a",
+        "version": 1,
+        "sha256": "7c33ce3b2b0351183220c244eaa254a4eb2312c39847e91b5fd2a9b379034763",
+        "format": "md",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "d1eff817-5481-4742-ac4a-4fbae947d2d5",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-029",
+        "documentId": "6392c8ef-0055-4e88-b435-cecbe277c236",
+        "version": 1,
+        "sha256": "c71eaa4cb47a0dfc05c1dd4f0a8ddc58ce5a5ec35b231eac85a5a0d4deeaaceb",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "73b0720c-2224-42b8-88b4-481fc8b77859",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-030",
+        "documentId": "ff5d58ce-4966-468d-b836-947fced1970b",
+        "version": 1,
+        "sha256": "73b247fe1b342831639508ac494b22f249cada39dde93875d6666fdf907a7d44",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "b8c7fcbb-0e84-4b26-b625-9fc232a1b7a5",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-031",
+        "documentId": "c7fd59cc-a9fa-4e7c-8389-99d1c82e4a31",
+        "version": 1,
+        "sha256": "cfa495f4818bebc503b1567cce14490f1658c1c4faee399002ea413b1c47a813",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "7d5cdce6-1b66-42e5-84e5-a23c85712e47",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-032",
+        "documentId": "3ca6e5ff-f9f2-4012-b147-0bfed6eab81d",
+        "version": 1,
+        "sha256": "083bed56fc1b18fc49896b36955c64cc972085b8ea649343c2392b747e701c4d",
+        "format": "md",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "6b06830d-bd04-459c-b4cc-502b64338539",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-033",
+        "documentId": "cc1d2253-8f70-42c2-b66f-46daf1ca6f0b",
+        "version": 1,
+        "sha256": "0a86aea1f334707086a1eb401edd7d7755937942fecac6ad9ee2761361e23ff7",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "8d4c3082-05a2-43ab-b7cf-542b7bd18ba6",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-034",
+        "documentId": "b1004c5b-1d64-4693-872a-a9309439204a",
+        "version": 1,
+        "sha256": "3da6c49abdd181f8ceaaf02aba2436aea71fd8248020d08d1055e41ffd83b47b",
+        "format": "md",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "6a57bbdf-9432-4392-8b42-35d59be50fb1",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-035",
+        "documentId": "ac49c188-28fc-42b2-9b79-4d5eb73713a6",
+        "version": 1,
+        "sha256": "9d0bb4e80d02e7a89a8b2f139b1a7151943ee27de681595f74d248838d3f6628",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "358b4527-43bf-41e3-ba9f-aaf89185e8df",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-036",
+        "documentId": "f8ec2dce-2794-4c87-be8d-92eecd9e6cb6",
+        "version": 1,
+        "sha256": "791b2691e7f2f08488cb466217382ac3711100e4eb444e9da4044c68fbe70cb1",
+        "format": "md",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "a63ca1bd-82af-42a7-a7de-5ef6acdebe60",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-037",
+        "documentId": "cf7bb4d0-cc47-4788-86b7-9c2cb48c66b5",
+        "version": 1,
+        "sha256": "588b3e376637b02bc88c47f6e801bffdc08c3a558f2662a684818f8f39d196c1",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "bbaf70f7-81be-49f1-add7-f17ae9ed283e",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-038",
+        "documentId": "95c1892c-fd25-474f-906d-b77113888aca",
+        "version": 1,
+        "sha256": "44523dc7243d3d765b6217bb90583983226f9c97d6630bd710465ee933d5bde9",
+        "format": "md",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "e64b36cd-b3c0-429a-ab8a-fac2387a7bbf",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-039",
+        "documentId": "0913befe-efb5-4811-b259-bf33949ea7f1",
+        "version": 1,
+        "sha256": "a3531b62549ba2e640b19ec7016a259e80b11af15764fe3dc1a97b6081504e89",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "a9e6ed2a-b1fd-4567-bf42-762d1180d38a",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-040",
+        "documentId": "80077368-29cc-4989-ac56-7730bd08ad43",
+        "version": 1,
+        "sha256": "ea70651e0240e13e4be38727b24c497f2b6a3fa14e7585e3059146e5096086ca",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "1c4a3076-9927-44f6-a48a-cbbf33393398",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-041",
+        "documentId": "42e9bf6c-689f-4509-bf66-0c98a7756ec1",
+        "version": 1,
+        "sha256": "104e51ab58568070abc7b6c43b24d29c405d494e72f488ef285a0d6c5d4e9509",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "88bb1a50-677a-443f-9d05-9914347e907d",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-042",
+        "documentId": "4324cf0b-5b78-4efb-b6a0-b9af7e09bdd2",
+        "version": 1,
+        "sha256": "96d169a0f52ad291395024c5a14a9a9b4bf5c9bfec5898226037a52c167b1e45",
+        "format": "md",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "66f1ef2b-2f42-46de-abdb-580035f870d2",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-043",
+        "documentId": "211689c8-1d91-4db6-91fa-d13126139842",
+        "version": 1,
+        "sha256": "a430c32cfa3c07c4aca537ae12fec6420829a7f119f7691c7455cbe52725441d",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "5d17436b-a31b-471d-b3bb-3e05ebfc3941",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-044",
+        "documentId": "31d7d30c-c58a-4431-a56e-54b6bf83e83c",
+        "version": 1,
+        "sha256": "7e732481be285200fcb7862080fcc4e826b5a2b7765f0aa018753120b82c87c0",
+        "format": "md",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "45dcc33a-9e6e-44ba-af5c-2e770f948a51",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-045",
+        "documentId": "5edbfa50-b4cd-47a5-bd08-ce1e305ad5d4",
+        "version": 1,
+        "sha256": "fb1a7c66243d89167985f826d3b350d6603fd6df4ba24ab13313c79f21d3c085",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "a5dfd087-467e-44c4-a243-c305ad83a14d",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-046",
+        "documentId": "21c9ad4d-e736-413e-b1ec-42dd48b6b13b",
+        "version": 1,
+        "sha256": "a1e12aff7e7243b10c4765f5f227d90426a1ac89bb1a7c50e436b6c3f2740871",
+        "format": "md",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "30d8e994-f4b6-41c0-ae3e-4ef9af40e522",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-047",
+        "documentId": "60cd2fe7-0de4-4b09-bbeb-251e7a4f3c7e",
+        "version": 1,
+        "sha256": "f222815fc91a3139a077d28fec6debbaf30cb657ee8959277959766dac345472",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "12f77ddb-6b6f-4e16-a6f6-de58adf08e8f",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-048",
+        "documentId": "4ff448af-ae23-4281-80b7-61e5576e7f78",
+        "version": 1,
+        "sha256": "d238b2c3975e13434df5305e5dfa986547c4c4f573e0e7ee9464668a8b3c74d4",
+        "format": "md",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "64d388a6-e8b2-46e5-be8b-dc62a08f9e67",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-049",
+        "documentId": "8f149b13-eeec-4f89-a90f-ec3656cc0b79",
+        "version": 1,
+        "sha256": "b21d1ebb458ec87e600a8665b887101b5a6244fd925e5090b6517985cca25df7",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "94f8875e-b1b4-4c32-bb92-8f583e21e823",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-050",
+        "documentId": "dc6b88ec-f309-401b-8093-fa7039330199",
+        "version": 1,
+        "sha256": "ad159cbc6111fc5fd65aff16a44fae0a85682981d91acfb660f64b113f711664",
+        "format": "md",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "0aa6bb99-8b9a-4441-a249-9f242ac4d140",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-051",
+        "documentId": "7c71ca44-b26f-4006-8466-1405c128ca0d",
+        "version": 1,
+        "sha256": "f9b192f17a1e67d77b641454b3d73b85b6b8af656107730ba53d3332dd2ebd33",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "5538c2f5-89c0-41ef-9416-5d5393c3c88d",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-052",
+        "documentId": "ee0cd994-35c3-4eeb-b94b-c80b1b539ccc",
+        "version": 1,
+        "sha256": "ba18209f06953c45172f46446027f707e39963f2c95bd3f011c099debe0c6bed",
+        "format": "pdf",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "abbe94e7-328b-44e1-88c9-703f928b0f12",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-053",
+        "documentId": "e8a62f7e-a80e-497d-833b-47d6e6d5238c",
+        "version": 1,
+        "sha256": "a477274a5107616ad66eb93464703318f6d335fd1a2226671083f171bb3bd71d",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "09f16384-fae9-406c-a920-dcdab896d213",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-054",
+        "documentId": "04d9ba57-62ff-4db3-aaee-75b1ea607402",
+        "version": 1,
+        "sha256": "3da19e482733109cbc60a750d4aac242f2d655be663190079d61523d14056205",
+        "format": "pdf",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "7e0ea7cc-ebfa-4633-a190-f824cfa617aa",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-055",
+        "documentId": "659dd186-957d-41fc-9296-1fac40440f31",
+        "version": 1,
+        "sha256": "2eb58607bbff59b7a789e5aad459d36efeba8d10eac49676f070f5d1d5d3e0e0",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "127c9bcf-bf84-4127-b42f-3c9d6f9703ce",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-056",
+        "documentId": "4652eaea-86a0-498e-b504-044ac6670d59",
+        "version": 1,
+        "sha256": "ed6ec695494dda4f07a1dd0c3fe5ed7c6bbb4845157b9c00a5b01ed2e3f55c55",
+        "format": "pdf",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "47505544-94a8-42a8-a6df-1500055d5600",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-057",
+        "documentId": "63ae9235-4934-4c87-b604-3b9b7ccb7756",
+        "version": 1,
+        "sha256": "701f5f3cede9102e8dc759e0c4040ffa997a392f87eb636c25e19ff750355fcd",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "1a659793-dadc-4228-bd56-c92744a40bdf",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-058",
+        "documentId": "5aee59ea-d0b9-4749-a028-5bcf0c362814",
+        "version": 1,
+        "sha256": "59713717e3d83d94d9d7deb5a40b0b05fac212cefe935f87bf561a15e190c8e5",
+        "format": "pdf",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "f104feba-bd03-4eae-b80a-cb2f44f27652",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-059",
+        "documentId": "08043a94-15ba-4779-9a28-f4ed27ac31db",
+        "version": 1,
+        "sha256": "c85b2be0a110c27e9cc886c6ce313dfdfdb0e997e169b70577fc3e17f1ab4fc3",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "587d2153-1a2b-4382-a568-3ad9e66bf595",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-060",
+        "documentId": "c0514e9f-63cd-472a-af76-92e906ef99fd",
+        "version": 1,
+        "sha256": "52f7e7e3a2fe8eb826ae3ff114dec4bd0437724596290d3da9779018897c61b4",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "67b295ba-971f-4344-a96c-f11c17867195",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-061",
+        "documentId": "dd9332f0-7d3f-40d4-8e35-f957d2ab1b5c",
+        "version": 1,
+        "sha256": "1c6db6dfe9e43c1414ec3b5e1d1bcc4bb904e53ec3a4fb4c58414c68aad327eb",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "706b446c-49f4-433d-9367-bfda662c937c",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-062",
+        "documentId": "c222c582-7027-41b6-b5b3-31946eb2062a",
+        "version": 1,
+        "sha256": "013957467e299261e7a78afd28a9eea510289cc48f453abd21c255f848217350",
+        "format": "pdf",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "c78f7a26-6256-4bcb-aa51-49f5e7c69739",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-063",
+        "documentId": "3d38f38a-d944-409e-9fbb-6d4871fade9b",
+        "version": 1,
+        "sha256": "db072ca681ef5fbc223f322d3c84779a4cf3313f21f0f497e9a27f476bbe1972",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "12b6b30d-b102-4e8e-85bf-991f4c722aaa",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-064",
+        "documentId": "8f8e6d45-fc18-4276-92d1-baf643ba9c98",
+        "version": 1,
+        "sha256": "146c024108a8fa869f7a66c1e0be75ebe300e4b5d4024d0161cf338fc073b3fa",
+        "format": "pdf",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "5fb0e6f4-ee5e-4425-a6e2-2d203799f7aa",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-065",
+        "documentId": "48d1952c-3f47-4cb0-8137-ee3012a30c87",
+        "version": 1,
+        "sha256": "78c59cac656c0518f1f3e1d90438c27fba4e26627ab66a23875e536fa4495541",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "b22b5b50-abaa-4146-bef7-f0c20e908879",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-066",
+        "documentId": "7aeca253-5e66-49cb-8fcc-71119771d2fe",
+        "version": 1,
+        "sha256": "4124d3fc32bca659999fed60daa2784bd3f173d7fab655f4247978b106299271",
+        "format": "pdf",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "46c1f9ff-2439-4ea5-9905-ce7182d32d18",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-067",
+        "documentId": "674b8d2f-4f20-41ed-ab79-fc10713b2425",
+        "version": 1,
+        "sha256": "09ff2b37b107b554c584bb87653617f0dd3f04f720ac2e35534923a8fceba779",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "01183a84-f5d3-4ccb-aa2c-9a51fe2ba5d9",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-068",
+        "documentId": "8e74983a-53b2-473f-b37d-ada5666e2bfc",
+        "version": 1,
+        "sha256": "4620e37f5ecd46cd4ab2b6bc52c34af8531c15e6562d1f8c724927771062307e",
+        "format": "pdf",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "b5897933-fa0c-4c4f-b3e4-7831faf30fc7",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-069",
+        "documentId": "e91418d1-c166-468e-ab33-18949ef2f1ad",
+        "version": 1,
+        "sha256": "17c226a4a1c275de719f1fef6c9b1045532db55cf004da4129e83d5172638d2e",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "733f5b51-afcb-41c6-89de-1037de10c807",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-070",
+        "documentId": "046315f9-c073-4ed5-9222-1718c460bae5",
+        "version": 1,
+        "sha256": "e2088414433a9032db8664d00e44e0307a51e941e2f0a580917807e92bb5c1c7",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "cbc89972-f355-4805-9b8e-48f4f03bf630",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-071",
+        "documentId": "5b758c1a-e1ff-41bc-b986-fe1ff737cb8c",
+        "version": 1,
+        "sha256": "0a7ab13f688a2a7074775f60b4e4e536922b8e55beb749defa2fbe90a01d814f",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "b5154e1c-fcd7-499f-bd36-0cc2831719b4",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-072",
+        "documentId": "b102534a-f25f-4919-9fa7-bb0491dbb0be",
+        "version": 1,
+        "sha256": "834c612a940c703064ee0006074be11b33178765ebdf321d632b386b042aa7c4",
+        "format": "pdf",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "738c6a5b-06db-433c-9a8c-a9cd0d423dbe",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-073",
+        "documentId": "4b0e4a99-8caf-47a1-8a1f-34f031dd638c",
+        "version": 1,
+        "sha256": "1f57458df7bc3c11ae58fdd8ffa1b652f810eded0aff4f2f295b9f1b4da8a4e7",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "905452ac-77ba-49f5-9332-e2ea3a3a2c7a",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-074",
+        "documentId": "793261bd-f73a-4213-886d-09b6697d1661",
+        "version": 1,
+        "sha256": "8af9a50f197d7e1916473ae8c0754db21f1b1397767fe2bb987728b69b3d8831",
+        "format": "pdf",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "33d499f6-e82a-46c8-8ad7-477790d60fd5",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-075",
+        "documentId": "96d05dc6-57cf-4951-8c29-59e528efec12",
+        "version": 1,
+        "sha256": "f4c65d8465aed012b5fccfca9eb96e232b662a926dae646400ca0535a2308057",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "a99292dd-0aaa-4eca-8403-bbaa595c0ddb",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-076",
+        "documentId": "6995e8de-8328-4548-8812-b5a3783e675f",
+        "version": 1,
+        "sha256": "ace889bae74943d5cf481df3a466be0752d3f933f6aff1ca3e03854f7c2f5da9",
+        "format": "pdf",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "96103ddd-d56e-4b3e-b4bc-ea0579fa827b",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-077",
+        "documentId": "4c997534-12d8-42c0-b88a-4a5a9fdffbbb",
+        "version": 1,
+        "sha256": "9bf7881b807d74252aaebfc3ff17375af1b85a36876a31f761f217b145613417",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "c4f68c15-1bf5-4ba3-ba30-58ff24b6fcdb",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-078",
+        "documentId": "b5ab9cea-2b7b-46f9-b6ae-1491d8c7b2b1",
+        "version": 1,
+        "sha256": "25397541a2d8b19b1e6ca7b6ebe3eedc341c2a77a90df1d492dde410d83eaf15",
+        "format": "pdf",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "6231cc7b-8a61-432c-8b33-2468fde894dd",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-079",
+        "documentId": "eb75296f-736a-465a-b6bd-524b72a51862",
+        "version": 1,
+        "sha256": "a1da5d90ffecd09a086fdd4c1212c6313f41cd1437298066927f1676daec6820",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "5c9d1a96-2104-428e-84ce-7369b4195d11",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-080",
+        "documentId": "2e34adb4-dee0-4fe0-b343-686db11ea04f",
+        "version": 1,
+        "sha256": "20fca64038c68a8b28968485a6abe51cef378b0bfc5a7294bb88eb5964e1e297",
+        "format": "pdf",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "daa35304-3d20-438c-ad25-14ffe1df2d84",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-081",
+        "documentId": "a5cc61be-2dbf-4d90-96ef-84c09e1957d8",
+        "version": 1,
+        "sha256": "ca83c8e86e29088414a3e0a86589150145fcf4e1f55376d6cf64cadae2f36da7",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "786b334b-07d4-4c52-9c38-2fe059a9fc40",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-082",
+        "documentId": "7ad037e1-9a25-452d-8ca5-b51ca18025ca",
+        "version": 1,
+        "sha256": "0047c9e786b6f43890c63a22fe7004d5fcd16f2dfa8b4927a9e9f58daf6bb564",
+        "format": "docx",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "7d15cc2a-4ac8-4765-9315-2c73401d8179",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-083",
+        "documentId": "c59a1806-76a4-4f8a-b114-cc87963bfac4",
+        "version": 1,
+        "sha256": "b326719e5dcbcb34154eae0b684b5ee75e832c706583bc2a9d5628e95d924841",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "36beea43-4085-4c62-8ea2-edbbc53d9fca",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-084",
+        "documentId": "972d27f9-c9e1-4ac8-bbcf-9909405cc43b",
+        "version": 1,
+        "sha256": "e3c5a971c097bef65117264457fbe8e6646bf6a7840397e1b0862c7490363e8c",
+        "format": "docx",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "f822b784-4076-473d-8b15-b4fdbfda65b0",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-085",
+        "documentId": "6371c533-0670-4445-8e7d-93792ccc9272",
+        "version": 1,
+        "sha256": "29e5c0b21375f75deb6919a72eeb650192d19955c59169bc812b4680121c64f9",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "76a612e9-ec14-4694-937e-6d3e4226ecef",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-086",
+        "documentId": "d3c6b2ff-0d89-4eda-9a69-e8189d19f683",
+        "version": 1,
+        "sha256": "049f340878bf3ce39fa814282655b7670c30e7d9001a5520cb6281fc2dfb6aa4",
+        "format": "docx",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "a3c46b31-f296-4b32-9248-22a9c81a75b7",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-087",
+        "documentId": "979fe56b-6a4d-4523-9f01-a63fd0f686d1",
+        "version": 1,
+        "sha256": "53cfd0e7be2b75b26cad36720c33fb327eb27d8cfd7676047040518526722c45",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "f015952e-042b-4566-8b40-4a1916e8ee78",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-088",
+        "documentId": "c7984f59-3e68-47aa-a434-129e04b521df",
+        "version": 1,
+        "sha256": "cae9f042a6257c62fa62eccb8895d43aefe5e88b1e5866c3263dc0a6235730ee",
+        "format": "docx",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "78d29521-16f4-4b8c-96aa-ddc4df1b2bb5",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-089",
+        "documentId": "5c829360-fe12-4cd3-b629-6f8672359e18",
+        "version": 1,
+        "sha256": "cdf7f9c43e3452e39a4cef9e056471c8c44d86c61b3abebd3eeef94bf3962b58",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "a197c9f1-ed73-40bd-a37c-a8377153b92f",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-090",
+        "documentId": "d52af937-abc5-4967-8083-fa281ab2d60f",
+        "version": 1,
+        "sha256": "594bd1d954a12dd3d61fa457d2e67687178df158e2befc56084d9f13defda287",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "730b8b5a-ccbc-4a3e-a84b-34c9ca91168d",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-091",
+        "documentId": "e1e7cda4-ea44-41a6-a71e-dfba62c70e5e",
+        "version": 1,
+        "sha256": "a8c9300514f447f87b7d9ba1709fe0a7c667675a1b06f2433052ac234dfe5d07",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "6f8833c7-1d2b-49bc-aaf6-a06585a2c76b",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-092",
+        "documentId": "797b3144-3e9d-4a9a-b7fe-5ad6dd39a1aa",
+        "version": 1,
+        "sha256": "634cb4481cd23592bdd0a3865391c9c8d578012dc9f839e5f0068cd39e700f14",
+        "format": "docx",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "928cb79b-7c61-4761-81ef-c58d4c6f9dd1",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-093",
+        "documentId": "5b40d0a8-526b-47a6-9c3c-15fde5479ec9",
+        "version": 1,
+        "sha256": "8fbffcdb686958310a9e8ed63dcd3bf9978b716d7c27a069b82bd8a54e968d82",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "f8fcf927-f0f7-4f31-8c19-4fb01d951404",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-094",
+        "documentId": "a86baba6-f1cf-4cf5-9fb8-b47bd2bae734",
+        "version": 1,
+        "sha256": "adbf418e7091857521844106e7f760d11a50321476e2d3857207616a3e71fff3",
+        "format": "docx",
+        "language": "mixed",
+        "knowledgeBaseRole": "public",
+        "taskId": "63d26b9a-a791-4df9-a046-420dd93ac59d",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-095",
+        "documentId": "b2493039-0df2-4177-aa9a-3ed0a506dc45",
+        "version": 1,
+        "sha256": "a3e85c5814adf9c7362768d33333398e880ded397afcef85aa68da0cc8a3051c",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "b5ec2a5a-4a15-4572-b28f-3aea130a6725",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-096",
+        "documentId": "844140a5-e737-44f8-8413-6fb49ae9cfc3",
+        "version": 1,
+        "sha256": "bacf023fd5065b8112c758b3aafab2d2dc7b1b9bcb2f4cfd1111ef6c10d601fd",
+        "format": "docx",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "19e7b88c-20e3-4df7-9a15-ca1425d8734a",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-097",
+        "documentId": "01e997b1-c9a2-4daf-8bc4-7d3e80adcc13",
+        "version": 1,
+        "sha256": "a127f5fc7d620916826814c884f20ddb3a96cb775c5ead9812f0a4aeaf0a8c54",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "b82a72b3-772a-4d5c-8fd2-32bad9b68f6a",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-098",
+        "documentId": "a28890e5-1a47-4685-aade-a70f92ed137e",
+        "version": 1,
+        "sha256": "505e88af12bdeaab4cb743303a5716acddb15ff0afc3bb6e64dca0163c305688",
+        "format": "docx",
+        "language": "en",
+        "knowledgeBaseRole": "public",
+        "taskId": "d054480b-38f8-4d52-91e1-670ab03ccd04",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-099",
+        "documentId": "8a1bb8eb-aa35-479b-9d1c-af8849c56d1f",
+        "version": 1,
+        "sha256": "3e9da0f1b3becfaf7fcb6312ced99b6e274e01a1e127be0eb9e888e8c233a3c4",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "2a813430-488a-4998-a57a-b05c2e7f7946",
+        "indexState": "ready"
+      },
+      {
+        "key": "doc-100",
+        "documentId": "1f275d98-992d-480e-9dcf-677320fa5487",
+        "version": 1,
+        "sha256": "9b5cfae8b4f9aeb861c185533498f2736f847738cffc5db0edbd5ceb98ed3943",
+        "format": "docx",
+        "language": "zh",
+        "knowledgeBaseRole": "public",
+        "taskId": "a6f9f4c4-5b06-4bd7-9a5a-c66232790c21",
+        "indexState": "ready"
+      }
+    ],
+    "versionUpdates": [
+      {
+        "documentKey": "doc-091",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "e1e7cda4-ea44-41a6-a71e-dfba62c70e5e",
+        "updateTaskId": "82dfeff8-9a19-432c-9dcd-a4c98b6eabab",
+        "resultVersion": 2,
+        "sha256": "78b39cd412476a5142f58c85c950eb895d7ff05a5e5788322c9321f4e4563781",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 2,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 2
+      },
+      {
+        "documentKey": "doc-092",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "797b3144-3e9d-4a9a-b7fe-5ad6dd39a1aa",
+        "updateTaskId": "b9b74240-4d2f-4e69-80ca-5e6ca88cc936",
+        "resultVersion": 2,
+        "sha256": "3bfc065d78838b938cf93f53ccf5ace4c5cf7bae7ccdc68f69ba15a8a505a557",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 2,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 2
+      },
+      {
+        "documentKey": "doc-093",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "5b40d0a8-526b-47a6-9c3c-15fde5479ec9",
+        "updateTaskId": "be21c017-807b-4f1e-a8dd-54d4dfda736b",
+        "resultVersion": 2,
+        "sha256": "ee784ee9e789acd9df36c76d196971c86f7c6d2aab6e27fe4d84a5955934dbc2",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 2,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 2
+      },
+      {
+        "documentKey": "doc-094",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "a86baba6-f1cf-4cf5-9fb8-b47bd2bae734",
+        "updateTaskId": "e6274c8b-5001-41d3-97ac-536a3d2f0ea9",
+        "resultVersion": 2,
+        "sha256": "63317ac28e2b20e4b9aa17eb6683cfe2e4d09380c02239fac3635e0193c79273",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 3,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 3
+      },
+      {
+        "documentKey": "doc-095",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "b2493039-0df2-4177-aa9a-3ed0a506dc45",
+        "updateTaskId": "b58a93e9-dd35-4e3a-bfe9-e64468506b3b",
+        "resultVersion": 2,
+        "sha256": "e783e8b20cd454645f3c21a79c870a27940b009fdd0a48fd61ffbf7483fcda93",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 2,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 2
+      },
+      {
+        "documentKey": "doc-096",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "844140a5-e737-44f8-8413-6fb49ae9cfc3",
+        "updateTaskId": "10ab7ccf-426e-4279-a988-e93f7c754dc4",
+        "resultVersion": 2,
+        "sha256": "2854e7cb869a292005a3f79e56a4810b5220d9c13fff5b0f698494904e76de75",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 2,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 2
+      },
+      {
+        "documentKey": "doc-097",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "01e997b1-c9a2-4daf-8bc4-7d3e80adcc13",
+        "updateTaskId": "893cac99-59d4-4bc7-92f3-b531136ef5e6",
+        "resultVersion": 2,
+        "sha256": "9c7350515ead777eb3dbf8934f46ae6790e5b4f0ee94fc342cbbf10cb8747c67",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 2,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 2
+      },
+      {
+        "documentKey": "doc-098",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "a28890e5-1a47-4685-aade-a70f92ed137e",
+        "updateTaskId": "007f55fd-7093-4322-b50d-910f1fd6f422",
+        "resultVersion": 2,
+        "sha256": "a26f8fb46ef071ca267809f42167e3f660aa96b9cb42e93d6a0c382aac5989a8",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 2,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 2
+      },
+      {
+        "documentKey": "doc-099",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "8a1bb8eb-aa35-479b-9d1c-af8849c56d1f",
+        "updateTaskId": "c180272b-3e03-4809-ac04-7b6821774a4d",
+        "resultVersion": 2,
+        "sha256": "fb3737f515d6d966eb077531087457587a77b1f709b3cb83bab6a8550832c200",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 2,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 2
+      },
+      {
+        "documentKey": "doc-100",
+        "status": "passed",
+        "fromVersion": 1,
+        "toVersion": 2,
+        "documentId": "1f275d98-992d-480e-9dcf-677320fa5487",
+        "updateTaskId": "ce4c3890-16cb-4879-9821-cba34eccb665",
+        "resultVersion": 2,
+        "sha256": "f991df1e1b3eb5c79fc046cc620b277c48ce2b675926b4240458cb1a7f9cc375",
+        "indexState": "ready",
+        "oldVersionSearchHitCount": 2,
+        "oldVersionSearchStaleHitCount": 0,
+        "oldVersionSearchCurrentVersionCitationChecks": 2
+      }
+    ],
+    "htmlSnapshots": [
+      {
+        "key": "html-snap-001",
+        "status": "failed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "failureCode": "EVAL_HTML_LOCATOR_NOT_VERIFIED"
+      },
+      {
+        "key": "html-snap-002",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "8bec1162-3961-4e3a-b9d7-272c0a492c7b",
+        "version": 1,
+        "sha256": "c3d10698580f4dfb27b64322f6b3ffdae8806e781b0e5cfe59c9ace27c605f2d",
+        "indexState": "ready",
+        "saveTaskId": "7b4f3dd1-816e-4038-adcc-31c132746f93",
+        "searchTaskId": "c80a7901-3d6d-49d3-8897-c0b54fb137fb",
+        "searchMode": "keyword",
+        "searchHitCount": 1,
+        "citationHashAndLocatorChecks": 1,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "冷链交接记录",
+            "温控读数"
+          ],
+          "fragment": "evidence-002"
+        },
+        "publicUrlFetchExercised": false
+      },
+      {
+        "key": "html-snap-003",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "daf6a12d-b81f-4157-94bc-10b21110b9e4",
+        "version": 1,
+        "sha256": "c452a58cdbc024d31e78fda817522db6dbfe5933539d441584265d7a561e61d4",
+        "indexState": "ready",
+        "saveTaskId": "083395cb-122e-438b-9099-3c5e3cbf350f",
+        "searchTaskId": "8ad32814-43f8-4018-a328-358844b42384",
+        "searchMode": "keyword",
+        "searchHitCount": 2,
+        "citationHashAndLocatorChecks": 2,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "青禾公交场站快照",
+            "电量门槛"
+          ],
+          "fragment": "evidence-003"
+        },
+        "publicUrlFetchExercised": false
+      },
+      {
+        "key": "html-snap-004",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "7b527c45-f6fe-4169-9a0d-d08d742f59a7",
+        "version": 1,
+        "sha256": "330d43d72ee26c3fd2ac7ad0cc428a121512307c1d5bb8af0a1294f535859eb7",
+        "indexState": "ready",
+        "saveTaskId": "003e4f2c-9749-4a6a-b2d3-14c862a8fbb3",
+        "searchTaskId": "c82ddeec-d17b-4fc2-b5aa-270f23c60b7c",
+        "searchMode": "keyword",
+        "searchHitCount": 2,
+        "citationHashAndLocatorChecks": 2,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "社区诊所药柜快照",
+            "冷藏批次"
+          ],
+          "fragment": "evidence-004"
+        },
+        "publicUrlFetchExercised": false
+      },
+      {
+        "key": "html-snap-005",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "9f4ad40c-9173-4b08-8ee2-d27fe2aa55f5",
+        "version": 1,
+        "sha256": "61c97be1021cc62e7385acc966f3afd06cb1a8d81b411b1e33c87aaf47d90606",
+        "indexState": "ready",
+        "saveTaskId": "a881c78e-429f-4e52-a54f-fad1576a4379",
+        "searchTaskId": "1927a2b5-a0a6-4cc0-8665-469b22bb321a",
+        "searchMode": "keyword",
+        "searchHitCount": 2,
+        "citationHashAndLocatorChecks": 2,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "东堤水闸巡查快照",
+            "上游水位"
+          ],
+          "fragment": "evidence-005"
+        },
+        "publicUrlFetchExercised": false
+      },
+      {
+        "key": "html-snap-006",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "8ff14080-d8c7-40d3-bdfe-cdc31aaef56b",
+        "version": 1,
+        "sha256": "768b4f8e5e3b0c0341f749f6f984f49a0aaee20518b21acf6426b1837d60f13a",
+        "indexState": "ready",
+        "saveTaskId": "520c39c1-a3b0-46b1-b0ac-2cd15e6b8fa2",
+        "searchTaskId": "867015db-fd28-47a3-b0e0-fa8c50c33d06",
+        "searchMode": "keyword",
+        "searchHitCount": 2,
+        "citationHashAndLocatorChecks": 2,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "Solar Field S06 Snapshot",
+            "Inverter alarm"
+          ],
+          "fragment": "evidence-006"
+        },
+        "publicUrlFetchExercised": false
+      },
+      {
+        "key": "html-snap-007",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "162b063c-3147-4155-8bd2-92a298808802",
+        "version": 1,
+        "sha256": "81c709cd5fd348d92b0b011ac340604c42a60eccd83a75434efaca43d40cbf65",
+        "indexState": "ready",
+        "saveTaskId": "1fd62ead-0ea2-4155-8167-3ec6d53830f4",
+        "searchTaskId": "7bd88bd2-153d-4259-985b-d9777f2956bb",
+        "searchMode": "keyword",
+        "searchHitCount": 2,
+        "citationHashAndLocatorChecks": 2,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "石岗信号维护快照",
+            "区段延迟"
+          ],
+          "fragment": "evidence-007"
+        },
+        "publicUrlFetchExercised": false
+      },
+      {
+        "key": "html-snap-008",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "aa35e3c9-e68c-4fdc-a9de-8c7de5bf5880",
+        "version": 1,
+        "sha256": "0c2af8a66c32b76ebe0075e7a7b7d58a88628165ee4a743562feee7368d48ac4",
+        "indexState": "ready",
+        "saveTaskId": "45d94d4b-0503-45cb-bb67-d7cb68ec8a43",
+        "searchTaskId": "f4608daf-42c9-4340-b21f-4bfb7d400059",
+        "searchMode": "keyword",
+        "searchHitCount": 2,
+        "citationHashAndLocatorChecks": 2,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "Regional Archive A08 Snapshot",
+            "Paper storage"
+          ],
+          "fragment": "evidence-008"
+        },
+        "publicUrlFetchExercised": false
+      },
+      {
+        "key": "html-snap-009",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "a3f4f952-ad0d-47fe-9e47-57095cc689a5",
+        "version": 1,
+        "sha256": "bedc5e7602acdbb086904390280617e7c3f0d1dfa3163fff1dee7a72adb5a0f8",
+        "indexState": "ready",
+        "saveTaskId": "25234a7b-94d8-4cad-832d-5a740a3c2369",
+        "searchTaskId": "50224228-994f-4104-b5ba-e2eed415448d",
+        "searchMode": "keyword",
+        "searchHitCount": 2,
+        "citationHashAndLocatorChecks": 2,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "仓储机器人快照",
+            "通道速度"
+          ],
+          "fragment": "evidence-009"
+        },
+        "publicUrlFetchExercised": false
+      },
+      {
+        "key": "html-snap-010",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "96daf016-5b9f-4fdd-97c3-d000cda8e357",
+        "version": 1,
+        "sha256": "3f57d6e5cd3536d56404309c8755c7ce52fad7f31eb902b3019ea034b8dd1a66",
+        "indexState": "ready",
+        "saveTaskId": "659999e6-d02d-4cef-8268-60c7bd4a168d",
+        "searchTaskId": "8251d705-da9d-40e6-9b40-27b1ed552e58",
+        "searchMode": "keyword",
+        "searchHitCount": 2,
+        "citationHashAndLocatorChecks": 2,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "Willow Cove Water Snapshot",
+            "River sample"
+          ],
+          "fragment": "evidence-010"
+        },
+        "publicUrlFetchExercised": false
+      },
+      {
+        "key": "html-snap-011",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "adcd2282-1834-43c2-8a0d-0c054924a782",
+        "version": 1,
+        "sha256": "76e4d45ae97291f48a8cf048dcaa30c3cb6084bc959d3315330c34523fa4836f",
+        "indexState": "ready",
+        "saveTaskId": "05155eb3-fea4-484e-b601-99b452526275",
+        "searchTaskId": "9f83e06d-da84-450d-92a4-1698b27d6c19",
+        "searchMode": "keyword",
+        "searchHitCount": 2,
+        "citationHashAndLocatorChecks": 2,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "滨林光伏点快照",
+            "并网读数"
+          ],
+          "fragment": "evidence-011"
+        },
+        "publicUrlFetchExercised": false
+      },
+      {
+        "key": "html-snap-012",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "d6eea88d-3cee-4786-9ea4-1a603dbe9602",
+        "version": 1,
+        "sha256": "a5290d34165e0bb1f8bab753c4f3aab467e67b43ff5d25b33fc24ac99025c1bc",
+        "indexState": "ready",
+        "saveTaskId": "afe3df2e-0ec8-4792-a6fa-6c4390c2dbcc",
+        "searchTaskId": "6fc2e1a7-ec77-47a9-8d89-14eb08e87b61",
+        "searchMode": "keyword",
+        "searchHitCount": 2,
+        "citationHashAndLocatorChecks": 2,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "Bus Depot B12 Snapshot",
+            "Route reserve"
+          ],
+          "fragment": "evidence-012"
+        },
+        "publicUrlFetchExercised": false
+      },
+      {
+        "key": "html-snap-013",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "361afa3e-33d5-4c43-8e35-757608b266a3",
+        "version": 1,
+        "sha256": "a762770762fef9a6dc6e9c869a3ffd944ebeb281e7a00998b81342a554177df7",
+        "indexState": "ready",
+        "saveTaskId": "c5d3daeb-a225-4905-b6a5-83e8ef6adfb0",
+        "searchTaskId": "7422e462-f4bb-48ee-98ce-16e139b1c291",
+        "searchMode": "keyword",
+        "searchHitCount": 2,
+        "citationHashAndLocatorChecks": 2,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "南圃档案室快照",
+            "纸张湿度"
+          ],
+          "fragment": "evidence-013"
+        },
+        "publicUrlFetchExercised": false
+      },
+      {
+        "key": "html-snap-014",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "0dd8b461-5e79-4951-9119-f36d4eaa894d",
+        "version": 1,
+        "sha256": "6560c5b8aeccf10700c4790cc32183fa9b745ed1c7113231d64c115f01bcbfa8",
+        "indexState": "ready",
+        "saveTaskId": "404eba9e-a99b-4eac-a6fc-eea9563b6fb0",
+        "searchTaskId": "2d40a216-1454-4001-b153-da30af8e73da",
+        "searchMode": "keyword",
+        "searchHitCount": 2,
+        "citationHashAndLocatorChecks": 2,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "East Levee Gate Snapshot",
+            "Storm watch"
+          ],
+          "fragment": "evidence-014"
+        },
+        "publicUrlFetchExercised": false
+      },
+      {
+        "key": "html-snap-015",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "9a7f585c-a8e5-4c92-b90b-bb2387b0f027",
+        "version": 1,
+        "sha256": "1bd7d79bc42f7660c6e09743bbc1af94e56b814c5db84595cb932a97834bb7e0",
+        "indexState": "ready",
+        "saveTaskId": "d750344a-370d-40f5-a4e8-868f8106875c",
+        "searchTaskId": "d6073151-46c8-4bc1-b74b-f47ad75bad4b",
+        "searchMode": "keyword",
+        "searchHitCount": 2,
+        "citationHashAndLocatorChecks": 2,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "云岭冷藏点快照",
+            "样本箱读数"
+          ],
+          "fragment": "evidence-015"
+        },
+        "publicUrlFetchExercised": false
+      },
+      {
+        "key": "html-snap-016",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "88c44a28-ce1e-4693-aff5-3abf00a7ee1f",
+        "version": 1,
+        "sha256": "d1e9cf684a5b61cb649f8cfb5baa24d450067a93a0ef665a8ea945a24f1c502f",
+        "indexState": "ready",
+        "saveTaskId": "5142003b-3c41-421d-af1b-83dba7a57edc",
+        "searchTaskId": "21635574-3bb3-4946-80c0-f2adff4d4438",
+        "searchMode": "keyword",
+        "searchHitCount": 2,
+        "citationHashAndLocatorChecks": 2,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "银桥社区诊所快照",
+            "药品柜校准"
+          ],
+          "fragment": "evidence-016"
+        },
+        "publicUrlFetchExercised": false
+      },
+      {
+        "key": "html-snap-017",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "72793a85-9606-4354-85c4-8cb3b3f9dec1",
+        "version": 1,
+        "sha256": "809c4a85b32f24b98710bd58f3c4396f9797801ce2a4622c577e7a215f81ac1f",
+        "indexState": "ready",
+        "saveTaskId": "ac64df69-5da2-4c37-bc02-42e402c5d52f",
+        "searchTaskId": "b4483734-3783-42cd-a841-ab8791bb08a3",
+        "searchMode": "keyword",
+        "searchHitCount": 2,
+        "citationHashAndLocatorChecks": 2,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "Stone Hill Rail Snapshot",
+            "Signal relay"
+          ],
+          "fragment": "evidence-017"
+        },
+        "publicUrlFetchExercised": false
+      },
+      {
+        "key": "html-snap-018",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "51b2ab23-2ccd-45d8-b1b4-cb12349bde2a",
+        "version": 1,
+        "sha256": "e092225bc178c044fafdfb68ce0b14bbadad2cdec4c18d7ef49c54d3a9ee6837",
+        "indexState": "ready",
+        "saveTaskId": "15717377-700c-42aa-9de5-e4e7a5d9331f",
+        "searchTaskId": "7cd56cda-5a41-4429-a7e7-95d2e131d9cb",
+        "searchMode": "keyword",
+        "searchHitCount": 2,
+        "citationHashAndLocatorChecks": 2,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "河湾采样快照",
+            "水样浊度"
+          ],
+          "fragment": "evidence-018"
+        },
+        "publicUrlFetchExercised": false
+      },
+      {
+        "key": "html-snap-019",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "7e6e340c-eedb-457d-8bab-5237e58f7656",
+        "version": 1,
+        "sha256": "53838c622e6574131cf945fefce95d03a4e3db5fdb7fda3f7cf0992c0a8af67a",
+        "indexState": "ready",
+        "saveTaskId": "05144cc0-aebe-46b7-b762-c688f3b6202c",
+        "searchTaskId": "61017712-c95b-433d-8f6d-d9e7b67eb53b",
+        "searchMode": "keyword",
+        "searchHitCount": 2,
+        "citationHashAndLocatorChecks": 2,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "Riverwood Cold Depot Snapshot",
+            "Door seal"
+          ],
+          "fragment": "evidence-019"
+        },
+        "publicUrlFetchExercised": false
+      },
+      {
+        "key": "html-snap-020",
+        "status": "passed",
+        "sourceTransport": "upload_snapshot",
+        "searchInput": "frozen_support_text",
+        "documentId": "32715928-2c38-4fd0-bc79-deb4d5505b1b",
+        "version": 1,
+        "sha256": "84b97ff06cfeecddd7a95fd256bcec402782918c42e3322dfd67777891292316",
+        "indexState": "ready",
+        "saveTaskId": "d84921a7-f4df-4030-9006-0b83116a24fc",
+        "searchTaskId": "21c8b7ae-055d-467b-b1e5-0bbf64159e7f",
+        "searchMode": "keyword",
+        "searchHitCount": 2,
+        "citationHashAndLocatorChecks": 2,
+        "expectedHtmlLocator": {
+          "kind": "html_section",
+          "headingPath": [
+            "南岸水站快照",
+            "备用泵切换"
+          ],
+          "fragment": "evidence-020"
+        },
+        "publicUrlFetchExercised": false
+      }
+    ],
+    "queries": [
+      {
+        "queryId": "exact-doc-001",
+        "category": "exact",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-001"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-001",
+          "doc-002",
+          "doc-005",
+          "doc-003",
+          "doc-004",
+          "doc-031",
+          "doc-081",
+          "doc-021"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "3baf903f-6015-4ac0-90b3-dd8a81ae2e47",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-002",
+        "category": "exact",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-002"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-002",
+          "doc-005",
+          "doc-001",
+          "doc-003",
+          "doc-004",
+          "doc-022",
+          "doc-092",
+          "doc-082",
+          "doc-032"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "bee63487-05b6-4769-9547-afa545d11d50",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-003",
+        "category": "exact",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-003"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-003",
+          "doc-005",
+          "doc-001",
+          "doc-002",
+          "doc-004",
+          "doc-023"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "9df2c7c1-4c72-44f4-9369-cf3393542e20",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-004",
+        "category": "exact",
+        "language": "mixed",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-004"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-004",
+          "doc-005",
+          "doc-002",
+          "doc-001",
+          "doc-003",
+          "doc-084"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "22cda1ce-0c73-46cf-b727-8c325bc1a356",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-005",
+        "category": "exact",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-005"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-005",
+          "doc-003",
+          "doc-001",
+          "doc-002",
+          "doc-085",
+          "doc-004",
+          "doc-025",
+          "doc-095",
+          "doc-035"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "2b51f345-c452-4121-972a-d547b6300b2a",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-006",
+        "category": "exact",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-006"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-006",
+          "doc-008",
+          "doc-007",
+          "doc-010",
+          "doc-009"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "87c84a4d-4cec-4555-83d4-90bb41af076f",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-007",
+        "category": "exact",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-007"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-007",
+          "doc-010",
+          "doc-008",
+          "doc-006",
+          "doc-009"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "a7276df3-cd35-4514-9b87-d6a1f6606ce3",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-008",
+        "category": "exact",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-008"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-008",
+          "doc-007",
+          "doc-010",
+          "doc-006",
+          "doc-009"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "61365551-3223-44f6-b65d-dfc7faab3a18",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-009",
+        "category": "exact",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-009"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-009",
+          "doc-010",
+          "doc-008",
+          "doc-007",
+          "doc-006"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "8f1090e5-7065-47a7-b29c-829f7eca8c63",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-010",
+        "category": "exact",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-010"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-010",
+          "doc-009",
+          "doc-008",
+          "doc-007",
+          "doc-006"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "492a8b70-34aa-428b-83d7-7a2d925fe8b7",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-011",
+        "category": "exact",
+        "language": "zh",
+        "split": "blind",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-011"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-011",
+          "doc-020",
+          "doc-015",
+          "doc-012",
+          "doc-013",
+          "doc-017",
+          "doc-019",
+          "doc-018",
+          "doc-016"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "d4aa7bf4-8a32-42ad-9654-84e93d344124",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-012",
+        "category": "exact",
+        "language": "en",
+        "split": "blind",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-012"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-012",
+          "doc-018",
+          "doc-017",
+          "doc-042",
+          "doc-015",
+          "doc-020",
+          "doc-019",
+          "doc-011",
+          "doc-032"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "9cbc702d-2651-41b7-9d8e-3e1569f2cb59",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-013",
+        "category": "exact",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-013"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-013",
+          "doc-015",
+          "doc-020",
+          "doc-019",
+          "doc-011",
+          "doc-012",
+          "doc-043",
+          "doc-017",
+          "doc-018"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "882d395f-d4f7-4309-b253-b0f595bc2659",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-014",
+        "category": "exact",
+        "language": "mixed",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-014"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-014",
+          "doc-015",
+          "doc-018",
+          "doc-020",
+          "doc-012",
+          "doc-011",
+          "doc-019",
+          "doc-017"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "d184c4ee-503e-419e-a879-f4309990e7f2",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-015",
+        "category": "exact",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-015"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-015",
+          "doc-045",
+          "doc-020",
+          "doc-011",
+          "doc-012",
+          "doc-019",
+          "doc-013",
+          "doc-017",
+          "doc-016"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "c79ab1d2-2818-4f87-b602-0e6c0a351f31",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-016",
+        "category": "exact",
+        "language": "en",
+        "split": "blind",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-016"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-016",
+          "doc-046",
+          "doc-015",
+          "doc-017",
+          "doc-018",
+          "doc-019",
+          "doc-020",
+          "doc-036",
+          "doc-011"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "4a871889-4a1b-4415-b59d-8755fe00dbe8",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-017",
+        "category": "exact",
+        "language": "zh",
+        "split": "blind",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-017"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-017",
+          "doc-012",
+          "doc-047",
+          "doc-015",
+          "doc-020",
+          "doc-018",
+          "doc-011",
+          "doc-016",
+          "doc-013"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "843e2f8e-85bb-4196-b278-cf826b828469",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-018",
+        "category": "exact",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-018"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-018",
+          "doc-048",
+          "doc-012",
+          "doc-038",
+          "doc-015",
+          "doc-017",
+          "doc-020",
+          "doc-028",
+          "doc-019"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "fa06457a-269a-422c-967b-32071125fd6d",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-019",
+        "category": "exact",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-019"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-019",
+          "doc-020",
+          "doc-049",
+          "doc-015",
+          "doc-013",
+          "doc-011",
+          "doc-012",
+          "doc-017",
+          "doc-014"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "33f04b9c-dd48-4a51-b8c1-ecd8e6f4a39c",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "exact-doc-020",
+        "category": "exact",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-020"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-020",
+          "doc-012",
+          "doc-019",
+          "doc-011",
+          "doc-015",
+          "doc-013",
+          "doc-018",
+          "doc-017"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "d7ef4bef-3968-446a-b915-f90304862ec7",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-021",
+        "category": "synonym",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-021"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-021",
+          "doc-001",
+          "doc-041",
+          "doc-025",
+          "doc-051",
+          "doc-029",
+          "doc-081"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "646bae13-546b-4e99-a810-7c0a67a6cf3a",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-022",
+        "category": "synonym",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-022"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-022",
+          "doc-012",
+          "doc-002",
+          "doc-032",
+          "doc-082"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "363e8a36-7abf-4677-8445-30d1d664f882",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-023",
+        "category": "synonym",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-023"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-023",
+          "doc-003",
+          "doc-043",
+          "doc-030",
+          "doc-053"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "118754ca-169d-4671-931f-a3c352733da1",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-024",
+        "category": "synonym",
+        "language": "mixed",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-024"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-024",
+          "doc-029",
+          "doc-004",
+          "doc-028",
+          "doc-027"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "187d5658-f9d1-4c1b-a125-e3f1972ffffb",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-025",
+        "category": "synonym",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-025"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-025",
+          "doc-005",
+          "doc-045",
+          "doc-015"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "75bd8ac8-e141-4cee-84c2-5589fe26c77b",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-026",
+        "category": "synonym",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-026"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-026",
+          "doc-016",
+          "doc-036",
+          "doc-086",
+          "doc-022"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "e00be979-d2a8-4553-9b64-1097e84864b6",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-027",
+        "category": "synonym",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-027"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-027",
+          "doc-047",
+          "doc-087",
+          "doc-017",
+          "doc-037"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "08b54ad9-fe24-46b5-bc44-3bee9216290d",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-028",
+        "category": "synonym",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-028"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-028",
+          "doc-018",
+          "doc-038",
+          "doc-088",
+          "doc-023"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "95abd3cd-eb46-4e22-9b1a-f5e13dc6dd54",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-029",
+        "category": "synonym",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-029"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-029",
+          "doc-049",
+          "doc-089",
+          "doc-059",
+          "doc-039",
+          "doc-019"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "b4f515a0-e626-4a4a-9c60-e9f6ec29c086",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-030",
+        "category": "synonym",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-030"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-030",
+          "doc-050",
+          "doc-023",
+          "doc-029"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "af8f7dd0-f55b-412e-9cc1-0a38bf245a93",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-031",
+        "category": "synonym",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-031"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-031",
+          "doc-011",
+          "doc-035",
+          "doc-040",
+          "doc-039"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "de9a14ba-4500-4eae-ac86-2bbe7439e8af",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-032",
+        "category": "synonym",
+        "language": "en",
+        "split": "blind",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-032"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-032",
+          "doc-012",
+          "doc-040",
+          "doc-002",
+          "doc-016"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "a0c13da6-71ee-48f1-8bc0-dbd071d06d6d",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-033",
+        "category": "synonym",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-033"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-033",
+          "doc-013",
+          "doc-040",
+          "doc-023",
+          "doc-003"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "4a354db3-f2c2-43ac-aa23-91f96819b8fe",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-034",
+        "category": "synonym",
+        "language": "mixed",
+        "split": "blind",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-034"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-034",
+          "doc-014",
+          "doc-040",
+          "doc-039",
+          "doc-033"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "88a23d29-dafa-4c8f-96fb-a816dc64c78b",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-035",
+        "category": "synonym",
+        "language": "zh",
+        "split": "blind",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-035"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-035",
+          "doc-015",
+          "doc-025",
+          "doc-040",
+          "doc-031"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "dd67c875-d7d6-4abb-b7b3-100d13688293",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-036",
+        "category": "synonym",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-036"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-036",
+          "doc-016",
+          "doc-040",
+          "doc-033",
+          "doc-031",
+          "doc-018"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "9eca06cf-aa49-4395-923b-b37ba51f6cfd",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-037",
+        "category": "synonym",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-037"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-037",
+          "doc-017",
+          "doc-027",
+          "doc-035",
+          "doc-040"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "6685b795-a499-4dba-98eb-c5008055dea0",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-038",
+        "category": "synonym",
+        "language": "en",
+        "split": "blind",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-038"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-038",
+          "doc-018",
+          "doc-033",
+          "doc-040",
+          "doc-037",
+          "doc-034"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "f32ce797-e11e-4551-b184-0999ec14748b",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-039",
+        "category": "synonym",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-039"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-039",
+          "doc-019",
+          "doc-040",
+          "doc-029",
+          "doc-033"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "745be0e2-ee87-4493-b3cb-7dde1c29a519",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-040",
+        "category": "synonym",
+        "language": "zh",
+        "split": "blind",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-040"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-040",
+          "doc-020",
+          "doc-033",
+          "doc-030",
+          "doc-039"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "ab1ec9f6-e530-439b-ae98-376dad0f8f21",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-041",
+        "category": "synonym",
+        "language": "zh",
+        "split": "blind",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-041"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-041",
+          "doc-001",
+          "doc-091",
+          "doc-045",
+          "doc-021"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "d8f2359a-dfa8-4437-99da-512f715158a3",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-042",
+        "category": "synonym",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-042"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-042",
+          "doc-002",
+          "doc-092",
+          "doc-012",
+          "doc-064"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "f0da5c1c-9e93-4c21-89d1-b6e2d7b7cf45",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-043",
+        "category": "synonym",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-043"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-043",
+          "doc-003",
+          "doc-093",
+          "doc-050"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "1d59fecd-da5e-449b-9fac-662922d0e359",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-044",
+        "category": "synonym",
+        "language": "mixed",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-044"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-044",
+          "doc-094",
+          "doc-048",
+          "doc-004",
+          "doc-041",
+          "doc-049",
+          "doc-046"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "e6914e00-29aa-4c29-a6d2-bbad2607bd12",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-045",
+        "category": "synonym",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-045"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-045",
+          "doc-005",
+          "doc-095",
+          "doc-025",
+          "doc-041"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "d6f56e45-58e7-406d-8303-16c191141d3f",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-046",
+        "category": "synonym",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-046"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-046",
+          "doc-096",
+          "doc-016",
+          "doc-036",
+          "doc-048",
+          "doc-042",
+          "doc-049"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "d5829d62-86c6-4d92-9d08-db69f7435c2e",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-047",
+        "category": "synonym",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-047"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-047",
+          "doc-097",
+          "doc-027",
+          "doc-045",
+          "doc-050"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "d813e137-07b3-411c-a009-6e066cb9367c",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-048",
+        "category": "synonym",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-048"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-048",
+          "doc-098",
+          "doc-046",
+          "doc-018",
+          "doc-044"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "aef749cb-a6bb-4e70-bc8a-409654883fa7",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-049",
+        "category": "synonym",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-049"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-049",
+          "doc-050",
+          "doc-099",
+          "doc-041",
+          "doc-043",
+          "doc-042"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "3c52c70c-2315-449b-b443-7102735665d0",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "synonym-doc-050",
+        "category": "synonym",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-050"
+        ],
+        "expectedFormats": [
+          "md"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-050",
+          "doc-043",
+          "doc-049",
+          "doc-100"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "844bf526-94a2-46a1-b7d7-aa2647dc0889",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "cross-LINK-001",
+        "category": "cross_passage_document",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-051",
+          "doc-053"
+        ],
+        "expectedFormats": [
+          "pdf"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-051",
+          "doc-053",
+          "doc-085",
+          "doc-081",
+          "doc-089",
+          "doc-054",
+          "doc-074",
+          "doc-086",
+          "doc-087",
+          "doc-083"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "2e995a4b-0f03-468d-a415-04f9dec25615",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-002",
+        "category": "cross_passage_document",
+        "language": "zh",
+        "split": "blind",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-055",
+          "doc-057"
+        ],
+        "expectedFormats": [
+          "pdf"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-057",
+          "doc-055",
+          "doc-074",
+          "doc-089",
+          "doc-085",
+          "doc-081",
+          "doc-054",
+          "doc-086",
+          "doc-084"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "9a2338b3-4798-4c49-b2aa-4a155668cdf4",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-003",
+        "category": "cross_passage_document",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-059",
+          "doc-060"
+        ],
+        "expectedFormats": [
+          "pdf"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-059",
+          "doc-060",
+          "doc-081",
+          "doc-085",
+          "doc-089",
+          "doc-074",
+          "doc-054",
+          "doc-083",
+          "doc-086",
+          "doc-087"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "2b10d53b-7eb6-4e3e-b12e-cb8aef22bb99",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-004",
+        "category": "cross_passage_document",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-061",
+          "doc-063"
+        ],
+        "expectedFormats": [
+          "pdf"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-061",
+          "doc-063",
+          "doc-074",
+          "doc-081",
+          "doc-085",
+          "doc-089",
+          "doc-054",
+          "doc-087",
+          "doc-086",
+          "doc-064"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "01508467-45e6-4f62-9f89-dd03ded31222",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-005",
+        "category": "cross_passage_document",
+        "language": "zh",
+        "split": "blind",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-065",
+          "doc-067"
+        ],
+        "expectedFormats": [
+          "pdf"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-067",
+          "doc-065",
+          "doc-081",
+          "doc-085",
+          "doc-089",
+          "doc-074",
+          "doc-054",
+          "doc-084",
+          "doc-090",
+          "doc-086"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "a6559004-532c-4b7e-b002-6f6253834a8a",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-006",
+        "category": "cross_passage_document",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-069",
+          "doc-070"
+        ],
+        "expectedFormats": [
+          "pdf"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-069",
+          "doc-070",
+          "doc-085",
+          "doc-081",
+          "doc-074",
+          "doc-089",
+          "doc-054",
+          "doc-086",
+          "doc-017",
+          "doc-084"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "98053e96-c051-486a-8e7e-01fdee13f1fc",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-007",
+        "category": "cross_passage_document",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-071",
+          "doc-073"
+        ],
+        "expectedFormats": [
+          "pdf"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-071",
+          "doc-073",
+          "doc-074",
+          "doc-089",
+          "doc-081",
+          "doc-085",
+          "doc-054",
+          "doc-086",
+          "doc-017",
+          "doc-082"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "972c6ab5-8e3c-47a0-a421-c25abff98e66",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-008",
+        "category": "cross_passage_document",
+        "language": "zh",
+        "split": "blind",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-075",
+          "doc-077"
+        ],
+        "expectedFormats": [
+          "pdf"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-077",
+          "doc-075",
+          "doc-081",
+          "doc-085",
+          "doc-074",
+          "doc-089",
+          "doc-086",
+          "doc-054",
+          "doc-088",
+          "doc-087"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "bcfd3059-2b9d-450f-b881-72610d9cdd26",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-009",
+        "category": "cross_passage_document",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-079",
+          "doc-080"
+        ],
+        "expectedFormats": [
+          "pdf"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-079",
+          "doc-080",
+          "doc-054",
+          "doc-081",
+          "doc-085",
+          "doc-074",
+          "doc-089",
+          "doc-086",
+          "doc-083",
+          "doc-084"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "1a8cf222-faa0-4672-87cf-49b4b415d71a",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-010",
+        "category": "cross_passage_document",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-081",
+          "doc-083"
+        ],
+        "expectedFormats": [
+          "docx"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-081",
+          "doc-083",
+          "doc-085",
+          "doc-089",
+          "doc-054",
+          "doc-074",
+          "doc-086",
+          "doc-087",
+          "doc-090",
+          "doc-084"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "f541fde3-139d-43fe-8bbf-e7578bccae97",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-011",
+        "category": "cross_passage_document",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-085",
+          "doc-087"
+        ],
+        "expectedFormats": [
+          "docx"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-085",
+          "doc-087",
+          "doc-081",
+          "doc-089",
+          "doc-054",
+          "doc-074",
+          "doc-086",
+          "doc-083",
+          "doc-090",
+          "doc-084"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "173bc44e-9d26-47b3-ab3b-0125f5cda789",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-012",
+        "category": "cross_passage_document",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-089",
+          "doc-090"
+        ],
+        "expectedFormats": [
+          "docx"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-089",
+          "doc-090",
+          "doc-081",
+          "doc-085",
+          "doc-074",
+          "doc-054",
+          "doc-086",
+          "doc-087",
+          "doc-083",
+          "doc-084"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "401845c7-5386-4b86-baa9-327eb50757ef",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-013",
+        "category": "cross_passage_document",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-052",
+          "doc-056"
+        ],
+        "expectedFormats": [
+          "pdf"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-052",
+          "doc-056",
+          "doc-086",
+          "doc-054",
+          "doc-088",
+          "doc-081",
+          "doc-085",
+          "doc-074",
+          "doc-089",
+          "doc-084"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "141e7832-dcde-4deb-937f-020c192d12ff",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-014",
+        "category": "cross_passage_document",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-058",
+          "doc-062"
+        ],
+        "expectedFormats": [
+          "pdf"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-062",
+          "doc-058",
+          "doc-086",
+          "doc-054",
+          "doc-074",
+          "doc-081",
+          "doc-085",
+          "doc-088",
+          "doc-089",
+          "doc-084"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "a9538fd8-2294-4917-80ff-f38b83938c7c",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-015",
+        "category": "cross_passage_document",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-066",
+          "doc-068"
+        ],
+        "expectedFormats": [
+          "pdf"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-066",
+          "doc-068",
+          "doc-086",
+          "doc-081",
+          "doc-054",
+          "doc-085",
+          "doc-074",
+          "doc-089",
+          "doc-088",
+          "doc-082"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "fb56ede1-6051-4657-a9b4-1dcc001b0882",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-016",
+        "category": "cross_passage_document",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-072",
+          "doc-076"
+        ],
+        "expectedFormats": [
+          "pdf"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-072",
+          "doc-076",
+          "doc-086",
+          "doc-085",
+          "doc-054",
+          "doc-081",
+          "doc-074",
+          "doc-089",
+          "doc-088",
+          "doc-016"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "27313730-44f2-4061-93c4-780c9e974b04",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-017",
+        "category": "cross_passage_document",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-078",
+          "doc-082"
+        ],
+        "expectedFormats": [
+          "docx",
+          "pdf"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-082",
+          "doc-078",
+          "doc-086",
+          "doc-074",
+          "doc-054",
+          "doc-089",
+          "doc-081",
+          "doc-085",
+          "doc-088",
+          "doc-017"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "c498501c-689d-4fc7-8dda-6671cedfaa06",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-018",
+        "category": "cross_passage_document",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-086",
+          "doc-088"
+        ],
+        "expectedFormats": [
+          "docx"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-086",
+          "doc-088",
+          "doc-054",
+          "doc-074",
+          "doc-081",
+          "doc-085",
+          "doc-089",
+          "doc-082",
+          "doc-084",
+          "doc-017"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "029986cd-d2aa-439d-95aa-64785dfb9141",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-019",
+        "category": "cross_passage_document",
+        "language": "mixed",
+        "split": "blind",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-054",
+          "doc-064"
+        ],
+        "expectedFormats": [
+          "pdf"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-054",
+          "doc-064",
+          "doc-081",
+          "doc-085",
+          "doc-089",
+          "doc-074",
+          "doc-086",
+          "doc-088"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "4f8cb294-55a5-4445-930f-4e0edf64312d",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "cross-LINK-020",
+        "category": "cross_passage_document",
+        "language": "mixed",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-074",
+          "doc-084"
+        ],
+        "expectedFormats": [
+          "docx",
+          "pdf"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-074",
+          "doc-084",
+          "doc-081",
+          "doc-089",
+          "doc-085",
+          "doc-054",
+          "doc-086",
+          "doc-082"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "3a4bf2af-63c8-4e90-9c08-33e4668d0aad",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 2,
+          "locatorOverlapCount": 2,
+          "fullSnippetCount": 2
+        }
+      },
+      {
+        "queryId": "version-doc-091",
+        "category": "version",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results_after_update",
+        "expectedDocumentKeys": [
+          "doc-091"
+        ],
+        "expectedFormats": [
+          "docx"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-091",
+          "doc-094",
+          "doc-095",
+          "doc-099",
+          "doc-097",
+          "doc-100",
+          "doc-041"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "044570d5-327f-43ed-a473-bc9e3525f231",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "version-doc-092",
+        "category": "version",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results_after_update",
+        "expectedDocumentKeys": [
+          "doc-092"
+        ],
+        "expectedFormats": [
+          "docx"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-092",
+          "doc-042",
+          "doc-012",
+          "doc-082",
+          "doc-002"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "b76238b7-e1b0-48b0-93f1-bd9504dd0488",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "version-doc-093",
+        "category": "version",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results_after_update",
+        "expectedDocumentKeys": [
+          "doc-093"
+        ],
+        "expectedFormats": [
+          "docx"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-093",
+          "doc-100",
+          "doc-043",
+          "doc-003",
+          "doc-063"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "eaba21fc-18a5-4095-a249-61cef44065b7",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "version-doc-094",
+        "category": "version",
+        "language": "mixed",
+        "split": "development",
+        "expectedOutcome": "results_after_update",
+        "expectedDocumentKeys": [
+          "doc-094"
+        ],
+        "expectedFormats": [
+          "docx"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-094",
+          "doc-044",
+          "doc-064",
+          "doc-096",
+          "doc-024",
+          "doc-099"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "826a5709-c132-4613-b90e-ba5a63067f69",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "version-doc-095",
+        "category": "version",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results_after_update",
+        "expectedDocumentKeys": [
+          "doc-095"
+        ],
+        "expectedFormats": [
+          "docx"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-095",
+          "doc-045",
+          "doc-091",
+          "doc-005",
+          "doc-093"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "5bd9777d-81f8-47d7-93db-6d116ebbe129",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "version-doc-096",
+        "category": "version",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results_after_update",
+        "expectedDocumentKeys": [
+          "doc-096"
+        ],
+        "expectedFormats": [
+          "docx"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-096",
+          "doc-046",
+          "doc-016",
+          "doc-041",
+          "doc-036"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "691722cb-f1fa-44fd-a176-20dc5a0f47c2",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "version-doc-097",
+        "category": "version",
+        "language": "zh",
+        "split": "blind",
+        "expectedOutcome": "results_after_update",
+        "expectedDocumentKeys": [
+          "doc-097"
+        ],
+        "expectedFormats": [
+          "docx"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-097",
+          "doc-091",
+          "doc-047",
+          "doc-095",
+          "doc-094",
+          "doc-100",
+          "doc-099"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "0311fe11-ff59-4eff-ae1e-e8082120e293",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "version-doc-098",
+        "category": "version",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results_after_update",
+        "expectedDocumentKeys": [
+          "doc-098"
+        ],
+        "expectedFormats": [
+          "docx"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-098",
+          "doc-048",
+          "doc-096",
+          "doc-018",
+          "doc-088"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "d7966933-b3e1-46e3-8ee0-96c13dbe0b19",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "version-doc-099",
+        "category": "version",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results_after_update",
+        "expectedDocumentKeys": [
+          "doc-099"
+        ],
+        "expectedFormats": [
+          "docx"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-099",
+          "doc-091",
+          "doc-049",
+          "doc-094",
+          "doc-100"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "d8a56231-a39b-4849-8f57-7547f4b00688",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "version-doc-100",
+        "category": "version",
+        "language": "zh",
+        "split": "blind",
+        "expectedOutcome": "results_after_update",
+        "expectedDocumentKeys": [
+          "doc-100"
+        ],
+        "expectedFormats": [
+          "docx"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-100",
+          "doc-093",
+          "doc-050",
+          "doc-099",
+          "doc-091"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "fdffc9c3-7470-4b6f-bd7f-9c87631bc98f",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "no-answer-01",
+        "category": "no_answer",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "no_answer",
+        "expectedDocumentKeys": [],
+        "expectedFormats": [],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-020",
+          "doc-001",
+          "doc-011",
+          "doc-018",
+          "doc-015",
+          "doc-093",
+          "doc-013",
+          "doc-004",
+          "doc-005",
+          "doc-019"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "2ffabd45-7e2b-466a-8703-9360474653c7",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "falsePositive": true
+      },
+      {
+        "queryId": "no-answer-02",
+        "category": "no_answer",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "no_answer",
+        "expectedDocumentKeys": [],
+        "expectedFormats": [],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-090",
+          "doc-085",
+          "doc-089",
+          "doc-083",
+          "doc-081",
+          "doc-084",
+          "doc-087",
+          "doc-095",
+          "doc-020",
+          "doc-030"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "018186ca-3f73-4bee-8ac7-d44aca4b6aa9",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "falsePositive": true
+      },
+      {
+        "queryId": "no-answer-03",
+        "category": "no_answer",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "no_answer",
+        "expectedDocumentKeys": [],
+        "expectedFormats": [],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-039",
+          "doc-018",
+          "doc-089",
+          "doc-087",
+          "doc-079",
+          "doc-094",
+          "doc-099",
+          "doc-085"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "ab543e82-fe5c-4790-870b-3cbdb6a96240",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "falsePositive": true
+      },
+      {
+        "queryId": "no-answer-04",
+        "category": "no_answer",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "no_answer",
+        "expectedDocumentKeys": [],
+        "expectedFormats": [],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-040",
+          "doc-090",
+          "doc-020",
+          "doc-032",
+          "doc-039"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "a7f0b2ca-b532-446f-a8ea-5e9583582754",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "falsePositive": true
+      },
+      {
+        "queryId": "no-answer-05",
+        "category": "no_answer",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "no_answer",
+        "expectedDocumentKeys": [],
+        "expectedFormats": [],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-015",
+          "doc-035",
+          "doc-085",
+          "doc-011",
+          "doc-031",
+          "doc-095",
+          "doc-016"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "fe49a836-7861-45a1-bf38-8826c23a84df",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "falsePositive": true
+      },
+      {
+        "queryId": "no-answer-06",
+        "category": "no_answer",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "no_answer",
+        "expectedDocumentKeys": [],
+        "expectedFormats": [],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-090",
+          "doc-081",
+          "doc-087",
+          "doc-083",
+          "doc-089"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "d6a15481-5544-4565-a730-1b27f52b1d33",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "falsePositive": true
+      },
+      {
+        "queryId": "no-answer-07",
+        "category": "no_answer",
+        "language": "zh",
+        "split": "blind",
+        "expectedOutcome": "no_answer",
+        "expectedDocumentKeys": [],
+        "expectedFormats": [],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-014",
+          "doc-043",
+          "doc-013",
+          "doc-023",
+          "doc-093",
+          "doc-019",
+          "doc-080",
+          "doc-011",
+          "doc-073"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "08219ad5-3cb4-4c11-9f9f-926d25578c16",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "falsePositive": true
+      },
+      {
+        "queryId": "no-answer-08",
+        "category": "no_answer",
+        "language": "en",
+        "split": "blind",
+        "expectedOutcome": "no_answer",
+        "expectedDocumentKeys": [],
+        "expectedFormats": [],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-012",
+          "doc-018",
+          "doc-015",
+          "doc-097",
+          "doc-087",
+          "doc-027",
+          "doc-020",
+          "doc-047",
+          "doc-017"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "fadf3cf7-8236-48ac-87c4-057ee4a8a7ac",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "falsePositive": true
+      },
+      {
+        "queryId": "no-answer-09",
+        "category": "no_answer",
+        "language": "mixed",
+        "split": "development",
+        "expectedOutcome": "no_answer",
+        "expectedDocumentKeys": [],
+        "expectedFormats": [],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-090",
+          "doc-081",
+          "doc-085",
+          "doc-089",
+          "doc-011",
+          "doc-014",
+          "doc-015",
+          "doc-019",
+          "doc-018",
+          "doc-084"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "162557c0-86c3-49dd-9e1c-ec77ef74a506",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "falsePositive": true
+      },
+      {
+        "queryId": "no-answer-10",
+        "category": "no_answer",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "no_answer",
+        "expectedDocumentKeys": [],
+        "expectedFormats": [],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-040",
+          "doc-020",
+          "doc-011",
+          "doc-033",
+          "doc-031",
+          "doc-035"
+        ],
+        "resultCount": 10,
+        "citationChecks": {
+          "verified": 10,
+          "failed": 0
+        },
+        "taskId": "86459c7d-561e-4717-853e-c6da7e7b07e7",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "falsePositive": true
+      },
+      {
+        "queryId": "filter-doc-001",
+        "category": "filter_permission",
+        "scenario": "filter",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-001"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-001"
+        ],
+        "resultCount": 5,
+        "citationChecks": {
+          "verified": 5,
+          "failed": 0
+        },
+        "taskId": "2c79490b-dc53-41f5-9d75-bd4087225205",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "filter-doc-002",
+        "category": "filter_permission",
+        "scenario": "filter",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-002"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-002"
+        ],
+        "resultCount": 5,
+        "citationChecks": {
+          "verified": 5,
+          "failed": 0
+        },
+        "taskId": "94e4e39b-de78-473a-9caa-1be46a7d1e52",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "filter-doc-003",
+        "category": "filter_permission",
+        "scenario": "filter",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-003"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-003"
+        ],
+        "resultCount": 5,
+        "citationChecks": {
+          "verified": 5,
+          "failed": 0
+        },
+        "taskId": "b46e59cd-58b8-4c39-903c-fe8b02736e3e",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "filter-doc-004",
+        "category": "filter_permission",
+        "scenario": "filter",
+        "language": "mixed",
+        "split": "development",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-004"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-004"
+        ],
+        "resultCount": 7,
+        "citationChecks": {
+          "verified": 7,
+          "failed": 0
+        },
+        "taskId": "7884414e-85ec-4051-9012-bc9bf3bebea7",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "filter-doc-005",
+        "category": "filter_permission",
+        "scenario": "filter",
+        "language": "zh",
+        "split": "blind",
+        "expectedOutcome": "results",
+        "expectedDocumentKeys": [
+          "doc-005"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [
+          "doc-005"
+        ],
+        "resultCount": 5,
+        "citationChecks": {
+          "verified": 5,
+          "failed": 0
+        },
+        "taskId": "c18da7dc-d774-4ee0-8174-1207bbcabbf9",
+        "actualMode": "hybrid",
+        "degraded": true,
+        "degradationReason": "reranker_not_configured",
+        "recallAt10": 1,
+        "mrrAt10": 1,
+        "supportCoverage": {
+          "expectedPassageCount": 1,
+          "locatorOverlapCount": 1,
+          "fullSnippetCount": 1
+        }
+      },
+      {
+        "queryId": "permission-doc-006",
+        "category": "filter_permission",
+        "scenario": "permission",
+        "language": "en",
+        "split": "blind",
+        "expectedOutcome": "permission_denied",
+        "expectedDocumentKeys": [
+          "doc-006"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [],
+        "resultCount": 0,
+        "citationChecks": {
+          "verified": 0,
+          "failed": 0
+        },
+        "denialCode": "KNOWLEDGE_BASE_NOT_FOUND",
+        "denied": true,
+        "leakage": false,
+        "note": "KNOWLEDGE_BASE_NOT_FOUND"
+      },
+      {
+        "queryId": "permission-doc-007",
+        "category": "filter_permission",
+        "scenario": "permission",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "permission_denied",
+        "expectedDocumentKeys": [
+          "doc-007"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [],
+        "resultCount": 0,
+        "citationChecks": {
+          "verified": 0,
+          "failed": 0
+        },
+        "denialCode": "KNOWLEDGE_BASE_NOT_FOUND",
+        "denied": true,
+        "leakage": false,
+        "note": "KNOWLEDGE_BASE_NOT_FOUND"
+      },
+      {
+        "queryId": "permission-doc-008",
+        "category": "filter_permission",
+        "scenario": "permission",
+        "language": "en",
+        "split": "development",
+        "expectedOutcome": "permission_denied",
+        "expectedDocumentKeys": [
+          "doc-008"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [],
+        "resultCount": 0,
+        "citationChecks": {
+          "verified": 0,
+          "failed": 0
+        },
+        "denialCode": "KNOWLEDGE_BASE_NOT_FOUND",
+        "denied": true,
+        "leakage": false,
+        "note": "KNOWLEDGE_BASE_NOT_FOUND"
+      },
+      {
+        "queryId": "permission-doc-009",
+        "category": "filter_permission",
+        "scenario": "permission",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "permission_denied",
+        "expectedDocumentKeys": [
+          "doc-009"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [],
+        "resultCount": 0,
+        "citationChecks": {
+          "verified": 0,
+          "failed": 0
+        },
+        "denialCode": "KNOWLEDGE_BASE_NOT_FOUND",
+        "denied": true,
+        "leakage": false,
+        "note": "KNOWLEDGE_BASE_NOT_FOUND"
+      },
+      {
+        "queryId": "permission-doc-010",
+        "category": "filter_permission",
+        "scenario": "permission",
+        "language": "zh",
+        "split": "development",
+        "expectedOutcome": "permission_denied",
+        "expectedDocumentKeys": [
+          "doc-010"
+        ],
+        "expectedFormats": [
+          "txt"
+        ],
+        "status": "completed",
+        "actualUniqueDocumentKeys": [],
+        "resultCount": 0,
+        "citationChecks": {
+          "verified": 0,
+          "failed": 0
+        },
+        "denialCode": "KNOWLEDGE_BASE_NOT_FOUND",
+        "denied": true,
+        "leakage": false,
+        "note": "KNOWLEDGE_BASE_NOT_FOUND"
+      }
+    ],
+    "versionUpdateSummary": {
+      "fixtureCount": 10,
+      "passedCount": 10,
+      "sameDocumentIdCount": 10,
+      "activeVersion2Count": 10,
+      "staleVersionSearchHitCount": 0
+    },
+    "htmlSnapshotSummary": {
+      "snapshotCount": 20,
+      "failedCount": 1,
+      "gatePass": false,
+      "uploadIndexedCount": 19,
+      "parserLocatorVerifiedCount": 19,
+      "sha256VerifiedCount": 19,
+      "publicUrlFetchExercised": false,
+      "sourceTransport": "upload_snapshot",
+      "datasetSha256": "07b825d3fb539ad10ab55b97f1b136bbcda31ed92fe9da5903f487aefde641ae"
+    },
+    "summary": {
+      "status": "failed",
+      "expectedQueryCount": 100,
+      "expectedLiveQueryCount": 100,
+      "completedQueryCount": 100,
+      "failedQueryCount": 0,
+      "supportCoverageFailureQueryCount": 0,
+      "notRunQueryCount": 0,
+      "answerableAuthorizedQueryCount": 85,
+      "completedAnswerableQueryCount": 85,
+      "scoreCoverageComplete": true,
+      "supportCoverage": {
+        "expectedPassageCount": 105,
+        "locatorOverlapPassageCount": 105,
+        "locatorOverlapRate": 1,
+        "fullSnippetPassageCount": 105,
+        "fullSnippetRate": 1,
+        "unknownPassageCount": 0
+      },
+      "supportCoveragePass": true,
+      "metrics": {
+        "overall": {
+          "queryCount": 85,
+          "recallAt10": 1,
+          "mrrAt10": 1
+        },
+        "byLanguage": {
+          "en": {
+            "queryCount": 25,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "mixed": {
+            "queryCount": 9,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "zh": {
+            "queryCount": 51,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          }
+        },
+        "byFormat": {
+          "docx": {
+            "queryCount": 16,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "md": {
+            "queryCount": 30,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "pdf": {
+            "queryCount": 16,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "txt": {
+            "queryCount": 25,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          }
+        },
+        "byCategory": {
+          "cross_passage_document": {
+            "queryCount": 20,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "exact": {
+            "queryCount": 20,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "filter_permission": {
+            "queryCount": 5,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "no_answer": {
+            "queryCount": 0,
+            "recallAt10": null,
+            "mrrAt10": null
+          },
+          "synonym": {
+            "queryCount": 30,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "version": {
+            "queryCount": 10,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          }
+        },
+        "bySplit": {
+          "blind": {
+            "queryCount": 17,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "development": {
+            "queryCount": 68,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          }
+        },
+        "blind": {
+          "queryCount": 17,
+          "recallAt10": 1,
+          "mrrAt10": 1
+        }
+      },
+      "noAnswer": {
+        "queryCount": 10,
+        "falsePositiveQueryCount": 10,
+        "falsePositiveRate": 1
+      },
+      "permission": {
+        "queryCount": 5,
+        "deniedQueryCount": 5,
+        "leakageQueryCount": 0
+      },
+      "degradation": {
+        "degradedQueryCount": 95,
+        "reasons": {
+          "reranker_not_configured": 95
+        }
+      },
+      "citations": {
+        "verifiedHitCount": 927,
+        "failedHitCount": 0,
+        "verifiedRate": 1
+      },
+      "thresholds": {
+        "recallAt10": 0.9,
+        "mrrAt10": 0.75,
+        "supportCoverage": 1,
+        "overallPass": true
+      },
+      "qualityGatePass": true,
+      "acceptancePass": false,
+      "limitations": [
+        "Scores describe this frozen synthetic fixture only and do not establish retrieval quality on real enterprise documents.",
+        "Version queries target v2 after the v1-to-v2 update flow; unexecuted or failed answerable rows remain in the core denominator with zero score.",
+        "No-answer false positives are reported separately and are excluded from Recall@10 and MRR@10.",
+        "Permission checks are reported as denials/leaks separately and are excluded from the quality denominator."
+      ],
+      "htmlSnapshotGatePass": false
+    }
+  },
+  "fixtureSha256": "da6a450c6f813ce99b1d26acd3e88863c689bc200e7bb2ee3c14ecb580a89c74",
+  "fixtureCounts": {
+    "documents": 100,
+    "documentsByFormat": {
+      "txt": 20,
+      "md": 30,
+      "pdf": 30,
+      "docx": 20
+    },
+    "documentsByLanguage": {
+      "zh": 60,
+      "en": 30,
+      "mixed": 10
+    },
+    "formatLanguageMatrix": {
+      "txt": {
+        "zh": 12,
+        "en": 6,
+        "mixed": 2
+      },
+      "md": {
+        "zh": 18,
+        "en": 9,
+        "mixed": 3
+      },
+      "pdf": {
+        "zh": 18,
+        "en": 9,
+        "mixed": 3
+      },
+      "docx": {
+        "zh": 12,
+        "en": 6,
+        "mixed": 2
+      }
+    },
+    "queries": 100,
+    "queriesByCategory": {
+      "exact": 20,
+      "synonym": 30,
+      "cross_passage_document": 20,
+      "version": 10,
+      "no_answer": 10,
+      "filter_permission": 10
+    },
+    "queriesByLanguage": {
+      "zh": 59,
+      "en": 31,
+      "mixed": 10
+    },
+    "queriesBySplit": {
+      "development": 80,
+      "blind": 20
+    },
+    "versionTransitions": 10
+  },
+  "htmlSnapshotSha256": "07b825d3fb539ad10ab55b97f1b136bbcda31ed92fe9da5903f487aefde641ae",
+  "htmlSnapshotCount": 20,
+  "environment": {
+    "platform": "darwin 27.0.0",
+    "architecture": "arm64",
+    "cpuModel": "Apple M2",
+    "cpuCount": 8,
+    "memoryTotalBytes": 17179869184,
+    "memoryFreeBytesAtStart": 646463488,
+    "node": "v24.15.0",
+    "lockSha256": "b849100f7c1521b3a365abd6a25e278ed9e1062fad241e599a733784095c02f4",
+    "piDurableVersion": "1.3.0",
+    "a2aSdkVersion": "1.3.0",
+    "git": {
+      "head": "a2f1c03a10596207b8d18973ef43a5ecdf9b769e",
+      "dirtyPathCount": 313
+    },
+    "postgresToolVersion": "postgres (PostgreSQL) 17.10",
+    "embedding": {
+      "origin": "https://maas.qianwenaiapi.com",
+      "modelId": "qwen3.7-text-embedding-flash",
+      "dimensions": 1024,
+      "version": "1",
+      "normalization": "l2",
+      "credentialsEnv": "PI_DOCUMENT_AGENT_API_KEY"
+    },
+    "embeddingConfigSha256": "c54a38437fca4ddadc78a473fd38a9b20a976ef2809340db18105adb24b09b9d",
+    "fixtureSha256": "da6a450c6f813ce99b1d26acd3e88863c689bc200e7bb2ee3c14ecb580a89c74",
+    "fixtureCounts": {
+      "documents": 100,
+      "documentsByFormat": {
+        "txt": 20,
+        "md": 30,
+        "pdf": 30,
+        "docx": 20
+      },
+      "documentsByLanguage": {
+        "zh": 60,
+        "en": 30,
+        "mixed": 10
+      },
+      "formatLanguageMatrix": {
+        "txt": {
+          "zh": 12,
+          "en": 6,
+          "mixed": 2
+        },
+        "md": {
+          "zh": 18,
+          "en": 9,
+          "mixed": 3
+        },
+        "pdf": {
+          "zh": 18,
+          "en": 9,
+          "mixed": 3
+        },
+        "docx": {
+          "zh": 12,
+          "en": 6,
+          "mixed": 2
+        }
+      },
+      "queries": 100,
+      "queriesByCategory": {
+        "exact": 20,
+        "synonym": 30,
+        "cross_passage_document": 20,
+        "version": 10,
+        "no_answer": 10,
+        "filter_permission": 10
+      },
+      "queriesByLanguage": {
+        "zh": 59,
+        "en": 31,
+        "mixed": 10
+      },
+      "queriesBySplit": {
+        "development": 80,
+        "blind": 20
+      },
+      "versionTransitions": 10
+    },
+    "htmlSnapshotSha256": "07b825d3fb539ad10ab55b97f1b136bbcda31ed92fe9da5903f487aefde641ae",
+    "htmlSnapshotCount": 20,
+    "htmlSnapshotCoverage": "uploaded synthetic HTML parser/locator smoke using frozen support text for deterministic keyword retrieval; public URL fetch is not covered by these snapshots",
+    "embeddingBudget": {
+      "parsedDocumentCount": 130,
+      "mainCorpusDocumentCount": 100,
+      "versionUpdateDocumentCount": 10,
+      "htmlSnapshotCount": 20,
+      "chunkCount": 540,
+      "ingestionEmbeddingBatchCount": 131,
+      "searchEmbeddingRequestCount": 95,
+      "worstCaseEmbeddingAttempts": 1130
+    },
+    "runtimeBudgets": {
+      "maxDocuments": 100,
+      "maxQueries": 100,
+      "maxFileBytes": 1048576,
+      "maxTotalFileBytes": 5242880,
+      "maxTaskWaitMs": 120000,
+      "supplementalVersionUpdates": 10,
+      "supplementalHtmlSnapshots": 20,
+      "supplementalHtmlLocatorSearches": 20,
+      "maxTotalRuntimeMs": 3600000,
+      "maxRunnerHttpRequests": 25000,
+      "maxEmbeddingAttemptBudget": 1500,
+      "indexingWaitFor": "indexed",
+      "searchMode": "hybrid",
+      "searchTopK": 10,
+      "rerank": false,
+      "htmlLocatorSearchMode": "keyword",
+      "htmlLocatorSearchInput": "frozen_support_text",
+      "embeddingBatchSize": 8,
+      "embeddingMaxAttemptsPerRequest": 5
+    },
+    "runnerHttpRequests": 893,
+    "postgres": {
+      "binDir": ".cache/postgres/bin",
+      "serverVersion": "17.10",
+      "pgvectorVersion": "0.8.2"
+    }
+  },
+  "completedAt": "2026-10-16T04:57:53.502Z",
+  "failureCode": "EVAL_ACCEPTANCE_GATE_FAILED",
+  "elapsedMs": 215001
+}

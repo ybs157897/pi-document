@@ -5,3 +5,6 @@
 
 # Whitespace-only input is intentional in this empty-document parser fixture.
 fixtures/parsers/md/empty.md -whitespace
+
+# Raw test transcripts retain the runner's whitespace verbatim.
+evidence/**/*.log -whitespace

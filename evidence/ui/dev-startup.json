@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "recordedAt": "2026-10-16T07:16:37.431Z",
+  "baseUrl": "http://127.0.0.1:4328",
+  "browserAuthenticated": true,
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "cache": "no-store"
+    },
+    {
+      "path": "/ui/",
+      "status": 200,
+      "cache": "no-store"
+    },
+    {
+      "path": "/healthz",
+      "status": 200,
+      "cache": null
+    },
+    {
+      "path": "/readyz",
+      "status": 200,
+      "cache": null
+    },
+    {
+      "path": "/api/manage/me",
+      "status": 200,
+      "cache": "no-store"
+    }
+  ]
+}

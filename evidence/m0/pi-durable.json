@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "node": "v24.15.0",
+  "pi": "1.3.0",
+  "journalMode": "wal",
+  "adapterSynchronous": "NORMAL",
+  "crashWindow": "external receipt committed, Pi terminal checkpoint not committed",
+  "signal": "SIGKILL",
+  "receiptCount": 1,
+  "taskIdStableAcross20Retries": true,
+  "terminalReopenReexecutionCount": 0,
+  "limitation": "Probe receipt uses separate SQLite. PostgreSQL outbox and host-power-loss durability are not proven here."
+}

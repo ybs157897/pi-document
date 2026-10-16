@@ -1,0 +1,51 @@
+{
+  "status": "recommended_after_spike",
+  "decisions": [
+    {
+      "format": "PDF",
+      "package": "pdfjs-dist",
+      "version": "6.4.299",
+      "license": "Apache-2.0",
+      "entrypoint": "pdfjs-dist/legacy/build/pdf.mjs",
+      "reason": "Extracts text from each real PDF page and supports page-local Unicode code-point offsets.",
+      "limitation": "This M0 probe covers text PDFs only; scanned PDFs and OCR remain out of scope."
+    },
+    {
+      "format": "DOCX",
+      "packages": [
+        {
+          "name": "cheerio",
+          "version": "1.2.0",
+          "license": "MIT"
+        }
+      ],
+      "builtins": [
+        "node:zlib.inflateRawSync with maxOutputLength",
+        "ZIP central-directory reader"
+      ],
+      "entrypoint": "bounded ZIP entry inflate + Cheerio XML mode",
+      "reason": "Reading w:p nodes directly preserves empty paragraphs and duplicate paragraph identity for the zero-based docx_paragraph locator.",
+      "limitation": "M0 reads text and paragraph styles from the main document part; aggregate expansion checks include ZIP declarations while actual output is bounded for document.xml, and unreferenced ZIP parts are not inflated or CRC-validated. This is not a complete ZIP bomb audit. Pagination, run styling, OCR, and full layout fidelity are also out of scope."
+    },
+    {
+      "format": "HTML",
+      "package": "cheerio",
+      "version": "1.2.0",
+      "license": "MIT",
+      "entrypoint": "cheerio.load",
+      "reason": "Tolerant HTML parsing preserves heading paths and existing fragment IDs without fabricating anchors.",
+      "limitation": "The probe accepts captured HTML bytes; network fetching and URL safety are separate work."
+    }
+  ],
+  "textFormats": {
+    "packages": [],
+    "reason": "TXT/MD use Node UTF-8 decoding and line parsing, avoiding unnecessary dependencies.",
+    "limitation": "Markdown extraction here preserves headings and line ranges, not every dialect extension."
+  },
+  "rejectedAlternative": {
+    "package": "mammoth@1.13.0",
+    "reason": "Semantic HTML output may omit empty paragraphs, so its output index cannot prove the original DOCX paragraphIndex.",
+    "securityObservation": "Mammoth was not selected and is absent from the final parser dependency set. During selection, npm audit identified its transitive argparse -> sprintf-js <=1.1.3 finding; this probe does not import or execute Mammoth CLI code."
+  },
+  "acceptanceBoundary": "This report covers M0 parser evidence only; it does not claim full AC-07 or AC-22 product acceptance."
+}

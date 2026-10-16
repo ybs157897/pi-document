@@ -1,0 +1,105 @@
+{
+  "first": {
+    "request": {
+      "schemaVersion": "1.0",
+      "operation": "document.save",
+      "requestId": "603ded8e-b9be-4d7c-829b-ad180f73d11b",
+      "knowledgeBaseId": "807d36c8-2028-4135-ba29-89c707c11f58",
+      "input": {
+        "source": {
+          "kind": "text",
+          "text": "UI-UNCERTAIN-2026-029 原始正文不会因窗口关闭丢失。",
+          "mimeType": "text/plain"
+        },
+        "title": "异常响应恢复验收",
+        "waitFor": "indexed"
+      }
+    },
+    "response": {
+      "jsonrpc": "2.0",
+      "id": "ui-faa392d8-35a6-425c-bc41-187e45ad86a7",
+      "result": {
+        "task": {
+          "id": "e126e1ad-7287-470f-ba2f-4ba17242b45b",
+          "contextId": "8ee0ac4a-7620-4a49-9e02-158b956399e2",
+          "status": {
+            "state": "TASK_STATE_SUBMITTED",
+            "timestamp": "2026-10-16T07:09:51.809Z"
+          },
+          "metadata": {
+            "operation": "document.save",
+            "requestId": "603ded8e-b9be-4d7c-829b-ad180f73d11b"
+          }
+        }
+      }
+    }
+  },
+  "reopened": {
+    "requestId": "603ded8e-b9be-4d7c-829b-ad180f73d11b",
+    "title": "异常响应恢复验收",
+    "titleLocked": true,
+    "text": "UI-UNCERTAIN-2026-029 原始正文不会因窗口关闭丢失。"
+  },
+  "after": {
+    "request": {
+      "schemaVersion": "1.0",
+      "operation": "document.save",
+      "requestId": "603ded8e-b9be-4d7c-829b-ad180f73d11b",
+      "knowledgeBaseId": "807d36c8-2028-4135-ba29-89c707c11f58",
+      "input": {
+        "source": {
+          "kind": "text",
+          "text": "UI-UNCERTAIN-2026-029 原始正文不会因窗口关闭丢失。",
+          "mimeType": "text/plain"
+        },
+        "title": "异常响应恢复验收",
+        "waitFor": "indexed"
+      }
+    },
+    "response": {
+      "jsonrpc": "2.0",
+      "id": "ui-d22d9456-597b-4a83-8974-67d73bb84a9f",
+      "result": {
+        "task": {
+          "id": "e126e1ad-7287-470f-ba2f-4ba17242b45b",
+          "contextId": "8ee0ac4a-7620-4a49-9e02-158b956399e2",
+          "status": {
+            "state": "TASK_STATE_COMPLETED",
+            "timestamp": "2026-10-16T07:09:52.006Z"
+          },
+          "artifacts": [
+            {
+              "artifactId": "result-e126e1ad-7287-470f-ba2f-4ba17242b45b",
+              "name": "document.save result",
+              "parts": [
+                {
+                  "data": {
+                    "result": {
+                      "sha256": "a36baf651e985315e124306a584a61daa6eb86c54c38ba55856f838c45431f45",
+                      "version": 1,
+                      "documentId": "d1b198a5-d393-4bc3-a663-1d9e5355fd38",
+                      "indexState": "ready",
+                      "generationId": "b915962180068d61a0604a629bcfcb3ea8dc019a5f01385e",
+                      "knowledgeBaseId": "807d36c8-2028-4135-ba29-89c707c11f58"
+                    },
+                    "outcome": "succeeded",
+                    "operation": "document.save",
+                    "requestId": "603ded8e-b9be-4d7c-829b-ad180f73d11b",
+                    "schemaVersion": "1.0"
+                  },
+                  "mediaType": "application/json"
+                }
+              ]
+            }
+          ],
+          "metadata": {
+            "operation": "document.save",
+            "requestId": "603ded8e-b9be-4d7c-829b-ad180f73d11b"
+          }
+        }
+      }
+    }
+  },
+  "sameTaskId": true,
+  "samePayload": true
+}

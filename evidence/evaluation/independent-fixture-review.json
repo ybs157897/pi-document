@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "datasetSha256": "da6a450c6f813ce99b1d26acd3e88863c689bc200e7bb2ee3c14ecb580a89c74",
+  "sourceFilesVerified": 113,
+  "parsedSources": 110,
+  "supportPassagesChecked": 154,
+  "queriesReviewed": 100,
+  "blindQueries": 20,
+  "review": "Independent pre-retrieval source/hash/range review by the integrating agent; category samples checked against the written synthetic facts. No retrieval output used to create labels.",
+  "limitations": "Synthetic corpus, not evidence of enterprise data generalization or WeKnora parity.",
+  "recordedAt": "2026-10-16T04:03:06.863Z"
+}

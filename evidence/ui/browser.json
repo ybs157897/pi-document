@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "recordedAt": "2026-10-16T07:14:36.783Z",
+  "browser": "Ego Lite / Chromium",
+  "baseUrl": "http://127.0.0.1:4330",
+  "data": "isolated temporary database with public synthetic fixtures",
+  "knowledgeBaseId": "807d36c8-2028-4135-ba29-89c707c11f58",
+  "documentId": "4ea1d761-e470-4f8c-a3f6-713291b93d77",
+  "checks": {
+    "tokenLogin": true,
+    "knowledgeBaseCreated": true,
+    "multipartMarkdownIndexed": true,
+    "sourceDownloadBytesMatch": true,
+    "hybridSearch": true,
+    "citationVersionAndLocator": true,
+    "readOnlyNoVisibleWrites": true,
+    "readerCanRead": true,
+    "knowledgeBaseRevokeClearsSource": true,
+    "rawMarkdownEditorPreservesBytes": true,
+    "uploadUpdateVersion2": true,
+    "version2SourceDownloadBytesMatch": true,
+    "failedEmbeddingFive503": true,
+    "retryViaUIRealEmbeddingRecovery": true,
+    "retryRetainsSingleDocumentVersion": true,
+    "taskFailedAndCompletedFilters": true,
+    "deleteConfirmationAndReload": true,
+    "deletedSourceKeywordSearchEmpty": true,
+    "uncertainSubmissionReloadUsesOriginalRequest": true,
+    "uncertainSubmissionReturnsSameTask": true,
+    "uncertainSubmissionCreatesOneKnowledgeBase": true,
+    "taskPaginationLoads28WithoutDuplicate": true,
+    "knowledgeSidebarReturnsToList": true,
+    "mobileMenuOpenClose": true,
+    "mobileDialogEscapeRestoresFocus": true,
+    "staleMembersResponseDoesNotReplaceCurrentKB": true,
+    "malformed202TaskShapeRetainsPendingRequest": true,
+    "editorCloseReopenRestoresLockedOriginalPayload": true,
+    "editorRecoverySameRequestAndTask": true,
+    "mobileNoRootHorizontalOverflow": true,
+    "retryGenerationSearchableWithRealEmbedding": true,
+    "retryMalformed202ReloadSameRequestAndTask": true,
+    "completedSourceRejectsNewRetry": true
+  },
+  "sourceSha256": "2be9602a747edfbfb36b7fac863a220e955558018e8ce9a2e36ce246cd3c93f6",
+  "retry": {
+    "failedTaskId": "9cd59f56-e21b-44c1-9191-62e2fe675fdf",
+    "retryTaskId": "33cc12b5-8605-4f3b-9b90-9f65a4690f9c",
+    "documentId": "81673790-32c7-438f-b217-11ea2dd14848",
+    "version": 1,
+    "fault": "5 injected HTTP 503 responses, followed by actual configured embedding service"
+  },
+  "testSuite": {
+    "passed": 137,
+    "failed": 0,
+    "evidence": "../final/product-tests.json"
+  },
+  "viewport": {
+    "desktop": {
+      "width": 1200,
+      "height": 800
+    },
+    "mobile": {
+      "width": 375,
+      "height": 812,
+      "rootScrollWidth": 375,
+      "bodyScrollWidth": 375
+    }
+  },
+  "correctionsPending": [],
+  "evidence": [
+    "desktop-library.png",
+    "search-citation.png",
+    "access-control.png",
+    "mobile-library.png",
+    "mobile-menu.png",
+    "failed-index-task.png",
+    "retry-search-success.png",
+    "retry-final.json",
+    "uncertain-submit.json",
+    "malformed-response-recovery.json",
+    "dev-startup.json"
+  ],
+  "notes": [
+    "retry-tasks.json is intermediate before generation recovery fix; final retry acceptance uses retry-final.json",
+    "Two isolated temporary databases were used; no acceptance fixtures were written into the persistent development database"
+  ]
+}

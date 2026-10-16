@@ -1,0 +1,88 @@
+{
+  "status": "passed",
+  "first": {
+    "request": {
+      "requestId": "0ee3b2b6-220d-473d-9bee-22bed7f73dd2"
+    },
+    "response": {
+      "taskId": "1150d3e2-8080-4bde-b18f-4ad873a99b0e",
+      "contextId": "2a408bf0-94a9-40bb-ac14-dfbd15ca2971",
+      "retryOfTaskId": "876edc5d-e227-479b-9e5f-ef7474460748"
+    }
+  },
+  "replayed": {
+    "request": {
+      "requestId": "0ee3b2b6-220d-473d-9bee-22bed7f73dd2"
+    },
+    "response": {
+      "taskId": "1150d3e2-8080-4bde-b18f-4ad873a99b0e",
+      "contextId": "2a408bf0-94a9-40bb-ac14-dfbd15ca2971",
+      "retryOfTaskId": "876edc5d-e227-479b-9e5f-ef7474460748"
+    }
+  },
+  "sameRequestId": true,
+  "sameTaskId": true,
+  "search": {
+    "mode": "semantic",
+    "actualConfiguredEmbedding": true,
+    "hits": [
+      {
+        "title": "索引恢复最终文档",
+        "documentId": "79f5410e-aeb2-4723-89d9-8d2266915eab",
+        "snippet": "UI-RETRY-2026-029：当 Embedding 临时不可用时，原文和任务错误会保留。点击重试索引后应使用同一个文档标识和版本，不重复创建资料。",
+        "meta": "版本 v1·语义相似度 · 0.706·第 3 行"
+      },
+      {
+        "title": "索引恢复最终文档",
+        "documentId": "79f5410e-aeb2-4723-89d9-8d2266915eab",
+        "snippet": "索引重试验收",
+        "meta": "版本 v1·语义相似度 · 0.647·第 1 行"
+      }
+    ]
+  },
+  "injectedFault": {
+    "injectedFailures": 5,
+    "reason": "deterministic 503 fixture before real embedding recovery"
+  },
+  "task": {
+    "id": "1150d3e2-8080-4bde-b18f-4ad873a99b0e",
+    "contextId": "2a408bf0-94a9-40bb-ac14-dfbd15ca2971",
+    "status": {
+      "state": "TASK_STATE_COMPLETED",
+      "timestamp": "2026-10-16T07:12:20.752Z"
+    },
+    "artifacts": [
+      {
+        "artifactId": "result-1150d3e2-8080-4bde-b18f-4ad873a99b0e",
+        "name": "document.save result",
+        "parts": [
+          {
+            "data": {
+              "result": {
+                "sha256": "787ff932e6ea592b9a001ef050cf8aadc72cb5ee401cdfcd51aeb90b520c334b",
+                "version": 1,
+                "documentId": "79f5410e-aeb2-4723-89d9-8d2266915eab",
+                "indexState": "ready",
+                "generationId": "598d0be04fdd1a23c6681603db02e79acc211a00d585cdcf",
+                "knowledgeBaseId": "9a80e90d-3f19-4a6c-817a-05436dd2738c"
+              },
+              "outcome": "succeeded",
+              "operation": "document.save",
+              "requestId": "0ee3b2b6-220d-473d-9bee-22bed7f73dd2",
+              "schemaVersion": "1.0"
+            },
+            "mediaType": "application/json"
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "operation": "document.save",
+      "requestId": "0ee3b2b6-220d-473d-9bee-22bed7f73dd2"
+    }
+  },
+  "recordedAt": "2026-10-16T07:14:36.779Z",
+  "readySemanticSearchVerified": true,
+  "retryRetainedVersion": 1,
+  "successfulSourceRepeatRejected": true
+}

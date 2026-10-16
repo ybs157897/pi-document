@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "repeatsPerWindow": 3,
+  "cases": [
+    {
+      "point": "cancel-accepted",
+      "repeat": 1,
+      "signal": "SIGKILL",
+      "lateModelResultReleased": true,
+      "visibleHitsAfterRecovery": 0
+    },
+    {
+      "point": "cancel-accepted",
+      "repeat": 2,
+      "signal": "SIGKILL",
+      "lateModelResultReleased": true,
+      "visibleHitsAfterRecovery": 0
+    },
+    {
+      "point": "cancel-accepted",
+      "repeat": 3,
+      "signal": "SIGKILL",
+      "lateModelResultReleased": true,
+      "visibleHitsAfterRecovery": 0
+    },
+    {
+      "point": "tombstone-committed",
+      "repeat": 1,
+      "signal": "SIGKILL",
+      "lateModelResultReleased": true,
+      "visibleHitsAfterRecovery": 0
+    },
+    {
+      "point": "tombstone-committed",
+      "repeat": 2,
+      "signal": "SIGKILL",
+      "lateModelResultReleased": true,
+      "visibleHitsAfterRecovery": 0
+    },
+    {
+      "point": "tombstone-committed",
+      "repeat": 3,
+      "signal": "SIGKILL",
+      "lateModelResultReleased": true,
+      "visibleHitsAfterRecovery": 0
+    }
+  ],
+  "provider": "local controlled delayed HTTP embedding fixture"
+}

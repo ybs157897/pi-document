@@ -1,0 +1,684 @@
+{
+  "phase": "M2",
+  "status": "failed",
+  "embeddingModelId": "qwen3.7-text-embedding-flash",
+  "dimensions": 1024,
+  "clients": [
+    "official JS SDK",
+    "independent fetch JSON-RPC"
+  ],
+  "data": "public synthetic acceptance fixture",
+  "naturalFailure": {
+    "taskId": "agt_8edb477a-0955-4b86-83b8-6afaf3b69e92",
+    "state": "TASK_STATE_FAILED",
+    "statusText": [
+      "Pi submission ended without an answer (reason=faulted; class=PI_TASK_FAULTED)."
+    ],
+    "turns": [
+      {
+        "turn_no": 1,
+        "context_id": "69e489ce-9d17-46bb-af9e-e15cd8159bac",
+        "state": "failed",
+        "model_requests": 8,
+        "tool_calls": 2,
+        "pi_submission_id": "55",
+        "pi_generation_task_id": "56",
+        "error_code": "PI_SUBMISSION_UNANSWERED",
+        "error_message": "Pi submission ended without an answer (reason=faulted; class=PI_TASK_FAULTED)."
+      }
+    ],
+    "actions": [
+      {
+        "operation": "knowledge_base.list",
+        "state": "completed",
+        "child_task_id": "7097e07f-d654-4e81-bfce-67f1262a4786"
+      },
+      {
+        "operation": "document.list",
+        "state": "completed",
+        "child_task_id": "7375cc84-3c77-4376-a22d-890df6423a0f"
+      }
+    ],
+    "piTasks": [
+      {
+        "turnNo": 1,
+        "piTaskId": "56",
+        "conversationId": "48",
+        "outcome": {
+          "status": "completed",
+          "result": {
+            "entryId": 58
+          }
+        },
+        "piEntries": [
+          {
+            "id": "54",
+            "kind": "pi-document.a2a-natural",
+            "messages": [
+              {
+                "role": "user",
+                "content": []
+              }
+            ]
+          },
+          {
+            "id": "57",
+            "kind": "pi.system",
+            "byTaskId": "56",
+            "messages": [
+              {
+                "role": "system",
+                "content": []
+              }
+            ]
+          },
+          {
+            "id": "58",
+            "kind": "pi.assistant",
+            "byTaskId": "56",
+            "messages": [
+              {
+                "role": "assistant",
+                "api": "openai-completions",
+                "provider": "qwen-maas",
+                "model": "qwen3.8-flash",
+                "stopReason": "toolUse",
+                "usage": {
+                  "input": 845,
+                  "output": 159,
+                  "cacheRead": 1792,
+                  "cacheWrite": 0,
+                  "totalTokens": 2796
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "I'll save the document first, then search and read it back.\n\n"
+                  },
+                  {
+                    "type": "toolCall",
+                    "name": "document_save",
+                    "arguments": {
+                      "knowledgeBaseId": "5a80ac47-a980-46d9-9553-2184f5cde1ae",
+                      "title": "自然语言入口验收",
+                      "source": "{\"kind\": \"text\", \"text\": \"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\", \"mimeType\": \"text/plain\"}",
+                      "waitFor": "indexed"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "60",
+            "kind": "pi.tool-result",
+            "byTaskId": "59",
+            "messages": [
+              {
+                "role": "toolResult",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "<harness>\n[error] Validation failed for tool \"document_save\":\n  - source: must be object\n  - source: must be object\n  - source: must be object\n  - source: must match a schema in anyOf\n\nReceived arguments:\n{\n  \"knowledgeBaseId\": \"5a80ac47-a980-46d9-9553-2184f5cde1ae\",\n  \"title\": \"自然语言入口验收\",\n  \"source\": \"{\\\"kind\\\": \\\"text\\\", \\\"text\\\": \\\"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\\\", \\\"mimeType\\\": \\\"text/plain\\\"}\",\n  \"waitFor\": \"indexed\"\n}\n</harness>"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "62",
+            "kind": "pi.assistant",
+            "byTaskId": "61",
+            "messages": [
+              {
+                "role": "assistant",
+                "api": "openai-completions",
+                "provider": "qwen-maas",
+                "model": "qwen3.8-flash",
+                "stopReason": "toolUse",
+                "usage": {
+                  "input": 945,
+                  "output": 144,
+                  "cacheRead": 2048,
+                  "cacheWrite": 0,
+                  "totalTokens": 3137
+                },
+                "content": [
+                  {
+                    "type": "toolCall",
+                    "name": "document_save",
+                    "arguments": {
+                      "knowledgeBaseId": "5a80ac47-a980-46d9-9553-2184f5cde1ae",
+                      "source": "{\"kind\": \"text\", \"mimeType\": \"text/plain\", \"text\": \"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\"}",
+                      "title": "自然语言入口验收",
+                      "waitFor": "indexed"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "64",
+            "kind": "pi.tool-result",
+            "byTaskId": "63",
+            "messages": [
+              {
+                "role": "toolResult",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "<harness>\n[error] Validation failed for tool \"document_save\":\n  - source: must be object\n  - source: must be object\n  - source: must be object\n  - source: must match a schema in anyOf\n\nReceived arguments:\n{\n  \"knowledgeBaseId\": \"5a80ac47-a980-46d9-9553-2184f5cde1ae\",\n  \"source\": \"{\\\"kind\\\": \\\"text\\\", \\\"mimeType\\\": \\\"text/plain\\\", \\\"text\\\": \\\"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\\\"}\",\n  \"title\": \"自然语言入口验收\",\n  \"waitFor\": \"indexed\"\n}\n</harness>"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "66",
+            "kind": "pi.assistant",
+            "byTaskId": "65",
+            "messages": [
+              {
+                "role": "assistant",
+                "api": "openai-completions",
+                "provider": "qwen-maas",
+                "model": "qwen3.8-flash",
+                "stopReason": "toolUse",
+                "usage": {
+                  "input": 1286,
+                  "output": 124,
+                  "cacheRead": 2048,
+                  "cacheWrite": 0,
+                  "totalTokens": 3458
+                },
+                "content": [
+                  {
+                    "type": "toolCall",
+                    "name": "document_save",
+                    "arguments": {
+                      "knowledgeBaseId": "5a80ac47-a980-46d9-9553-2184f5cde1ae",
+                      "title": "自然语言入口验收",
+                      "source": "{\"kind\": \"text\", \"text\": \"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\"}"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "68",
+            "kind": "pi.tool-result",
+            "byTaskId": "67",
+            "messages": [
+              {
+                "role": "toolResult",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "<harness>\n[error] Validation failed for tool \"document_save\":\n  - source: must be object\n  - source: must be object\n  - source: must be object\n  - source: must match a schema in anyOf\n\nReceived arguments:\n{\n  \"knowledgeBaseId\": \"5a80ac47-a980-46d9-9553-2184f5cde1ae\",\n  \"title\": \"自然语言入口验收\",\n  \"source\": \"{\\\"kind\\\": \\\"text\\\", \\\"text\\\": \\\"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\\\"}\"\n}\n</harness>"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "70",
+            "kind": "pi.assistant",
+            "byTaskId": "69",
+            "messages": [
+              {
+                "role": "assistant",
+                "api": "openai-completions",
+                "provider": "qwen-maas",
+                "model": "qwen3.8-flash",
+                "stopReason": "toolUse",
+                "usage": {
+                  "input": 567,
+                  "output": 121,
+                  "cacheRead": 3072,
+                  "cacheWrite": 0,
+                  "totalTokens": 3760
+                },
+                "content": [
+                  {
+                    "type": "toolCall",
+                    "name": "document_save",
+                    "arguments": {
+                      "source": "{\"kind\":\"text\",\"text\":\"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\"}",
+                      "knowledgeBaseId": "5a80ac47-a980-46d9-9553-2184f5cde1ae",
+                      "title": "自然语言入口验收"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "72",
+            "kind": "pi.tool-result",
+            "byTaskId": "71",
+            "messages": [
+              {
+                "role": "toolResult",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "<harness>\n[error] Validation failed for tool \"document_save\":\n  - source: must be object\n  - source: must be object\n  - source: must be object\n  - source: must match a schema in anyOf\n\nReceived arguments:\n{\n  \"source\": \"{\\\"kind\\\":\\\"text\\\",\\\"text\\\":\\\"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\\\"}\",\n  \"knowledgeBaseId\": \"5a80ac47-a980-46d9-9553-2184f5cde1ae\",\n  \"title\": \"自然语言入口验收\"\n}\n</harness>"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "74",
+            "kind": "pi.assistant",
+            "byTaskId": "73",
+            "messages": [
+              {
+                "role": "assistant",
+                "api": "openai-completions",
+                "provider": "qwen-maas",
+                "model": "qwen3.8-flash",
+                "stopReason": "toolUse",
+                "usage": {
+                  "input": 354,
+                  "output": 109,
+                  "cacheRead": 3584,
+                  "cacheWrite": 0,
+                  "totalTokens": 4047
+                },
+                "content": [
+                  {
+                    "type": "toolCall",
+                    "name": "document_save",
+                    "arguments": {
+                      "knowledgeBaseId": "5a80ac47-a980-46d9-9553-2184f5cde1ae",
+                      "source": "{\"kind\": \"url\", \"url\": \"https://example.com/nl-2026-001\"}",
+                      "title": "自然语言入口验收"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "76",
+            "kind": "pi.tool-result",
+            "byTaskId": "75",
+            "messages": [
+              {
+                "role": "toolResult",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "<harness>\n[error] Validation failed for tool \"document_save\":\n  - source: must be object\n  - source: must be object\n  - source: must be object\n  - source: must match a schema in anyOf\n\nReceived arguments:\n{\n  \"knowledgeBaseId\": \"5a80ac47-a980-46d9-9553-2184f5cde1ae\",\n  \"source\": \"{\\\"kind\\\": \\\"url\\\", \\\"url\\\": \\\"https://example.com/nl-2026-001\\\"}\",\n  \"title\": \"自然语言入口验收\"\n}\n</harness>"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "78",
+            "kind": "pi.assistant",
+            "byTaskId": "77",
+            "messages": [
+              {
+                "role": "assistant",
+                "api": "openai-completions",
+                "provider": "qwen-maas",
+                "model": "qwen3.8-flash",
+                "stopReason": "toolUse",
+                "usage": {
+                  "input": 629,
+                  "output": 145,
+                  "cacheRead": 3584,
+                  "cacheWrite": 0,
+                  "totalTokens": 4358
+                },
+                "content": [
+                  {
+                    "type": "toolCall",
+                    "name": "document_save",
+                    "arguments": {
+                      "knowledgeBaseId": "5a80ac47-a980-46d9-9553-2184f5cde1ae",
+                      "source": "{\"kind\": \"text\", \"text\": \"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\", \"mimeType\": \"text/markdown\"}",
+                      "title": "自然语言入口验收",
+                      "waitFor": "stored"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "80",
+            "kind": "pi.tool-result",
+            "byTaskId": "79",
+            "messages": [
+              {
+                "role": "toolResult",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "<harness>\n[error] Validation failed for tool \"document_save\":\n  - source: must be object\n  - source: must be object\n  - source: must be object\n  - source: must match a schema in anyOf\n\nReceived arguments:\n{\n  \"knowledgeBaseId\": \"5a80ac47-a980-46d9-9553-2184f5cde1ae\",\n  \"source\": \"{\\\"kind\\\": \\\"text\\\", \\\"text\\\": \\\"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\\\", \\\"mimeType\\\": \\\"text/markdown\\\"}\",\n  \"title\": \"自然语言入口验收\",\n  \"waitFor\": \"stored\"\n}\n</harness>"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "82",
+            "kind": "pi.assistant",
+            "byTaskId": "81",
+            "messages": [
+              {
+                "role": "assistant",
+                "api": "openai-completions",
+                "provider": "qwen-maas",
+                "model": "qwen3.8-flash",
+                "stopReason": "toolUse",
+                "usage": {
+                  "input": 460,
+                  "output": 15,
+                  "cacheRead": 4096,
+                  "cacheWrite": 0,
+                  "totalTokens": 4571
+                },
+                "content": [
+                  {
+                    "type": "toolCall",
+                    "name": "knowledge_base_list",
+                    "arguments": {}
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "86",
+            "kind": "pi.tool-result",
+            "byTaskId": "83",
+            "messages": [
+              {
+                "role": "toolResult",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "{\"result\":{\"knowledgeBases\":[{\"name\":\"跨 Agent 实施验收\",\"knowledgeBaseId\":\"5a80ac47-a980-46d9-9553-2184f5cde1ae\"}]},\"outcome\":\"succeeded\",\"operation\":\"knowledge_base.list\",\"requestId\":\"agt-op-b00fb999-9e75-4882-8cc7-418bf569af48\",\"schemaVersion\":\"1.0\"}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "88",
+            "kind": "pi.assistant",
+            "byTaskId": "87",
+            "messages": [
+              {
+                "role": "assistant",
+                "api": "openai-completions",
+                "provider": "qwen-maas",
+                "model": "qwen3.8-flash",
+                "stopReason": "toolUse",
+                "usage": {
+                  "input": 603,
+                  "output": 58,
+                  "cacheRead": 4096,
+                  "cacheWrite": 0,
+                  "totalTokens": 4757
+                },
+                "content": [
+                  {
+                    "type": "toolCall",
+                    "name": "document_list",
+                    "arguments": {
+                      "knowledgeBaseId": "5a80ac47-a980-46d9-9553-2184f5cde1ae"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "92",
+            "kind": "pi.tool-result",
+            "byTaskId": "89",
+            "messages": [
+              {
+                "role": "toolResult",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "{\"result\":{\"documents\":[{\"tags\":[],\"title\":\"持久任务与恢复规则 v2\",\"version\":2,\"documentId\":\"6da60865-6e26-4c8b-a10f-6ecdc3eea4a0\",\"indexState\":\"ready\"}]},\"outcome\":\"succeeded\",\"operation\":\"document.list\",\"requestId\":\"agt-op-3637c05e-e7a6-4b34-947e-40a7742cc580\",\"schemaVersion\":\"1.0\"}"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "toolTasksFromStorage": [
+          {
+            "taskId": "59",
+            "ownerTaskId": "56",
+            "status": "terminal",
+            "input": {
+              "kind": "model",
+              "assistant": 58,
+              "callId": "call_2a2db87d10fe46a498fae01a"
+            },
+            "outcome": {
+              "status": "completed",
+              "result": {
+                "kind": "model",
+                "entryId": 60
+              }
+            }
+          },
+          {
+            "taskId": "63",
+            "ownerTaskId": "61",
+            "status": "terminal",
+            "input": {
+              "kind": "model",
+              "assistant": 62,
+              "callId": "call_c57c4829db064cf3b9beacab"
+            },
+            "outcome": {
+              "status": "completed",
+              "result": {
+                "kind": "model",
+                "entryId": 64
+              }
+            }
+          },
+          {
+            "taskId": "67",
+            "ownerTaskId": "65",
+            "status": "terminal",
+            "input": {
+              "kind": "model",
+              "assistant": 66,
+              "callId": "call_f8d2bd8bc4744409ad5b245f"
+            },
+            "outcome": {
+              "status": "completed",
+              "result": {
+                "kind": "model",
+                "entryId": 68
+              }
+            }
+          },
+          {
+            "taskId": "71",
+            "ownerTaskId": "69",
+            "status": "terminal",
+            "input": {
+              "kind": "model",
+              "assistant": 70,
+              "callId": "call_5005790fd03f42148d9d0358"
+            },
+            "outcome": {
+              "status": "completed",
+              "result": {
+                "kind": "model",
+                "entryId": 72
+              }
+            }
+          },
+          {
+            "taskId": "75",
+            "ownerTaskId": "73",
+            "status": "terminal",
+            "input": {
+              "kind": "model",
+              "assistant": 74,
+              "callId": "call_4a8e8c8a1c4e44fabf7f5386"
+            },
+            "outcome": {
+              "status": "completed",
+              "result": {
+                "kind": "model",
+                "entryId": 76
+              }
+            }
+          },
+          {
+            "taskId": "79",
+            "ownerTaskId": "77",
+            "status": "terminal",
+            "input": {
+              "kind": "model",
+              "assistant": 78,
+              "callId": "call_788ed480bc3048cc96a3cb89"
+            },
+            "outcome": {
+              "status": "completed",
+              "result": {
+                "kind": "model",
+                "entryId": 80
+              }
+            }
+          },
+          {
+            "taskId": "83",
+            "ownerTaskId": "81",
+            "status": "terminal",
+            "input": {
+              "kind": "model",
+              "assistant": 82,
+              "callId": "call_58cf6b5b7c6b496d8eee88fe"
+            },
+            "outcome": {
+              "status": "completed",
+              "result": {
+                "kind": "model",
+                "entryId": 86
+              }
+            }
+          },
+          {
+            "taskId": "89",
+            "ownerTaskId": "87",
+            "status": "terminal",
+            "input": {
+              "kind": "model",
+              "assistant": 88,
+              "callId": "call_110ee0c1453d45d89071f872"
+            },
+            "outcome": {
+              "status": "completed",
+              "result": {
+                "kind": "model",
+                "entryId": 92
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "error": "Natural A2A task failed: {\"taskId\":\"agt_8edb477a-0955-4b86-83b8-6afaf3b69e92\",\"state\":\"TASK_STATE_FAILED\",\"statusText\":[\"Pi submission ended without an answer (reason=faulted; class=PI_TASK_FAULTED).\"],\"turns\":[{\"turn_no\":1,\"context_id\":\"69e489ce-9d17-46bb-af9e-e15cd8159bac\",\"state\":\"failed\",\"model_requests\":8,\"tool_calls\":2,\"pi_submission_id\":\"55\",\"pi_generation_task_id\":\"56\",\"error_code\":\"PI_SUBMISSION_UNANSWERED\",\"error_message\":\"Pi submission ended without an answer (reason=faulted; class=PI_TASK_FAULTED).\"}],\"actions\":[{\"operation\":\"knowledge_base.list\",\"state\":\"completed\",\"child_task_id\":\"7097e07f-d654-4e81-bfce-67f1262a4786\"},{\"operation\":\"document.list\",\"state\":\"completed\",\"child_task_id\":\"7375cc84-3c77-4376-a22d-890df6423a0f\"}],\"piTasks\":[{\"turnNo\":1,\"piTaskId\":\"56\",\"conversationId\":\"48\",\"outcome\":{\"status\":\"completed\",\"result\":{\"entryId\":58}},\"piEntries\":[{\"id\":\"54\",\"kind\":\"pi-document.a2a-natural\",\"messages\":[{\"role\":\"user\",\"content\":[]}]},{\"id\":\"57\",\"kind\":\"pi.system\",\"byTaskId\":\"56\",\"messages\":[{\"role\":\"system\",\"content\":[]}]},{\"id\":\"58\",\"kind\":\"pi.assistant\",\"byTaskId\":\"56\",\"messages\":[{\"role\":\"assistant\",\"api\":\"openai-completions\",\"provider\":\"qwen-maas\",\"model\":\"qwen3.8-flash\",\"stopReason\":\"toolUse\",\"usage\":{\"input\":845,\"output\":159,\"cacheRead\":1792,\"cacheWrite\":0,\"totalTokens\":2796},\"content\":[{\"type\":\"text\",\"text\":\"I'll save the document first, then search and read it back.\\n\\n\"},{\"type\":\"toolCall\",\"name\":\"document_save\",\"arguments\":{\"knowledgeBaseId\":\"5a80ac47-a980-46d9-9553-2184f5cde1ae\",\"title\":\"自然语言入口验收\",\"source\":\"{\\\"kind\\\": \\\"text\\\", \\\"text\\\": \\\"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\\\", \\\"mimeType\\\": \\\"text/plain\\\"}\",\"waitFor\":\"indexed\"}}]}]},{\"id\":\"60\",\"kind\":\"pi.tool-result\",\"byTaskId\":\"59\",\"messages\":[{\"role\":\"toolResult\",\"content\":[{\"type\":\"text\",\"text\":\"<harness>\\n[error] Validation failed for tool \\\"document_save\\\":\\n  - source: must be object\\n  - source: must be object\\n  - source: must be object\\n  - source: must match a schema in anyOf\\n\\nReceived arguments:\\n{\\n  \\\"knowledgeBaseId\\\": \\\"5a80ac47-a980-46d9-9553-2184f5cde1ae\\\",\\n  \\\"title\\\": \\\"自然语言入口验收\\\",\\n  \\\"source\\\": \\\"{\\\\\\\"kind\\\\\\\": \\\\\\\"text\\\\\\\", \\\\\\\"text\\\\\\\": \\\\\\\"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\\\\\\\", \\\\\\\"mimeType\\\\\\\": \\\\\\\"text/plain\\\\\\\"}\\\",\\n  \\\"waitFor\\\": \\\"indexed\\\"\\n}\\n</harness>\"}]}]},{\"id\":\"62\",\"kind\":\"pi.assistant\",\"byTaskId\":\"61\",\"messages\":[{\"role\":\"assistant\",\"api\":\"openai-completions\",\"provider\":\"qwen-maas\",\"model\":\"qwen3.8-flash\",\"stopReason\":\"toolUse\",\"usage\":{\"input\":945,\"output\":144,\"cacheRead\":2048,\"cacheWrite\":0,\"totalTokens\":3137},\"content\":[{\"type\":\"toolCall\",\"name\":\"document_save\",\"arguments\":{\"knowledgeBaseId\":\"5a80ac47-a980-46d9-9553-2184f5cde1ae\",\"source\":\"{\\\"kind\\\": \\\"text\\\", \\\"mimeType\\\": \\\"text/plain\\\", \\\"text\\\": \\\"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\\\"}\",\"title\":\"自然语言入口验收\",\"waitFor\":\"indexed\"}}]}]},{\"id\":\"64\",\"kind\":\"pi.tool-result\",\"byTaskId\":\"63\",\"messages\":[{\"role\":\"toolResult\",\"content\":[{\"type\":\"text\",\"text\":\"<harness>\\n[error] Validation failed for tool \\\"document_save\\\":\\n  - source: must be object\\n  - source: must be object\\n  - source: must be object\\n  - source: must match a schema in anyOf\\n\\nReceived arguments:\\n{\\n  \\\"knowledgeBaseId\\\": \\\"5a80ac47-a980-46d9-9553-2184f5cde1ae\\\",\\n  \\\"source\\\": \\\"{\\\\\\\"kind\\\\\\\": \\\\\\\"text\\\\\\\", \\\\\\\"mimeType\\\\\\\": \\\\\\\"text/plain\\\\\\\", \\\\\\\"text\\\\\\\": \\\\\\\"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\\\\\\\"}\\\",\\n  \\\"title\\\": \\\"自然语言入口验收\\\",\\n  \\\"waitFor\\\": \\\"indexed\\\"\\n}\\n</harness>\"}]}]},{\"id\":\"66\",\"kind\":\"pi.assistant\",\"byTaskId\":\"65\",\"messages\":[{\"role\":\"assistant\",\"api\":\"openai-completions\",\"provider\":\"qwen-maas\",\"model\":\"qwen3.8-flash\",\"stopReason\":\"toolUse\",\"usage\":{\"input\":1286,\"output\":124,\"cacheRead\":2048,\"cacheWrite\":0,\"totalTokens\":3458},\"content\":[{\"type\":\"toolCall\",\"name\":\"document_save\",\"arguments\":{\"knowledgeBaseId\":\"5a80ac47-a980-46d9-9553-2184f5cde1ae\",\"title\":\"自然语言入口验收\",\"source\":\"{\\\"kind\\\": \\\"text\\\", \\\"text\\\": \\\"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\\\"}\"}}]}]},{\"id\":\"68\",\"kind\":\"pi.tool-result\",\"byTaskId\":\"67\",\"messages\":[{\"role\":\"toolResult\",\"content\":[{\"type\":\"text\",\"text\":\"<harness>\\n[error] Validation failed for tool \\\"document_save\\\":\\n  - source: must be object\\n  - source: must be object\\n  - source: must be object\\n  - source: must match a schema in anyOf\\n\\nReceived arguments:\\n{\\n  \\\"knowledgeBaseId\\\": \\\"5a80ac47-a980-46d9-9553-2184f5cde1ae\\\",\\n  \\\"title\\\": \\\"自然语言入口验收\\\",\\n  \\\"source\\\": \\\"{\\\\\\\"kind\\\\\\\": \\\\\\\"text\\\\\\\", \\\\\\\"text\\\\\\\": \\\\\\\"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\\\\\\\"}\\\"\\n}\\n</harness>\"}]}]},{\"id\":\"70\",\"kind\":\"pi.assistant\",\"byTaskId\":\"69\",\"messages\":[{\"role\":\"assistant\",\"api\":\"openai-completions\",\"provider\":\"qwen-maas\",\"model\":\"qwen3.8-flash\",\"stopReason\":\"toolUse\",\"usage\":{\"input\":567,\"output\":121,\"cacheRead\":3072,\"cacheWrite\":0,\"totalTokens\":3760},\"content\":[{\"type\":\"toolCall\",\"name\":\"document_save\",\"arguments\":{\"source\":\"{\\\"kind\\\":\\\"text\\\",\\\"text\\\":\\\"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\\\"}\",\"knowledgeBaseId\":\"5a80ac47-a980-46d9-9553-2184f5cde1ae\",\"title\":\"自然语言入口验收\"}}]}]},{\"id\":\"72\",\"kind\":\"pi.tool-result\",\"byTaskId\":\"71\",\"messages\":[{\"role\":\"toolResult\",\"content\":[{\"type\":\"text\",\"text\":\"<harness>\\n[error] Validation failed for tool \\\"document_save\\\":\\n  - source: must be object\\n  - source: must be object\\n  - source: must be object\\n  - source: must match a schema in anyOf\\n\\nReceived arguments:\\n{\\n  \\\"source\\\": \\\"{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"text\\\\\\\":\\\\\\\"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\\\\\\\"}\\\",\\n  \\\"knowledgeBaseId\\\": \\\"5a80ac47-a980-46d9-9553-2184f5cde1ae\\\",\\n  \\\"title\\\": \\\"自然语言入口验收\\\"\\n}\\n</harness>\"}]}]},{\"id\":\"74\",\"kind\":\"pi.assistant\",\"byTaskId\":\"73\",\"messages\":[{\"role\":\"assistant\",\"api\":\"openai-completions\",\"provider\":\"qwen-maas\",\"model\":\"qwen3.8-flash\",\"stopReason\":\"toolUse\",\"usage\":{\"input\":354,\"output\":109,\"cacheRead\":3584,\"cacheWrite\":0,\"totalTokens\":4047},\"content\":[{\"type\":\"toolCall\",\"name\":\"document_save\",\"arguments\":{\"knowledgeBaseId\":\"5a80ac47-a980-46d9-9553-2184f5cde1ae\",\"source\":\"{\\\"kind\\\": \\\"url\\\", \\\"url\\\": \\\"https://example.com/nl-2026-001\\\"}\",\"title\":\"自然语言入口验收\"}}]}]},{\"id\":\"76\",\"kind\":\"pi.tool-result\",\"byTaskId\":\"75\",\"messages\":[{\"role\":\"toolResult\",\"content\":[{\"type\":\"text\",\"text\":\"<harness>\\n[error] Validation failed for tool \\\"document_save\\\":\\n  - source: must be object\\n  - source: must be object\\n  - source: must be object\\n  - source: must match a schema in anyOf\\n\\nReceived arguments:\\n{\\n  \\\"knowledgeBaseId\\\": \\\"5a80ac47-a980-46d9-9553-2184f5cde1ae\\\",\\n  \\\"source\\\": \\\"{\\\\\\\"kind\\\\\\\": \\\\\\\"url\\\\\\\", \\\\\\\"url\\\\\\\": \\\\\\\"https://example.com/nl-2026-001\\\\\\\"}\\\",\\n  \\\"title\\\": \\\"自然语言入口验收\\\"\\n}\\n</harness>\"}]}]},{\"id\":\"78\",\"kind\":\"pi.assistant\",\"byTaskId\":\"77\",\"messages\":[{\"role\":\"assistant\",\"api\":\"openai-completions\",\"provider\":\"qwen-maas\",\"model\":\"qwen3.8-flash\",\"stopReason\":\"toolUse\",\"usage\":{\"input\":629,\"output\":145,\"cacheRead\":3584,\"cacheWrite\":0,\"totalTokens\":4358},\"content\":[{\"type\":\"toolCall\",\"name\":\"document_save\",\"arguments\":{\"knowledgeBaseId\":\"5a80ac47-a980-46d9-9553-2184f5cde1ae\",\"source\":\"{\\\"kind\\\": \\\"text\\\", \\\"text\\\": \\\"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\\\", \\\"mimeType\\\": \\\"text/markdown\\\"}\",\"title\":\"自然语言入口验收\",\"waitFor\":\"stored\"}}]}]},{\"id\":\"80\",\"kind\":\"pi.tool-result\",\"byTaskId\":\"79\",\"messages\":[{\"role\":\"toolResult\",\"content\":[{\"type\":\"text\",\"text\":\"<harness>\\n[error] Validation failed for tool \\\"document_save\\\":\\n  - source: must be object\\n  - source: must be object\\n  - source: must be object\\n  - source: must match a schema in anyOf\\n\\nReceived arguments:\\n{\\n  \\\"knowledgeBaseId\\\": \\\"5a80ac47-a980-46d9-9553-2184f5cde1ae\\\",\\n  \\\"source\\\": \\\"{\\\\\\\"kind\\\\\\\": \\\\\\\"text\\\\\\\", \\\\\\\"text\\\\\\\": \\\\\\\"自然语言入口 NL-2026-001：重新启动后复用持久检查点，保存成功后必须能查到同一版本原文。\\\\\\\", \\\\\\\"mimeType\\\\\\\": \\\\\\\"text/markdown\\\\\\\"}\\\",\\n  \\\"title\\\": \\\"自然语言入口验收\\\",\\n  \\\"waitFor\\\": \\\"stored\\\"\\n}\\n</harness>\"}]}]},{\"id\":\"82\",\"kind\":\"pi.assistant\",\"byTaskId\":\"81\",\"messages\":[{\"role\":\"assistant\",\"api\":\"openai-completions\",\"provider\":\"qwen-maas\",\"model\":\"qwen3.8-flash\",\"stopReason\":\"toolUse\",\"usage\":{\"input\":460,\"output\":15,\"cacheRead\":4096,\"cacheWrite\":0,\"totalTokens\":4571},\"content\":[{\"type\":\"toolCall\",\"name\":\"knowledge_base_list\",\"arguments\":{}}]}]},{\"id\":\"86\",\"kind\":\"pi.tool-result\",\"byTaskId\":\"83\",\"messages\":[{\"role\":\"toolResult\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"result\\\":{\\\"knowledgeBases\\\":[{\\\"name\\\":\\\"跨 Agent 实施验收\\\",\\\"knowledgeBaseId\\\":\\\"5a80ac47-a980-46d9-9553-2184f5cde1ae\\\"}]},\\\"outcome\\\":\\\"succeeded\\\",\\\"operation\\\":\\\"knowledge_base.list\\\",\\\"requestId\\\":\\\"agt-op-b00fb999-9e75-4882-8cc7-418bf569af48\\\",\\\"schemaVersion\\\":\\\"1.0\\\"}\"}]}]},{\"id\":\"88\",\"kind\":\"pi.assistant\",\"byTaskId\":\"87\",\"messages\":[{\"role\":\"assistant\",\"api\":\"openai-completions\",\"provider\":\"qwen-maas\",\"model\":\"qwen3.8-flash\",\"stopReason\":\"toolUse\",\"usage\":{\"input\":603,\"output\":58,\"cacheRead\":4096,\"cacheWrite\":0,\"totalTokens\":4757},\"content\":[{\"type\":\"toolCall\",\"name\":\"document_list\",\"arguments\":{\"knowledgeBaseId\":\"5a80ac47-a980-46d9-9553-2184f5cde1ae\"}}]}]},{\"id\":\"92\",\"kind\":\"pi.tool-result\",\"byTaskId\":\"89\",\"messages\":[{\"role\":\"toolResult\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"result\\\":{\\\"documents\\\":[{\\\"tags\\\":[],\\\"title\\\":\\\"持久任务与恢复规则 v2\\\",\\\"version\\\":2,\\\"documentId\\\":\\\"6da60865-6e26-4c8b-a10f-6ecdc3eea4a0\\\",\\\"indexState\\\":\\\"ready\\\"}]},\\\"outcome\\\":\\\"succeeded\\\",\\\"operation\\\":\\\"document.list\\\",\\\"requestId\\\":\\\"agt-op-3637c05e-e7a6-4b34-947e-40a7742cc580\\\",\\\"schemaVersion\\\":\\\"1.0\\\"}\"}]}]}]}]}",
+  "trace": [
+    {
+      "client": "sdk",
+      "operation": "knowledge_base.create",
+      "taskId": "42ea5a25-b934-4a0f-9037-d656ffc58e69",
+      "state": 3
+    },
+    {
+      "client": "sdk",
+      "operation": "document.save",
+      "taskId": "1249529a-11b0-4d39-b667-c80fdae5d97f",
+      "state": 3
+    },
+    {
+      "client": "fetch",
+      "operation": "document.search",
+      "taskId": "ed0945ea-95fe-455a-b8c5-364efca0436f",
+      "hit": {
+        "rank": 1,
+        "score": 0.03278688524590164,
+        "title": "持久任务与恢复规则",
+        "chunkId": "67b26c3646e3de44e4136e21100e8db9a0a30462",
+        "locator": {
+          "kind": "text_span",
+          "endLine": 2,
+          "endOffset": 60,
+          "startLine": 2,
+          "startOffset": 17
+        },
+        "snippet": "进程被终止后，服务从持久检查点继续任务。同一请求重试应复用原有收据，不能重复创建文档。",
+        "version": 1,
+        "scoreType": "rrf",
+        "contentUri": "http://127.0.0.1:49201/v1/documents/6da60865-6e26-4c8b-a10f-6ecdc3eea4a0/content?version=1",
+        "documentId": "6da60865-6e26-4c8b-a10f-6ecdc3eea4a0",
+        "generationId": "0b3c4fcac34597d203e5c0bf9d9044244c081eff46a912d9"
+      },
+      "degraded": true
+    },
+    {
+      "client": "sdk",
+      "operation": "document.update",
+      "taskId": "bbd3dd03-4611-42a1-9804-03ff7e5c3acf",
+      "state": 3
+    },
+    {
+      "client": "sdk",
+      "operation": "document.update",
+      "documentId": "6da60865-6e26-4c8b-a10f-6ecdc3eea4a0",
+      "version": 2
+    },
+    {
+      "client": "fetch",
+      "operation": "document.search.v2",
+      "taskId": "f1f39d20-3804-41ab-9c9a-6637e3844add",
+      "hit": {
+        "rank": 1,
+        "score": 0.03278688524590164,
+        "title": "持久任务与恢复规则 v2",
+        "chunkId": "1edcffbde513c952d0c83ef43f5cceb6ac3c104e",
+        "locator": {
+          "kind": "text_span",
+          "endLine": 1,
+          "endOffset": 16,
+          "startLine": 1,
+          "startOffset": 0
+        },
+        "snippet": "PI-2026-001 故障恢复",
+        "version": 2,
+        "scoreType": "rrf",
+        "contentUri": "http://127.0.0.1:49201/v1/documents/6da60865-6e26-4c8b-a10f-6ecdc3eea4a0/content?version=2",
+        "documentId": "6da60865-6e26-4c8b-a10f-6ecdc3eea4a0",
+        "generationId": "890ff615b1620cb19a5327373bcbde8a0aee805f78c5d327"
+      }
+    }
+  ],
+  "debugPiStorage": {
+    "files": [
+      "data/debug-natural/2026-10-16T04-47-01-132Z-9b79d053-pi.sqlite"
+    ],
+    "permissions": "directory 0700; files 0600; local ignored data/"
+  }
+}

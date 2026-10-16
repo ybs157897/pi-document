@@ -1,0 +1,577 @@
+{
+  "recordedAt": "2026-10-16T07:16:37.323Z",
+  "scope": "P0 local service plus AC-29 management UI; no other P1/P2, public deployment, or WeKnora quality-parity claim",
+  "status": "passed",
+  "gates": {
+    "product": "passed",
+    "install": "passed",
+    "quality": "passed",
+    "live": "passed",
+    "natural": "passed",
+    "caller": "passed",
+    "faults": "passed",
+    "cancel": "passed",
+    "backup": "passed",
+    "load": "passed",
+    "indexing": "passed",
+    "ui": "passed"
+  },
+  "checks": [
+    {
+      "id": "AC-01",
+      "name": "精确依赖与干净安装",
+      "status": "passed",
+      "requires": {
+        "install": "passed"
+      },
+      "evidence": [
+        "evidence/m0/clean-install.json",
+        "evidence/m0/manifest.json"
+      ],
+      "limitation": "真实 Pi SQLite open/close，独立空目录 npm ci。"
+    },
+    {
+      "id": "AC-02",
+      "name": "独立 A2A 客户端与协议",
+      "status": "passed",
+      "requires": {
+        "product": "passed",
+        "live": "passed"
+      },
+      "evidence": [
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log",
+        "evidence/m0/a2a-runtime.json",
+        "evidence/m2/live-service.json"
+      ],
+      "limitation": "JS SDK、原生 HTTP/SSE、Python；未运行官方 TCK。"
+    },
+    {
+      "id": "AC-03",
+      "name": "脱离 WeKnora 独立运行",
+      "status": "passed",
+      "requires": {
+        "product": "passed",
+        "live": "passed"
+      },
+      "evidence": [
+        "evidence/m2/live-service.json",
+        "evidence/final/dev-startup.json"
+      ],
+      "limitation": "独立 Pi/PG/blob；没有使用 WeKnora 服务。"
+    },
+    {
+      "id": "AC-04",
+      "name": "创建知识库并保存 Markdown",
+      "status": "passed",
+      "requires": {
+        "product": "passed",
+        "live": "passed",
+        "caller": "passed"
+      },
+      "evidence": [
+        "evidence/m2/live-service.json",
+        "evidence/m4/caller-agent.json"
+      ],
+      "limitation": "收据、documentId/version/hash 与原文读回。"
+    },
+    {
+      "id": "AC-05",
+      "name": "20 次重试与自然 action 幂等",
+      "status": "passed",
+      "requires": {
+        "product": "passed",
+        "natural": "passed"
+      },
+      "evidence": [
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log",
+        "evidence/m4/natural-live.json"
+      ],
+      "limitation": "请求收据与 action hash；不承诺供应商外部调用 exactly-once。"
+    },
+    {
+      "id": "AC-06",
+      "name": "异参冲突与跨主体隔离",
+      "status": "passed",
+      "requires": {
+        "product": "passed"
+      },
+      "evidence": [
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log"
+      ],
+      "limitation": "同键异参冲突；主体间 request/context/task 不串用。"
+    },
+    {
+      "id": "AC-07",
+      "name": "五种格式及定位",
+      "status": "passed",
+      "requires": {
+        "product": "passed",
+        "quality": "passed"
+      },
+      "evidence": [
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log",
+        "evidence/evaluation/retrieval-2026-10-16T05-13-53-360Z-156014/report.json"
+      ],
+      "limitation": "100 份主语料与独立20 HTML快照；不含OCR。"
+    },
+    {
+      "id": "AC-08",
+      "name": "stored 与 indexed 语义",
+      "status": "passed",
+      "requires": {
+        "product": "passed"
+      },
+      "evidence": [
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log"
+      ],
+      "limitation": "stored 公开 ingestionTaskId，索引完成后才返回 ready。"
+    },
+    {
+      "id": "AC-09",
+      "name": "混合检索与结构化结果",
+      "status": "passed",
+      "requires": {
+        "product": "passed",
+        "live": "passed"
+      },
+      "evidence": [
+        "evidence/m2/live-service.json",
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log"
+      ],
+      "limitation": "真实 pgvector/Embedding；空词法结果与基础设施失败区分。"
+    },
+    {
+      "id": "AC-10",
+      "name": "冻结质量指标",
+      "status": "passed",
+      "requires": {
+        "quality": "passed"
+      },
+      "evidence": [
+        "evidence/evaluation/retrieval-2026-10-16T05-13-53-360Z-156014/report.json",
+        "evidence/evaluation/independent-fixture-review.json"
+      ],
+      "limitation": "85 个有权有答案查询作宏平均；无答案误报单列。"
+    },
+    {
+      "id": "AC-11",
+      "name": "引用与版本映射",
+      "status": "passed",
+      "requires": {
+        "quality": "passed"
+      },
+      "evidence": [
+        "evidence/evaluation/retrieval-2026-10-16T05-13-53-360Z-156014/report.json"
+      ],
+      "limitation": "逐条读回并对照相同版本字节hash和source locator。"
+    },
+    {
+      "id": "AC-12",
+      "name": "Embedding/Rerank 降级",
+      "status": "passed",
+      "requires": {
+        "product": "passed"
+      },
+      "evidence": [
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log"
+      ],
+      "limitation": "Embedding失败回退词法；PG查询失败明确失败。Rerank未配置，不宣称真实Reranker超时验收。"
+    },
+    {
+      "id": "AC-13",
+      "name": "topK/filter/分页",
+      "status": "passed",
+      "requires": {
+        "product": "passed"
+      },
+      "evidence": [
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log"
+      ],
+      "limitation": "有界SQL分页、identity/filter绑定、快照与临时cursor过期清理。"
+    },
+    {
+      "id": "AC-14",
+      "name": "权限与资源隔离",
+      "status": "passed",
+      "requires": {
+        "product": "passed",
+        "live": "passed",
+        "natural": "passed"
+      },
+      "evidence": [
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log",
+        "evidence/m2/live-service.json",
+        "evidence/m4/natural-live.json"
+      ],
+      "limitation": "当前ACL覆盖task、SSE、upload、缓存与引用；自然失败无正文结果不污染会话。"
+    },
+    {
+      "id": "AC-15",
+      "name": "URL SSRF 与来源",
+      "status": "passed",
+      "requires": {
+        "product": "passed"
+      },
+      "evidence": [
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log"
+      ],
+      "limitation": "每跳DNS/IP固定、连接地址验证、重定向/大小/媒体限制；真实example.com来源。"
+    },
+    {
+      "id": "AC-16",
+      "name": "更新与并发CAS",
+      "status": "passed",
+      "requires": {
+        "product": "passed",
+        "quality": "passed",
+        "live": "passed"
+      },
+      "evidence": [
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log",
+        "evidence/evaluation/retrieval-2026-10-16T05-13-53-360Z-156014/report.json",
+        "evidence/m2/live-service.json"
+      ],
+      "limitation": "构建期间保留v1，发布后v2，十个版本夹具真实更新。"
+    },
+    {
+      "id": "AC-17",
+      "name": "删除/tombstone/purge",
+      "status": "passed",
+      "requires": {
+        "product": "passed",
+        "cancel": "passed"
+      },
+      "evidence": [
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log",
+        "evidence/m3/cancel-delete-crashes.json"
+      ],
+      "limitation": "立即隐藏与共享blob清理；自然删除返回安全收据并关闭旧context。"
+    },
+    {
+      "id": "AC-18",
+      "name": "终态任务重启可查",
+      "status": "passed",
+      "requires": {
+        "product": "passed",
+        "faults": "passed"
+      },
+      "evidence": [
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log",
+        "evidence/m3/crash-matrix.json"
+      ],
+      "limitation": "实际Pi SQLite与PG重开，不重复已完成写入。"
+    },
+    {
+      "id": "AC-19",
+      "name": "十个故障窗口标签",
+      "status": "passed",
+      "requires": {
+        "faults": "passed",
+        "cancel": "passed"
+      },
+      "evidence": [
+        "evidence/m3/crash-matrix.json",
+        "evidence/m3/cancel-delete-crashes.json"
+      ],
+      "limitation": "30次真实SIGKILL；outbox-handled与Pi commit后PG ACK前共享物理边界。"
+    },
+    {
+      "id": "AC-20",
+      "name": "真实 Pi 模型工具调用",
+      "status": "passed",
+      "requires": {
+        "caller": "passed",
+        "natural": "passed"
+      },
+      "evidence": [
+        "evidence/m4/caller-agent.json",
+        "evidence/m4/natural-live.json"
+      ],
+      "limitation": "qwen3.8-flash；外部调用方和服务TextPart分别验证。"
+    },
+    {
+      "id": "AC-21",
+      "name": "取消与断流分离",
+      "status": "passed",
+      "requires": {
+        "product": "passed",
+        "cancel": "passed"
+      },
+      "evidence": [
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log",
+        "evidence/m3/cancel-delete-crashes.json"
+      ],
+      "limitation": "断流不取消；取消fence禁止后续发布，读取主体可取消自己的任务。"
+    },
+    {
+      "id": "AC-22",
+      "name": "恶意/损坏/空/超限",
+      "status": "passed",
+      "requires": {
+        "product": "passed"
+      },
+      "evidence": [
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log"
+      ],
+      "limitation": "真实格式负例与worker资源/网络约束；macOS网络隔离，不是filesystem sandbox。"
+    },
+    {
+      "id": "AC-23",
+      "name": "提示注入隔离",
+      "status": "passed",
+      "requires": {
+        "product": "passed",
+        "natural": "passed"
+      },
+      "evidence": [
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log",
+        "evidence/m4/natural-live.json"
+      ],
+      "limitation": "领域授权、明确写意图/否定检查；真实工具轨迹检查无越权写操作。"
+    },
+    {
+      "id": "AC-24",
+      "name": "性能和有界预算",
+      "status": "passed",
+      "requires": {
+        "product": "passed",
+        "load": "passed",
+        "indexing": "passed"
+      },
+      "evidence": [
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log",
+        "evidence/performance/load-10min.json",
+        "evidence/performance/indexing.json"
+      ],
+      "limitation": "10k chunks/5客户端/10分钟；合成重复尺寸夹具。请求/token/时长有界，币种账单硬限额未配置。"
+    },
+    {
+      "id": "AC-25",
+      "name": "三存储备份恢复",
+      "status": "passed",
+      "requires": {
+        "product": "passed",
+        "backup": "passed"
+      },
+      "evidence": [
+        "evidence/m4/backup-restore.json",
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log"
+      ],
+      "limitation": "离线逻辑快照、备份后修改、空目标恢复、旧任务/引用与新写；不保证掉电零丢失。"
+    },
+    {
+      "id": "AC-26",
+      "name": "两Agent完整链路及接入",
+      "status": "passed",
+      "requires": {
+        "live": "passed",
+        "natural": "passed",
+        "caller": "passed"
+      },
+      "evidence": [
+        "evidence/m2/live-service.json",
+        "evidence/m4/natural-live.json",
+        "evidence/m4/caller-agent.json",
+        "examples/clients/README.md"
+      ],
+      "limitation": "writer保存/更新，reader搜索/引用，撤权后拒绝访问。"
+    },
+    {
+      "id": "AC-29",
+      "name": "管理 UI",
+      "status": "passed",
+      "requires": {
+        "product": "passed",
+        "ui": "passed"
+      },
+      "evidence": [
+        "evidence/final/product-tests.json",
+        "evidence/final/product-tests.log",
+        "evidence/ui/browser.json",
+        "docs/12-management-ui.md"
+      ],
+      "limitation": "本地同源管理界面；浏览器实测建库、上传、引用、版本、删除、权限和重试。不代表其余 P1/P2 已完成。"
+    }
+  ],
+  "evaluation": {
+    "path": "evidence/evaluation/retrieval-2026-10-16T05-13-53-360Z-156014/report.json",
+    "summary": {
+      "status": "passed",
+      "expectedQueryCount": 100,
+      "expectedLiveQueryCount": 100,
+      "completedQueryCount": 100,
+      "failedQueryCount": 0,
+      "supportCoverageFailureQueryCount": 0,
+      "notRunQueryCount": 0,
+      "answerableAuthorizedQueryCount": 85,
+      "completedAnswerableQueryCount": 85,
+      "scoreCoverageComplete": true,
+      "supportCoverage": {
+        "expectedPassageCount": 105,
+        "locatorOverlapPassageCount": 105,
+        "locatorOverlapRate": 1,
+        "fullSnippetPassageCount": 105,
+        "fullSnippetRate": 1,
+        "unknownPassageCount": 0
+      },
+      "supportCoveragePass": true,
+      "metrics": {
+        "overall": {
+          "queryCount": 85,
+          "recallAt10": 1,
+          "mrrAt10": 1
+        },
+        "byLanguage": {
+          "en": {
+            "queryCount": 25,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "mixed": {
+            "queryCount": 9,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "zh": {
+            "queryCount": 51,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          }
+        },
+        "byFormat": {
+          "docx": {
+            "queryCount": 16,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "md": {
+            "queryCount": 30,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "pdf": {
+            "queryCount": 16,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "txt": {
+            "queryCount": 25,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          }
+        },
+        "byCategory": {
+          "cross_passage_document": {
+            "queryCount": 20,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "exact": {
+            "queryCount": 20,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "filter_permission": {
+            "queryCount": 5,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "no_answer": {
+            "queryCount": 0,
+            "recallAt10": null,
+            "mrrAt10": null
+          },
+          "synonym": {
+            "queryCount": 30,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "version": {
+            "queryCount": 10,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          }
+        },
+        "bySplit": {
+          "blind": {
+            "queryCount": 17,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          },
+          "development": {
+            "queryCount": 68,
+            "recallAt10": 1,
+            "mrrAt10": 1
+          }
+        },
+        "blind": {
+          "queryCount": 17,
+          "recallAt10": 1,
+          "mrrAt10": 1
+        }
+      },
+      "noAnswer": {
+        "queryCount": 10,
+        "falsePositiveQueryCount": 10,
+        "falsePositiveRate": 1
+      },
+      "permission": {
+        "queryCount": 5,
+        "deniedQueryCount": 5,
+        "leakageQueryCount": 0
+      },
+      "degradation": {
+        "degradedQueryCount": 95,
+        "reasons": {
+          "reranker_not_configured": 95
+        }
+      },
+      "citations": {
+        "verifiedHitCount": 927,
+        "failedHitCount": 0,
+        "verifiedRate": 1
+      },
+      "thresholds": {
+        "recallAt10": 0.9,
+        "mrrAt10": 0.75,
+        "supportCoverage": 1,
+        "overallPass": true
+      },
+      "qualityGatePass": true,
+      "acceptancePass": true,
+      "limitations": [
+        "Scores describe this frozen synthetic fixture only and do not establish retrieval quality on real enterprise documents.",
+        "Version queries target v2 after the v1-to-v2 update flow; unexecuted or failed answerable rows remain in the core denominator with zero score.",
+        "No-answer false positives are reported separately and are excluded from Recall@10 and MRR@10.",
+        "Permission checks are reported as denials/leaks separately and are excluded from the quality denominator."
+      ],
+      "htmlSnapshotGatePass": true
+    }
+  },
+  "limitations": [
+    "A2A TCK not_run",
+    "WeKnora quality comparison not_run",
+    "No production TLS/SSO deployment",
+    "No host power-loss durability claim",
+    "No true reranker service configured",
+    "No-answer retrieval returns similar candidates; it is not answer abstention"
+  ]
+}

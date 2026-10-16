@@ -1,0 +1,73 @@
+{
+  "failed": {
+    "id": "9cd59f56-e21b-44c1-9191-62e2fe675fdf",
+    "contextId": "0127c254-9b58-45b1-b158-78de72bf73a1",
+    "status": {
+      "state": "TASK_STATE_FAILED",
+      "timestamp": "2026-10-16T06:47:53.501Z"
+    },
+    "artifacts": [
+      {
+        "artifactId": "result-9cd59f56-e21b-44c1-9191-62e2fe675fdf",
+        "name": "document.save result",
+        "parts": [
+          {
+            "data": {
+              "error": {
+                "code": "EMBEDDING_RETRY_EXHAUSTED",
+                "message": "Embedding request failed after 5 attempts (HTTP 503).",
+                "retryable": true
+              },
+              "outcome": "failed",
+              "operation": "document.save",
+              "requestId": "2c073ad3-86a7-4ae7-a3a7-bafe61aa5f27",
+              "schemaVersion": "1.0"
+            },
+            "mediaType": "application/json"
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "operation": "document.save",
+      "requestId": "2c073ad3-86a7-4ae7-a3a7-bafe61aa5f27"
+    }
+  },
+  "retried": {
+    "id": "33cc12b5-8605-4f3b-9b90-9f65a4690f9c",
+    "contextId": "0127c254-9b58-45b1-b158-78de72bf73a1",
+    "status": {
+      "state": "TASK_STATE_COMPLETED",
+      "timestamp": "2026-10-16T06:49:19.150Z"
+    },
+    "artifacts": [
+      {
+        "artifactId": "result-33cc12b5-8605-4f3b-9b90-9f65a4690f9c",
+        "name": "document.save result",
+        "parts": [
+          {
+            "data": {
+              "result": {
+                "sha256": "787ff932e6ea592b9a001ef050cf8aadc72cb5ee401cdfcd51aeb90b520c334b",
+                "version": 1,
+                "documentId": "81673790-32c7-438f-b217-11ea2dd14848",
+                "indexState": "ready",
+                "generationId": "defa80519c807bd79e741abe223432deaadda75167df4a9b",
+                "knowledgeBaseId": "807d36c8-2028-4135-ba29-89c707c11f58"
+              },
+              "outcome": "succeeded",
+              "operation": "document.save",
+              "requestId": "931e7705-25c3-4fdf-86c3-0491afb8a417",
+              "schemaVersion": "1.0"
+            },
+            "mediaType": "application/json"
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "operation": "document.save",
+      "requestId": "931e7705-25c3-4fdf-86c3-0491afb8a417"
+    }
+  }
+}

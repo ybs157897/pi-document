@@ -1,0 +1,141 @@
+{
+  "status": "passed",
+  "provider": "qwen-maas",
+  "modelId": "qwen3.8-flash",
+  "modelRequests": 3,
+  "toolCalls": 3,
+  "trace": [
+    {
+      "name": "document_save",
+      "piToolTaskId": 12,
+      "result": {
+        "result": {
+          "sha256": "1d9890455f28288ea0dcb2e4322c103a5a5a1934cbe1a0a095ed7e8e981d37ae",
+          "version": 1,
+          "documentId": "0b15c654-cb5a-4ee2-909e-e87634a8a15a",
+          "indexState": "ready",
+          "generationId": "43df2bcf7140d0190c4519f02f9d320a1c03c979d6509de8",
+          "knowledgeBaseId": "9015beea-4a85-495e-9445-30d315dfebc1"
+        },
+        "outcome": "succeeded",
+        "operation": "document.save",
+        "requestId": "caller-save-63c70ff2d9edf0892ec181e2737ab8665e6b8028d73b1fb9f67f29b7c19e0c13",
+        "schemaVersion": "1.0"
+      }
+    },
+    {
+      "name": "document_search",
+      "piToolTaskId": 16,
+      "result": {
+        "result": {
+          "query": "CALLER-2026-017 重复工单与重启后的索引如何处理",
+          "results": [
+            {
+              "rank": 1,
+              "score": 0.01639344262295082,
+              "title": "调用方 Agent 验收",
+              "chunkId": "2385ef0a3b5e444291897530345f81a675a170dd",
+              "locator": {
+                "kind": "text_span",
+                "endLine": 1,
+                "endOffset": 54,
+                "startLine": 1,
+                "startOffset": 0
+              },
+              "snippet": "验收编号 CALLER-2026-017。工单重复提交时必须返回原任务；服务重新启动后继续未完成的资料索引。",
+              "version": 1,
+              "scoreType": "rrf",
+              "contentUri": "http://127.0.0.1:64457/v1/documents/0b15c654-cb5a-4ee2-909e-e87634a8a15a/content?version=1",
+              "documentId": "0b15c654-cb5a-4ee2-909e-e87634a8a15a",
+              "generationId": "43df2bcf7140d0190c4519f02f9d320a1c03c979d6509de8"
+            },
+            {
+              "rank": 2,
+              "score": 0.016129032258064516,
+              "title": "持久任务与恢复规则",
+              "chunkId": "f96e6d8b069b5e8e791226b19a9b63d47c5bdf68",
+              "locator": {
+                "kind": "text_span",
+                "endLine": 1,
+                "endOffset": 16,
+                "startLine": 1,
+                "startOffset": 0
+              },
+              "snippet": "PI-2026-001 故障恢复",
+              "version": 1,
+              "scoreType": "rrf",
+              "contentUri": "http://127.0.0.1:64457/v1/documents/ef6af1a2-a2c7-41c5-8f45-c3672307e507/content?version=1",
+              "documentId": "ef6af1a2-a2c7-41c5-8f45-c3672307e507",
+              "generationId": "f45d662c3b6f5923d5f9ecd92a32079f17880a23af4345cf"
+            },
+            {
+              "rank": 3,
+              "score": 0.015873015873015872,
+              "title": "持久任务与恢复规则",
+              "chunkId": "6c3c5efd42ffd1e9838d0b2825ca4134b50b7ff1",
+              "locator": {
+                "kind": "text_span",
+                "endLine": 2,
+                "endOffset": 60,
+                "startLine": 2,
+                "startOffset": 17
+              },
+              "snippet": "进程被终止后，服务从持久检查点继续任务。同一请求重试应复用原有收据，不能重复创建文档。",
+              "version": 1,
+              "scoreType": "rrf",
+              "contentUri": "http://127.0.0.1:64457/v1/documents/ef6af1a2-a2c7-41c5-8f45-c3672307e507/content?version=1",
+              "documentId": "ef6af1a2-a2c7-41c5-8f45-c3672307e507",
+              "generationId": "f45d662c3b6f5923d5f9ecd92a32079f17880a23af4345cf"
+            }
+          ],
+          "degraded": true,
+          "actualMode": "hybrid",
+          "degradationReason": "reranker_not_configured"
+        },
+        "outcome": "succeeded",
+        "operation": "document.search",
+        "requestId": "caller-search-3fe10c17a6cb49908df4fe3f6ec162115553145728952f9d67fe0c2327da71b9",
+        "schemaVersion": "1.0"
+      }
+    },
+    {
+      "name": "document_get",
+      "piToolTaskId": 20,
+      "result": {
+        "result": {
+          "title": "调用方 Agent 验收",
+          "source": {
+            "sha256": "1d9890455f28288ea0dcb2e4322c103a5a5a1934cbe1a0a095ed7e8e981d37ae",
+            "mimeType": "text/plain"
+          },
+          "content": {
+            "text": "验收编号 CALLER-2026-017。工单重复提交时必须返回原任务；服务重新启动后继续未完成的资料索引。",
+            "truncated": false
+          },
+          "version": 1,
+          "documentId": "0b15c654-cb5a-4ee2-909e-e87634a8a15a",
+          "indexState": "ready",
+          "downloadUri": "http://127.0.0.1:64457/v1/documents/0b15c654-cb5a-4ee2-909e-e87634a8a15a/content?version=1"
+        },
+        "outcome": "succeeded",
+        "operation": "document.get",
+        "requestId": "caller-get-da3f655f9777b54494e9d4a78db52dd562de3d1a0c841f48df9a37e010092d8c",
+        "schemaVersion": "1.0"
+      }
+    }
+  ],
+  "usageTokens": {
+    "qwen-maas/qwen3.8-flash": {
+      "input": 3365,
+      "output": 170,
+      "cacheRead": 0,
+      "cacheWrite": 0,
+      "reasoning": 0,
+      "totalTokens": 3535
+    }
+  },
+  "costStatus": "pricing_not_verified",
+  "submissionId": 8,
+  "piStoragePersisted": true,
+  "limitation": "External real Pi caller over authenticated A2A; service TextPart admission is a separate acceptance gate."
+}

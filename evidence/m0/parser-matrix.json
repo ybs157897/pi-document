@@ -1,0 +1,843 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-16T02:32:06.626Z",
+  "environment": {
+    "node": "v24.15.0",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "parserVersions": {
+    "pdfjs-dist": "6.4.299",
+    "cheerio": "1.2.0"
+  },
+  "configuredProductionLimits": {
+    "maxBytes": 52428800,
+    "maxExpandedBytes": 209715200,
+    "maxPdfPages": 500
+  },
+  "configuredWorkerLimits": {
+    "timeoutMs": 120000,
+    "oldSpaceMiB": 512,
+    "rssBytes": 1073741824,
+    "rssSampleIntervalMs": 100
+  },
+  "resourceTestNotes": {
+    "rawByteCasesUseReducedThreshold": "TXT/MD/HTML use 512 bytes to exercise the common size gate without committing 50 MiB fixtures; a separate 50 MiB + 1 byte boundary probe covers the production cap.",
+    "docxCaseUsesReducedExpandedThreshold": "DOCX uses a valid compressed package and a 512-byte expanded-size threshold; a forged-directory fixture verifies actual document.xml inflate output is bounded.",
+    "pdfCaseUsesProductionPageLimit": "PDF over-limit fixture has 501 real pages against the 500-page production limit."
+  },
+  "timeoutProbe": {
+    "passed": true,
+    "exitCode": null,
+    "signal": "SIGTERM",
+    "timedOut": true,
+    "wallDurationMs": 2.013,
+    "stderr": "",
+    "memoryMonitorAvailable": false,
+    "memoryExceeded": false,
+    "peakRssBytes": 0,
+    "rssLimitBytes": 1073741824
+  },
+  "forgedDocxExpansionProbe": {
+    "passed": true,
+    "fixture": "fixtures/parsers/docx/forged-expanded.docx",
+    "fixtureBytes": 1284,
+    "fixtureSha256": "e119a4c6cf9cb2e94b445f6ee876b2175233f89c84494cdde501ae63025d2811",
+    "configuredMaxExpandedBytes": 512,
+    "worker": {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "wallDurationMs": 462.861,
+      "stderr": "",
+      "memoryMonitorAvailable": true,
+      "memoryExceeded": false,
+      "peakRssBytes": 318062592,
+      "rssLimitBytes": 1073741824
+    },
+    "status": "failed",
+    "errorCode": "EXPANDED_SIZE_LIMIT",
+    "error": "DOCX entry word/document.xml expands past 512 bytes.",
+    "warnings": [],
+    "durationMs": 0.638
+  },
+  "summary": {
+    "cases": 20,
+    "passed": 23,
+    "failed": 0,
+    "normalFormatCount": 5,
+    "sourceSpanFailures": 0,
+    "checks": 23
+  },
+  "cases": [
+    {
+      "format": "txt",
+      "case": "normal",
+      "fixture": "fixtures/parsers/txt/normal.txt",
+      "fixtureBytes": 77,
+      "fixtureSha256": "a6302d407fa4dfa8ec1d937dd4596da061a625dad6b32b409923d1f3ef4e2343",
+      "configuredLimits": {
+        "maxBytes": 52428800,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "parsed"
+      },
+      "ok": true,
+      "spanValidation": {
+        "valid": true,
+        "spanCount": 1,
+        "errors": []
+      },
+      "status": "parsed",
+      "codePointCount": 32,
+      "utf16Length": 33,
+      "spanCount": 1,
+      "spans": [
+        {
+          "startOffset": 0,
+          "endOffset": 31,
+          "locator": {
+            "kind": "text_span",
+            "startLine": 1,
+            "endLine": 3,
+            "startOffset": 0,
+            "endOffset": 31
+          }
+        }
+      ],
+      "warnings": [],
+      "durationMs": 0.262
+    },
+    {
+      "format": "txt",
+      "case": "empty",
+      "fixture": "fixtures/parsers/txt/empty.txt",
+      "fixtureBytes": 0,
+      "fixtureSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "configuredLimits": {
+        "maxBytes": 52428800,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "failed",
+        "errorCode": "EMPTY_INPUT"
+      },
+      "ok": true,
+      "status": "failed",
+      "errorCode": "EMPTY_INPUT",
+      "error": "Input file is empty.",
+      "warnings": [],
+      "durationMs": 0.017
+    },
+    {
+      "format": "txt",
+      "case": "corrupt",
+      "fixture": "fixtures/parsers/txt/corrupt.txt",
+      "fixtureBytes": 3,
+      "fixtureSha256": "7260da181cc952b2a568e214a50e99a75448e8d5c5f01d46da0dae0eae99409c",
+      "configuredLimits": {
+        "maxBytes": 52428800,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "failed",
+        "errorCode": "CORRUPT_DOCUMENT"
+      },
+      "ok": true,
+      "status": "failed",
+      "errorCode": "CORRUPT_DOCUMENT",
+      "error": "Input is not valid UTF-8.",
+      "warnings": [],
+      "durationMs": 0.046
+    },
+    {
+      "format": "txt",
+      "case": "over-limit",
+      "fixture": "fixtures/parsers/txt/over-limit.txt",
+      "fixtureBytes": 1792,
+      "fixtureSha256": "f203877f545391b647ffe9e882a34661f091d55de8f5a0526dd09c7b11677a78",
+      "configuredLimits": {
+        "maxBytes": 512,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "failed",
+        "errorCode": "SIZE_LIMIT"
+      },
+      "ok": true,
+      "status": "failed",
+      "errorCode": "SIZE_LIMIT",
+      "error": "Input has 1792 bytes; limit is 512.",
+      "warnings": [],
+      "durationMs": 0.004
+    },
+    {
+      "format": "md",
+      "case": "normal",
+      "fixture": "fixtures/parsers/md/normal.md",
+      "fixtureBytes": 110,
+      "fixtureSha256": "404777a7510ee549eff63cb3ab81485973e50e2f8302817b85158f4cfe1e1804",
+      "configuredLimits": {
+        "maxBytes": 52428800,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "parsed"
+      },
+      "ok": true,
+      "spanValidation": {
+        "valid": true,
+        "spanCount": 4,
+        "errors": []
+      },
+      "status": "parsed",
+      "codePointCount": 48,
+      "utf16Length": 49,
+      "spanCount": 4,
+      "spans": [
+        {
+          "startOffset": 0,
+          "endOffset": 6,
+          "headingPath": [
+            "实施方案 😀"
+          ],
+          "locator": {
+            "kind": "text_span",
+            "startLine": 1,
+            "endLine": 1,
+            "startOffset": 0,
+            "endOffset": 6
+          }
+        },
+        {
+          "startOffset": 8,
+          "endOffset": 12,
+          "headingPath": [
+            "实施方案 😀",
+            "输入约束"
+          ],
+          "locator": {
+            "kind": "text_span",
+            "startLine": 3,
+            "endLine": 3,
+            "startOffset": 8,
+            "endOffset": 12
+          }
+        },
+        {
+          "startOffset": 13,
+          "endOffset": 28,
+          "headingPath": [
+            "实施方案 😀",
+            "输入约束"
+          ],
+          "locator": {
+            "kind": "text_span",
+            "startLine": 4,
+            "endLine": 4,
+            "startOffset": 13,
+            "endOffset": 28
+          }
+        },
+        {
+          "startOffset": 30,
+          "endOffset": 47,
+          "headingPath": [
+            "实施方案 😀",
+            "输入约束"
+          ],
+          "locator": {
+            "kind": "text_span",
+            "startLine": 6,
+            "endLine": 6,
+            "startOffset": 30,
+            "endOffset": 47
+          }
+        }
+      ],
+      "warnings": [],
+      "durationMs": 0.23
+    },
+    {
+      "format": "md",
+      "case": "empty",
+      "fixture": "fixtures/parsers/md/empty.md",
+      "fixtureBytes": 4,
+      "fixtureSha256": "b94f13a5c07a89598ff9c517dbb26d84a29b460a8d2c3671699886e9458ccabf",
+      "configuredLimits": {
+        "maxBytes": 52428800,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "failed",
+        "errorCode": "EMPTY_PARSE"
+      },
+      "ok": true,
+      "status": "failed",
+      "errorCode": "EMPTY_PARSE",
+      "error": "Parser produced no non-empty source spans.",
+      "warnings": [],
+      "durationMs": 0.039
+    },
+    {
+      "format": "md",
+      "case": "corrupt",
+      "fixture": "fixtures/parsers/md/corrupt.md",
+      "fixtureBytes": 3,
+      "fixtureSha256": "c86ded0f8260d2f24517e33b0198bcff9e350951af1aee5ef3dbcc71b1785401",
+      "configuredLimits": {
+        "maxBytes": 52428800,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "failed",
+        "errorCode": "CORRUPT_DOCUMENT"
+      },
+      "ok": true,
+      "status": "failed",
+      "errorCode": "CORRUPT_DOCUMENT",
+      "error": "Input is not valid UTF-8.",
+      "warnings": [],
+      "durationMs": 0.013
+    },
+    {
+      "format": "md",
+      "case": "over-limit",
+      "fixture": "fixtures/parsers/md/over-limit.md",
+      "fixtureBytes": 2064,
+      "fixtureSha256": "52b27219258d42bc8d3611178b8dad200b96e30f5dba7872dcf2d72dc38d63df",
+      "configuredLimits": {
+        "maxBytes": 512,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "failed",
+        "errorCode": "SIZE_LIMIT"
+      },
+      "ok": true,
+      "status": "failed",
+      "errorCode": "SIZE_LIMIT",
+      "error": "Input has 2064 bytes; limit is 512.",
+      "warnings": [],
+      "durationMs": 0.003
+    },
+    {
+      "format": "pdf",
+      "case": "normal",
+      "fixture": "fixtures/parsers/pdf/normal.pdf",
+      "fixtureBytes": 880,
+      "fixtureSha256": "5c5fdf9057b3d51570727e991bb261c3eabbf6bf4e9ddf1bb30dfe8aecd070bb",
+      "configuredLimits": {
+        "maxBytes": 52428800,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "parsed"
+      },
+      "ok": true,
+      "spanValidation": {
+        "valid": true,
+        "spanCount": 2,
+        "errors": []
+      },
+      "status": "parsed",
+      "codePointCount": 54,
+      "utf16Length": 54,
+      "spanCount": 2,
+      "spans": [
+        {
+          "startOffset": 0,
+          "endOffset": 32,
+          "locator": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 32
+          }
+        },
+        {
+          "startOffset": 34,
+          "endOffset": 54,
+          "locator": {
+            "kind": "pdf_page",
+            "page": 2,
+            "startOffset": 0,
+            "endOffset": 20
+          }
+        }
+      ],
+      "warnings": [],
+      "durationMs": 249.104,
+      "worker": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "wallDurationMs": 705.543,
+        "stderr": "",
+        "memoryMonitorAvailable": true,
+        "memoryExceeded": false,
+        "peakRssBytes": 586186752,
+        "rssLimitBytes": 1073741824
+      }
+    },
+    {
+      "format": "pdf",
+      "case": "empty",
+      "fixture": "fixtures/parsers/pdf/empty.pdf",
+      "fixtureBytes": 543,
+      "fixtureSha256": "854c9456d4bb00838ec9ad6f5158ded02a6736f9d45b10b208107c20b71f4f20",
+      "configuredLimits": {
+        "maxBytes": 52428800,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "failed",
+        "errorCode": "EMPTY_PARSE"
+      },
+      "ok": true,
+      "status": "failed",
+      "errorCode": "EMPTY_PARSE",
+      "error": "Parser produced no non-empty source spans.",
+      "warnings": [
+        "PDF pages were readable but contained no extractable text."
+      ],
+      "durationMs": 244.89,
+      "worker": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "wallDurationMs": 703.552,
+        "stderr": "",
+        "memoryMonitorAvailable": true,
+        "memoryExceeded": false,
+        "peakRssBytes": 584351744,
+        "rssLimitBytes": 1073741824
+      }
+    },
+    {
+      "format": "pdf",
+      "case": "corrupt",
+      "fixture": "fixtures/parsers/pdf/corrupt.pdf",
+      "fixtureBytes": 50,
+      "fixtureSha256": "5c7b58c300c146f45e6c8189eadbbbf859faabb1e3a0becc4646edd6a9029f87",
+      "configuredLimits": {
+        "maxBytes": 52428800,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "failed",
+        "errorCode": "CORRUPT_DOCUMENT"
+      },
+      "ok": true,
+      "status": "failed",
+      "errorCode": "CORRUPT_DOCUMENT",
+      "error": "Invalid PDF structure.",
+      "warnings": [],
+      "durationMs": 241.679,
+      "worker": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "wallDurationMs": 688.755,
+        "stderr": "Warning: Indexing all PDF objects\n",
+        "memoryMonitorAvailable": true,
+        "memoryExceeded": false,
+        "peakRssBytes": 587251712,
+        "rssLimitBytes": 1073741824
+      }
+    },
+    {
+      "format": "pdf",
+      "case": "over-limit",
+      "fixture": "fixtures/parsers/pdf/over-limit.pdf",
+      "fixtureBytes": 146823,
+      "fixtureSha256": "30ea474c09f537988ba7ea3e0d39df500216d427912e4ef8f58ca32aaaa4c23b",
+      "configuredLimits": {
+        "maxBytes": 52428800,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "failed",
+        "errorCode": "PAGE_LIMIT"
+      },
+      "ok": true,
+      "status": "failed",
+      "errorCode": "PAGE_LIMIT",
+      "error": "PDF has 501 pages; limit is 500.",
+      "warnings": [],
+      "durationMs": 251.273,
+      "worker": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "wallDurationMs": 707.958,
+        "stderr": "",
+        "memoryMonitorAvailable": true,
+        "memoryExceeded": false,
+        "peakRssBytes": 630784000,
+        "rssLimitBytes": 1073741824
+      }
+    },
+    {
+      "format": "docx",
+      "case": "normal",
+      "fixture": "fixtures/parsers/docx/normal.docx",
+      "fixtureBytes": 1374,
+      "fixtureSha256": "fb6eff8ef6700fb857384ca2b5652767f0a8693cc5ab002279f3e0b675d903cf",
+      "configuredLimits": {
+        "maxBytes": 52428800,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "parsed"
+      },
+      "ok": true,
+      "spanValidation": {
+        "valid": true,
+        "spanCount": 5,
+        "errors": []
+      },
+      "status": "parsed",
+      "codePointCount": 58,
+      "utf16Length": 60,
+      "spanCount": 5,
+      "spans": [
+        {
+          "startOffset": 0,
+          "endOffset": 6,
+          "locator": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "实施要点 😀"
+            ],
+            "paragraphIndex": 0
+          }
+        },
+        {
+          "startOffset": 7,
+          "endOffset": 12,
+          "locator": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "实施要点 😀"
+            ],
+            "paragraphIndex": 2
+          }
+        },
+        {
+          "startOffset": 13,
+          "endOffset": 18,
+          "locator": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "实施要点 😀"
+            ],
+            "paragraphIndex": 3
+          }
+        },
+        {
+          "startOffset": 19,
+          "endOffset": 21,
+          "locator": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "实施要点 😀",
+              "来源"
+            ],
+            "paragraphIndex": 4
+          }
+        },
+        {
+          "startOffset": 22,
+          "endOffset": 58,
+          "locator": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "实施要点 😀",
+              "来源"
+            ],
+            "paragraphIndex": 5
+          }
+        }
+      ],
+      "warnings": [],
+      "durationMs": 3.728,
+      "worker": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "wallDurationMs": 452.637,
+        "stderr": "",
+        "memoryMonitorAvailable": true,
+        "memoryExceeded": false,
+        "peakRssBytes": 317259776,
+        "rssLimitBytes": 1073741824
+      }
+    },
+    {
+      "format": "docx",
+      "case": "empty",
+      "fixture": "fixtures/parsers/docx/empty.docx",
+      "fixtureBytes": 1167,
+      "fixtureSha256": "2b8fd6cefb2ad0eb776987091824a74baee1ee5a9e3211f751489e71907b3e55",
+      "configuredLimits": {
+        "maxBytes": 52428800,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "failed",
+        "errorCode": "EMPTY_PARSE"
+      },
+      "ok": true,
+      "status": "failed",
+      "errorCode": "EMPTY_PARSE",
+      "error": "Parser produced no non-empty source spans.",
+      "warnings": [],
+      "durationMs": 2.239,
+      "worker": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "wallDurationMs": 439.765,
+        "stderr": "",
+        "memoryMonitorAvailable": true,
+        "memoryExceeded": false,
+        "peakRssBytes": 317652992,
+        "rssLimitBytes": 1073741824
+      }
+    },
+    {
+      "format": "docx",
+      "case": "corrupt",
+      "fixture": "fixtures/parsers/docx/corrupt.docx",
+      "fixtureBytes": 23,
+      "fixtureSha256": "f5c5cc5770eb82da425244602a9ad27f66b94650a9ce0ae04ad3b18e734759d0",
+      "configuredLimits": {
+        "maxBytes": 52428800,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "failed",
+        "errorCode": "CORRUPT_DOCUMENT"
+      },
+      "ok": true,
+      "status": "failed",
+      "errorCode": "CORRUPT_DOCUMENT",
+      "error": "DOCX ZIP end record is missing.",
+      "warnings": [],
+      "durationMs": 0.199,
+      "worker": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "wallDurationMs": 453.74,
+        "stderr": "",
+        "memoryMonitorAvailable": true,
+        "memoryExceeded": false,
+        "peakRssBytes": 317407232,
+        "rssLimitBytes": 1073741824
+      }
+    },
+    {
+      "format": "docx",
+      "case": "over-limit",
+      "fixture": "fixtures/parsers/docx/over-limit.docx",
+      "fixtureBytes": 1281,
+      "fixtureSha256": "f725b1a4eee0195d7b021f7dc6e69399084ee031982893a37c85a8d04c5aa8a2",
+      "configuredLimits": {
+        "maxBytes": 52428800,
+        "maxExpandedBytes": 512,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "failed",
+        "errorCode": "EXPANDED_SIZE_LIMIT"
+      },
+      "ok": true,
+      "status": "failed",
+      "errorCode": "EXPANDED_SIZE_LIMIT",
+      "error": "DOCX expands to 2923 bytes; limit is 512.",
+      "warnings": [],
+      "durationMs": 0.245,
+      "worker": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "wallDurationMs": 459.833,
+        "stderr": "",
+        "memoryMonitorAvailable": true,
+        "memoryExceeded": false,
+        "peakRssBytes": 319012864,
+        "rssLimitBytes": 1073741824
+      }
+    },
+    {
+      "format": "html",
+      "case": "normal",
+      "fixture": "fixtures/parsers/html/normal.html",
+      "fixtureBytes": 163,
+      "fixtureSha256": "1f78dd70bcec4b1913432ed8fde8a54d1c7cae24589e7c918f07ae7f86d82eb4",
+      "configuredLimits": {
+        "maxBytes": 52428800,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "parsed"
+      },
+      "ok": true,
+      "spanValidation": {
+        "valid": true,
+        "spanCount": 4,
+        "errors": []
+      },
+      "status": "parsed",
+      "codePointCount": 38,
+      "utf16Length": 39,
+      "spanCount": 4,
+      "spans": [
+        {
+          "startOffset": 0,
+          "endOffset": 6,
+          "locator": {
+            "kind": "html_section",
+            "headingPath": [
+              "知识说明 😀"
+            ],
+            "fragment": "overview"
+          }
+        },
+        {
+          "startOffset": 7,
+          "endOffset": 22,
+          "locator": {
+            "kind": "html_section",
+            "headingPath": [
+              "知识说明 😀"
+            ],
+            "fragment": "overview"
+          }
+        },
+        {
+          "startOffset": 23,
+          "endOffset": 25,
+          "locator": {
+            "kind": "html_section",
+            "headingPath": [
+              "知识说明 😀",
+              "来源"
+            ],
+            "fragment": ""
+          }
+        },
+        {
+          "startOffset": 26,
+          "endOffset": 38,
+          "locator": {
+            "kind": "html_section",
+            "headingPath": [
+              "知识说明 😀",
+              "来源"
+            ],
+            "fragment": ""
+          }
+        }
+      ],
+      "warnings": [],
+      "durationMs": 3.703
+    },
+    {
+      "format": "html",
+      "case": "empty",
+      "fixture": "fixtures/parsers/html/empty.html",
+      "fixtureBytes": 54,
+      "fixtureSha256": "62c1f95e10a691c01b714cdb3ed96c923cdd5edc263bf9d231d5cd3addb8b6a5",
+      "configuredLimits": {
+        "maxBytes": 52428800,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "failed",
+        "errorCode": "EMPTY_PARSE"
+      },
+      "ok": true,
+      "status": "failed",
+      "errorCode": "EMPTY_PARSE",
+      "error": "Parser produced no non-empty source spans.",
+      "warnings": [],
+      "durationMs": 0.291
+    },
+    {
+      "format": "html",
+      "case": "corrupt",
+      "fixture": "fixtures/parsers/html/corrupt.html",
+      "fixtureBytes": 10,
+      "fixtureSha256": "b0705642ed1bbf72a909a0ac25634cfb29ff379a82d9d531d6eaeb763352cbed",
+      "configuredLimits": {
+        "maxBytes": 52428800,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "failed",
+        "errorCode": "CORRUPT_DOCUMENT"
+      },
+      "ok": true,
+      "status": "failed",
+      "errorCode": "CORRUPT_DOCUMENT",
+      "error": "Input is not valid UTF-8.",
+      "warnings": [],
+      "durationMs": 0.035
+    },
+    {
+      "format": "html",
+      "case": "over-limit",
+      "fixture": "fixtures/parsers/html/over-limit.html",
+      "fixtureBytes": 2764,
+      "fixtureSha256": "5f1c705c451981148c62b6e074bb7628c1dbda65df6a42ce6592839638c4c040",
+      "configuredLimits": {
+        "maxBytes": 512,
+        "maxExpandedBytes": 209715200,
+        "maxPdfPages": 500
+      },
+      "expected": {
+        "status": "failed",
+        "errorCode": "SIZE_LIMIT"
+      },
+      "ok": true,
+      "status": "failed",
+      "errorCode": "SIZE_LIMIT",
+      "error": "Input has 2764 bytes; limit is 512.",
+      "warnings": [],
+      "durationMs": 0.005
+    }
+  ],
+  "failures": [],
+  "productionByteLimitProbe": {
+    "configuredBytes": 52428800,
+    "actualBytes": 52428801,
+    "passed": true,
+    "status": "failed",
+    "errorCode": "SIZE_LIMIT",
+    "error": "Input has 52428801 bytes; limit is 52428800.",
+    "warnings": [],
+    "durationMs": 0.01
+  }
+}

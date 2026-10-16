@@ -1,0 +1,95 @@
+{
+  "checkedAt": "2026-10-16T07:09:05.435Z",
+  "sdk": {
+    "package": "@a2a-js/sdk",
+    "version": "1.3.0",
+    "installedProtocolCardVersion": "1.0"
+  },
+  "probes": {
+    "sdkClient": {
+      "status": "passed",
+      "discoveryPath": "/.well-known/agent-card.json",
+      "cardProtocolVersion": "1.0",
+      "operations": [
+        "SendMessage",
+        "GetTask",
+        "CancelTask"
+      ],
+      "completedTaskState": "TASK_STATE_COMPLETED",
+      "canceledTaskState": "TASK_STATE_CANCELED",
+      "artifactDataPart": {
+        "$case": "data",
+        "value": {
+          "outcome": "succeeded",
+          "source": "m0-a2a-probe"
+        }
+      },
+      "observedRequestVersions": [
+        "1.0"
+      ]
+    },
+    "rawJsonRpcLifecycle": {
+      "status": "passed",
+      "operations": [
+        "SendMessage",
+        "GetTask",
+        "CancelTask",
+        "GetTask"
+      ],
+      "states": [
+        "TASK_STATE_WORKING",
+        "TASK_STATE_WORKING",
+        "TASK_STATE_CANCELED",
+        "TASK_STATE_CANCELED"
+      ],
+      "observedRequestVersions": [
+        "1.0"
+      ]
+    },
+    "rawSse": {
+      "status": "passed",
+      "sendStreamingMessage": {
+        "contentType": "text/event-stream",
+        "firstEventCase": "task",
+        "eventCases": [
+          "task",
+          "artifactUpdate",
+          "statusUpdate"
+        ],
+        "terminalState": "TASK_STATE_COMPLETED",
+        "streamClosedAfterTerminal": true
+      },
+      "subscribeToTask": {
+        "contentType": "text/event-stream",
+        "firstEventCase": "task",
+        "eventCases": [
+          "task",
+          "artifactUpdate",
+          "statusUpdate"
+        ],
+        "terminalState": "TASK_STATE_COMPLETED",
+        "streamClosedAfterTerminal": true
+      }
+    },
+    "versionAndParameterErrors": {
+      "status": "passed",
+      "unsupportedVersion": {
+        "header": "1.0.1",
+        "code": -32009
+      },
+      "absentVersion": {
+        "header": null,
+        "code": -32009
+      },
+      "invalidParameters": {
+        "method": "SendMessage",
+        "code": -32602
+      },
+      "unknownMethod": {
+        "method": "UnknownA2AMethod",
+        "code": -32601
+      }
+    }
+  },
+  "scope": "Real local HTTP and SDK transport behavior with an in-memory executor; not business-service or persistence interoperability."
+}

@@ -1,0 +1,37 @@
+{
+  "recordedAt": "2026-10-16T05:19:48.223Z",
+  "baseUrl": "http://127.0.0.1:4328",
+  "agentCard": {
+    "name": "Pi Document Agent",
+    "inputModes": [
+      "application/json",
+      "text/plain"
+    ],
+    "outputModes": [
+      "application/json",
+      "text/plain"
+    ],
+    "interfaces": [
+      {
+        "url": "http://127.0.0.1:4328/a2a",
+        "protocolBinding": "JSONRPC",
+        "protocolVersion": "1.0"
+      }
+    ]
+  },
+  "authenticatedMetricsStatus": 200,
+  "health": {
+    "/healthz": {
+      "status": 200,
+      "body": {
+        "status": "ok"
+      }
+    },
+    "/readyz": {
+      "status": 200,
+      "body": {
+        "status": "ready"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+
+> pi-document-agent@0.1.0 verify:install
+> tsx scripts/verify-install.ts
+
+{
+  "node": "v24.15.0",
+  "npm": "11.12.1",
+  "lockSha256": "2a01c3b159998858b32dd13ece6d7518da92cee08b44bc0ff24de1c43c78ad5b",
+  "installOutput": "added 264 packages, and audited 265 packages in 5s\n\nfound 0 vulnerabilities",
+  "status": "passed",
+  "piSqlite": "open/close passed in clean installed directory"
+}

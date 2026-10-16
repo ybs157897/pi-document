@@ -1,0 +1,93 @@
+{
+  "phase": "M2",
+  "status": "failed",
+  "embeddingModelId": "qwen3.7-text-embedding-flash",
+  "dimensions": 1024,
+  "clients": [
+    "official JS SDK",
+    "independent fetch JSON-RPC"
+  ],
+  "data": "public synthetic acceptance fixture",
+  "error": "{\"jsonrpc\":\"2.0\",\"id\":\"8cb38888-d1b8-44fa-8ce1-ec06e6ad9662\",\"error\":{\"code\":-32001,\"message\":\"Task not found\",\"data\":[{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"TASK_NOT_FOUND\",\"domain\":\"a2a-protocol.org\"}]}}\n+ actual - expected\n\n+ {\n+   code: -32001,\n+   data: [\n+     {\n+       '@type': 'type.googleapis.com/google.rpc.ErrorInfo',\n+       domain: 'a2a-protocol.org',\n+       reason: 'TASK_NOT_FOUND'\n+     }\n+   ],\n+   message: 'Task not found'\n+ }\n- undefined\n",
+  "trace": [
+    {
+      "client": "sdk",
+      "operation": "knowledge_base.create",
+      "taskId": "3513b60f-feba-4512-92c3-17ad7e074e89",
+      "state": 3
+    },
+    {
+      "client": "sdk",
+      "operation": "document.save",
+      "taskId": "3b98f988-408f-4cfc-a3ac-86a72ffb8974",
+      "state": 3
+    },
+    {
+      "client": "fetch",
+      "operation": "document.search",
+      "taskId": "1a12ee56-1e5a-4a64-83b2-b7a432d6b82d",
+      "hit": {
+        "rank": 1,
+        "score": 0.01639344262295082,
+        "title": "持久任务与恢复规则",
+        "chunkId": "f7796fa54143e3252de1399bef2d44ec9142442d",
+        "locator": {
+          "kind": "text_span",
+          "endLine": 2,
+          "endOffset": 60,
+          "startLine": 2,
+          "startOffset": 17
+        },
+        "snippet": "进程被终止后，服务从持久检查点继续任务。同一请求重试应复用原有收据，不能重复创建文档。",
+        "version": 1,
+        "scoreType": "rrf",
+        "contentUri": "http://127.0.0.1:50868/v1/documents/e544ecb1-1b18-405f-baad-696a7b5a9391/content?version=1",
+        "documentId": "e544ecb1-1b18-405f-baad-696a7b5a9391",
+        "generationId": "c44f639ad7c1101c6c4f34f3ce197ac68fb5c0addeed3f21"
+      },
+      "degraded": true
+    },
+    {
+      "client": "sdk",
+      "operation": "document.update",
+      "taskId": "f19a9b5c-04f9-4581-bf06-00dd40a92278",
+      "state": 3
+    },
+    {
+      "client": "sdk",
+      "operation": "document.update",
+      "documentId": "e544ecb1-1b18-405f-baad-696a7b5a9391",
+      "version": 2
+    },
+    {
+      "client": "fetch",
+      "operation": "document.search.v2",
+      "taskId": "9714ed6e-4189-42eb-af57-76b158721506",
+      "hit": {
+        "rank": 1,
+        "score": 0.03278688524590164,
+        "title": "持久任务与恢复规则 v2",
+        "chunkId": "0e090fb6da4d500bca1527b267a1000a1c5d612d",
+        "locator": {
+          "kind": "text_span",
+          "endLine": 1,
+          "endOffset": 16,
+          "startLine": 1,
+          "startOffset": 0
+        },
+        "snippet": "PI-2026-001 故障恢复",
+        "version": 2,
+        "scoreType": "rrf",
+        "contentUri": "http://127.0.0.1:50868/v1/documents/e544ecb1-1b18-405f-baad-696a7b5a9391/content?version=2",
+        "documentId": "e544ecb1-1b18-405f-baad-696a7b5a9391",
+        "generationId": "c46aea80400c710d25b30ca48c14a3cdbd223e885b9aa14e"
+      }
+    }
+  ],
+  "debugPiStorage": {
+    "files": [
+      "data/debug-natural/2026-10-16T04-56-54-434Z-f8732955-pi.sqlite"
+    ],
+    "permissions": "directory 0700; files 0600; local ignored data/"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "phase": "M2 + M4 natural-language",
+  "acceptanceMode": "M2 document lifecycle plus M4 natural-language A2A",
+  "status": "passed",
+  "embeddingModelId": "qwen3.7-text-embedding-flash",
+  "dimensions": 1024,
+  "clients": [
+    "official JS SDK",
+    "independent fetch JSON-RPC"
+  ],
+  "data": "public synthetic acceptance fixture",
+  "naturalReaderActions": [
+    {
+      "operation": "document.get",
+      "childTaskId": "0d22f4dd-6f50-4b0f-abe5-c614d0e0e213"
+    },
+    {
+      "operation": "document.get",
+      "childTaskId": "ba46aaa8-739e-4fca-9608-31682b1826da"
+    }
+  ],
+  "naturalService": {
+    "status": "passed",
+    "writerTaskId": "agt_2a14e584-9182-4114-9b76-f4fe80e794c9",
+    "readerTaskId": "agt_735d8fdc-cdb7-47ef-a242-6f3b96240c38",
+    "operations": [
+      "document.save",
+      "document.search",
+      "document.get"
+    ],
+    "readerOperations": [
+      "document.get",
+      "document.get"
+    ],
+    "turns": [
+      {
+        "task_id": "agt_2a14e584-9182-4114-9b76-f4fe80e794c9",
+        "model_requests": 4,
+        "tool_calls": 3,
+        "state": "completed"
+      },
+      {
+        "task_id": "agt_735d8fdc-cdb7-47ef-a242-6f3b96240c38",
+        "model_requests": 3,
+        "tool_calls": 2,
+        "state": "completed"
+      }
+    ],
+    "messageReplayStable": true,
+    "revokedArtifactHidden": true
+  },
+  "independentPython": {
+    "status": "passed",
+    "client": "Python standard library",
+    "documentId": "9ae5d035-ac80-4bba-bf7b-19fe9c4602ad",
+    "version": 1,
+    "sourceSha256": "141432fc98eebc5437e8e328c300a9a6ed4ac78a310a313d0fa741ff30ec02a3",
+    "hitCount": 5
+  },
+  "trace": [
+    {
+      "client": "sdk",
+      "operation": "knowledge_base.create",
+      "taskId": "f6d33fbd-3fb9-4aba-b810-fbfdd7b6d2c3",
+      "state": 3
+    },
+    {
+      "client": "sdk",
+      "operation": "document.save",
+      "taskId": "29df07a4-5790-497c-be08-6a7fcdcef18e",
+      "state": 3
+    },
+    {
+      "client": "fetch",
+      "operation": "document.search",
+      "taskId": "f40b753f-c0e3-4607-a424-2de6459cd476",
+      "hit": {
+        "rank": 1,
+        "score": 0.01639344262295082,
+        "title": "持久任务与恢复规则",
+        "chunkId": "d27f4140f9c1219fd30910284b2bb65a6552a858",
+        "locator": {
+          "kind": "text_span",
+          "endLine": 2,
+          "endOffset": 60,
+          "startLine": 2,
+          "startOffset": 17
+        },
+        "snippet": "进程被终止后，服务从持久检查点继续任务。同一请求重试应复用原有收据，不能重复创建文档。",
+        "version": 1,
+        "scoreType": "rrf",
+        "contentUri": "http://127.0.0.1:52462/v1/documents/5f7cfab4-d0dc-4e44-9566-c46948b6bb99/content?version=1",
+        "documentId": "5f7cfab4-d0dc-4e44-9566-c46948b6bb99",
+        "generationId": "b5cc0301b149e648d4ae120ba0a38daef365fc8210f756b0"
+      },
+      "degraded": true
+    },
+    {
+      "client": "sdk",
+      "operation": "document.update",
+      "taskId": "2ca88e04-ec95-4931-917d-efe2953b8de3",
+      "state": 3
+    },
+    {
+      "client": "sdk",
+      "operation": "document.update",
+      "documentId": "5f7cfab4-d0dc-4e44-9566-c46948b6bb99",
+      "version": 2
+    },
+    {
+      "client": "fetch",
+      "operation": "document.search.v2",
+      "taskId": "359945e2-8871-4bc6-92f8-3106597c2f4b",
+      "hit": {
+        "rank": 1,
+        "score": 0.03278688524590164,
+        "title": "持久任务与恢复规则 v2",
+        "chunkId": "bc7fd5a186391cff0b991715f10fc227cfea43f0",
+        "locator": {
+          "kind": "text_span",
+          "endLine": 1,
+          "endOffset": 16,
+          "startLine": 1,
+          "startOffset": 0
+        },
+        "snippet": "PI-2026-001 故障恢复",
+        "version": 2,
+        "scoreType": "rrf",
+        "contentUri": "http://127.0.0.1:52462/v1/documents/5f7cfab4-d0dc-4e44-9566-c46948b6bb99/content?version=2",
+        "documentId": "5f7cfab4-d0dc-4e44-9566-c46948b6bb99",
+        "generationId": "25b9dd79cf919c68bbe0c8354d7cd4dcb5523c22920095f1"
+      }
+    }
+  ],
+  "sourceSha256": "4bbb0ed2440df4a79e953c491f4e78ae59370059b024511de10dae9350ebffbf",
+  "revokeStatus": 404,
+  "limitation": "Verified real Qwen natural-language A2A save/search/readback on this synthetic fixture. This does not cover the 100-document quality, load, full process-fault, or broad model-evaluation gates."
+}

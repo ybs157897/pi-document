@@ -1,0 +1,31 @@
+
+> pi-document-agent@0.1.0 test:natural
+> tsx --test tests/natural/*.test.ts
+
+✔ natural TextParts create, interrupt, continue, query, list, subscribe, and cancel one A2A task (43.604333ms)
+✔ natural TextPart parsing rejects missing media types, mixed parts, and context changes (12.868ms)
+✔ read-only requests and negated write verbs do not authorize writes (3.846375ms)
+✔ operation-specific negation does not block a separate explicit save (1.104417ms)
+✔ a later read-only instruction does not erase an earlier explicit save (0.1635ms)
+✔ affirmative create, update, and delete wording remains recognized (0.407458ms)
+✔ read operations return false so their caller path remains unchanged (0.061667ms)
+✔ real Pi request_clarification yields INPUT_REQUIRED, same-task continuation completes, and crossed contexts are rejected (1163.285958ms)
+✔ natural turn concurrency reaches only its configured peak and a full principal queue returns 429 (2607.790167ms)
+✔ same-context tasks stay FIFO while the active Pi turn is waiting on its model request (1080.112709ms)
+✔ real Pi runs deterministic document.save, document.search, and document.get against PostgreSQL (1095.703875ms)
+✔ an explicitly requested unrelated document ID is never rebound to the saved document (1091.442834ms)
+✔ document deletion retires a Pi context, preserves only a safe receipt, and drains queued turns (1161.770084ms)
+✔ cancel fences an intent before admission, an admitted unlinked child, and a dispatching child (2996.776291ms)
+✔ read-only requests ignore destructive or URL-saving instructions returned from a stored document (1030.5515ms)
+✔ graceful Pi storage close/reopen resumes a persisted active natural turn before any Pi submission (not SIGKILL) (852.760708ms)
+✔ graceful Pi storage close/reopen replays a linked natural child before dispatch without generic-pump publication (not SIGKILL) (927.622875ms)
+✔ A2A advertises and routes indexed upload, update, and delete through the real PostgreSQL backend (1041.42775ms)
+✔ real Pi Harness runs the registered natural tool against PostgreSQL with a deterministic model fixture (1029.647917ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 15701.56225

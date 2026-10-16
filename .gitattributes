@@ -1,0 +1,7 @@
+# Preserve exact fixture and screenshot bytes across platforms.
+*.pdf binary
+*.docx binary
+*.png binary
+
+# Whitespace-only input is intentional in this empty-document parser fixture.
+fixtures/parsers/md/empty.md -whitespace

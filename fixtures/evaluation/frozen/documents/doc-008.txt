@@ -1,0 +1,9 @@
+Municipal water-pump inspection: Stone Hill Pump Station
+
+Revision v1. Record EV-WTR-08.
+
+Site: Stone Hill Pump Station; asset: booster pump H.
+
+EV-WTR-08 Stone Hill: outlet pressure 0.53 MPa; review within 28 min.
+
+during cold start, switch to the parallel standby pump after two out-of-range readings; log readings in WATER-LOG-008.

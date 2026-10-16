@@ -317,13 +317,7 @@
               "indexState": {
                 "enum": [
                   "stored",
-                  "parsing",
-                  "chunking",
-                  "embedding",
-                  "indexing",
-                  "ready",
-                  "failed",
-                  "canceled"
+                  "ready"
                 ]
               },
               "sha256": {
@@ -352,15 +346,27 @@
                 "if": {
                   "properties": {
                     "indexState": {
-                      "not": {
-                        "const": "ready"
-                      }
+                      "const": "stored"
                     }
                   }
                 },
                 "then": {
                   "required": [
                     "ingestionTaskId"
+                  ]
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "indexState": {
+                      "const": "ready"
+                    }
+                  }
+                },
+                "then": {
+                  "required": [
+                    "generationId"
                   ]
                 }
               }

@@ -1,0 +1,13 @@
+冷链仓配温控记录：银桥冷配点 / Cold-chain distribution temperature record: Silver Bridge Cold Depot
+
+修订版本：v1。记录编号：EV-CLD-04。 Revision v1. Record EV-CLD-04.
+
+地点：银桥冷配点；设备：冷藏箱D。 Site: Silver Bridge Cold Depot; asset: refrigerated container D.
+
+记录 EV-CLD-04：银桥 箱内温度 -19 °C；16 分钟内复核。
+
+EV-CLD-04 Silver Bridge: cargo-bay temperature -19 °C; review within 16 min.
+
+设备重启后，开门累计超过八分钟时重新封签；读数记入 COLD-LOG-014。
+
+after equipment restart, reseal the load after more than eight cumulative minutes with the door open; log readings in COLD-LOG-014.

@@ -1,0 +1,296 @@
+{
+  "fixtureVersion": 1,
+  "description": "Ten explicit v1-to-v2 document source fixtures. These are not executed until the M3 update API is available.",
+  "transitions": [
+    {
+      "fixtureId": "update-doc-091",
+      "documentKey": "doc-091",
+      "format": "docx",
+      "language": "zh",
+      "fromVersion": 1,
+      "toVersion": 2,
+      "baselinePath": "documents/doc-091.docx",
+      "baselineSha256": "a8c9300514f447f87b7d9ba1709fe0a7c667675a1b06f2433052ac234dfe5d07",
+      "version1Value": "3.2",
+      "version2Path": "updates/doc-091-v2.docx",
+      "version2Sha256": "78b39cd412476a5142f58c85c950eb895d7ff05a5e5788322c9321f4e4563781",
+      "version2ByteSize": 1510,
+      "supportText": "记录 EV-HAB-01：北河 河段浊度参考值 3.6 NTU；7 分钟内复核。",
+      "acceptableSourceLocator": {
+        "container": {
+          "kind": "docx_paragraph",
+          "headingPath": [
+            "河流栖息地水样监测：北河河段监测点"
+          ],
+          "paragraphIndex": 3
+        },
+        "range": {
+          "startOffset": 64,
+          "endOffset": 104
+        }
+      },
+      "queryId": "version-doc-091"
+    },
+    {
+      "fixtureId": "update-doc-092",
+      "documentKey": "doc-092",
+      "format": "docx",
+      "language": "en",
+      "fromVersion": 1,
+      "toVersion": 2,
+      "baselinePath": "documents/doc-092.docx",
+      "baselineSha256": "634cb4481cd23592bdd0a3865391c9c8d578012dc9f839e5f0068cd39e700f14",
+      "version1Value": "4.1",
+      "version2Path": "updates/doc-092-v2.docx",
+      "version2Sha256": "3bfc065d78838b938cf93f53ccf5ace4c5cf7bae7ccdc68f69ba15a8a505a557",
+      "version2ByteSize": 1447,
+      "supportText": "EV-HAB-02 Cedar Quay: reference turbidity for the river reach 4.5 NTU; review within 10 min.",
+      "acceptableSourceLocator": {
+        "container": {
+          "kind": "docx_paragraph",
+          "headingPath": [
+            "River-habitat water-sample monitoring: Cedar Quay River Reach"
+          ],
+          "paragraphIndex": 3
+        },
+        "range": {
+          "startOffset": 160,
+          "endOffset": 252
+        }
+      },
+      "queryId": "version-doc-092"
+    },
+    {
+      "fixtureId": "update-doc-093",
+      "documentKey": "doc-093",
+      "format": "docx",
+      "language": "zh",
+      "fromVersion": 1,
+      "toVersion": 2,
+      "baselinePath": "documents/doc-093.docx",
+      "baselineSha256": "8fbffcdb686958310a9e8ed63dcd3bf9978b716d7c27a069b82bd8a54e968d82",
+      "version1Value": "2.8",
+      "version2Path": "updates/doc-093-v2.docx",
+      "version2Sha256": "ee784ee9e789acd9df36c76d196971c86f7c6d2aab6e27fe4d84a5955934dbc2",
+      "version2ByteSize": 1509,
+      "supportText": "记录 EV-HAB-03：松湾 河段浊度参考值 3.2 NTU；13 分钟内复核。",
+      "acceptableSourceLocator": {
+        "container": {
+          "kind": "docx_paragraph",
+          "headingPath": [
+            "河流栖息地水样监测：松湾河段监测点"
+          ],
+          "paragraphIndex": 3
+        },
+        "range": {
+          "startOffset": 64,
+          "endOffset": 105
+        }
+      },
+      "queryId": "version-doc-093"
+    },
+    {
+      "fixtureId": "update-doc-094",
+      "documentKey": "doc-094",
+      "format": "docx",
+      "language": "mixed",
+      "fromVersion": 1,
+      "toVersion": 2,
+      "baselinePath": "documents/doc-094.docx",
+      "baselineSha256": "adbf418e7091857521844106e7f760d11a50321476e2d3857207616a3e71fff3",
+      "version1Value": "5.0",
+      "version2Path": "updates/doc-094-v2.docx",
+      "version2Sha256": "63317ac28e2b20e4b9aa17eb6683cfe2e4d09380c02239fac3635e0193c79273",
+      "version2ByteSize": 1702,
+      "supportText": "记录 EV-HAB-04：银桥 河段浊度参考值 5.4 NTU；16 分钟内复核。",
+      "acceptableSourceLocator": {
+        "container": {
+          "kind": "docx_paragraph",
+          "headingPath": [
+            "河流栖息地水样监测：银桥河段监测点"
+          ],
+          "paragraphIndex": 3
+        },
+        "range": {
+          "startOffset": 165,
+          "endOffset": 206
+        }
+      },
+      "queryId": "version-doc-094"
+    },
+    {
+      "fixtureId": "update-doc-095",
+      "documentKey": "doc-095",
+      "format": "docx",
+      "language": "zh",
+      "fromVersion": 1,
+      "toVersion": 2,
+      "baselinePath": "documents/doc-095.docx",
+      "baselineSha256": "a3e85c5814adf9c7362768d33333398e880ded397afcef85aa68da0cc8a3051c",
+      "version1Value": "3.7",
+      "version2Path": "updates/doc-095-v2.docx",
+      "version2Sha256": "e783e8b20cd454645f3c21a79c870a27940b009fdd0a48fd61ffbf7483fcda93",
+      "version2ByteSize": 1509,
+      "supportText": "记录 EV-HAB-05：南圃 河段浊度参考值 4.1 NTU；19 分钟内复核。",
+      "acceptableSourceLocator": {
+        "container": {
+          "kind": "docx_paragraph",
+          "headingPath": [
+            "河流栖息地水样监测：南圃河段监测点"
+          ],
+          "paragraphIndex": 3
+        },
+        "range": {
+          "startOffset": 64,
+          "endOffset": 105
+        }
+      },
+      "queryId": "version-doc-095"
+    },
+    {
+      "fixtureId": "update-doc-096",
+      "documentKey": "doc-096",
+      "format": "docx",
+      "language": "en",
+      "fromVersion": 1,
+      "toVersion": 2,
+      "baselinePath": "documents/doc-096.docx",
+      "baselineSha256": "bacf023fd5065b8112c758b3aafab2d2dc7b1b9bcb2f4cfd1111ef6c10d601fd",
+      "version1Value": "4.6",
+      "version2Path": "updates/doc-096-v2.docx",
+      "version2Sha256": "2854e7cb869a292005a3f79e56a4810b5220d9c13fff5b0f698494904e76de75",
+      "version2ByteSize": 1446,
+      "supportText": "EV-HAB-06 Cloud Ridge: reference turbidity for the river reach 5.0 NTU; review within 22 min.",
+      "acceptableSourceLocator": {
+        "container": {
+          "kind": "docx_paragraph",
+          "headingPath": [
+            "River-habitat water-sample monitoring: Cloud Ridge River Reach"
+          ],
+          "paragraphIndex": 3
+        },
+        "range": {
+          "startOffset": 162,
+          "endOffset": 255
+        }
+      },
+      "queryId": "version-doc-096"
+    },
+    {
+      "fixtureId": "update-doc-097",
+      "documentKey": "doc-097",
+      "format": "docx",
+      "language": "zh",
+      "fromVersion": 1,
+      "toVersion": 2,
+      "baselinePath": "documents/doc-097.docx",
+      "baselineSha256": "a127f5fc7d620916826814c884f20ddb3a96cb775c5ead9812f0a4aeaf0a8c54",
+      "version1Value": "2.5",
+      "version2Path": "updates/doc-097-v2.docx",
+      "version2Sha256": "9c7350515ead777eb3dbf8934f46ae6790e5b4f0ee94fc342cbbf10cb8747c67",
+      "version2ByteSize": 1510,
+      "supportText": "记录 EV-HAB-07：东堤 河段浊度参考值 2.9 NTU；25 分钟内复核。",
+      "acceptableSourceLocator": {
+        "container": {
+          "kind": "docx_paragraph",
+          "headingPath": [
+            "河流栖息地水样监测：东堤河段监测点"
+          ],
+          "paragraphIndex": 3
+        },
+        "range": {
+          "startOffset": 64,
+          "endOffset": 105
+        }
+      },
+      "queryId": "version-doc-097"
+    },
+    {
+      "fixtureId": "update-doc-098",
+      "documentKey": "doc-098",
+      "format": "docx",
+      "language": "en",
+      "fromVersion": 1,
+      "toVersion": 2,
+      "baselinePath": "documents/doc-098.docx",
+      "baselineSha256": "505e88af12bdeaab4cb743303a5716acddb15ff0afc3bb6e64dca0163c305688",
+      "version1Value": "5.3",
+      "version2Path": "updates/doc-098-v2.docx",
+      "version2Sha256": "a26f8fb46ef071ca267809f42167e3f660aa96b9cb42e93d6a0c382aac5989a8",
+      "version2ByteSize": 1444,
+      "supportText": "EV-HAB-08 Stone Hill: reference turbidity for the river reach 5.7 NTU; review within 28 min.",
+      "acceptableSourceLocator": {
+        "container": {
+          "kind": "docx_paragraph",
+          "headingPath": [
+            "River-habitat water-sample monitoring: Stone Hill River Reach"
+          ],
+          "paragraphIndex": 3
+        },
+        "range": {
+          "startOffset": 160,
+          "endOffset": 252
+        }
+      },
+      "queryId": "version-doc-098"
+    },
+    {
+      "fixtureId": "update-doc-099",
+      "documentKey": "doc-099",
+      "format": "docx",
+      "language": "zh",
+      "fromVersion": 1,
+      "toVersion": 2,
+      "baselinePath": "documents/doc-099.docx",
+      "baselineSha256": "3e9da0f1b3becfaf7fcb6312ced99b6e274e01a1e127be0eb9e888e8c233a3c4",
+      "version1Value": "3.5",
+      "version2Path": "updates/doc-099-v2.docx",
+      "version2Sha256": "fb3737f515d6d966eb077531087457587a77b1f709b3cb83bab6a8550832c200",
+      "version2ByteSize": 1509,
+      "supportText": "记录 EV-HAB-09：滨林 河段浊度参考值 3.9 NTU；31 分钟内复核。",
+      "acceptableSourceLocator": {
+        "container": {
+          "kind": "docx_paragraph",
+          "headingPath": [
+            "河流栖息地水样监测：滨林河段监测点"
+          ],
+          "paragraphIndex": 3
+        },
+        "range": {
+          "startOffset": 64,
+          "endOffset": 105
+        }
+      },
+      "queryId": "version-doc-099"
+    },
+    {
+      "fixtureId": "update-doc-100",
+      "documentKey": "doc-100",
+      "format": "docx",
+      "language": "zh",
+      "fromVersion": 1,
+      "toVersion": 2,
+      "baselinePath": "documents/doc-100.docx",
+      "baselineSha256": "9b5cfae8b4f9aeb861c185533498f2736f847738cffc5db0edbd5ceb98ed3943",
+      "version1Value": "4.0",
+      "version2Path": "updates/doc-100-v2.docx",
+      "version2Sha256": "f991df1e1b3eb5c79fc046cc620b277c48ce2b675926b4240458cb1a7f9cc375",
+      "version2ByteSize": 1510,
+      "supportText": "记录 EV-HAB-10：柳湾 河段浊度参考值 4.4 NTU；34 分钟内复核。",
+      "acceptableSourceLocator": {
+        "container": {
+          "kind": "docx_paragraph",
+          "headingPath": [
+            "河流栖息地水样监测：柳湾河段监测点"
+          ],
+          "paragraphIndex": 3
+        },
+        "range": {
+          "startOffset": 64,
+          "endOffset": 105
+        }
+      },
+      "queryId": "version-doc-100"
+    }
+  ]
+}

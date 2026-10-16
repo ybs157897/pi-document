@@ -1,0 +1,9 @@
+Cold-chain distribution temperature record: Cedar Quay Cold Depot
+
+Revision v1. Record EV-CLD-02.
+
+Site: Cedar Quay Cold Depot; asset: refrigerated container B.
+
+EV-CLD-02 Cedar Quay: cargo-bay temperature -16 °C; review within 10 min.
+
+during the storm watch, reseal the load after more than eight cumulative minutes with the door open; log readings in COLD-LOG-012.

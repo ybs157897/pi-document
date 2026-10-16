@@ -167,8 +167,8 @@
             "limit": {
               "type": "integer",
               "minimum": 1,
-              "maximum": 100,
-              "default": 20
+              "maximum": 16384,
+              "default": 100
             }
           },
           "required": [

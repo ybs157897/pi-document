@@ -1,0 +1,9 @@
+{
+  "provider": "qwen-maas",
+  "modelId": "qwen3.8-flash",
+  "baseUrl": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+  "credentialsEnv": "PI_DOCUMENT_AGENT_API_KEY",
+  "contextWindow": 1000000,
+  "maxOutputTokens": 1024,
+  "timeoutMs": 60000
+}

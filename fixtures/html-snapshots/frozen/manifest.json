@@ -1,0 +1,584 @@
+{
+  "fixtureVersion": 1,
+  "frozen": true,
+  "datasetSha256": "07b825d3fb539ad10ab55b97f1b136bbcda31ed92fe9da5903f487aefde641ae",
+  "counts": {
+    "snapshots": 20,
+    "languages": {
+      "zh": 10,
+      "en": 5,
+      "mixed": 5
+    }
+  },
+  "transport": "A2A upload of frozen synthetic HTML snapshot files",
+  "publicUrlFetchCoverage": "not covered here; these files do not claim 20 public source URLs",
+  "files": [
+    {
+      "path": "001.html",
+      "sha256": "c975a478650cfec1d406186b38cae0361b718a54c3acd1a6b2e40e4bb6ff2cc8",
+      "byteSize": 443
+    },
+    {
+      "path": "002.html",
+      "sha256": "c3d10698580f4dfb27b64322f6b3ffdae8806e781b0e5cfe59c9ace27c605f2d",
+      "byteSize": 444
+    },
+    {
+      "path": "003.html",
+      "sha256": "c452a58cdbc024d31e78fda817522db6dbfe5933539d441584265d7a561e61d4",
+      "byteSize": 459
+    },
+    {
+      "path": "004.html",
+      "sha256": "330d43d72ee26c3fd2ac7ad0cc428a121512307c1d5bb8af0a1294f535859eb7",
+      "byteSize": 444
+    },
+    {
+      "path": "005.html",
+      "sha256": "61c97be1021cc62e7385acc966f3afd06cb1a8d81b411b1e33c87aaf47d90606",
+      "byteSize": 447
+    },
+    {
+      "path": "006.html",
+      "sha256": "768b4f8e5e3b0c0341f749f6f984f49a0aaee20518b21acf6426b1837d60f13a",
+      "byteSize": 457
+    },
+    {
+      "path": "007.html",
+      "sha256": "81c709cd5fd348d92b0b011ac340604c42a60eccd83a75434efaca43d40cbf65",
+      "byteSize": 449
+    },
+    {
+      "path": "008.html",
+      "sha256": "0c2af8a66c32b76ebe0075e7a7b7d58a88628165ee4a743562feee7368d48ac4",
+      "byteSize": 470
+    },
+    {
+      "path": "009.html",
+      "sha256": "bedc5e7602acdbb086904390280617e7c3f0d1dfa3163fff1dee7a72adb5a0f8",
+      "byteSize": 446
+    },
+    {
+      "path": "010.html",
+      "sha256": "3f57d6e5cd3536d56404309c8755c7ce52fad7f31eb902b3019ea034b8dd1a66",
+      "byteSize": 479
+    },
+    {
+      "path": "011.html",
+      "sha256": "76e4d45ae97291f48a8cf048dcaa30c3cb6084bc959d3315330c34523fa4836f",
+      "byteSize": 444
+    },
+    {
+      "path": "012.html",
+      "sha256": "a5290d34165e0bb1f8bab753c4f3aab467e67b43ff5d25b33fc24ac99025c1bc",
+      "byteSize": 454
+    },
+    {
+      "path": "013.html",
+      "sha256": "a762770762fef9a6dc6e9c869a3ffd944ebeb281e7a00998b81342a554177df7",
+      "byteSize": 448
+    },
+    {
+      "path": "014.html",
+      "sha256": "6560c5b8aeccf10700c4790cc32183fa9b745ed1c7113231d64c115f01bcbfa8",
+      "byteSize": 469
+    },
+    {
+      "path": "015.html",
+      "sha256": "1bd7d79bc42f7660c6e09743bbc1af94e56b814c5db84595cb932a97834bb7e0",
+      "byteSize": 460
+    },
+    {
+      "path": "016.html",
+      "sha256": "d1e9cf684a5b61cb649f8cfb5baa24d450067a93a0ef665a8ea945a24f1c502f",
+      "byteSize": 440
+    },
+    {
+      "path": "017.html",
+      "sha256": "809c4a85b32f24b98710bd58f3c4396f9797801ce2a4622c577e7a215f81ac1f",
+      "byteSize": 466
+    },
+    {
+      "path": "018.html",
+      "sha256": "e092225bc178c044fafdfb68ce0b14bbadad2cdec4c18d7ef49c54d3a9ee6837",
+      "byteSize": 451
+    },
+    {
+      "path": "019.html",
+      "sha256": "53838c622e6574131cf945fefce95d03a4e3db5fdb7fda3f7cf0992c0a8af67a",
+      "byteSize": 481
+    },
+    {
+      "path": "020.html",
+      "sha256": "84b97ff06cfeecddd7a95fd256bcec402782918c42e3322dfd67777891292316",
+      "byteSize": 452
+    }
+  ],
+  "snapshots": [
+    {
+      "key": "html-snap-001",
+      "path": "001.html",
+      "format": "html",
+      "language": "zh",
+      "title": "社区水站巡检快照",
+      "sha256": "c975a478650cfec1d406186b38cae0361b718a54c3acd1a6b2e40e4bb6ff2cc8",
+      "byteSize": 443,
+      "tags": [
+        "html-snapshot",
+        "language-zh"
+      ],
+      "query": "查询 HTML-SNAP-001 北岸阀室的供水压力。",
+      "supportText": "北岸阀室的夜班供水压力为 0.44 MPa，复核周期为 12 分钟。",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "社区水站巡检快照",
+          "供水压力"
+        ],
+        "fragment": "evidence-001"
+      }
+    },
+    {
+      "key": "html-snap-002",
+      "path": "002.html",
+      "format": "html",
+      "language": "en",
+      "title": "冷链交接记录",
+      "sha256": "c3d10698580f4dfb27b64322f6b3ffdae8806e781b0e5cfe59c9ace27c605f2d",
+      "byteSize": 444,
+      "tags": [
+        "html-snapshot",
+        "language-en"
+      ],
+      "query": "What temperature did HTML-SNAP-002 cold depot record?",
+      "supportText": "Cold Depot COLD-02 kept the sample bay at 3 °C; the handover check closes within 9 minutes.",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "冷链交接记录",
+          "温控读数"
+        ],
+        "fragment": "evidence-002"
+      }
+    },
+    {
+      "key": "html-snap-003",
+      "path": "003.html",
+      "format": "html",
+      "language": "mixed",
+      "title": "青禾公交场站快照",
+      "sha256": "c452a58cdbc024d31e78fda817522db6dbfe5933539d441584265d7a561e61d4",
+      "byteSize": 459,
+      "tags": [
+        "html-snapshot",
+        "language-mixed"
+      ],
+      "query": "For HTML-SNAP-003, what is the departure battery threshold?",
+      "supportText": "HTML-SNAP-003：车辆出库电量不得低于 71%；Green Route 需要在发车前复核。",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "青禾公交场站快照",
+          "电量门槛"
+        ],
+        "fragment": "evidence-003"
+      }
+    },
+    {
+      "key": "html-snap-004",
+      "path": "004.html",
+      "format": "html",
+      "language": "zh",
+      "title": "社区诊所药柜快照",
+      "sha256": "330d43d72ee26c3fd2ac7ad0cc428a121512307c1d5bb8af0a1294f535859eb7",
+      "byteSize": 444,
+      "tags": [
+        "html-snapshot",
+        "language-zh"
+      ],
+      "query": "查询 HTML-SNAP-004 的药柜温度与异常动作。",
+      "supportText": "HTML-SNAP-004 记录药柜温度为 4 °C，异常时先隔离疫苗批次。",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "社区诊所药柜快照",
+          "冷藏批次"
+        ],
+        "fragment": "evidence-004"
+      }
+    },
+    {
+      "key": "html-snap-005",
+      "path": "005.html",
+      "format": "html",
+      "language": "en",
+      "title": "东堤水闸巡查快照",
+      "sha256": "61c97be1021cc62e7385acc966f3afd06cb1a8d81b411b1e33c87aaf47d90606",
+      "byteSize": 447,
+      "tags": [
+        "html-snapshot",
+        "language-en"
+      ],
+      "query": "查询 HTML-SNAP-005 闸前水位上限。",
+      "supportText": "HTML-SNAP-005：东堤闸前水位为 2.7 米，超过 3.1 米时通知值守组。",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "东堤水闸巡查快照",
+          "上游水位"
+        ],
+        "fragment": "evidence-005"
+      }
+    },
+    {
+      "key": "html-snap-006",
+      "path": "006.html",
+      "format": "html",
+      "language": "zh",
+      "title": "Solar Field S06 Snapshot",
+      "sha256": "768b4f8e5e3b0c0341f749f6f984f49a0aaee20518b21acf6426b1837d60f13a",
+      "byteSize": 457,
+      "tags": [
+        "html-snapshot",
+        "language-zh"
+      ],
+      "query": "What alarm threshold is listed in HTML-SNAP-006?",
+      "supportText": "HTML-SNAP-006: inverter alarm threshold is 229 V; preserve the waveform on an excursion.",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "Solar Field S06 Snapshot",
+          "Inverter alarm"
+        ],
+        "fragment": "evidence-006"
+      }
+    },
+    {
+      "key": "html-snap-007",
+      "path": "007.html",
+      "format": "html",
+      "language": "mixed",
+      "title": "石岗信号维护快照",
+      "sha256": "81c709cd5fd348d92b0b011ac340604c42a60eccd83a75434efaca43d40cbf65",
+      "byteSize": 449,
+      "tags": [
+        "html-snapshot",
+        "language-mixed"
+      ],
+      "query": "HTML-SNAP-007 的轨道回路响应上限是多少？",
+      "supportText": "HTML-SNAP-007：轨道回路响应上限为 84 ms，超时后封锁支线区段。",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "石岗信号维护快照",
+          "区段延迟"
+        ],
+        "fragment": "evidence-007"
+      }
+    },
+    {
+      "key": "html-snap-008",
+      "path": "008.html",
+      "format": "html",
+      "language": "zh",
+      "title": "Regional Archive A08 Snapshot",
+      "sha256": "0c2af8a66c32b76ebe0075e7a7b7d58a88628165ee4a743562feee7368d48ac4",
+      "byteSize": 470,
+      "tags": [
+        "html-snapshot",
+        "language-zh"
+      ],
+      "query": "What humidity target does HTML-SNAP-008 record?",
+      "supportText": "For HTML-SNAP-008, paper storage humidity is 47%; recheck the sensor after dehumidification.",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "Regional Archive A08 Snapshot",
+          "Paper storage"
+        ],
+        "fragment": "evidence-008"
+      }
+    },
+    {
+      "key": "html-snap-009",
+      "path": "009.html",
+      "format": "html",
+      "language": "en",
+      "title": "仓储机器人快照",
+      "sha256": "bedc5e7602acdbb086904390280617e7c3f0d1dfa3163fff1dee7a72adb5a0f8",
+      "byteSize": 446,
+      "tags": [
+        "html-snapshot",
+        "language-en"
+      ],
+      "query": "HTML-SNAP-009 规定的通道速度上限是什么？",
+      "supportText": "HTML-SNAP-009：搬运机器人速度上限为 0.85 m/s；人员进入巷道后降速。",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "仓储机器人快照",
+          "通道速度"
+        ],
+        "fragment": "evidence-009"
+      }
+    },
+    {
+      "key": "html-snap-010",
+      "path": "010.html",
+      "format": "html",
+      "language": "zh",
+      "title": "Willow Cove Water Snapshot",
+      "sha256": "3f57d6e5cd3536d56404309c8755c7ce52fad7f31eb902b3019ea034b8dd1a66",
+      "byteSize": 479,
+      "tags": [
+        "html-snapshot",
+        "language-zh"
+      ],
+      "query": "What reference turbidity is recorded in HTML-SNAP-010?",
+      "supportText": "HTML-SNAP-010 River Reach reference turbidity is 3.8 NTU; take an upstream comparison sample above the mark.",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "Willow Cove Water Snapshot",
+          "River sample"
+        ],
+        "fragment": "evidence-010"
+      }
+    },
+    {
+      "key": "html-snap-011",
+      "path": "011.html",
+      "format": "html",
+      "language": "mixed",
+      "title": "滨林光伏点快照",
+      "sha256": "76e4d45ae97291f48a8cf048dcaa30c3cb6084bc959d3315330c34523fa4836f",
+      "byteSize": 444,
+      "tags": [
+        "html-snapshot",
+        "language-mixed"
+      ],
+      "query": "HTML-SNAP-011 的逆变器复核电压是多少？",
+      "supportText": "HTML-SNAP-011：光伏逆变器在 226 V 时触发复核，并保存当次波形。",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "滨林光伏点快照",
+          "并网读数"
+        ],
+        "fragment": "evidence-011"
+      }
+    },
+    {
+      "key": "html-snap-012",
+      "path": "012.html",
+      "format": "html",
+      "language": "zh",
+      "title": "Bus Depot B12 Snapshot",
+      "sha256": "a5290d34165e0bb1f8bab753c4f3aab467e67b43ff5d25b33fc24ac99025c1bc",
+      "byteSize": 454,
+      "tags": [
+        "html-snapshot",
+        "language-zh"
+      ],
+      "query": "How much charge is reserved in HTML-SNAP-012?",
+      "supportText": "HTML-SNAP-012 reserves 74% charge for the Cedar Loop departure after the morning handover.",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "Bus Depot B12 Snapshot",
+          "Route reserve"
+        ],
+        "fragment": "evidence-012"
+      }
+    },
+    {
+      "key": "html-snap-013",
+      "path": "013.html",
+      "format": "html",
+      "language": "en",
+      "title": "南圃档案室快照",
+      "sha256": "a762770762fef9a6dc6e9c869a3ffd944ebeb281e7a00998b81342a554177df7",
+      "byteSize": 448,
+      "tags": [
+        "html-snapshot",
+        "language-en"
+      ],
+      "query": "HTML-SNAP-013 的档案湿度目标是多少？",
+      "supportText": "HTML-SNAP-013：南圃纸本文档库房维持 49% 相对湿度，超界后启动除湿。",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "南圃档案室快照",
+          "纸张湿度"
+        ],
+        "fragment": "evidence-013"
+      }
+    },
+    {
+      "key": "html-snap-014",
+      "path": "014.html",
+      "format": "html",
+      "language": "zh",
+      "title": "East Levee Gate Snapshot",
+      "sha256": "6560c5b8aeccf10700c4790cc32183fa9b745ed1c7113231d64c115f01bcbfa8",
+      "byteSize": 469,
+      "tags": [
+        "html-snapshot",
+        "language-zh"
+      ],
+      "query": "What level limit applies to HTML-SNAP-014?",
+      "supportText": "HTML-SNAP-014 gate upstream level limit is 3.2 m; call the watch team within five minutes of a warning.",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "East Levee Gate Snapshot",
+          "Storm watch"
+        ],
+        "fragment": "evidence-014"
+      }
+    },
+    {
+      "key": "html-snap-015",
+      "path": "015.html",
+      "format": "html",
+      "language": "mixed",
+      "title": "云岭冷藏点快照",
+      "sha256": "1bd7d79bc42f7660c6e09743bbc1af94e56b814c5db84595cb932a97834bb7e0",
+      "byteSize": 460,
+      "tags": [
+        "html-snapshot",
+        "language-mixed"
+      ],
+      "query": "HTML-SNAP-015 的冷藏温度和封签规则是什么？",
+      "supportText": "HTML-SNAP-015：样本箱温度保持在 -18 °C，开门累计超过 8 分钟须重新封签。",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "云岭冷藏点快照",
+          "样本箱读数"
+        ],
+        "fragment": "evidence-015"
+      }
+    },
+    {
+      "key": "html-snap-016",
+      "path": "016.html",
+      "format": "html",
+      "language": "zh",
+      "title": "银桥社区诊所快照",
+      "sha256": "d1e9cf684a5b61cb649f8cfb5baa24d450067a93a0ef665a8ea945a24f1c502f",
+      "byteSize": 440,
+      "tags": [
+        "html-snapshot",
+        "language-zh"
+      ],
+      "query": "HTML-SNAP-016 药品柜的设定温度是多少？",
+      "supportText": "HTML-SNAP-016：药品柜设定为 5 °C；每周三核对校准签。",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "银桥社区诊所快照",
+          "药品柜校准"
+        ],
+        "fragment": "evidence-016"
+      }
+    },
+    {
+      "key": "html-snap-017",
+      "path": "017.html",
+      "format": "html",
+      "language": "en",
+      "title": "Stone Hill Rail Snapshot",
+      "sha256": "809c4a85b32f24b98710bd58f3c4396f9797801ce2a4622c577e7a215f81ac1f",
+      "byteSize": 466,
+      "tags": [
+        "html-snapshot",
+        "language-en"
+      ],
+      "query": "Which response limit is recorded in HTML-SNAP-017?",
+      "supportText": "HTML-SNAP-017 permits 79 ms signal-loop response; block the segment when a reading exceeds that limit.",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "Stone Hill Rail Snapshot",
+          "Signal relay"
+        ],
+        "fragment": "evidence-017"
+      }
+    },
+    {
+      "key": "html-snap-018",
+      "path": "018.html",
+      "format": "html",
+      "language": "zh",
+      "title": "河湾采样快照",
+      "sha256": "e092225bc178c044fafdfb68ce0b14bbadad2cdec4c18d7ef49c54d3a9ee6837",
+      "byteSize": 451,
+      "tags": [
+        "html-snapshot",
+        "language-zh"
+      ],
+      "query": "HTML-SNAP-018 的河水浊度参考值是多少？",
+      "supportText": "HTML-SNAP-018：河湾采样点浊度参考值为 4.4 NTU，超限后加采上游对照样本。",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "河湾采样快照",
+          "水样浊度"
+        ],
+        "fragment": "evidence-018"
+      }
+    },
+    {
+      "key": "html-snap-019",
+      "path": "019.html",
+      "format": "html",
+      "language": "mixed",
+      "title": "Riverwood Cold Depot Snapshot",
+      "sha256": "53838c622e6574131cf945fefce95d03a4e3db5fdb7fda3f7cf0992c0a8af67a",
+      "byteSize": 481,
+      "tags": [
+        "html-snapshot",
+        "language-mixed"
+      ],
+      "query": "What temperature and reseal interval does HTML-SNAP-019 specify?",
+      "supportText": "HTML-SNAP-019 limits the cargo-bay temperature to -17 °C; reseal after seven cumulative open-door minutes.",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "Riverwood Cold Depot Snapshot",
+          "Door seal"
+        ],
+        "fragment": "evidence-019"
+      }
+    },
+    {
+      "key": "html-snap-020",
+      "path": "020.html",
+      "format": "html",
+      "language": "zh",
+      "title": "南岸水站快照",
+      "sha256": "84b97ff06cfeecddd7a95fd256bcec402782918c42e3322dfd67777891292316",
+      "byteSize": 452,
+      "tags": [
+        "html-snapshot",
+        "language-zh"
+      ],
+      "query": "HTML-SNAP-020 的供水压力和备用泵规则是什么？",
+      "supportText": "HTML-SNAP-020：南岸水站出水压力为 0.41 MPa；连续两次偏差后切换备用泵。",
+      "expectedLocator": {
+        "kind": "html_section",
+        "headingPath": [
+          "南岸水站快照",
+          "备用泵切换"
+        ],
+        "fragment": "evidence-020"
+      }
+    }
+  ],
+  "generatorSha256": "518aae9f67b9422ae600d4348826576e825f1a49716d32465559763645146783",
+  "limitations": [
+    "These local synthetic snapshots verify HTML parser output and locator fragments through upload and search.",
+    "They do not exercise HTTP URL fetching, DNS resolution, redirect handling, or public website availability."
+  ]
+}

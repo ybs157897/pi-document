@@ -1,0 +1,9 @@
+Cold-chain distribution temperature record: Cloud Ridge Cold Depot
+
+Revision v1. Record EV-CLD-06.
+
+Site: Cloud Ridge Cold Depot; asset: refrigerated container F.
+
+EV-CLD-06 Cloud Ridge: cargo-bay temperature -21 °C; review within 22 min.
+
+under peak load, reseal the load after more than eight cumulative minutes with the door open; log readings in COLD-LOG-016.

@@ -1,0 +1,644 @@
+{
+  "fixtureVersion": 1,
+  "frozen": true,
+  "datasetSha256": "da6a450c6f813ce99b1d26acd3e88863c689bc200e7bb2ee3c14ecb580a89c74",
+  "blindSplit": {
+    "seed": "pi-document-evaluation-v1-blind-2026-10",
+    "strategy": "pre-retrieval SHA-256 rank within query category and filter/permission subcategory",
+    "developmentQueries": 80,
+    "blindQueries": 20
+  },
+  "counts": {
+    "documents": 100,
+    "documentsByFormat": {
+      "txt": 20,
+      "md": 30,
+      "pdf": 30,
+      "docx": 20
+    },
+    "documentsByLanguage": {
+      "zh": 60,
+      "en": 30,
+      "mixed": 10
+    },
+    "formatLanguageMatrix": {
+      "txt": {
+        "zh": 12,
+        "en": 6,
+        "mixed": 2
+      },
+      "md": {
+        "zh": 18,
+        "en": 9,
+        "mixed": 3
+      },
+      "pdf": {
+        "zh": 18,
+        "en": 9,
+        "mixed": 3
+      },
+      "docx": {
+        "zh": 12,
+        "en": 6,
+        "mixed": 2
+      }
+    },
+    "queries": 100,
+    "queriesByCategory": {
+      "exact": 20,
+      "synonym": 30,
+      "cross_passage_document": 20,
+      "version": 10,
+      "no_answer": 10,
+      "filter_permission": 10
+    },
+    "queriesByLanguage": {
+      "zh": 59,
+      "en": 31,
+      "mixed": 10
+    },
+    "queriesBySplit": {
+      "development": 80,
+      "blind": 20
+    },
+    "versionTransitions": 10
+  },
+  "files": [
+    {
+      "path": "corpus.json",
+      "sha256": "66c6ce686c30c0f472d86cd410a857b5587819a07f0a888be4bbe40813ed7b3d",
+      "byteSize": 137551
+    },
+    {
+      "path": "documents/doc-001.txt",
+      "sha256": "a7c00063572ea4d3954e25eba3b4350eb73e77e82a70959f7e309cbdcfeca09b",
+      "byteSize": 309
+    },
+    {
+      "path": "documents/doc-002.txt",
+      "sha256": "97e18dd657ffe89976affa85f398980a25d7677d52e557f2bd041a9836f24709",
+      "byteSize": 340
+    },
+    {
+      "path": "documents/doc-003.txt",
+      "sha256": "2beef041d01c64bf31d131e9d206c093f5a72056b86d013997029fc400c790fe",
+      "byteSize": 310
+    },
+    {
+      "path": "documents/doc-004.txt",
+      "sha256": "45cca3ce3e8344bfe78745ad5a38f60a3f86d2cba3c5107d48a9a19f5338165b",
+      "byteSize": 660
+    },
+    {
+      "path": "documents/doc-005.txt",
+      "sha256": "a1874ed3209ac287ff25b7f4b60d6a4dea451a1e545677cc0ce539e0bb0d1917",
+      "byteSize": 310
+    },
+    {
+      "path": "documents/doc-006.txt",
+      "sha256": "9ad689647ce71fac8f61d4c388bdaca56e57556533593e4a1ed56e19fd37fc29",
+      "byteSize": 336
+    },
+    {
+      "path": "documents/doc-007.txt",
+      "sha256": "fcf7aa519dd1c3a90dd075403992aabe811f872858f56641180e12138553329b",
+      "byteSize": 310
+    },
+    {
+      "path": "documents/doc-008.txt",
+      "sha256": "60fdc29d0dd9a9e90c162bb5f6c81d1badf0c56e33243dfbe7b22e63a51e8e0c",
+      "byteSize": 335
+    },
+    {
+      "path": "documents/doc-009.txt",
+      "sha256": "5a21d52c1795cba65f3537af6301bb41a00d142dca58738e43dc3d1e080bdd8e",
+      "byteSize": 310
+    },
+    {
+      "path": "documents/doc-010.txt",
+      "sha256": "b29e50e375108b0b52c86241733595a45c909a42cd7abec799092ce5af534457",
+      "byteSize": 310
+    },
+    {
+      "path": "documents/doc-011.txt",
+      "sha256": "334407ca33b48d32a73cee3b8cded2ca5f6b41d5ef70a283c8dbeacbf71c999b",
+      "byteSize": 307
+    },
+    {
+      "path": "documents/doc-012.txt",
+      "sha256": "f50830408a835d7b12d952f48934190c365d2622de160c5c43fec142b8838217",
+      "byteSize": 369
+    },
+    {
+      "path": "documents/doc-013.txt",
+      "sha256": "c9200c12239400f414dd544e80127dbcf6f212ce168f381ff03989877a0e09e4",
+      "byteSize": 308
+    },
+    {
+      "path": "documents/doc-014.txt",
+      "sha256": "ffa3eb4285055969e7bf4359317140412586059afdcc79f84fde0246d212b39e",
+      "byteSize": 687
+    },
+    {
+      "path": "documents/doc-015.txt",
+      "sha256": "7d6ec4a946883a674279508f86c2b6c47d08e0bd678eb56ea0aadfae0a4e1e81",
+      "byteSize": 308
+    },
+    {
+      "path": "documents/doc-016.txt",
+      "sha256": "1b191250f084dd010cf6e40fa79b90a8e88cc58412296d9bdb858332645ba6ce",
+      "byteSize": 365
+    },
+    {
+      "path": "documents/doc-017.txt",
+      "sha256": "dfc48c6da6a4f099bd3dc101f905dfedacf6407790989f561322ae6a0b6aaa8c",
+      "byteSize": 308
+    },
+    {
+      "path": "documents/doc-018.txt",
+      "sha256": "e5a6ee9df68ac28dd87f329f1152cc50a0c5914a20652fd42958572ea85d13f8",
+      "byteSize": 364
+    },
+    {
+      "path": "documents/doc-019.txt",
+      "sha256": "f24545bd6e6b94fe0311f4a5f786ff833ac24eeda5a045bff996f9f7759474f0",
+      "byteSize": 308
+    },
+    {
+      "path": "documents/doc-020.txt",
+      "sha256": "453b8988025d3e1018da9abc963a9bb2f719b5725177f18888c478b2ded66548",
+      "byteSize": 308
+    },
+    {
+      "path": "documents/doc-021.md",
+      "sha256": "8f5c5b13af1295910cb9c3ef3952a1291f519037c8714847432fae4b8d74a1b8",
+      "byteSize": 321
+    },
+    {
+      "path": "documents/doc-022.md",
+      "sha256": "292b8a709ceee94704443e108c13980a6c6e46863c7316aed12ade644255326b",
+      "byteSize": 332
+    },
+    {
+      "path": "documents/doc-023.md",
+      "sha256": "97c2370f7519925453eb3d75b493776e5d3f2d2de0fdc87743c57343e728ee88",
+      "byteSize": 322
+    },
+    {
+      "path": "documents/doc-024.md",
+      "sha256": "f0dc02ac3ca203f06e7670dcf24ee057c16684decf9fe416b6c079881339e021",
+      "byteSize": 609
+    },
+    {
+      "path": "documents/doc-025.md",
+      "sha256": "e44de879d73971cc3ec11ae8969f747989cee7c638da9fb899c1e0bbada1809b",
+      "byteSize": 322
+    },
+    {
+      "path": "documents/doc-026.md",
+      "sha256": "d059612e1745504b9493e6370ee9bb1196c169a6246039ea3b432ee5adbf6747",
+      "byteSize": 328
+    },
+    {
+      "path": "documents/doc-027.md",
+      "sha256": "09c32c9374de01b7553320c2b9286aef1336d22398ebd814eeaea52bf0373f78",
+      "byteSize": 322
+    },
+    {
+      "path": "documents/doc-028.md",
+      "sha256": "7c33ce3b2b0351183220c244eaa254a4eb2312c39847e91b5fd2a9b379034763",
+      "byteSize": 327
+    },
+    {
+      "path": "documents/doc-029.md",
+      "sha256": "c71eaa4cb47a0dfc05c1dd4f0a8ddc58ce5a5ec35b231eac85a5a0d4deeaaceb",
+      "byteSize": 322
+    },
+    {
+      "path": "documents/doc-030.md",
+      "sha256": "73b247fe1b342831639508ac494b22f249cada39dde93875d6666fdf907a7d44",
+      "byteSize": 322
+    },
+    {
+      "path": "documents/doc-031.md",
+      "sha256": "cfa495f4818bebc503b1567cce14490f1658c1c4faee399002ea413b1c47a813",
+      "byteSize": 330
+    },
+    {
+      "path": "documents/doc-032.md",
+      "sha256": "083bed56fc1b18fc49896b36955c64cc972085b8ea649343c2392b747e701c4d",
+      "byteSize": 379
+    },
+    {
+      "path": "documents/doc-033.md",
+      "sha256": "0a86aea1f334707086a1eb401edd7d7755937942fecac6ad9ee2761361e23ff7",
+      "byteSize": 331
+    },
+    {
+      "path": "documents/doc-034.md",
+      "sha256": "3da6c49abdd181f8ceaaf02aba2436aea71fd8248020d08d1055e41ffd83b47b",
+      "byteSize": 650
+    },
+    {
+      "path": "documents/doc-035.md",
+      "sha256": "9d0bb4e80d02e7a89a8b2f139b1a7151943ee27de681595f74d248838d3f6628",
+      "byteSize": 331
+    },
+    {
+      "path": "documents/doc-036.md",
+      "sha256": "791b2691e7f2f08488cb466217382ac3711100e4eb444e9da4044c68fbe70cb1",
+      "byteSize": 375
+    },
+    {
+      "path": "documents/doc-037.md",
+      "sha256": "588b3e376637b02bc88c47f6e801bffdc08c3a558f2662a684818f8f39d196c1",
+      "byteSize": 331
+    },
+    {
+      "path": "documents/doc-038.md",
+      "sha256": "44523dc7243d3d765b6217bb90583983226f9c97d6630bd710465ee933d5bde9",
+      "byteSize": 374
+    },
+    {
+      "path": "documents/doc-039.md",
+      "sha256": "a3531b62549ba2e640b19ec7016a259e80b11af15764fe3dc1a97b6081504e89",
+      "byteSize": 331
+    },
+    {
+      "path": "documents/doc-040.md",
+      "sha256": "ea70651e0240e13e4be38727b24c497f2b6a3fa14e7585e3059146e5096086ca",
+      "byteSize": 331
+    },
+    {
+      "path": "documents/doc-041.md",
+      "sha256": "104e51ab58568070abc7b6c43b24d29c405d494e72f488ef285a0d6c5d4e9509",
+      "byteSize": 308
+    },
+    {
+      "path": "documents/doc-042.md",
+      "sha256": "96d169a0f52ad291395024c5a14a9a9b4bf5c9bfec5898226037a52c167b1e45",
+      "byteSize": 336
+    },
+    {
+      "path": "documents/doc-043.md",
+      "sha256": "a430c32cfa3c07c4aca537ae12fec6420829a7f119f7691c7455cbe52725441d",
+      "byteSize": 309
+    },
+    {
+      "path": "documents/doc-044.md",
+      "sha256": "7e732481be285200fcb7862080fcc4e826b5a2b7765f0aa018753120b82c87c0",
+      "byteSize": 599
+    },
+    {
+      "path": "documents/doc-045.md",
+      "sha256": "fb1a7c66243d89167985f826d3b350d6603fd6df4ba24ab13313c79f21d3c085",
+      "byteSize": 309
+    },
+    {
+      "path": "documents/doc-046.md",
+      "sha256": "a1e12aff7e7243b10c4765f5f227d90426a1ac89bb1a7c50e436b6c3f2740871",
+      "byteSize": 332
+    },
+    {
+      "path": "documents/doc-047.md",
+      "sha256": "f222815fc91a3139a077d28fec6debbaf30cb657ee8959277959766dac345472",
+      "byteSize": 309
+    },
+    {
+      "path": "documents/doc-048.md",
+      "sha256": "d238b2c3975e13434df5305e5dfa986547c4c4f573e0e7ee9464668a8b3c74d4",
+      "byteSize": 331
+    },
+    {
+      "path": "documents/doc-049.md",
+      "sha256": "b21d1ebb458ec87e600a8665b887101b5a6244fd925e5090b6517985cca25df7",
+      "byteSize": 309
+    },
+    {
+      "path": "documents/doc-050.md",
+      "sha256": "ad159cbc6111fc5fd65aff16a44fae0a85682981d91acfb660f64b113f711664",
+      "byteSize": 309
+    },
+    {
+      "path": "documents/doc-051.pdf",
+      "sha256": "f9b192f17a1e67d77b641454b3d73b85b6b8af656107730ba53d3332dd2ebd33",
+      "byteSize": 2870
+    },
+    {
+      "path": "documents/doc-052.pdf",
+      "sha256": "ba18209f06953c45172f46446027f707e39963f2c95bd3f011c099debe0c6bed",
+      "byteSize": 2929
+    },
+    {
+      "path": "documents/doc-053.pdf",
+      "sha256": "a477274a5107616ad66eb93464703318f6d335fd1a2226671083f171bb3bd71d",
+      "byteSize": 2869
+    },
+    {
+      "path": "documents/doc-054.pdf",
+      "sha256": "3da19e482733109cbc60a750d4aac242f2d655be663190079d61523d14056205",
+      "byteSize": 3380
+    },
+    {
+      "path": "documents/doc-055.pdf",
+      "sha256": "2eb58607bbff59b7a789e5aad459d36efeba8d10eac49676f070f5d1d5d3e0e0",
+      "byteSize": 2872
+    },
+    {
+      "path": "documents/doc-056.pdf",
+      "sha256": "ed6ec695494dda4f07a1dd0c3fe5ed7c6bbb4845157b9c00a5b01ed2e3f55c55",
+      "byteSize": 2904
+    },
+    {
+      "path": "documents/doc-057.pdf",
+      "sha256": "701f5f3cede9102e8dc759e0c4040ffa997a392f87eb636c25e19ff750355fcd",
+      "byteSize": 2863
+    },
+    {
+      "path": "documents/doc-058.pdf",
+      "sha256": "59713717e3d83d94d9d7deb5a40b0b05fac212cefe935f87bf561a15e190c8e5",
+      "byteSize": 2925
+    },
+    {
+      "path": "documents/doc-059.pdf",
+      "sha256": "c85b2be0a110c27e9cc886c6ce313dfdfdb0e997e169b70577fc3e17f1ab4fc3",
+      "byteSize": 2879
+    },
+    {
+      "path": "documents/doc-060.pdf",
+      "sha256": "52f7e7e3a2fe8eb826ae3ff114dec4bd0437724596290d3da9779018897c61b4",
+      "byteSize": 2873
+    },
+    {
+      "path": "documents/doc-061.pdf",
+      "sha256": "1c6db6dfe9e43c1414ec3b5e1d1bcc4bb904e53ec3a4fb4c58414c68aad327eb",
+      "byteSize": 2885
+    },
+    {
+      "path": "documents/doc-062.pdf",
+      "sha256": "013957467e299261e7a78afd28a9eea510289cc48f453abd21c255f848217350",
+      "byteSize": 2905
+    },
+    {
+      "path": "documents/doc-063.pdf",
+      "sha256": "db072ca681ef5fbc223f322d3c84779a4cf3313f21f0f497e9a27f476bbe1972",
+      "byteSize": 2879
+    },
+    {
+      "path": "documents/doc-064.pdf",
+      "sha256": "146c024108a8fa869f7a66c1e0be75ebe300e4b5d4024d0161cf338fc073b3fa",
+      "byteSize": 3361
+    },
+    {
+      "path": "documents/doc-065.pdf",
+      "sha256": "78c59cac656c0518f1f3e1d90438c27fba4e26627ab66a23875e536fa4495541",
+      "byteSize": 2879
+    },
+    {
+      "path": "documents/doc-066.pdf",
+      "sha256": "4124d3fc32bca659999fed60daa2784bd3f173d7fab655f4247978b106299271",
+      "byteSize": 2912
+    },
+    {
+      "path": "documents/doc-067.pdf",
+      "sha256": "09ff2b37b107b554c584bb87653617f0dd3f04f720ac2e35534923a8fceba779",
+      "byteSize": 2887
+    },
+    {
+      "path": "documents/doc-068.pdf",
+      "sha256": "4620e37f5ecd46cd4ab2b6bc52c34af8531c15e6562d1f8c724927771062307e",
+      "byteSize": 2894
+    },
+    {
+      "path": "documents/doc-069.pdf",
+      "sha256": "17c226a4a1c275de719f1fef6c9b1045532db55cf004da4129e83d5172638d2e",
+      "byteSize": 2889
+    },
+    {
+      "path": "documents/doc-070.pdf",
+      "sha256": "e2088414433a9032db8664d00e44e0307a51e941e2f0a580917807e92bb5c1c7",
+      "byteSize": 2886
+    },
+    {
+      "path": "documents/doc-071.pdf",
+      "sha256": "0a7ab13f688a2a7074775f60b4e4e536922b8e55beb749defa2fbe90a01d814f",
+      "byteSize": 2882
+    },
+    {
+      "path": "documents/doc-072.pdf",
+      "sha256": "834c612a940c703064ee0006074be11b33178765ebdf321d632b386b042aa7c4",
+      "byteSize": 2953
+    },
+    {
+      "path": "documents/doc-073.pdf",
+      "sha256": "1f57458df7bc3c11ae58fdd8ffa1b652f810eded0aff4f2f295b9f1b4da8a4e7",
+      "byteSize": 2866
+    },
+    {
+      "path": "documents/doc-074.pdf",
+      "sha256": "8af9a50f197d7e1916473ae8c0754db21f1b1397767fe2bb987728b69b3d8831",
+      "byteSize": 3401
+    },
+    {
+      "path": "documents/doc-075.pdf",
+      "sha256": "f4c65d8465aed012b5fccfca9eb96e232b662a926dae646400ca0535a2308057",
+      "byteSize": 2880
+    },
+    {
+      "path": "documents/doc-076.pdf",
+      "sha256": "ace889bae74943d5cf481df3a466be0752d3f933f6aff1ca3e03854f7c2f5da9",
+      "byteSize": 2934
+    },
+    {
+      "path": "documents/doc-077.pdf",
+      "sha256": "9bf7881b807d74252aaebfc3ff17375af1b85a36876a31f761f217b145613417",
+      "byteSize": 2874
+    },
+    {
+      "path": "documents/doc-078.pdf",
+      "sha256": "25397541a2d8b19b1e6ca7b6ebe3eedc341c2a77a90df1d492dde410d83eaf15",
+      "byteSize": 2941
+    },
+    {
+      "path": "documents/doc-079.pdf",
+      "sha256": "a1da5d90ffecd09a086fdd4c1212c6313f41cd1437298066927f1676daec6820",
+      "byteSize": 2883
+    },
+    {
+      "path": "documents/doc-080.pdf",
+      "sha256": "20fca64038c68a8b28968485a6abe51cef378b0bfc5a7294bb88eb5964e1e297",
+      "byteSize": 2879
+    },
+    {
+      "path": "documents/doc-081.docx",
+      "sha256": "ca83c8e86e29088414a3e0a86589150145fcf4e1f55376d6cf64cadae2f36da7",
+      "byteSize": 1558
+    },
+    {
+      "path": "documents/doc-082.docx",
+      "sha256": "0047c9e786b6f43890c63a22fe7004d5fcd16f2dfa8b4927a9e9f58daf6bb564",
+      "byteSize": 1451
+    },
+    {
+      "path": "documents/doc-083.docx",
+      "sha256": "b326719e5dcbcb34154eae0b684b5ee75e832c706583bc2a9d5628e95d924841",
+      "byteSize": 1554
+    },
+    {
+      "path": "documents/doc-084.docx",
+      "sha256": "e3c5a971c097bef65117264457fbe8e6646bf6a7840397e1b0862c7490363e8c",
+      "byteSize": 1753
+    },
+    {
+      "path": "documents/doc-085.docx",
+      "sha256": "29e5c0b21375f75deb6919a72eeb650192d19955c59169bc812b4680121c64f9",
+      "byteSize": 1561
+    },
+    {
+      "path": "documents/doc-086.docx",
+      "sha256": "049f340878bf3ce39fa814282655b7670c30e7d9001a5520cb6281fc2dfb6aa4",
+      "byteSize": 1453
+    },
+    {
+      "path": "documents/doc-087.docx",
+      "sha256": "53cfd0e7be2b75b26cad36720c33fb327eb27d8cfd7676047040518526722c45",
+      "byteSize": 1556
+    },
+    {
+      "path": "documents/doc-088.docx",
+      "sha256": "cae9f042a6257c62fa62eccb8895d43aefe5e88b1e5866c3263dc0a6235730ee",
+      "byteSize": 1449
+    },
+    {
+      "path": "documents/doc-089.docx",
+      "sha256": "cdf7f9c43e3452e39a4cef9e056471c8c44d86c61b3abebd3eeef94bf3962b58",
+      "byteSize": 1563
+    },
+    {
+      "path": "documents/doc-090.docx",
+      "sha256": "594bd1d954a12dd3d61fa457d2e67687178df158e2befc56084d9f13defda287",
+      "byteSize": 1558
+    },
+    {
+      "path": "documents/doc-091.docx",
+      "sha256": "a8c9300514f447f87b7d9ba1709fe0a7c667675a1b06f2433052ac234dfe5d07",
+      "byteSize": 1507
+    },
+    {
+      "path": "documents/doc-092.docx",
+      "sha256": "634cb4481cd23592bdd0a3865391c9c8d578012dc9f839e5f0068cd39e700f14",
+      "byteSize": 1447
+    },
+    {
+      "path": "documents/doc-093.docx",
+      "sha256": "8fbffcdb686958310a9e8ed63dcd3bf9978b716d7c27a069b82bd8a54e968d82",
+      "byteSize": 1510
+    },
+    {
+      "path": "documents/doc-094.docx",
+      "sha256": "adbf418e7091857521844106e7f760d11a50321476e2d3857207616a3e71fff3",
+      "byteSize": 1702
+    },
+    {
+      "path": "documents/doc-095.docx",
+      "sha256": "a3e85c5814adf9c7362768d33333398e880ded397afcef85aa68da0cc8a3051c",
+      "byteSize": 1509
+    },
+    {
+      "path": "documents/doc-096.docx",
+      "sha256": "bacf023fd5065b8112c758b3aafab2d2dc7b1b9bcb2f4cfd1111ef6c10d601fd",
+      "byteSize": 1446
+    },
+    {
+      "path": "documents/doc-097.docx",
+      "sha256": "a127f5fc7d620916826814c884f20ddb3a96cb775c5ead9812f0a4aeaf0a8c54",
+      "byteSize": 1511
+    },
+    {
+      "path": "documents/doc-098.docx",
+      "sha256": "505e88af12bdeaab4cb743303a5716acddb15ff0afc3bb6e64dca0163c305688",
+      "byteSize": 1444
+    },
+    {
+      "path": "documents/doc-099.docx",
+      "sha256": "3e9da0f1b3becfaf7fcb6312ced99b6e274e01a1e127be0eb9e888e8c233a3c4",
+      "byteSize": 1510
+    },
+    {
+      "path": "documents/doc-100.docx",
+      "sha256": "9b5cfae8b4f9aeb861c185533498f2736f847738cffc5db0edbd5ceb98ed3943",
+      "byteSize": 1510
+    },
+    {
+      "path": "queries.json",
+      "sha256": "c6069828cead4b57cc2f18d96db4014067fd1dbf696154c64814f4a3b22466a3",
+      "byteSize": 115746
+    },
+    {
+      "path": "updates.json",
+      "sha256": "8154ba9d54b68c79a0eb21002adcc8599b1613d70d789e0ed345dab08456df80",
+      "byteSize": 10185
+    },
+    {
+      "path": "updates/doc-091-v2.docx",
+      "sha256": "78b39cd412476a5142f58c85c950eb895d7ff05a5e5788322c9321f4e4563781",
+      "byteSize": 1510
+    },
+    {
+      "path": "updates/doc-092-v2.docx",
+      "sha256": "3bfc065d78838b938cf93f53ccf5ace4c5cf7bae7ccdc68f69ba15a8a505a557",
+      "byteSize": 1447
+    },
+    {
+      "path": "updates/doc-093-v2.docx",
+      "sha256": "ee784ee9e789acd9df36c76d196971c86f7c6d2aab6e27fe4d84a5955934dbc2",
+      "byteSize": 1509
+    },
+    {
+      "path": "updates/doc-094-v2.docx",
+      "sha256": "63317ac28e2b20e4b9aa17eb6683cfe2e4d09380c02239fac3635e0193c79273",
+      "byteSize": 1702
+    },
+    {
+      "path": "updates/doc-095-v2.docx",
+      "sha256": "e783e8b20cd454645f3c21a79c870a27940b009fdd0a48fd61ffbf7483fcda93",
+      "byteSize": 1509
+    },
+    {
+      "path": "updates/doc-096-v2.docx",
+      "sha256": "2854e7cb869a292005a3f79e56a4810b5220d9c13fff5b0f698494904e76de75",
+      "byteSize": 1446
+    },
+    {
+      "path": "updates/doc-097-v2.docx",
+      "sha256": "9c7350515ead777eb3dbf8934f46ae6790e5b4f0ee94fc342cbbf10cb8747c67",
+      "byteSize": 1510
+    },
+    {
+      "path": "updates/doc-098-v2.docx",
+      "sha256": "a26f8fb46ef071ca267809f42167e3f660aa96b9cb42e93d6a0c382aac5989a8",
+      "byteSize": 1444
+    },
+    {
+      "path": "updates/doc-099-v2.docx",
+      "sha256": "fb3737f515d6d966eb077531087457587a77b1f709b3cb83bab6a8550832c200",
+      "byteSize": 1509
+    },
+    {
+      "path": "updates/doc-100-v2.docx",
+      "sha256": "f991df1e1b3eb5c79fc046cc620b277c48ce2b675926b4240458cb1a7f9cc375",
+      "byteSize": 1510
+    }
+  ],
+  "generationSources": {
+    "generatorSha256": "a24846d0b76bc4539ece3a3c90712c39ec8c1d2b329d7db7dc829852532a5522",
+    "pdfHelperSha256": "c8894882e03c8f000ce87aaeab029ed10687e80be82d95202e1ab9175cea60b7",
+    "docxHelperSha256": "e6b73ccd6c6ae76db17e6923681ac9d9a14c107451957eacf5afc57dfdfbe827"
+  },
+  "restrictions": [
+    "The corpus is synthetic and does not prove retrieval quality on real enterprise documents.",
+    "Twenty blind queries are frozen before retrieval tuning and must not be used to select parameters.",
+    "Version queries are fixtures only until the M3 v1-to-v2 update path is implemented and executed.",
+    "The five permission cases use reader identity against a KB without membership; no results are expected."
+  ]
+}

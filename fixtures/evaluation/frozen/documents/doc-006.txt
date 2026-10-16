@@ -1,0 +1,9 @@
+Municipal water-pump inspection: Cloud Ridge Pump Station
+
+Revision v1. Record EV-WTR-06.
+
+Site: Cloud Ridge Pump Station; asset: booster pump F.
+
+EV-WTR-06 Cloud Ridge: outlet pressure 0.48 MPa; review within 22 min.
+
+under peak load, switch to the parallel standby pump after two out-of-range readings; log readings in WATER-LOG-006.

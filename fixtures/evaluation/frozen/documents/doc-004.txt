@@ -1,0 +1,13 @@
+市政供水泵站巡检：银桥供水站 / Municipal water-pump inspection: Silver Bridge Pump Station
+
+修订版本：v1。记录编号：EV-WTR-04。 Revision v1. Record EV-WTR-04.
+
+地点：银桥供水站；设备：增压泵D。 Site: Silver Bridge Pump Station; asset: booster pump D.
+
+记录 EV-WTR-04：银桥 出水压力 0.51 MPa；16 分钟内复核。
+
+EV-WTR-04 Silver Bridge: outlet pressure 0.51 MPa; review within 16 min.
+
+设备重启后，偏离目标两次时切换并联备用泵；读数记入 WATER-LOG-004。
+
+after equipment restart, switch to the parallel standby pump after two out-of-range readings; log readings in WATER-LOG-004.

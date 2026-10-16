@@ -1,0 +1,150 @@
+{
+  "fixtureVersion": 1,
+  "description": "Fixed Chinese and identifier corpus for a PostgreSQL simple-config lexical spike. This fixture does not encode embedding or synonym behavior.",
+  "corpus": [
+    {
+      "id": "task-recovery",
+      "text": "任务恢复依赖最近提交的检查点；进程重启后从该检查点继续执行。编号 TASK-001。"
+    },
+    {
+      "id": "index-publish",
+      "text": "索引发布在 PostgreSQL 单事务中切换 activeGeneration。编号 P0-INDEX-004。"
+    },
+    {
+      "id": "tenant-acl",
+      "text": "租户隔离要求所有读取先通过 ACL 校验，并在输出前再次检查。编号 ACL-003。"
+    },
+    {
+      "id": "chinese-segmentation",
+      "text": "中文分词使用 Intl.Segmenter zh word 模式，索引和查询共用相同分词策略。编号 M0-LEX-019。"
+    },
+    {
+      "id": "payload-hash",
+      "text": "payloadHash 与 requestId 联合判断业务请求幂等；冲突时返回 IDEMPOTENCY_CONFLICT。编号 REQ-017。"
+    },
+    {
+      "id": "request-id",
+      "text": "requestId 是调用方提供的业务幂等键，不是 JSON-RPC id。编号 REQ-018。"
+    },
+    {
+      "id": "version-cas",
+      "text": "expectedVersion 用于更新时的 CAS 比较，版本冲突不得覆盖较新的发布。编号 CAS-007。"
+    },
+    {
+      "id": "document-tombstone",
+      "text": "document.delete 先写 tombstone，立即阻止读取并安排物理清理。编号 DOC-008。"
+    },
+    {
+      "id": "outbox-recovery",
+      "text": "outbox 负责可靠投递和重启修复，不直接运行模型任务。编号 OUTBOX-009。"
+    },
+    {
+      "id": "ssrf-guard",
+      "text": "URL 抓取拒绝 localhost、私网和云元数据地址。编号 SSRF-010。"
+    },
+    {
+      "id": "pgvector-index",
+      "text": "向量索引存储在 pgvector，profile 变化时重建 generation。编号 EMB-011。"
+    },
+    {
+      "id": "postgres-lexical",
+      "text": "PostgreSQL 词法检索将 to_tsvector 与 to_tsquery 应用于同一分词文本。编号 LEX-012。"
+    },
+    {
+      "id": "a2a-version",
+      "text": "JSON-RPC 客户端发送 A2A-Version: 1.0。编号 A2A-013。"
+    },
+    {
+      "id": "pi-task-id",
+      "text": "Pi taskId 仅用于内部执行恢复；公共 A2A taskId 由服务端生成。编号 TASK-014。"
+    },
+    {
+      "id": "sha256-integrity",
+      "text": "SHA-256 用于校验原始资料内容，摘要为 64 位十六进制。编号 HASH-015。"
+    },
+    {
+      "id": "rrf-ranking",
+      "text": "RRF 融合词法与向量候选排名，不把 score 当作概率。编号 RRF-016。"
+    },
+    {
+      "id": "docx-locator",
+      "text": "DOCX 解析保留标题路径和 paragraphIndex，引用指向源段落。编号 DOCX-017。"
+    },
+    {
+      "id": "pdf-locator",
+      "text": "文本型 PDF 定位保留页码 page 和源偏移；扫描件 OCR 不在 P0。编号 PDF-018。"
+    },
+    {
+      "id": "knowledge-base-id",
+      "text": "知识库编号 KB-3-RAG-2026 与租户授权表关联。"
+    },
+    {
+      "id": "uuidv7-identity",
+      "text": "Conversation provider-facing sessionId 使用 UUIDv7，不代表 principal 身份。编号 UUIDv7-020。"
+    },
+    {
+      "id": "cancel-task",
+      "text": "显式 CancelTask 记录取消意图；取消后台索引任务后停止后续阶段。编号 CANCEL-021。"
+    },
+    {
+      "id": "a2a-task-mapping",
+      "text": "taskId 与 Pi taskId 映射使用稳定键；公共任务编号 A2A-EXEC-022。"
+    },
+    {
+      "id": "inline-size-limit",
+      "text": "单次内联文本上限 256 KiB；P0 文件最大 50 MiB。编号 LIMIT-023。"
+    },
+    {
+      "id": "reranker-limit",
+      "text": "Reranker 对 RRF 前 30 条候选重排；失败返回 degraded true。编号 RERANK-024。"
+    }
+  ],
+  "queries": [
+    { "id": "zh-task-recovery", "kind": "exact_terms", "query": "任务恢复", "expectedDocumentIds": ["task-recovery"] },
+    { "id": "zh-index-publish", "kind": "exact_terms", "query": "索引发布", "expectedDocumentIds": ["index-publish"] },
+    { "id": "zh-tenant-isolation", "kind": "exact_terms", "query": "租户隔离", "expectedDocumentIds": ["tenant-acl"] },
+    { "id": "zh-tokenization", "kind": "exact_terms", "query": "中文分词", "expectedDocumentIds": ["chinese-segmentation"] },
+    { "id": "zh-checkpoint-execution", "kind": "exact_terms", "query": "检查点继续执行", "expectedDocumentIds": ["task-recovery"] },
+    { "id": "zh-transaction-switch", "kind": "exact_terms", "query": "事务切换", "expectedDocumentIds": ["index-publish"] },
+    { "id": "zh-read-output-check", "kind": "exact_terms", "query": "读取输出检查", "expectedDocumentIds": ["tenant-acl"] },
+    { "id": "zh-index-query", "kind": "exact_terms", "query": "索引查询", "expectedDocumentIds": ["chinese-segmentation"] },
+    { "id": "zh-idempotency-conflict", "kind": "exact_terms", "query": "幂等冲突", "expectedDocumentIds": ["payload-hash"] },
+    { "id": "zh-version-conflict", "kind": "exact_terms", "query": "版本冲突", "expectedDocumentIds": ["version-cas"] },
+    { "id": "zh-read-physical-cleanup", "kind": "exact_terms", "query": "读取物理清理", "expectedDocumentIds": ["document-tombstone"] },
+    { "id": "zh-delivery-repair", "kind": "exact_terms", "query": "可靠投递修复", "expectedDocumentIds": ["outbox-recovery"] },
+    { "id": "zh-reject-private-network", "kind": "exact_terms", "query": "拒绝私网", "expectedDocumentIds": ["ssrf-guard"] },
+    { "id": "zh-vector-index", "kind": "exact_terms", "query": "向量索引", "expectedDocumentIds": ["pgvector-index"] },
+    { "id": "zh-candidate-ranking", "kind": "exact_terms", "query": "候选排名", "expectedDocumentIds": ["rrf-ranking"] },
+    { "id": "zh-heading-paragraph", "kind": "exact_terms", "query": "标题路径段落", "expectedDocumentIds": ["docx-locator"] },
+    { "id": "zh-page-offset", "kind": "exact_terms", "query": "页码偏移", "expectedDocumentIds": ["pdf-locator"] },
+    { "id": "zh-cancel-intent", "kind": "exact_terms", "query": "取消意图", "expectedDocumentIds": ["cancel-task"] },
+    { "id": "zh-inline-size-limit", "kind": "exact_terms", "query": "内联文本上限", "expectedDocumentIds": ["inline-size-limit"] },
+    { "id": "zh-task-stable-mapping", "kind": "exact_terms", "query": "任务稳定映射", "expectedDocumentIds": ["a2a-task-mapping"] },
+    { "id": "exact-payload-hash", "kind": "exact_terms", "query": "payloadHash", "expectedDocumentIds": ["payload-hash"] },
+    { "id": "exact-request-id", "kind": "exact_terms", "query": "requestId", "expectedDocumentIds": ["request-id"] },
+    { "id": "exact-expected-version", "kind": "exact_terms", "query": "expectedVersion", "expectedDocumentIds": ["version-cas"] },
+    { "id": "exact-tombstone", "kind": "exact_terms", "query": "tombstone", "expectedDocumentIds": ["document-tombstone"] },
+    { "id": "exact-outbox", "kind": "exact_terms", "query": "outbox", "expectedDocumentIds": ["outbox-recovery"] },
+    { "id": "exact-localhost", "kind": "exact_terms", "query": "localhost", "expectedDocumentIds": ["ssrf-guard"] },
+    { "id": "exact-pgvector", "kind": "exact_terms", "query": "pgvector", "expectedDocumentIds": ["pgvector-index"] },
+    { "id": "exact-tsvector", "kind": "exact_terms", "query": "to_tsvector", "expectedDocumentIds": ["postgres-lexical"] },
+    { "id": "exact-a2a-version", "kind": "exact_terms", "query": "A2A-Version", "expectedDocumentIds": ["a2a-version"] },
+    { "id": "exact-pi-task-id", "kind": "exact_terms", "query": "taskId", "expectedDocumentIds": ["pi-task-id"] },
+    { "id": "identifier-task-001", "kind": "identifier", "query": "TASK-001", "expectedDocumentIds": ["task-recovery"] },
+    { "id": "identifier-request-017", "kind": "identifier", "query": "REQ-017", "expectedDocumentIds": ["payload-hash"] },
+    { "id": "identifier-index-004", "kind": "identifier", "query": "P0-INDEX-004", "expectedDocumentIds": ["index-publish"] },
+    { "id": "identifier-m0-lex-019", "kind": "identifier", "query": "M0-LEX-019", "expectedDocumentIds": ["chinese-segmentation"] },
+    { "id": "identifier-docx-017", "kind": "identifier", "query": "DOCX-017", "expectedDocumentIds": ["docx-locator"] },
+    { "id": "identifier-pdf-018", "kind": "identifier", "query": "PDF-018", "expectedDocumentIds": ["pdf-locator"] },
+    { "id": "identifier-kb-rag", "kind": "identifier", "query": "KB-3-RAG-2026", "expectedDocumentIds": ["knowledge-base-id"] },
+    { "id": "identifier-a2a-exec", "kind": "identifier", "query": "A2A-EXEC-022", "expectedDocumentIds": ["a2a-task-mapping"] },
+    { "id": "identifier-limits", "kind": "identifier", "query": "LIMIT-023", "expectedDocumentIds": ["inline-size-limit"] },
+    { "id": "identifier-rerank", "kind": "identifier", "query": "RERANK-024", "expectedDocumentIds": ["reranker-limit"] },
+    { "id": "synonym-revoke-cancel", "kind": "synonym_probe", "query": "撤销后台索引任务", "expectedDocumentIds": [], "note": "撤销与取消表达相近意图；此处只验证字面词法命中，不代表语义模型的结果。" },
+    { "id": "synonym-permission-review", "kind": "synonym_probe", "query": "权限审查", "expectedDocumentIds": [], "note": "权限审查与 ACL 校验相关；无同义词字典或 embedding 时不应声称识别了同义关系。" },
+    { "id": "synonym-material-delete", "kind": "synonym_probe", "query": "资料删除", "expectedDocumentIds": [], "note": "资料与文档相关；本词法试验不做概念扩展。" },
+    { "id": "semantic-vector-search", "kind": "synonym_probe", "query": "语义检索", "expectedDocumentIds": [], "note": "语义检索需由真实 embedding/Reranker 验证；本 fixture 不模拟语义能力。" },
+    { "id": "semantic-power-loss", "kind": "synonym_probe", "query": "断电恢复", "expectedDocumentIds": [], "note": "断电与进程重启属于相关但不同故障条件；词法结果不能推导故障语义。" },
+    { "id": "synonym-schedule-task", "kind": "synonym_probe", "query": "任务排程", "expectedDocumentIds": [], "note": "排程与调度相关；无词汇规则时该表达应作为未命中记录。" }
+  ]
+}

@@ -1,0 +1,9 @@
+Municipal water-pump inspection: Cedar Quay Pump Station
+
+Revision v1. Record EV-WTR-02.
+
+Site: Cedar Quay Pump Station; asset: booster pump B.
+
+EV-WTR-02 Cedar Quay: outlet pressure 0.46 MPa; review within 10 min.
+
+during the storm watch, switch to the parallel standby pump after two out-of-range readings; log readings in WATER-LOG-002.

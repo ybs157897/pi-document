@@ -1,0 +1,3873 @@
+{
+  "fixtureVersion": 1,
+  "blindSplitSeed": "pi-document-evaluation-v1-blind-2026-10",
+  "queries": [
+    {
+      "id": "exact-doc-001",
+      "query": "记录 EV-WTR-01 中的运行阈值是多少？",
+      "category": "exact",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-001"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-WTR-01：北河 出水压力 0.42 MPa；7 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-001",
+          "version": 1,
+          "sha256": "a7c00063572ea4d3954e25eba3b4350eb73e77e82a70959f7e309cbdcfeca09b",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 98
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 98
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-002",
+      "query": "Retrieve the operating threshold in record EV-WTR-02.",
+      "category": "exact",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-002"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "EV-WTR-02 Cedar Quay: outlet pressure 0.46 MPa; review within 10 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-002",
+          "version": 1,
+          "sha256": "97e18dd657ffe89976affa85f398980a25d7677d52e557f2bd041a9836f24709",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 145,
+            "endOffset": 214
+          },
+          "range": {
+            "startOffset": 145,
+            "endOffset": 214
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-003",
+      "query": "记录 EV-WTR-03 中的运行阈值是多少？",
+      "category": "exact",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-003"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-WTR-03：松湾 出水压力 0.39 MPa；13 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-003",
+          "version": 1,
+          "sha256": "2beef041d01c64bf31d131e9d206c093f5a72056b86d013997029fc400c790fe",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 99
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 99
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-004",
+      "query": "Record EV-WTR-04: 运行阈值 / operating threshold?",
+      "category": "exact",
+      "language": "mixed",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-004"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-WTR-04：银桥 出水压力 0.51 MPa；16 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-004",
+          "version": 1,
+          "sha256": "45cca3ce3e8344bfe78745ad5a38f60a3f86d2cba3c5107d48a9a19f5338165b",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 210,
+            "endOffset": 249
+          },
+          "range": {
+            "startOffset": 210,
+            "endOffset": 249
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-005",
+      "query": "记录 EV-WTR-05 中的运行阈值是多少？",
+      "category": "exact",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-005"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-WTR-05：南圃 出水压力 0.44 MPa；19 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-005",
+          "version": 1,
+          "sha256": "a1874ed3209ac287ff25b7f4b60d6a4dea451a1e545677cc0ce539e0bb0d1917",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 99
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 99
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-006",
+      "query": "Retrieve the operating threshold in record EV-WTR-06.",
+      "category": "exact",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-006"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "EV-WTR-06 Cloud Ridge: outlet pressure 0.48 MPa; review within 22 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-006",
+          "version": 1,
+          "sha256": "9ad689647ce71fac8f61d4c388bdaca56e57556533593e4a1ed56e19fd37fc29",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 147,
+            "endOffset": 217
+          },
+          "range": {
+            "startOffset": 147,
+            "endOffset": 217
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-007",
+      "query": "记录 EV-WTR-07 中的运行阈值是多少？",
+      "category": "exact",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-007"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-WTR-07：东堤 出水压力 0.41 MPa；25 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-007",
+          "version": 1,
+          "sha256": "fcf7aa519dd1c3a90dd075403992aabe811f872858f56641180e12138553329b",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 99
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 99
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-008",
+      "query": "Retrieve the operating threshold in record EV-WTR-08.",
+      "category": "exact",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-008"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "EV-WTR-08 Stone Hill: outlet pressure 0.53 MPa; review within 28 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-008",
+          "version": 1,
+          "sha256": "60fdc29d0dd9a9e90c162bb5f6c81d1badf0c56e33243dfbe7b22e63a51e8e0c",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 145,
+            "endOffset": 214
+          },
+          "range": {
+            "startOffset": 145,
+            "endOffset": 214
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-009",
+      "query": "记录 EV-WTR-09 中的运行阈值是多少？",
+      "category": "exact",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-009"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-WTR-09：滨林 出水压力 0.45 MPa；31 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-009",
+          "version": 1,
+          "sha256": "5a21d52c1795cba65f3537af6301bb41a00d142dca58738e43dc3d1e080bdd8e",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 99
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 99
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-010",
+      "query": "记录 EV-WTR-10 中的运行阈值是多少？",
+      "category": "exact",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-010"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-WTR-10：柳湾 出水压力 0.38 MPa；34 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-010",
+          "version": 1,
+          "sha256": "b29e50e375108b0b52c86241733595a45c909a42cd7abec799092ce5af534457",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 99
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 99
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-011",
+      "query": "记录 EV-CLD-01 中的运行阈值是多少？",
+      "category": "exact",
+      "language": "zh",
+      "split": "blind",
+      "expectedDocumentKeys": [
+        "doc-011"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-CLD-01：北河 箱内温度 -18 °C；7 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-011",
+          "version": 1,
+          "sha256": "334407ca33b48d32a73cee3b8cded2ca5f6b41d5ef70a283c8dbeacbf71c999b",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 96
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 96
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-012",
+      "query": "Retrieve the operating threshold in record EV-CLD-02.",
+      "category": "exact",
+      "language": "en",
+      "split": "blind",
+      "expectedDocumentKeys": [
+        "doc-012"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "EV-CLD-02 Cedar Quay: cargo-bay temperature -16 °C; review within 10 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-012",
+          "version": 1,
+          "sha256": "f50830408a835d7b12d952f48934190c365d2622de160c5c43fec142b8838217",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 162,
+            "endOffset": 235
+          },
+          "range": {
+            "startOffset": 162,
+            "endOffset": 235
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-013",
+      "query": "记录 EV-CLD-03 中的运行阈值是多少？",
+      "category": "exact",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-013"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-CLD-03：松湾 箱内温度 -20 °C；13 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-013",
+          "version": 1,
+          "sha256": "c9200c12239400f414dd544e80127dbcf6f212ce168f381ff03989877a0e09e4",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 97
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 97
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-014",
+      "query": "Record EV-CLD-04: 运行阈值 / operating threshold?",
+      "category": "exact",
+      "language": "mixed",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-014"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-CLD-04：银桥 箱内温度 -19 °C；16 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-014",
+          "version": 1,
+          "sha256": "ffa3eb4285055969e7bf4359317140412586059afdcc79f84fde0246d212b39e",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 227,
+            "endOffset": 264
+          },
+          "range": {
+            "startOffset": 227,
+            "endOffset": 264
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-015",
+      "query": "记录 EV-CLD-05 中的运行阈值是多少？",
+      "category": "exact",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-015"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-CLD-05：南圃 箱内温度 -17 °C；19 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-015",
+          "version": 1,
+          "sha256": "7d6ec4a946883a674279508f86c2b6c47d08e0bd678eb56ea0aadfae0a4e1e81",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 97
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 97
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-016",
+      "query": "Retrieve the operating threshold in record EV-CLD-06.",
+      "category": "exact",
+      "language": "en",
+      "split": "blind",
+      "expectedDocumentKeys": [
+        "doc-016"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "EV-CLD-06 Cloud Ridge: cargo-bay temperature -21 °C; review within 22 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-016",
+          "version": 1,
+          "sha256": "1b191250f084dd010cf6e40fa79b90a8e88cc58412296d9bdb858332645ba6ce",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 164,
+            "endOffset": 238
+          },
+          "range": {
+            "startOffset": 164,
+            "endOffset": 238
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-017",
+      "query": "记录 EV-CLD-07 中的运行阈值是多少？",
+      "category": "exact",
+      "language": "zh",
+      "split": "blind",
+      "expectedDocumentKeys": [
+        "doc-017"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-CLD-07：东堤 箱内温度 -15 °C；25 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-017",
+          "version": 1,
+          "sha256": "dfc48c6da6a4f099bd3dc101f905dfedacf6407790989f561322ae6a0b6aaa8c",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 97
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 97
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-018",
+      "query": "Retrieve the operating threshold in record EV-CLD-08.",
+      "category": "exact",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-018"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "EV-CLD-08 Stone Hill: cargo-bay temperature -22 °C; review within 28 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-018",
+          "version": 1,
+          "sha256": "e5a6ee9df68ac28dd87f329f1152cc50a0c5914a20652fd42958572ea85d13f8",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 162,
+            "endOffset": 235
+          },
+          "range": {
+            "startOffset": 162,
+            "endOffset": 235
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-019",
+      "query": "记录 EV-CLD-09 中的运行阈值是多少？",
+      "category": "exact",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-019"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-CLD-09：滨林 箱内温度 -18 °C；31 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-019",
+          "version": 1,
+          "sha256": "f24545bd6e6b94fe0311f4a5f786ff833ac24eeda5a045bff996f9f7759474f0",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 97
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 97
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "exact-doc-020",
+      "query": "记录 EV-CLD-10 中的运行阈值是多少？",
+      "category": "exact",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-020"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-CLD-10：柳湾 箱内温度 -17 °C；34 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-020",
+          "version": 1,
+          "sha256": "453b8988025d3e1018da9abc963a9bb2f719b5725177f18888c478b2ded66548",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 97
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 97
+          }
+        }
+      ],
+      "principalRole": "evaluator"
+    },
+    {
+      "id": "synonym-doc-021",
+      "query": "查询北河公交场站的车辆离站时的剩余储能。",
+      "category": "synonym",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-021"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-BUS-01：北河 发车电量下限 68 %；7 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-021",
+          "version": 1,
+          "sha256": "8f5c5b13af1295910cb9c3ef3952a1291f519037c8714847432fae4b8d74a1b8",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 63,
+            "endOffset": 99
+          },
+          "range": {
+            "startOffset": 63,
+            "endOffset": 99
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 发车电量下限; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-022",
+      "query": "What is the remaining battery energy when a vehicle leaves the depot at Cedar Quay Bus Depot?",
+      "category": "synonym",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-022"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "EV-BUS-02 Cedar Quay: minimum departure charge 72 %; review within 10 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-022",
+          "version": 1,
+          "sha256": "292b8a709ceee94704443e108c13980a6c6e46863c7316aed12ade644255326b",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 133,
+            "endOffset": 207
+          },
+          "range": {
+            "startOffset": 133,
+            "endOffset": 207
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of minimum departure charge; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-023",
+      "query": "查询松湾公交场站的车辆离站时的剩余储能。",
+      "category": "synonym",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-023"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-BUS-03：松湾 发车电量下限 65 %；13 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-023",
+          "version": 1,
+          "sha256": "97c2370f7519925453eb3d75b493776e5d3f2d2de0fdc87743c57343e728ee88",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 63,
+            "endOffset": 100
+          },
+          "range": {
+            "startOffset": 63,
+            "endOffset": 100
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 发车电量下限; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-024",
+      "query": "银桥公交场站 / Silver Bridge Bus Depot: 车辆离站时的剩余储能 (remaining battery energy when a vehicle leaves the depot)?",
+      "category": "synonym",
+      "language": "mixed",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-024"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-BUS-04：银桥 发车电量下限 75 %；16 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-024",
+          "version": 1,
+          "sha256": "f0dc02ac3ca203f06e7670dcf24ee057c16684decf9fe416b6c079881339e021",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 148,
+            "endOffset": 185
+          },
+          "range": {
+            "startOffset": 148,
+            "endOffset": 185
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 发车电量下限; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-025",
+      "query": "查询南圃公交场站的车辆离站时的剩余储能。",
+      "category": "synonym",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-025"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-BUS-05：南圃 发车电量下限 70 %；19 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-025",
+          "version": 1,
+          "sha256": "e44de879d73971cc3ec11ae8969f747989cee7c638da9fb899c1e0bbada1809b",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 63,
+            "endOffset": 100
+          },
+          "range": {
+            "startOffset": 63,
+            "endOffset": 100
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 发车电量下限; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-026",
+      "query": "What is the remaining battery energy when a vehicle leaves the depot at Cloud Ridge Bus Depot?",
+      "category": "synonym",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-026"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "EV-BUS-06 Cloud Ridge: minimum departure charge 64 %; review within 22 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-026",
+          "version": 1,
+          "sha256": "d059612e1745504b9493e6370ee9bb1196c169a6246039ea3b432ee5adbf6747",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 135,
+            "endOffset": 210
+          },
+          "range": {
+            "startOffset": 135,
+            "endOffset": 210
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of minimum departure charge; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-027",
+      "query": "查询东堤公交场站的车辆离站时的剩余储能。",
+      "category": "synonym",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-027"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-BUS-07：东堤 发车电量下限 78 %；25 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-027",
+          "version": 1,
+          "sha256": "09c32c9374de01b7553320c2b9286aef1336d22398ebd814eeaea52bf0373f78",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 63,
+            "endOffset": 100
+          },
+          "range": {
+            "startOffset": 63,
+            "endOffset": 100
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 发车电量下限; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-028",
+      "query": "What is the remaining battery energy when a vehicle leaves the depot at Stone Hill Bus Depot?",
+      "category": "synonym",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-028"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "EV-BUS-08 Stone Hill: minimum departure charge 69 %; review within 28 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-028",
+          "version": 1,
+          "sha256": "7c33ce3b2b0351183220c244eaa254a4eb2312c39847e91b5fd2a9b379034763",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 133,
+            "endOffset": 207
+          },
+          "range": {
+            "startOffset": 133,
+            "endOffset": 207
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of minimum departure charge; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-029",
+      "query": "查询滨林公交场站的车辆离站时的剩余储能。",
+      "category": "synonym",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-029"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-BUS-09：滨林 发车电量下限 73 %；31 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-029",
+          "version": 1,
+          "sha256": "c71eaa4cb47a0dfc05c1dd4f0a8ddc58ce5a5ec35b231eac85a5a0d4deeaaceb",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 63,
+            "endOffset": 100
+          },
+          "range": {
+            "startOffset": 63,
+            "endOffset": 100
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 发车电量下限; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-030",
+      "query": "查询柳湾公交场站的车辆离站时的剩余储能。",
+      "category": "synonym",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-030"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-BUS-10：柳湾 发车电量下限 66 %；34 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-030",
+          "version": 1,
+          "sha256": "73b247fe1b342831639508ac494b22f249cada39dde93875d6666fdf907a7d44",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 63,
+            "endOffset": 100
+          },
+          "range": {
+            "startOffset": 63,
+            "endOffset": 100
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 发车电量下限; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-031",
+      "query": "查询北河社区诊所的疫苗保冷环境。",
+      "category": "synonym",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-031"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-MED-01：北河 药品柜温度 4 °C；7 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-031",
+          "version": 1,
+          "sha256": "cfa495f4818bebc503b1567cce14490f1658c1c4faee399002ea413b1c47a813",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 65,
+            "endOffset": 100
+          },
+          "range": {
+            "startOffset": 65,
+            "endOffset": 100
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 药品柜温度; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-032",
+      "query": "What is the cold-storage conditions for vaccine stock at Cedar Quay Community Clinic?",
+      "category": "synonym",
+      "language": "en",
+      "split": "blind",
+      "expectedDocumentKeys": [
+        "doc-032"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "EV-MED-02 Cedar Quay: medicine-cabinet temperature 5 °C; review within 10 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-032",
+          "version": 1,
+          "sha256": "083bed56fc1b18fc49896b36955c64cc972085b8ea649343c2392b747e701c4d",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 164,
+            "endOffset": 242
+          },
+          "range": {
+            "startOffset": 164,
+            "endOffset": 242
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of medicine-cabinet temperature; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-033",
+      "query": "查询松湾社区诊所的疫苗保冷环境。",
+      "category": "synonym",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-033"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-MED-03：松湾 药品柜温度 3 °C；13 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-033",
+          "version": 1,
+          "sha256": "0a86aea1f334707086a1eb401edd7d7755937942fecac6ad9ee2761361e23ff7",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 65,
+            "endOffset": 101
+          },
+          "range": {
+            "startOffset": 65,
+            "endOffset": 101
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 药品柜温度; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-034",
+      "query": "银桥社区诊所 / Silver Bridge Community Clinic: 疫苗保冷环境 (cold-storage conditions for vaccine stock)?",
+      "category": "synonym",
+      "language": "mixed",
+      "split": "blind",
+      "expectedDocumentKeys": [
+        "doc-034"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-MED-04：银桥 药品柜温度 6 °C；16 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-034",
+          "version": 1,
+          "sha256": "3da6c49abdd181f8ceaaf02aba2436aea71fd8248020d08d1055e41ffd83b47b",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 166,
+            "endOffset": 202
+          },
+          "range": {
+            "startOffset": 166,
+            "endOffset": 202
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 药品柜温度; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-035",
+      "query": "查询南圃社区诊所的疫苗保冷环境。",
+      "category": "synonym",
+      "language": "zh",
+      "split": "blind",
+      "expectedDocumentKeys": [
+        "doc-035"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-MED-05：南圃 药品柜温度 4 °C；19 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-035",
+          "version": 1,
+          "sha256": "9d0bb4e80d02e7a89a8b2f139b1a7151943ee27de681595f74d248838d3f6628",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 65,
+            "endOffset": 101
+          },
+          "range": {
+            "startOffset": 65,
+            "endOffset": 101
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 药品柜温度; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-036",
+      "query": "What is the cold-storage conditions for vaccine stock at Cloud Ridge Community Clinic?",
+      "category": "synonym",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-036"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "EV-MED-06 Cloud Ridge: medicine-cabinet temperature 2 °C; review within 22 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-036",
+          "version": 1,
+          "sha256": "791b2691e7f2f08488cb466217382ac3711100e4eb444e9da4044c68fbe70cb1",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 166,
+            "endOffset": 245
+          },
+          "range": {
+            "startOffset": 166,
+            "endOffset": 245
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of medicine-cabinet temperature; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-037",
+      "query": "查询东堤社区诊所的疫苗保冷环境。",
+      "category": "synonym",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-037"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-MED-07：东堤 药品柜温度 5 °C；25 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-037",
+          "version": 1,
+          "sha256": "588b3e376637b02bc88c47f6e801bffdc08c3a558f2662a684818f8f39d196c1",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 65,
+            "endOffset": 101
+          },
+          "range": {
+            "startOffset": 65,
+            "endOffset": 101
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 药品柜温度; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-038",
+      "query": "What is the cold-storage conditions for vaccine stock at Stone Hill Community Clinic?",
+      "category": "synonym",
+      "language": "en",
+      "split": "blind",
+      "expectedDocumentKeys": [
+        "doc-038"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "EV-MED-08 Stone Hill: medicine-cabinet temperature 3 °C; review within 28 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-038",
+          "version": 1,
+          "sha256": "44523dc7243d3d765b6217bb90583983226f9c97d6630bd710465ee933d5bde9",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 164,
+            "endOffset": 242
+          },
+          "range": {
+            "startOffset": 164,
+            "endOffset": 242
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of medicine-cabinet temperature; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-039",
+      "query": "查询滨林社区诊所的疫苗保冷环境。",
+      "category": "synonym",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-039"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-MED-09：滨林 药品柜温度 6 °C；31 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-039",
+          "version": 1,
+          "sha256": "a3531b62549ba2e640b19ec7016a259e80b11af15764fe3dc1a97b6081504e89",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 65,
+            "endOffset": 101
+          },
+          "range": {
+            "startOffset": 65,
+            "endOffset": 101
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 药品柜温度; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-040",
+      "query": "查询柳湾社区诊所的疫苗保冷环境。",
+      "category": "synonym",
+      "language": "zh",
+      "split": "blind",
+      "expectedDocumentKeys": [
+        "doc-040"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-MED-10：柳湾 药品柜温度 4 °C；34 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-040",
+          "version": 1,
+          "sha256": "ea70651e0240e13e4be38727b24c497f2b6a3fa14e7585e3059146e5096086ca",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 65,
+            "endOffset": 101
+          },
+          "range": {
+            "startOffset": 65,
+            "endOffset": 101
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 药品柜温度; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-041",
+      "query": "查询北河防洪站的闸门上游蓄水位。",
+      "category": "synonym",
+      "language": "zh",
+      "split": "blind",
+      "expectedDocumentKeys": [
+        "doc-041"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-FLD-01：北河 闸前水位上限 2.8 m；7 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-041",
+          "version": 1,
+          "sha256": "104e51ab58568070abc7b6c43b24d29c405d494e72f488ef285a0d6c5d4e9509",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 97
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 97
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 闸前水位上限; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-042",
+      "query": "What is the reservoir level on the upstream side of the gate at Cedar Quay Flood Station?",
+      "category": "synonym",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-042"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "EV-FLD-02 Cedar Quay: upstream gate level limit 3.1 m; review within 10 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-042",
+          "version": 1,
+          "sha256": "96d169a0f52ad291395024c5a14a9a9b4bf5c9bfec5898226037a52c167b1e45",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 136,
+            "endOffset": 212
+          },
+          "range": {
+            "startOffset": 136,
+            "endOffset": 212
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of upstream gate level limit; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-043",
+      "query": "查询松湾防洪站的闸门上游蓄水位。",
+      "category": "synonym",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-043"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-FLD-03：松湾 闸前水位上限 2.6 m；13 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-043",
+          "version": 1,
+          "sha256": "a430c32cfa3c07c4aca537ae12fec6420829a7f119f7691c7455cbe52725441d",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 98
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 98
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 闸前水位上限; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-044",
+      "query": "银桥防洪站 / Silver Bridge Flood Station: 闸门上游蓄水位 (reservoir level on the upstream side of the gate)?",
+      "category": "synonym",
+      "language": "mixed",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-044"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-FLD-04：银桥 闸前水位上限 3.3 m；16 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-044",
+          "version": 1,
+          "sha256": "7e732481be285200fcb7862080fcc4e826b5a2b7765f0aa018753120b82c87c0",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 147,
+            "endOffset": 185
+          },
+          "range": {
+            "startOffset": 147,
+            "endOffset": 185
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 闸前水位上限; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-045",
+      "query": "查询南圃防洪站的闸门上游蓄水位。",
+      "category": "synonym",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-045"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-FLD-05：南圃 闸前水位上限 2.9 m；19 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-045",
+          "version": 1,
+          "sha256": "fb1a7c66243d89167985f826d3b350d6603fd6df4ba24ab13313c79f21d3c085",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 98
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 98
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 闸前水位上限; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-046",
+      "query": "What is the reservoir level on the upstream side of the gate at Cloud Ridge Flood Station?",
+      "category": "synonym",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-046"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "EV-FLD-06 Cloud Ridge: upstream gate level limit 3.5 m; review within 22 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-046",
+          "version": 1,
+          "sha256": "a1e12aff7e7243b10c4765f5f227d90426a1ac89bb1a7c50e436b6c3f2740871",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 138,
+            "endOffset": 215
+          },
+          "range": {
+            "startOffset": 138,
+            "endOffset": 215
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of upstream gate level limit; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-047",
+      "query": "查询东堤防洪站的闸门上游蓄水位。",
+      "category": "synonym",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-047"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-FLD-07：东堤 闸前水位上限 2.7 m；25 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-047",
+          "version": 1,
+          "sha256": "f222815fc91a3139a077d28fec6debbaf30cb657ee8959277959766dac345472",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 98
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 98
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 闸前水位上限; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-048",
+      "query": "What is the reservoir level on the upstream side of the gate at Stone Hill Flood Station?",
+      "category": "synonym",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-048"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "EV-FLD-08 Stone Hill: upstream gate level limit 3.0 m; review within 28 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-048",
+          "version": 1,
+          "sha256": "d238b2c3975e13434df5305e5dfa986547c4c4f573e0e7ee9464668a8b3c74d4",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 136,
+            "endOffset": 212
+          },
+          "range": {
+            "startOffset": 136,
+            "endOffset": 212
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of upstream gate level limit; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-049",
+      "query": "查询滨林防洪站的闸门上游蓄水位。",
+      "category": "synonym",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-049"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-FLD-09：滨林 闸前水位上限 3.2 m；31 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-049",
+          "version": 1,
+          "sha256": "b21d1ebb458ec87e600a8665b887101b5a6244fd925e5090b6517985cca25df7",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 98
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 98
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 闸前水位上限; authored before any retrieval run."
+    },
+    {
+      "id": "synonym-doc-050",
+      "query": "查询柳湾防洪站的闸门上游蓄水位。",
+      "category": "synonym",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-050"
+      ],
+      "expectedFormats": [
+        "md"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-FLD-10：柳湾 闸前水位上限 2.5 m；34 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-050",
+          "version": 1,
+          "sha256": "ad159cbc6111fc5fd65aff16a44fae0a85682981d91acfb660f64b113f711664",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 98
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 98
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "Curated paraphrase of 闸前水位上限; authored before any retrieval run."
+    },
+    {
+      "id": "cross-LINK-001",
+      "query": "对于 LINK-001，备援切换最多用时多少分钟，集合点在哪个门？",
+      "category": "cross_passage_document",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-051",
+        "doc-053"
+      ],
+      "expectedFormats": [
+        "pdf"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "关联 LINK-001：控制室 1 的备援切换限时 6 分钟。",
+        "关联 LINK-001：集合点位于银桥的 2 号门。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-051",
+          "version": 1,
+          "sha256": "f9b192f17a1e67d77b641454b3d73b85b6b8af656107730ba53d3332dd2ebd33",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 171
+          },
+          "range": {
+            "startOffset": 140,
+            "endOffset": 171
+          }
+        },
+        {
+          "documentKey": "doc-053",
+          "version": 1,
+          "sha256": "a477274a5107616ad66eb93464703318f6d335fd1a2226671083f171bb3bd71d",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 167
+          },
+          "range": {
+            "startOffset": 141,
+            "endOffset": 167
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-002",
+      "query": "对于 LINK-002，备援切换最多用时多少分钟，集合点在哪个门？",
+      "category": "cross_passage_document",
+      "language": "zh",
+      "split": "blind",
+      "expectedDocumentKeys": [
+        "doc-055",
+        "doc-057"
+      ],
+      "expectedFormats": [
+        "pdf"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "关联 LINK-002：控制室 2 的备援切换限时 7 分钟。",
+        "关联 LINK-002：集合点位于南圃的 3 号门。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-055",
+          "version": 1,
+          "sha256": "2eb58607bbff59b7a789e5aad459d36efeba8d10eac49676f070f5d1d5d3e0e0",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 172
+          },
+          "range": {
+            "startOffset": 141,
+            "endOffset": 172
+          }
+        },
+        {
+          "documentKey": "doc-057",
+          "version": 1,
+          "sha256": "701f5f3cede9102e8dc759e0c4040ffa997a392f87eb636c25e19ff750355fcd",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 167
+          },
+          "range": {
+            "startOffset": 141,
+            "endOffset": 167
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-003",
+      "query": "对于 LINK-003，备援切换最多用时多少分钟，集合点在哪个门？",
+      "category": "cross_passage_document",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-059",
+        "doc-060"
+      ],
+      "expectedFormats": [
+        "pdf"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "关联 LINK-003：控制室 3 的备援切换限时 8 分钟。",
+        "关联 LINK-003：集合点位于云岭的 4 号门。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-059",
+          "version": 1,
+          "sha256": "c85b2be0a110c27e9cc886c6ce313dfdfdb0e997e169b70577fc3e17f1ab4fc3",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 172
+          },
+          "range": {
+            "startOffset": 141,
+            "endOffset": 172
+          }
+        },
+        {
+          "documentKey": "doc-060",
+          "version": 1,
+          "sha256": "52f7e7e3a2fe8eb826ae3ff114dec4bd0437724596290d3da9779018897c61b4",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 167
+          },
+          "range": {
+            "startOffset": 141,
+            "endOffset": 167
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-004",
+      "query": "对于 LINK-004，备援切换最多用时多少分钟，集合点在哪个门？",
+      "category": "cross_passage_document",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-061",
+        "doc-063"
+      ],
+      "expectedFormats": [
+        "pdf"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "关联 LINK-004：控制室 4 的备援切换限时 9 分钟。",
+        "关联 LINK-004：集合点位于东堤的 5 号门。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-061",
+          "version": 1,
+          "sha256": "1c6db6dfe9e43c1414ec3b5e1d1bcc4bb904e53ec3a4fb4c58414c68aad327eb",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 178
+          },
+          "range": {
+            "startOffset": 147,
+            "endOffset": 178
+          }
+        },
+        {
+          "documentKey": "doc-063",
+          "version": 1,
+          "sha256": "db072ca681ef5fbc223f322d3c84779a4cf3313f21f0f497e9a27f476bbe1972",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 174
+          },
+          "range": {
+            "startOffset": 148,
+            "endOffset": 174
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-005",
+      "query": "对于 LINK-005，备援切换最多用时多少分钟，集合点在哪个门？",
+      "category": "cross_passage_document",
+      "language": "zh",
+      "split": "blind",
+      "expectedDocumentKeys": [
+        "doc-065",
+        "doc-067"
+      ],
+      "expectedFormats": [
+        "pdf"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "关联 LINK-005：控制室 5 的备援切换限时 10 分钟。",
+        "关联 LINK-005：集合点位于石岗的 6 号门。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-065",
+          "version": 1,
+          "sha256": "78c59cac656c0518f1f3e1d90438c27fba4e26627ab66a23875e536fa4495541",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 180
+          },
+          "range": {
+            "startOffset": 148,
+            "endOffset": 180
+          }
+        },
+        {
+          "documentKey": "doc-067",
+          "version": 1,
+          "sha256": "09ff2b37b107b554c584bb87653617f0dd3f04f720ac2e35534923a8fceba779",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 174
+          },
+          "range": {
+            "startOffset": 148,
+            "endOffset": 174
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-006",
+      "query": "对于 LINK-006，备援切换最多用时多少分钟，集合点在哪个门？",
+      "category": "cross_passage_document",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-069",
+        "doc-070"
+      ],
+      "expectedFormats": [
+        "pdf"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "关联 LINK-006：控制室 6 的备援切换限时 11 分钟。",
+        "关联 LINK-006：集合点位于滨林的 7 号门。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-069",
+          "version": 1,
+          "sha256": "17c226a4a1c275de719f1fef6c9b1045532db55cf004da4129e83d5172638d2e",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 180
+          },
+          "range": {
+            "startOffset": 148,
+            "endOffset": 180
+          }
+        },
+        {
+          "documentKey": "doc-070",
+          "version": 1,
+          "sha256": "e2088414433a9032db8664d00e44e0307a51e941e2f0a580917807e92bb5c1c7",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 174
+          },
+          "range": {
+            "startOffset": 148,
+            "endOffset": 174
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-007",
+      "query": "对于 LINK-007，备援切换最多用时多少分钟，集合点在哪个门？",
+      "category": "cross_passage_document",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-071",
+        "doc-073"
+      ],
+      "expectedFormats": [
+        "pdf"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "关联 LINK-007：控制室 7 的备援切换限时 12 分钟。",
+        "关联 LINK-007：集合点位于柳湾的 8 号门。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-071",
+          "version": 1,
+          "sha256": "0a7ab13f688a2a7074775f60b4e4e536922b8e55beb749defa2fbe90a01d814f",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 177
+          },
+          "range": {
+            "startOffset": 145,
+            "endOffset": 177
+          }
+        },
+        {
+          "documentKey": "doc-073",
+          "version": 1,
+          "sha256": "1f57458df7bc3c11ae58fdd8ffa1b652f810eded0aff4f2f295b9f1b4da8a4e7",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 172
+          },
+          "range": {
+            "startOffset": 146,
+            "endOffset": 172
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-008",
+      "query": "对于 LINK-008，备援切换最多用时多少分钟，集合点在哪个门？",
+      "category": "cross_passage_document",
+      "language": "zh",
+      "split": "blind",
+      "expectedDocumentKeys": [
+        "doc-075",
+        "doc-077"
+      ],
+      "expectedFormats": [
+        "pdf"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "关联 LINK-008：控制室 8 的备援切换限时 13 分钟。",
+        "关联 LINK-008：集合点位于北河的 1 号门。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-075",
+          "version": 1,
+          "sha256": "f4c65d8465aed012b5fccfca9eb96e232b662a926dae646400ca0535a2308057",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 178
+          },
+          "range": {
+            "startOffset": 146,
+            "endOffset": 178
+          }
+        },
+        {
+          "documentKey": "doc-077",
+          "version": 1,
+          "sha256": "9bf7881b807d74252aaebfc3ff17375af1b85a36876a31f761f217b145613417",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 172
+          },
+          "range": {
+            "startOffset": 146,
+            "endOffset": 172
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-009",
+      "query": "对于 LINK-009，备援切换最多用时多少分钟，集合点在哪个门？",
+      "category": "cross_passage_document",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-079",
+        "doc-080"
+      ],
+      "expectedFormats": [
+        "pdf"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "关联 LINK-009：控制室 9 的备援切换限时 14 分钟。",
+        "关联 LINK-009：集合点位于青港的 2 号门。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-079",
+          "version": 1,
+          "sha256": "a1da5d90ffecd09a086fdd4c1212c6313f41cd1437298066927f1676daec6820",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 178
+          },
+          "range": {
+            "startOffset": 146,
+            "endOffset": 178
+          }
+        },
+        {
+          "documentKey": "doc-080",
+          "version": 1,
+          "sha256": "20fca64038c68a8b28968485a6abe51cef378b0bfc5a7294bb88eb5964e1e297",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 172
+          },
+          "range": {
+            "startOffset": 146,
+            "endOffset": 172
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-010",
+      "query": "对于 LINK-010，备援切换最多用时多少分钟，集合点在哪个门？",
+      "category": "cross_passage_document",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-081",
+        "doc-083"
+      ],
+      "expectedFormats": [
+        "docx"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "关联 LINK-010：控制室 10 的备援切换限时 15 分钟。",
+        "关联 LINK-010：集合点位于松湾的 3 号门。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-081",
+          "version": 1,
+          "sha256": "ca83c8e86e29088414a3e0a86589150145fcf4e1f55376d6cf64cadae2f36da7",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "仓储巷道机器人安全巡检：北河仓储区"
+            ],
+            "paragraphIndex": 5
+          },
+          "range": {
+            "startOffset": 144,
+            "endOffset": 177
+          }
+        },
+        {
+          "documentKey": "doc-083",
+          "version": 1,
+          "sha256": "b326719e5dcbcb34154eae0b684b5ee75e832c706583bc2a9d5628e95d924841",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "仓储巷道机器人安全巡检：松湾仓储区"
+            ],
+            "paragraphIndex": 5
+          },
+          "range": {
+            "startOffset": 145,
+            "endOffset": 171
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-011",
+      "query": "对于 LINK-011，备援切换最多用时多少分钟，集合点在哪个门？",
+      "category": "cross_passage_document",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-085",
+        "doc-087"
+      ],
+      "expectedFormats": [
+        "docx"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "关联 LINK-011：控制室 11 的备援切换限时 16 分钟。",
+        "关联 LINK-011：集合点位于银桥的 4 号门。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-085",
+          "version": 1,
+          "sha256": "29e5c0b21375f75deb6919a72eeb650192d19955c59169bc812b4680121c64f9",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "仓储巷道机器人安全巡检：南圃仓储区"
+            ],
+            "paragraphIndex": 5
+          },
+          "range": {
+            "startOffset": 145,
+            "endOffset": 178
+          }
+        },
+        {
+          "documentKey": "doc-087",
+          "version": 1,
+          "sha256": "53cfd0e7be2b75b26cad36720c33fb327eb27d8cfd7676047040518526722c45",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "仓储巷道机器人安全巡检：东堤仓储区"
+            ],
+            "paragraphIndex": 5
+          },
+          "range": {
+            "startOffset": 145,
+            "endOffset": 171
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-012",
+      "query": "对于 LINK-012，备援切换最多用时多少分钟，集合点在哪个门？",
+      "category": "cross_passage_document",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-089",
+        "doc-090"
+      ],
+      "expectedFormats": [
+        "docx"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "关联 LINK-012：控制室 12 的备援切换限时 17 分钟。",
+        "关联 LINK-012：集合点位于南圃的 5 号门。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-089",
+          "version": 1,
+          "sha256": "cdf7f9c43e3452e39a4cef9e056471c8c44d86c61b3abebd3eeef94bf3962b58",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "仓储巷道机器人安全巡检：滨林仓储区"
+            ],
+            "paragraphIndex": 5
+          },
+          "range": {
+            "startOffset": 146,
+            "endOffset": 179
+          }
+        },
+        {
+          "documentKey": "doc-090",
+          "version": 1,
+          "sha256": "594bd1d954a12dd3d61fa457d2e67687178df158e2befc56084d9f13defda287",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "仓储巷道机器人安全巡检：柳湾仓储区"
+            ],
+            "paragraphIndex": 5
+          },
+          "range": {
+            "startOffset": 146,
+            "endOffset": 172
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-013",
+      "query": "For LINK-013, what are the backup-switch limit and assembly gate?",
+      "category": "cross_passage_document",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-052",
+        "doc-056"
+      ],
+      "expectedFormats": [
+        "pdf"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "LINK-013 control-room backup switch limit: 5 minutes.",
+        "LINK-013 assembly point: gate 6 at Cloud Ridge."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-052",
+          "version": 1,
+          "sha256": "ba18209f06953c45172f46446027f707e39963f2c95bd3f011c099debe0c6bed",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 402
+          },
+          "range": {
+            "startOffset": 349,
+            "endOffset": 402
+          }
+        },
+        {
+          "documentKey": "doc-056",
+          "version": 1,
+          "sha256": "ed6ec695494dda4f07a1dd0c3fe5ed7c6bbb4845157b9c00a5b01ed2e3f55c55",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 392
+          },
+          "range": {
+            "startOffset": 345,
+            "endOffset": 392
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-014",
+      "query": "For LINK-014, what are the backup-switch limit and assembly gate?",
+      "category": "cross_passage_document",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-058",
+        "doc-062"
+      ],
+      "expectedFormats": [
+        "pdf"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "LINK-014 control-room backup switch limit: 6 minutes.",
+        "LINK-014 assembly point: gate 7 at East Levee."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-058",
+          "version": 1,
+          "sha256": "59713717e3d83d94d9d7deb5a40b0b05fac212cefe935f87bf561a15e190c8e5",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 397
+          },
+          "range": {
+            "startOffset": 344,
+            "endOffset": 397
+          }
+        },
+        {
+          "documentKey": "doc-062",
+          "version": 1,
+          "sha256": "013957467e299261e7a78afd28a9eea510289cc48f453abd21c255f848217350",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 393
+          },
+          "range": {
+            "startOffset": 347,
+            "endOffset": 393
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-015",
+      "query": "For LINK-015, what are the backup-switch limit and assembly gate?",
+      "category": "cross_passage_document",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-066",
+        "doc-068"
+      ],
+      "expectedFormats": [
+        "pdf"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "LINK-015 control-room backup switch limit: 7 minutes.",
+        "LINK-015 assembly point: gate 8 at Stone Hill."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-066",
+          "version": 1,
+          "sha256": "4124d3fc32bca659999fed60daa2784bd3f173d7fab655f4247978b106299271",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 396
+          },
+          "range": {
+            "startOffset": 343,
+            "endOffset": 396
+          }
+        },
+        {
+          "documentKey": "doc-068",
+          "version": 1,
+          "sha256": "4620e37f5ecd46cd4ab2b6bc52c34af8531c15e6562d1f8c724927771062307e",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 388
+          },
+          "range": {
+            "startOffset": 342,
+            "endOffset": 388
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-016",
+      "query": "For LINK-016, what are the backup-switch limit and assembly gate?",
+      "category": "cross_passage_document",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-072",
+        "doc-076"
+      ],
+      "expectedFormats": [
+        "pdf"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "LINK-016 control-room backup switch limit: 8 minutes.",
+        "LINK-016 assembly point: gate 1 at Riverwood."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-072",
+          "version": 1,
+          "sha256": "834c612a940c703064ee0006074be11b33178765ebdf321d632b386b042aa7c4",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 415
+          },
+          "range": {
+            "startOffset": 362,
+            "endOffset": 415
+          }
+        },
+        {
+          "documentKey": "doc-076",
+          "version": 1,
+          "sha256": "ace889bae74943d5cf481df3a466be0752d3f933f6aff1ca3e03854f7c2f5da9",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 403
+          },
+          "range": {
+            "startOffset": 358,
+            "endOffset": 403
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-017",
+      "query": "For LINK-017, what are the backup-switch limit and assembly gate?",
+      "category": "cross_passage_document",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-078",
+        "doc-082"
+      ],
+      "expectedFormats": [
+        "docx",
+        "pdf"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "LINK-017 control-room backup switch limit: 9 minutes.",
+        "LINK-017 assembly point: gate 2 at Willow Cove."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-078",
+          "version": 1,
+          "sha256": "25397541a2d8b19b1e6ca7b6ebe3eedc341c2a77a90df1d492dde410d83eaf15",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 410
+          },
+          "range": {
+            "startOffset": 357,
+            "endOffset": 410
+          }
+        },
+        {
+          "documentKey": "doc-082",
+          "version": 1,
+          "sha256": "0047c9e786b6f43890c63a22fe7004d5fcd16f2dfa8b4927a9e9f58daf6bb564",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "Warehouse-aisle robot safety check: Cedar Quay Warehouse"
+            ],
+            "paragraphIndex": 5
+          },
+          "range": {
+            "startOffset": 328,
+            "endOffset": 375
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-018",
+      "query": "For LINK-018, what are the backup-switch limit and assembly gate?",
+      "category": "cross_passage_document",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-086",
+        "doc-088"
+      ],
+      "expectedFormats": [
+        "docx"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "LINK-018 control-room backup switch limit: 10 minutes.",
+        "LINK-018 assembly point: gate 3 at North Basin."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-086",
+          "version": 1,
+          "sha256": "049f340878bf3ce39fa814282655b7670c30e7d9001a5520cb6281fc2dfb6aa4",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "Warehouse-aisle robot safety check: Cloud Ridge Warehouse"
+            ],
+            "paragraphIndex": 5
+          },
+          "range": {
+            "startOffset": 324,
+            "endOffset": 378
+          }
+        },
+        {
+          "documentKey": "doc-088",
+          "version": 1,
+          "sha256": "cae9f042a6257c62fa62eccb8895d43aefe5e88b1e5866c3263dc0a6235730ee",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "Warehouse-aisle robot safety check: Stone Hill Warehouse"
+            ],
+            "paragraphIndex": 5
+          },
+          "range": {
+            "startOffset": 324,
+            "endOffset": 371
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-019",
+      "query": "For LINK-019, 备援切换时限与 assembly gate 分别是什么？",
+      "category": "cross_passage_document",
+      "language": "mixed",
+      "split": "blind",
+      "expectedDocumentKeys": [
+        "doc-054",
+        "doc-064"
+      ],
+      "expectedFormats": [
+        "pdf"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "关联 LINK-019：控制室 19 的备援切换限时 11 分钟。",
+        "关联 LINK-019：集合点位于青港的 4 号门。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-054",
+          "version": 1,
+          "sha256": "3da19e482733109cbc60a750d4aac242f2d655be663190079d61523d14056205",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 590
+          },
+          "range": {
+            "startOffset": 502,
+            "endOffset": 535
+          }
+        },
+        {
+          "documentKey": "doc-064",
+          "version": 1,
+          "sha256": "146c024108a8fa869f7a66c1e0be75ebe300e4b5d4024d0161cf338fc073b3fa",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 580
+          },
+          "range": {
+            "startOffset": 507,
+            "endOffset": 533
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "cross-LINK-020",
+      "query": "For LINK-020, 备援切换时限与 assembly gate 分别是什么？",
+      "category": "cross_passage_document",
+      "language": "mixed",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-074",
+        "doc-084"
+      ],
+      "expectedFormats": [
+        "docx",
+        "pdf"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "关联 LINK-020：控制室 20 的备援切换限时 12 分钟。",
+        "关联 LINK-020：集合点位于松湾的 5 号门。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-074",
+          "version": 1,
+          "sha256": "8af9a50f197d7e1916473ae8c0754db21f1b1397767fe2bb987728b69b3d8831",
+          "container": {
+            "kind": "pdf_page",
+            "page": 1,
+            "startOffset": 0,
+            "endOffset": 608
+          },
+          "range": {
+            "startOffset": 520,
+            "endOffset": 553
+          }
+        },
+        {
+          "documentKey": "doc-084",
+          "version": 1,
+          "sha256": "e3c5a971c097bef65117264457fbe8e6646bf6a7840397e1b0862c7490363e8c",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "仓储巷道机器人安全巡检：银桥仓储区"
+            ],
+            "paragraphIndex": 7
+          },
+          "range": {
+            "startOffset": 423,
+            "endOffset": 449
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "note": "The two independently authored passages are joined by a fixed synthetic case identifier."
+    },
+    {
+      "id": "version-doc-091",
+      "query": "更新后 北河河段监测点 的河水看起来浑浊的程度新阈值是多少？",
+      "category": "version",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-091"
+      ],
+      "expectedFormats": [
+        "docx"
+      ],
+      "expectedKnowledgeBaseRole": "public",
+      "expectedOutcome": "results_after_update",
+      "supportText": [
+        "记录 EV-HAB-01：北河 河段浊度参考值 3.6 NTU；7 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-091",
+          "version": 2,
+          "sha256": "78b39cd412476a5142f58c85c950eb895d7ff05a5e5788322c9321f4e4563781",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "河流栖息地水样监测：北河河段监测点"
+            ],
+            "paragraphIndex": 3
+          },
+          "range": {
+            "startOffset": 64,
+            "endOffset": 104
+          }
+        }
+      ],
+      "expectedVersion": 2,
+      "versionFixtureId": "update-doc-091",
+      "principalRole": "evaluator",
+      "note": "Requires a real document.update v1-to-v2 operation; the runner must report not_run while M3 is unavailable."
+    },
+    {
+      "id": "version-doc-092",
+      "query": "After the revision, what is the how cloudy the river water may become limit at Cedar Quay River Reach?",
+      "category": "version",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-092"
+      ],
+      "expectedFormats": [
+        "docx"
+      ],
+      "expectedKnowledgeBaseRole": "public",
+      "expectedOutcome": "results_after_update",
+      "supportText": [
+        "EV-HAB-02 Cedar Quay: reference turbidity for the river reach 4.5 NTU; review within 10 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-092",
+          "version": 2,
+          "sha256": "3bfc065d78838b938cf93f53ccf5ace4c5cf7bae7ccdc68f69ba15a8a505a557",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "River-habitat water-sample monitoring: Cedar Quay River Reach"
+            ],
+            "paragraphIndex": 3
+          },
+          "range": {
+            "startOffset": 160,
+            "endOffset": 252
+          }
+        }
+      ],
+      "expectedVersion": 2,
+      "versionFixtureId": "update-doc-092",
+      "principalRole": "evaluator",
+      "note": "Requires a real document.update v1-to-v2 operation; the runner must report not_run while M3 is unavailable."
+    },
+    {
+      "id": "version-doc-093",
+      "query": "更新后 松湾河段监测点 的河水看起来浑浊的程度新阈值是多少？",
+      "category": "version",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-093"
+      ],
+      "expectedFormats": [
+        "docx"
+      ],
+      "expectedKnowledgeBaseRole": "public",
+      "expectedOutcome": "results_after_update",
+      "supportText": [
+        "记录 EV-HAB-03：松湾 河段浊度参考值 3.2 NTU；13 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-093",
+          "version": 2,
+          "sha256": "ee784ee9e789acd9df36c76d196971c86f7c6d2aab6e27fe4d84a5955934dbc2",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "河流栖息地水样监测：松湾河段监测点"
+            ],
+            "paragraphIndex": 3
+          },
+          "range": {
+            "startOffset": 64,
+            "endOffset": 105
+          }
+        }
+      ],
+      "expectedVersion": 2,
+      "versionFixtureId": "update-doc-093",
+      "principalRole": "evaluator",
+      "note": "Requires a real document.update v1-to-v2 operation; the runner must report not_run while M3 is unavailable."
+    },
+    {
+      "id": "version-doc-094",
+      "query": "Revision 2: 银桥河段监测点 / Silver Bridge River Reach 的新阈值是多少？",
+      "category": "version",
+      "language": "mixed",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-094"
+      ],
+      "expectedFormats": [
+        "docx"
+      ],
+      "expectedKnowledgeBaseRole": "public",
+      "expectedOutcome": "results_after_update",
+      "supportText": [
+        "记录 EV-HAB-04：银桥 河段浊度参考值 5.4 NTU；16 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-094",
+          "version": 2,
+          "sha256": "63317ac28e2b20e4b9aa17eb6683cfe2e4d09380c02239fac3635e0193c79273",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "河流栖息地水样监测：银桥河段监测点"
+            ],
+            "paragraphIndex": 3
+          },
+          "range": {
+            "startOffset": 165,
+            "endOffset": 206
+          }
+        }
+      ],
+      "expectedVersion": 2,
+      "versionFixtureId": "update-doc-094",
+      "principalRole": "evaluator",
+      "note": "Requires a real document.update v1-to-v2 operation; the runner must report not_run while M3 is unavailable."
+    },
+    {
+      "id": "version-doc-095",
+      "query": "更新后 南圃河段监测点 的河水看起来浑浊的程度新阈值是多少？",
+      "category": "version",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-095"
+      ],
+      "expectedFormats": [
+        "docx"
+      ],
+      "expectedKnowledgeBaseRole": "public",
+      "expectedOutcome": "results_after_update",
+      "supportText": [
+        "记录 EV-HAB-05：南圃 河段浊度参考值 4.1 NTU；19 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-095",
+          "version": 2,
+          "sha256": "e783e8b20cd454645f3c21a79c870a27940b009fdd0a48fd61ffbf7483fcda93",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "河流栖息地水样监测：南圃河段监测点"
+            ],
+            "paragraphIndex": 3
+          },
+          "range": {
+            "startOffset": 64,
+            "endOffset": 105
+          }
+        }
+      ],
+      "expectedVersion": 2,
+      "versionFixtureId": "update-doc-095",
+      "principalRole": "evaluator",
+      "note": "Requires a real document.update v1-to-v2 operation; the runner must report not_run while M3 is unavailable."
+    },
+    {
+      "id": "version-doc-096",
+      "query": "After the revision, what is the how cloudy the river water may become limit at Cloud Ridge River Reach?",
+      "category": "version",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-096"
+      ],
+      "expectedFormats": [
+        "docx"
+      ],
+      "expectedKnowledgeBaseRole": "public",
+      "expectedOutcome": "results_after_update",
+      "supportText": [
+        "EV-HAB-06 Cloud Ridge: reference turbidity for the river reach 5.0 NTU; review within 22 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-096",
+          "version": 2,
+          "sha256": "2854e7cb869a292005a3f79e56a4810b5220d9c13fff5b0f698494904e76de75",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "River-habitat water-sample monitoring: Cloud Ridge River Reach"
+            ],
+            "paragraphIndex": 3
+          },
+          "range": {
+            "startOffset": 162,
+            "endOffset": 255
+          }
+        }
+      ],
+      "expectedVersion": 2,
+      "versionFixtureId": "update-doc-096",
+      "principalRole": "evaluator",
+      "note": "Requires a real document.update v1-to-v2 operation; the runner must report not_run while M3 is unavailable."
+    },
+    {
+      "id": "version-doc-097",
+      "query": "更新后 东堤河段监测点 的河水看起来浑浊的程度新阈值是多少？",
+      "category": "version",
+      "language": "zh",
+      "split": "blind",
+      "expectedDocumentKeys": [
+        "doc-097"
+      ],
+      "expectedFormats": [
+        "docx"
+      ],
+      "expectedKnowledgeBaseRole": "public",
+      "expectedOutcome": "results_after_update",
+      "supportText": [
+        "记录 EV-HAB-07：东堤 河段浊度参考值 2.9 NTU；25 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-097",
+          "version": 2,
+          "sha256": "9c7350515ead777eb3dbf8934f46ae6790e5b4f0ee94fc342cbbf10cb8747c67",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "河流栖息地水样监测：东堤河段监测点"
+            ],
+            "paragraphIndex": 3
+          },
+          "range": {
+            "startOffset": 64,
+            "endOffset": 105
+          }
+        }
+      ],
+      "expectedVersion": 2,
+      "versionFixtureId": "update-doc-097",
+      "principalRole": "evaluator",
+      "note": "Requires a real document.update v1-to-v2 operation; the runner must report not_run while M3 is unavailable."
+    },
+    {
+      "id": "version-doc-098",
+      "query": "After the revision, what is the how cloudy the river water may become limit at Stone Hill River Reach?",
+      "category": "version",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-098"
+      ],
+      "expectedFormats": [
+        "docx"
+      ],
+      "expectedKnowledgeBaseRole": "public",
+      "expectedOutcome": "results_after_update",
+      "supportText": [
+        "EV-HAB-08 Stone Hill: reference turbidity for the river reach 5.7 NTU; review within 28 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-098",
+          "version": 2,
+          "sha256": "a26f8fb46ef071ca267809f42167e3f660aa96b9cb42e93d6a0c382aac5989a8",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "River-habitat water-sample monitoring: Stone Hill River Reach"
+            ],
+            "paragraphIndex": 3
+          },
+          "range": {
+            "startOffset": 160,
+            "endOffset": 252
+          }
+        }
+      ],
+      "expectedVersion": 2,
+      "versionFixtureId": "update-doc-098",
+      "principalRole": "evaluator",
+      "note": "Requires a real document.update v1-to-v2 operation; the runner must report not_run while M3 is unavailable."
+    },
+    {
+      "id": "version-doc-099",
+      "query": "更新后 滨林河段监测点 的河水看起来浑浊的程度新阈值是多少？",
+      "category": "version",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-099"
+      ],
+      "expectedFormats": [
+        "docx"
+      ],
+      "expectedKnowledgeBaseRole": "public",
+      "expectedOutcome": "results_after_update",
+      "supportText": [
+        "记录 EV-HAB-09：滨林 河段浊度参考值 3.9 NTU；31 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-099",
+          "version": 2,
+          "sha256": "fb3737f515d6d966eb077531087457587a77b1f709b3cb83bab6a8550832c200",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "河流栖息地水样监测：滨林河段监测点"
+            ],
+            "paragraphIndex": 3
+          },
+          "range": {
+            "startOffset": 64,
+            "endOffset": 105
+          }
+        }
+      ],
+      "expectedVersion": 2,
+      "versionFixtureId": "update-doc-099",
+      "principalRole": "evaluator",
+      "note": "Requires a real document.update v1-to-v2 operation; the runner must report not_run while M3 is unavailable."
+    },
+    {
+      "id": "version-doc-100",
+      "query": "更新后 柳湾河段监测点 的河水看起来浑浊的程度新阈值是多少？",
+      "category": "version",
+      "language": "zh",
+      "split": "blind",
+      "expectedDocumentKeys": [
+        "doc-100"
+      ],
+      "expectedFormats": [
+        "docx"
+      ],
+      "expectedKnowledgeBaseRole": "public",
+      "expectedOutcome": "results_after_update",
+      "supportText": [
+        "记录 EV-HAB-10：柳湾 河段浊度参考值 4.4 NTU；34 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-100",
+          "version": 2,
+          "sha256": "f991df1e1b3eb5c79fc046cc620b277c48ce2b675926b4240458cb1a7f9cc375",
+          "container": {
+            "kind": "docx_paragraph",
+            "headingPath": [
+              "河流栖息地水样监测：柳湾河段监测点"
+            ],
+            "paragraphIndex": 3
+          },
+          "range": {
+            "startOffset": 64,
+            "endOffset": 105
+          }
+        }
+      ],
+      "expectedVersion": 2,
+      "versionFixtureId": "update-doc-100",
+      "principalRole": "evaluator",
+      "note": "Requires a real document.update v1-to-v2 operation; the runner must report not_run while M3 is unavailable."
+    },
+    {
+      "id": "no-answer-01",
+      "query": "月面种子库的氦气瓶压力记录是多少？",
+      "category": "no_answer",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [],
+      "expectedFormats": [],
+      "expectedOutcome": "no_answer",
+      "supportText": [],
+      "acceptableSourceLocators": [],
+      "principalRole": "evaluator",
+      "note": "No supporting passage exists in the frozen corpus; these concepts were reserved for abstention checks."
+    },
+    {
+      "id": "no-answer-02",
+      "query": "What color was the orbital bakery umbrella on the first survey day?",
+      "category": "no_answer",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [],
+      "expectedFormats": [],
+      "expectedOutcome": "no_answer",
+      "supportText": [],
+      "acceptableSourceLocators": [],
+      "principalRole": "evaluator",
+      "note": "No supporting passage exists in the frozen corpus; these concepts were reserved for abstention checks."
+    },
+    {
+      "id": "no-answer-03",
+      "query": "火星观测站的咖啡豆库存是否超过 900 袋？",
+      "category": "no_answer",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [],
+      "expectedFormats": [],
+      "expectedOutcome": "no_answer",
+      "supportText": [],
+      "acceptableSourceLocators": [],
+      "principalRole": "evaluator",
+      "note": "No supporting passage exists in the frozen corpus; these concepts were reserved for abstention checks."
+    },
+    {
+      "id": "no-answer-04",
+      "query": "How many blue umbrellas were stored in the lunar seed vault?",
+      "category": "no_answer",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [],
+      "expectedFormats": [],
+      "expectedOutcome": "no_answer",
+      "supportText": [],
+      "acceptableSourceLocators": [],
+      "principalRole": "evaluator",
+      "note": "No supporting passage exists in the frozen corpus; these concepts were reserved for abstention checks."
+    },
+    {
+      "id": "no-answer-05",
+      "query": "南极月壤样本由哪一艘潜艇运送？",
+      "category": "no_answer",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [],
+      "expectedFormats": [],
+      "expectedOutcome": "no_answer",
+      "supportText": [],
+      "acceptableSourceLocators": [],
+      "principalRole": "evaluator",
+      "note": "No supporting passage exists in the frozen corpus; these concepts were reserved for abstention checks."
+    },
+    {
+      "id": "no-answer-06",
+      "query": "Which bakery sold the cobalt telescope on Mars?",
+      "category": "no_answer",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [],
+      "expectedFormats": [],
+      "expectedOutcome": "no_answer",
+      "supportText": [],
+      "acceptableSourceLocators": [],
+      "principalRole": "evaluator",
+      "note": "No supporting passage exists in the frozen corpus; these concepts were reserved for abstention checks."
+    },
+    {
+      "id": "no-answer-07",
+      "query": "月球档案员在 2014 年借出的黑胶唱片数量是多少？",
+      "category": "no_answer",
+      "language": "zh",
+      "split": "blind",
+      "expectedDocumentKeys": [],
+      "expectedFormats": [],
+      "expectedOutcome": "no_answer",
+      "supportText": [],
+      "acceptableSourceLocators": [],
+      "principalRole": "evaluator",
+      "note": "No supporting passage exists in the frozen corpus; these concepts were reserved for abstention checks."
+    },
+    {
+      "id": "no-answer-08",
+      "query": "Did the orbital greenhouse order 700 copper kites?",
+      "category": "no_answer",
+      "language": "en",
+      "split": "blind",
+      "expectedDocumentKeys": [],
+      "expectedFormats": [],
+      "expectedOutcome": "no_answer",
+      "supportText": [],
+      "acceptableSourceLocators": [],
+      "principalRole": "evaluator",
+      "note": "No supporting passage exists in the frozen corpus; these concepts were reserved for abstention checks."
+    },
+    {
+      "id": "no-answer-09",
+      "query": "月面厨房的咖啡豆 shipment 到达了哪座火星机场？",
+      "category": "no_answer",
+      "language": "mixed",
+      "split": "development",
+      "expectedDocumentKeys": [],
+      "expectedFormats": [],
+      "expectedOutcome": "no_answer",
+      "supportText": [],
+      "acceptableSourceLocators": [],
+      "principalRole": "evaluator",
+      "note": "No supporting passage exists in the frozen corpus; these concepts were reserved for abstention checks."
+    },
+    {
+      "id": "no-answer-10",
+      "query": "What was the Antarctic submarine name in the lunar bakery ledger?",
+      "category": "no_answer",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [],
+      "expectedFormats": [],
+      "expectedOutcome": "no_answer",
+      "supportText": [],
+      "acceptableSourceLocators": [],
+      "principalRole": "evaluator",
+      "note": "No supporting passage exists in the frozen corpus; these concepts were reserved for abstention checks."
+    },
+    {
+      "id": "filter-doc-001",
+      "query": "查询北河供水站的泵口水压。",
+      "category": "filter_permission",
+      "scenario": "filter",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-001"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-WTR-01：北河 出水压力 0.42 MPa；7 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-001",
+          "version": 1,
+          "sha256": "a7c00063572ea4d3954e25eba3b4350eb73e77e82a70959f7e309cbdcfeca09b",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 98
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 98
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "filters": {
+        "tags": [
+          "benchmark-filter-01"
+        ],
+        "sourceTypes": [
+          "upload"
+        ]
+      },
+      "note": "The tag filter isolates this preselected document; it was assigned before retrieval."
+    },
+    {
+      "id": "filter-doc-002",
+      "query": "What is the pressure at the pump outlet at Cedar Quay Pump Station?",
+      "category": "filter_permission",
+      "scenario": "filter",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-002"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "EV-WTR-02 Cedar Quay: outlet pressure 0.46 MPa; review within 10 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-002",
+          "version": 1,
+          "sha256": "97e18dd657ffe89976affa85f398980a25d7677d52e557f2bd041a9836f24709",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 145,
+            "endOffset": 214
+          },
+          "range": {
+            "startOffset": 145,
+            "endOffset": 214
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "filters": {
+        "tags": [
+          "benchmark-filter-02"
+        ],
+        "sourceTypes": [
+          "upload"
+        ]
+      },
+      "note": "The tag filter isolates this preselected document; it was assigned before retrieval."
+    },
+    {
+      "id": "filter-doc-003",
+      "query": "查询松湾供水站的泵口水压。",
+      "category": "filter_permission",
+      "scenario": "filter",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-003"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-WTR-03：松湾 出水压力 0.39 MPa；13 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-003",
+          "version": 1,
+          "sha256": "2beef041d01c64bf31d131e9d206c093f5a72056b86d013997029fc400c790fe",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 99
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 99
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "filters": {
+        "tags": [
+          "benchmark-filter-03"
+        ],
+        "sourceTypes": [
+          "upload"
+        ]
+      },
+      "note": "The tag filter isolates this preselected document; it was assigned before retrieval."
+    },
+    {
+      "id": "filter-doc-004",
+      "query": "银桥供水站 / Silver Bridge Pump Station: 泵口水压 (pressure at the pump outlet)?",
+      "category": "filter_permission",
+      "scenario": "filter",
+      "language": "mixed",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-004"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-WTR-04：银桥 出水压力 0.51 MPa；16 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-004",
+          "version": 1,
+          "sha256": "45cca3ce3e8344bfe78745ad5a38f60a3f86d2cba3c5107d48a9a19f5338165b",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 210,
+            "endOffset": 249
+          },
+          "range": {
+            "startOffset": 210,
+            "endOffset": 249
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "filters": {
+        "tags": [
+          "benchmark-filter-04"
+        ],
+        "sourceTypes": [
+          "upload"
+        ]
+      },
+      "note": "The tag filter isolates this preselected document; it was assigned before retrieval."
+    },
+    {
+      "id": "filter-doc-005",
+      "query": "查询南圃供水站的泵口水压。",
+      "category": "filter_permission",
+      "scenario": "filter",
+      "language": "zh",
+      "split": "blind",
+      "expectedDocumentKeys": [
+        "doc-005"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedOutcome": "results",
+      "supportText": [
+        "记录 EV-WTR-05：南圃 出水压力 0.44 MPa；19 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-005",
+          "version": 1,
+          "sha256": "a1874ed3209ac287ff25b7f4b60d6a4dea451a1e545677cc0ce539e0bb0d1917",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 99
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 99
+          }
+        }
+      ],
+      "principalRole": "evaluator",
+      "filters": {
+        "tags": [
+          "benchmark-filter-05"
+        ],
+        "sourceTypes": [
+          "upload"
+        ]
+      },
+      "note": "The tag filter isolates this preselected document; it was assigned before retrieval."
+    },
+    {
+      "id": "permission-doc-006",
+      "query": "What is the pressure at the pump outlet at Cloud Ridge Pump Station?",
+      "category": "filter_permission",
+      "scenario": "permission",
+      "language": "en",
+      "split": "blind",
+      "expectedDocumentKeys": [
+        "doc-006"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedKnowledgeBaseRole": "restricted",
+      "expectedOutcome": "permission_denied",
+      "supportText": [
+        "EV-WTR-06 Cloud Ridge: outlet pressure 0.48 MPa; review within 22 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-006",
+          "version": 1,
+          "sha256": "9ad689647ce71fac8f61d4c388bdaca56e57556533593e4a1ed56e19fd37fc29",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 147,
+            "endOffset": 217
+          },
+          "range": {
+            "startOffset": 147,
+            "endOffset": 217
+          }
+        }
+      ],
+      "principalRole": "reader",
+      "note": "The reader has read access to the public evaluation KB but is intentionally not a member of this restricted KB."
+    },
+    {
+      "id": "permission-doc-007",
+      "query": "查询东堤供水站的泵口水压。",
+      "category": "filter_permission",
+      "scenario": "permission",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-007"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedKnowledgeBaseRole": "restricted",
+      "expectedOutcome": "permission_denied",
+      "supportText": [
+        "记录 EV-WTR-07：东堤 出水压力 0.41 MPa；25 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-007",
+          "version": 1,
+          "sha256": "fcf7aa519dd1c3a90dd075403992aabe811f872858f56641180e12138553329b",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 99
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 99
+          }
+        }
+      ],
+      "principalRole": "reader",
+      "note": "The reader has read access to the public evaluation KB but is intentionally not a member of this restricted KB."
+    },
+    {
+      "id": "permission-doc-008",
+      "query": "What is the pressure at the pump outlet at Stone Hill Pump Station?",
+      "category": "filter_permission",
+      "scenario": "permission",
+      "language": "en",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-008"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedKnowledgeBaseRole": "restricted",
+      "expectedOutcome": "permission_denied",
+      "supportText": [
+        "EV-WTR-08 Stone Hill: outlet pressure 0.53 MPa; review within 28 min."
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-008",
+          "version": 1,
+          "sha256": "60fdc29d0dd9a9e90c162bb5f6c81d1badf0c56e33243dfbe7b22e63a51e8e0c",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 145,
+            "endOffset": 214
+          },
+          "range": {
+            "startOffset": 145,
+            "endOffset": 214
+          }
+        }
+      ],
+      "principalRole": "reader",
+      "note": "The reader has read access to the public evaluation KB but is intentionally not a member of this restricted KB."
+    },
+    {
+      "id": "permission-doc-009",
+      "query": "查询滨林供水站的泵口水压。",
+      "category": "filter_permission",
+      "scenario": "permission",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-009"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedKnowledgeBaseRole": "restricted",
+      "expectedOutcome": "permission_denied",
+      "supportText": [
+        "记录 EV-WTR-09：滨林 出水压力 0.45 MPa；31 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-009",
+          "version": 1,
+          "sha256": "5a21d52c1795cba65f3537af6301bb41a00d142dca58738e43dc3d1e080bdd8e",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 99
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 99
+          }
+        }
+      ],
+      "principalRole": "reader",
+      "note": "The reader has read access to the public evaluation KB but is intentionally not a member of this restricted KB."
+    },
+    {
+      "id": "permission-doc-010",
+      "query": "查询柳湾供水站的泵口水压。",
+      "category": "filter_permission",
+      "scenario": "permission",
+      "language": "zh",
+      "split": "development",
+      "expectedDocumentKeys": [
+        "doc-010"
+      ],
+      "expectedFormats": [
+        "txt"
+      ],
+      "expectedKnowledgeBaseRole": "restricted",
+      "expectedOutcome": "permission_denied",
+      "supportText": [
+        "记录 EV-WTR-10：柳湾 出水压力 0.38 MPa；34 分钟内复核。"
+      ],
+      "acceptableSourceLocators": [
+        {
+          "documentKey": "doc-010",
+          "version": 1,
+          "sha256": "b29e50e375108b0b52c86241733595a45c909a42cd7abec799092ce5af534457",
+          "container": {
+            "kind": "text_span",
+            "startLine": 7,
+            "endLine": 7,
+            "startOffset": 60,
+            "endOffset": 99
+          },
+          "range": {
+            "startOffset": 60,
+            "endOffset": 99
+          }
+        }
+      ],
+      "principalRole": "reader",
+      "note": "The reader has read access to the public evaluation KB but is intentionally not a member of this restricted KB."
+    }
+  ]
+}

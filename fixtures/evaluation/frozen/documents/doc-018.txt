@@ -1,0 +1,9 @@
+Cold-chain distribution temperature record: Stone Hill Cold Depot
+
+Revision v1. Record EV-CLD-08.
+
+Site: Stone Hill Cold Depot; asset: refrigerated container H.
+
+EV-CLD-08 Stone Hill: cargo-bay temperature -22 °C; review within 28 min.
+
+during cold start, reseal the load after more than eight cumulative minutes with the door open; log readings in COLD-LOG-018.

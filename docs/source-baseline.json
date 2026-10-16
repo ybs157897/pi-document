@@ -1,0 +1,40 @@
+{
+  "checkedDate": "2026-10-16",
+  "timezone": "Asia/Shanghai",
+  "deliveryStatus": "planning_only",
+  "weknora": {
+    "repository": "https://github.com/Tencent/WeKnora.git",
+    "branch": "main",
+    "commit": "2fbfb4471581cd5e7d731bc7a2d443fe7d8e95b5",
+    "commitDate": "2026-10-15T23:54:14+08:00",
+    "pullCommand": "git pull --ff-only",
+    "pullResult": "Already up to date.",
+    "worktreeCleanAtInspection": true
+  },
+  "piDurable": {
+    "npmPackage": "@earendil-works/pi-durable",
+    "recommendedVersion": "1.3.0",
+    "localReferenceVersion": "1.1.0",
+    "repository": "https://github.com/earendil-works/pi",
+    "tag": "v1.3.0",
+    "commit": "71023aec1546d6d677a65669c5665c0927ce0dd0",
+    "nodeMinimum": "22.19.0",
+    "installedInTarget": false
+  },
+  "a2a": {
+    "repository": "https://github.com/a2aproject/A2A",
+    "specTag": "v1.0.1",
+    "wireVersion": "1.0",
+    "commit": "3303592588e388e62e0f69f701af531d2f4e3991",
+    "sdkPackage": "@a2a-js/sdk",
+    "sdkVersion": "1.3.0",
+    "sdkRepository": "https://github.com/a2aproject/a2a-js",
+    "sdkCommit": "29417a5bb4038f804f310ce4fffd267a9375aa90",
+    "sdkDeclaredSpec": "1.0.0",
+    "compatibilityStatus": "not_run_gate_M0"
+  },
+  "runtimeAcceptance": "not_run",
+  "deployment": "not_performed",
+  "gitInitCommitPush": "not_performed",
+  "snapshotStage": "initial_planning_before_git_publication"
+}

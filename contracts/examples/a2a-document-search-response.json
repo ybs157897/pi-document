@@ -1,0 +1,56 @@
+{
+  "jsonrpc": "2.0",
+  "id": "rpc-search-001",
+  "result": {
+    "task": {
+      "id": "a2a-task-search-001",
+      "contextId": "a2a-context-001",
+      "status": {
+        "state": "TASK_STATE_COMPLETED",
+        "timestamp": "2026-10-16T00:00:01Z"
+      },
+      "artifacts": [
+        {
+          "artifactId": "artifact-search-001",
+          "name": "document.search result",
+          "description": "检索结果及其来源位置。",
+          "parts": [
+            {
+              "data": {
+                "schemaVersion": "1.0",
+                "operation": "document.search",
+                "requestId": "req-search-3ee6b39b-bb1d-4c0c-a736-6bf4ced5fa11",
+                "outcome": "succeeded",
+                "result": {
+                  "query": "Pi Durable 的执行状态如何持久化？",
+                  "results": [
+                    {
+                      "documentId": "doc-9a12f3",
+                      "version": 1,
+                      "generationId": "gen-2026-10-16-001",
+                      "chunkId": "chunk-4",
+                      "title": "Pi Durable 笔记",
+                      "snippet": "Pi Durable 使用自己的持久化执行状态。索引发布后才能让检索使用新文档。",
+                      "locator": {
+                        "kind": "text_span",
+                        "startLine": 1,
+                        "endLine": 1,
+                        "startOffset": 0,
+                        "endOffset": 40
+                      },
+                      "rank": 1,
+                      "scoreType": "rrf",
+                      "contentUri": "https://doc-agent.example.com/v1/documents/doc-9a12f3/content?version=1"
+                    }
+                  ],
+                  "degraded": false
+                }
+              },
+              "mediaType": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

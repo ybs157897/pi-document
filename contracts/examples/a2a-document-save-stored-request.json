@@ -1,0 +1,42 @@
+{
+  "jsonrpc": "2.0",
+  "id": "rpc-save-stored-001",
+  "method": "SendMessage",
+  "params": {
+    "message": {
+      "messageId": "msg-save-stored-001",
+      "role": "ROLE_USER",
+      "parts": [
+        {
+          "data": {
+            "schemaVersion": "1.0",
+            "operation": "document.save",
+            "requestId": "req-save-stored-001",
+            "knowledgeBaseId": "kb-project-docs",
+            "input": {
+              "source": {
+                "kind": "text",
+                "text": "Pi Durable 使用自己的持久化执行状态。索引发布后才能让检索使用新文档。",
+                "mimeType": "text/markdown"
+              },
+              "title": "Pi Durable 笔记",
+              "tags": [
+                "pi",
+                "durable",
+                "检索"
+              ],
+              "waitFor": "stored"
+            }
+          },
+          "mediaType": "application/json"
+        }
+      ]
+    },
+    "configuration": {
+      "acceptedOutputModes": [
+        "application/json"
+      ],
+      "returnImmediately": false
+    }
+  }
+}

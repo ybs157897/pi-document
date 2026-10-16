@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0",
+  "operation": "document.update",
+  "requestId": "update-research-001",
+  "knowledgeBaseId": "kb-research",
+  "input": {
+    "documentId": "doc-a2a-guide",
+    "expectedVersion": 1,
+    "source": {
+      "kind": "text",
+      "text": "# 更新资料\n保存和检索都经过 A2A 入口。",
+      "mimeType": "text/markdown"
+    },
+    "waitFor": "indexed"
+  }
+}

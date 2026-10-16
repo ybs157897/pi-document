@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0",
+  "operation": "document.save",
+  "requestId": "save-research-001",
+  "knowledgeBaseId": "kb-research",
+  "input": {
+    "source": {
+      "kind": "text",
+      "text": "# 资料\n本项目使用 A2A 提供文档检索。",
+      "mimeType": "text/markdown"
+    },
+    "title": "A2A 接入说明",
+    "tags": [
+      "integration"
+    ],
+    "waitFor": "indexed"
+  }
+}

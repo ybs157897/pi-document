@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "operation": "document.search",
+  "requestId": "search-research-001",
+  "knowledgeBaseId": "kb-research",
+  "input": {
+    "query": "文档通过什么协议检索？",
+    "topK": 5,
+    "mode": "hybrid",
+    "rerank": true
+  }
+}

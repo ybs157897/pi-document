@@ -1,0 +1,40 @@
+{
+  "jsonrpc": "2.0",
+  "id": "rpc-save-001",
+  "result": {
+    "task": {
+      "id": "a2a-task-save-001",
+      "contextId": "a2a-context-001",
+      "status": {
+        "state": "TASK_STATE_COMPLETED",
+        "timestamp": "2026-10-16T00:00:00Z"
+      },
+      "artifacts": [
+        {
+          "artifactId": "artifact-save-001",
+          "name": "document.save result",
+          "description": "业务保存结果；索引 generation 已发布。",
+          "parts": [
+            {
+              "data": {
+                "schemaVersion": "1.0",
+                "operation": "document.save",
+                "requestId": "req-save-7df70f2f-75a2-4d94-97f1-1d3e945424b0",
+                "outcome": "succeeded",
+                "result": {
+                  "documentId": "doc-9a12f3",
+                  "knowledgeBaseId": "kb-project-docs",
+                  "version": 1,
+                  "generationId": "gen-2026-10-16-001",
+                  "indexState": "ready",
+                  "sha256": "51ee269dcb8514e6450e626ae2d84a631432185651e966f608d20345d63b5be6"
+                }
+              },
+              "mediaType": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

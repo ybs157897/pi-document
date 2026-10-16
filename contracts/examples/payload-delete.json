@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0",
+  "operation": "document.delete",
+  "requestId": "delete-research-001",
+  "knowledgeBaseId": "kb-research",
+  "input": {
+    "documentId": "doc-a2a-guide",
+    "expectedVersion": 2
+  }
+}

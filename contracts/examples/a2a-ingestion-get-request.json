@@ -1,0 +1,8 @@
+{
+  "jsonrpc": "2.0",
+  "id": "rpc-get-ingestion-001",
+  "method": "GetTask",
+  "params": {
+    "id": "a2a-task-ingestion-001"
+  }
+}

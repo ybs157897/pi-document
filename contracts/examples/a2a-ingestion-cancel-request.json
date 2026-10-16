@@ -1,0 +1,8 @@
+{
+  "jsonrpc": "2.0",
+  "id": "rpc-cancel-ingestion-001",
+  "method": "CancelTask",
+  "params": {
+    "id": "a2a-task-ingestion-001"
+  }
+}

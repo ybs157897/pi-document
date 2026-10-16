@@ -1,0 +1,35 @@
+{
+  "jsonrpc": "2.0",
+  "id": "rpc-search-001",
+  "method": "SendMessage",
+  "params": {
+    "message": {
+      "messageId": "msg-search-001",
+      "role": "ROLE_USER",
+      "parts": [
+        {
+          "data": {
+            "schemaVersion": "1.0",
+            "operation": "document.search",
+            "requestId": "req-search-3ee6b39b-bb1d-4c0c-a736-6bf4ced5fa11",
+            "knowledgeBaseId": "kb-project-docs",
+            "input": {
+              "query": "Pi Durable 的执行状态如何持久化？",
+              "topK": 5,
+              "filters": {
+                "tags": ["pi", "durable"]
+              },
+              "mode": "hybrid",
+              "rerank": true
+            }
+          },
+          "mediaType": "application/json"
+        }
+      ]
+    },
+    "configuration": {
+      "acceptedOutputModes": ["application/json"],
+      "returnImmediately": false
+    }
+  }
+}

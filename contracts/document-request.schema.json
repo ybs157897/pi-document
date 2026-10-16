@@ -1,0 +1,605 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pi-document-agent:schema:document-request:1.0",
+  "title": "Pi Document Agent DataPart request (planned contract)",
+  "description": "A2A DataPart.data business payload; not an A2A protocol schema. Auth identity is supplied by the server. document.answer is P1; advertising it before implementation is forbidden. Text maxLength is characters; service additionally enforces 256 KiB UTF-8 bytes. Defaults must be applied explicitly by the implementation.",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0"
+        },
+        "operation": {
+          "const": "document.save"
+        },
+        "requestId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "input": {
+          "type": "object",
+          "properties": {
+            "source": {
+              "$ref": "#/$defs/source"
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 500
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "maxItems": 50,
+              "uniqueItems": true,
+              "description": "Omitted means empty tags."
+            },
+            "waitFor": {
+              "enum": [
+                "stored",
+                "indexed"
+              ],
+              "default": "indexed"
+            }
+          },
+          "required": [
+            "source",
+            "title"
+          ],
+          "additionalProperties": false
+        },
+        "knowledgeBaseId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "operation",
+        "requestId",
+        "input",
+        "knowledgeBaseId"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0"
+        },
+        "operation": {
+          "const": "document.search"
+        },
+        "requestId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "input": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 8000
+            },
+            "topK": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50,
+              "default": 10
+            },
+            "filters": {
+              "$ref": "#/$defs/filters"
+            },
+            "mode": {
+              "enum": [
+                "hybrid",
+                "semantic",
+                "keyword"
+              ],
+              "default": "hybrid"
+            },
+            "rerank": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "additionalProperties": false
+        },
+        "knowledgeBaseId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "operation",
+        "requestId",
+        "input",
+        "knowledgeBaseId"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0"
+        },
+        "operation": {
+          "const": "document.get"
+        },
+        "requestId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "input": {
+          "type": "object",
+          "properties": {
+            "documentId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200
+            },
+            "version": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "cursor": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200
+            },
+            "limit": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 20
+            }
+          },
+          "required": [
+            "documentId"
+          ],
+          "additionalProperties": false
+        },
+        "knowledgeBaseId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "operation",
+        "requestId",
+        "input",
+        "knowledgeBaseId"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0"
+        },
+        "operation": {
+          "const": "document.list"
+        },
+        "requestId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "input": {
+          "type": "object",
+          "properties": {
+            "filters": {
+              "$ref": "#/$defs/filters"
+            },
+            "cursor": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200
+            },
+            "limit": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 20
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        "knowledgeBaseId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "operation",
+        "requestId",
+        "input",
+        "knowledgeBaseId"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0"
+        },
+        "operation": {
+          "const": "document.update"
+        },
+        "requestId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "input": {
+          "type": "object",
+          "properties": {
+            "documentId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200
+            },
+            "expectedVersion": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "source": {
+              "$ref": "#/$defs/source"
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 500,
+              "description": "Omitted preserves existing title."
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "maxItems": 50,
+              "uniqueItems": true,
+              "description": "Omitted preserves existing tags; [] clears; non-empty array replaces all tags."
+            },
+            "waitFor": {
+              "enum": [
+                "stored",
+                "indexed"
+              ],
+              "default": "indexed"
+            }
+          },
+          "required": [
+            "documentId",
+            "expectedVersion",
+            "source"
+          ],
+          "additionalProperties": false
+        },
+        "knowledgeBaseId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "operation",
+        "requestId",
+        "input",
+        "knowledgeBaseId"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0"
+        },
+        "operation": {
+          "const": "document.delete"
+        },
+        "requestId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "input": {
+          "type": "object",
+          "properties": {
+            "documentId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200
+            },
+            "expectedVersion": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "required": [
+            "documentId",
+            "expectedVersion"
+          ],
+          "additionalProperties": false
+        },
+        "knowledgeBaseId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "operation",
+        "requestId",
+        "input",
+        "knowledgeBaseId"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0"
+        },
+        "operation": {
+          "const": "knowledge_base.create"
+        },
+        "requestId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "input": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200
+            },
+            "description": {
+              "type": "string",
+              "maxLength": 2000
+            }
+          },
+          "required": [
+            "name"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "operation",
+        "requestId",
+        "input"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0"
+        },
+        "operation": {
+          "const": "knowledge_base.list"
+        },
+        "requestId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "input": {
+          "type": "object",
+          "properties": {
+            "cursor": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200
+            },
+            "limit": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "operation",
+        "requestId",
+        "input"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0"
+        },
+        "operation": {
+          "const": "document.answer"
+        },
+        "requestId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "input": {
+          "type": "object",
+          "properties": {
+            "question": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 8000
+            },
+            "topK": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            },
+            "filters": {
+              "$ref": "#/$defs/filters"
+            }
+          },
+          "required": [
+            "question"
+          ],
+          "additionalProperties": false
+        },
+        "knowledgeBaseId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "operation",
+        "requestId",
+        "input",
+        "knowledgeBaseId"
+      ],
+      "additionalProperties": false
+    }
+  ],
+  "$defs": {
+    "source": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "text"
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 262144
+            },
+            "mimeType": {
+              "enum": [
+                "text/plain",
+                "text/markdown"
+              ],
+              "default": "text/plain"
+            }
+          },
+          "required": [
+            "kind",
+            "text"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "upload"
+            },
+            "uploadId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200
+            }
+          },
+          "required": [
+            "kind",
+            "uploadId"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "url"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https?://"
+            }
+          },
+          "required": [
+            "kind",
+            "url"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "filters": {
+      "type": "object",
+      "properties": {
+        "documentIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "maxItems": 100
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "maxItems": 50,
+          "uniqueItems": true
+        },
+        "sourceTypes": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "text",
+              "upload",
+              "url"
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "jsonrpc": "2.0",
+  "id": "rpc-save-stored-001",
+  "result": {
+    "task": {
+      "id": "a2a-task-save-stored-001",
+      "contextId": "a2a-context-001",
+      "status": {
+        "state": "TASK_STATE_COMPLETED",
+        "timestamp": "2026-10-16T00:00:00Z"
+      },
+      "artifacts": [
+        {
+          "artifactId": "artifact-save-stored-001",
+          "name": "document.save result",
+          "description": "仅完成原文落盘；索引由另一个公共A2A任务继续。",
+          "parts": [
+            {
+              "data": {
+                "schemaVersion": "1.0",
+                "operation": "document.save",
+                "requestId": "req-save-stored-001",
+                "outcome": "succeeded",
+                "result": {
+                  "documentId": "doc-stored-001",
+                  "knowledgeBaseId": "kb-project-docs",
+                  "version": 1,
+                  "indexState": "stored",
+                  "sha256": "51ee269dcb8514e6450e626ae2d84a631432185651e966f608d20345d63b5be6",
+                  "ingestionTaskId": "a2a-task-ingestion-001"
+                }
+              },
+              "mediaType": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

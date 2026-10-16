@@ -1,0 +1,16 @@
+# macOS metadata
+.DS_Store
+
+# Dependencies and build output
+node_modules/
+dist/
+
+# Local credentials and runtime data
+.env
+.env.*
+!.env.example
+data/
+.cache/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm

@@ -1,0 +1,12 @@
+{
+  "jsonrpc": "2.0",
+  "id": "rpc-get-ingestion-001",
+  "result": {
+    "id": "a2a-task-ingestion-001",
+    "contextId": "a2a-context-001",
+    "status": {
+      "state": "TASK_STATE_WORKING",
+      "timestamp": "2026-10-16T00:00:01Z"
+    }
+  }
+}

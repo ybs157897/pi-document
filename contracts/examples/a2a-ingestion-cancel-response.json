@@ -1,0 +1,12 @@
+{
+  "jsonrpc": "2.0",
+  "id": "rpc-cancel-ingestion-001",
+  "result": {
+    "id": "a2a-task-ingestion-001",
+    "contextId": "a2a-context-001",
+    "status": {
+      "state": "TASK_STATE_CANCELED",
+      "timestamp": "2026-10-16T00:00:02Z"
+    }
+  }
+}

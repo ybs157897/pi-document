@@ -1,0 +1,84 @@
+{
+  "name": "Pi Document Agent",
+  "description": "通过 A2A 提供知识库管理、文档保存、混合检索、读取、列表、更新与删除。",
+  "supportedInterfaces": [
+    {
+      "url": "https://doc-agent.example.com/a2a/jsonrpc",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "provider": {
+    "organization": "Example",
+    "url": "https://doc-agent.example.com"
+  },
+  "version": "0.1.0",
+  "documentationUrl": "https://doc-agent.example.com/docs",
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false,
+    "extensions": [],
+    "extendedAgentCard": false
+  },
+  "securitySchemes": {
+    "bearerAuth": {
+      "httpAuthSecurityScheme": {
+        "description": "本机服务身份的 opaque Bearer token；认证到 principal 后按 ACL 授权。",
+        "scheme": "Bearer"
+      }
+    }
+  },
+  "securityRequirements": [
+    {
+      "schemes": {
+        "bearerAuth": {
+          "list": []
+        }
+      }
+    }
+  ],
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "knowledge-base-and-documents",
+      "name": "知识库与文档操作",
+      "description": "接收 application/json DataPart 或 text/plain 自然语言 TextPart，执行知识库管理、文档保存、混合检索、读取、列表、更新与删除；文档回答计划在 P1 提供。",
+      "tags": [
+        "knowledge_base.create",
+        "knowledge_base.list",
+        "document.save",
+        "document.search",
+        "document.get",
+        "document.list",
+        "document.update",
+        "document.delete"
+      ],
+      "examples": [
+        "保存 Markdown 到指定知识库并等待索引发布。",
+        "在指定知识库中混合检索主题相关片段，并返回受权原文位置。"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "securityRequirements": [
+        {
+          "schemes": {
+            "bearerAuth": {
+              "list": []
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

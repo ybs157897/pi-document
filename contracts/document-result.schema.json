@@ -1,0 +1,773 @@
+{
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "operation": {
+      "enum": [
+        "document.save",
+        "document.search",
+        "document.get",
+        "document.list",
+        "document.update",
+        "document.delete",
+        "knowledge_base.create",
+        "knowledge_base.list",
+        "document.answer"
+      ]
+    },
+    "requestId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "outcome": {
+      "enum": [
+        "succeeded",
+        "failed"
+      ]
+    },
+    "result": {
+      "type": "object"
+    },
+    "error": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "minLength": 1
+        },
+        "message": {
+          "type": "string",
+          "minLength": 1
+        },
+        "retryable": {
+          "type": "boolean"
+        },
+        "details": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "code",
+        "message",
+        "retryable"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "operation",
+    "requestId",
+    "outcome"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pi-document-agent:schema:document-result:1.0",
+  "title": "Pi Document Agent DataPart result (planned contract)",
+  "$defs": {
+    "locator": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "pdf_page"
+            },
+            "page": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "startOffset": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "endOffset": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "kind",
+            "page",
+            "startOffset",
+            "endOffset"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "text_span"
+            },
+            "startLine": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "endLine": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "startOffset": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "endOffset": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "kind",
+            "startLine",
+            "endLine",
+            "startOffset",
+            "endOffset"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "docx_paragraph"
+            },
+            "headingPath": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "paragraphIndex": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "kind",
+            "headingPath",
+            "paragraphIndex"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "html_section"
+            },
+            "headingPath": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "fragment": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "kind",
+            "headingPath",
+            "fragment"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "searchHit": {
+      "type": "object",
+      "properties": {
+        "documentId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "generationId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "chunkId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "snippet": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locator": {
+          "$ref": "#/$defs/locator"
+        },
+        "rank": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "scoreType": {
+          "enum": [
+            "rrf",
+            "cosine",
+            "lexical",
+            "rerank"
+          ]
+        },
+        "score": {
+          "type": "number"
+        },
+        "contentUri": {
+          "type": "string",
+          "format": "uri"
+        },
+        "sourceUri": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "documentId",
+        "version",
+        "generationId",
+        "chunkId",
+        "title",
+        "snippet",
+        "locator",
+        "rank",
+        "scoreType",
+        "contentUri"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "outcome": {
+            "const": "succeeded"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "result"
+        ],
+        "not": {
+          "required": [
+            "error"
+          ]
+        }
+      },
+      "else": {
+        "required": [
+          "error"
+        ],
+        "not": {
+          "required": [
+            "result"
+          ]
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "operation": {
+            "enum": [
+              "document.save",
+              "document.update"
+            ]
+          },
+          "outcome": {
+            "const": "succeeded"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "result": {
+            "type": "object",
+            "required": [
+              "documentId",
+              "version",
+              "indexState",
+              "sha256"
+            ],
+            "properties": {
+              "documentId": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "version": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "indexState": {
+                "enum": [
+                  "stored",
+                  "parsing",
+                  "chunking",
+                  "embedding",
+                  "indexing",
+                  "ready",
+                  "failed",
+                  "canceled"
+                ]
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "generationId": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "knowledgeBaseId": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "ingestionTaskId": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200,
+                "description": "Public A2A task ID for durable background indexing; query/subscribe/cancel via standard A2A methods. Never a Pi internal ID."
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "indexState": {
+                      "not": {
+                        "const": "ready"
+                      }
+                    }
+                  }
+                },
+                "then": {
+                  "required": [
+                    "ingestionTaskId"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "operation": {
+            "const": "document.search"
+          },
+          "outcome": {
+            "const": "succeeded"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "result": {
+            "type": "object",
+            "required": [
+              "query",
+              "results",
+              "degraded"
+            ],
+            "properties": {
+              "query": {
+                "type": "string",
+                "minLength": 1
+              },
+              "results": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/searchHit"
+                },
+                "maxItems": 50
+              },
+              "degraded": {
+                "type": "boolean"
+              },
+              "degradationReason": {
+                "type": "string",
+                "minLength": 1
+              },
+              "actualMode": {
+                "enum": [
+                  "hybrid",
+                  "semantic",
+                  "keyword"
+                ]
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "degraded": {
+                      "const": true
+                    }
+                  }
+                },
+                "then": {
+                  "required": [
+                    "degradationReason"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "operation": {
+            "const": "document.delete"
+          },
+          "outcome": {
+            "const": "succeeded"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "result": {
+            "type": "object",
+            "required": [
+              "documentId",
+              "deleted",
+              "purgeState"
+            ],
+            "properties": {
+              "documentId": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "deleted": {
+                "const": true
+              },
+              "purgeState": {
+                "enum": [
+                  "pending",
+                  "completed"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "operation": {
+            "const": "document.get"
+          },
+          "outcome": {
+            "const": "succeeded"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "result": {
+            "type": "object",
+            "properties": {
+              "documentId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "version": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "indexState": {
+                "enum": [
+                  "stored",
+                  "parsing",
+                  "chunking",
+                  "embedding",
+                  "indexing",
+                  "ready",
+                  "failed",
+                  "canceled"
+                ]
+              },
+              "source": {
+                "type": "object",
+                "properties": {
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "mimeType": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "sha256",
+                  "mimeType"
+                ],
+                "additionalProperties": false
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string"
+                  },
+                  "truncated": {
+                    "type": "boolean"
+                  },
+                  "nextCursor": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "text",
+                  "truncated"
+                ],
+                "additionalProperties": false
+              },
+              "downloadUri": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "documentId",
+              "version",
+              "title",
+              "indexState",
+              "source",
+              "content"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "operation": {
+            "const": "document.list"
+          },
+          "outcome": {
+            "const": "succeeded"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "result": {
+            "type": "object",
+            "properties": {
+              "documents": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "documentId": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "version": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "title": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "indexState": {
+                      "enum": [
+                        "stored",
+                        "parsing",
+                        "chunking",
+                        "embedding",
+                        "indexing",
+                        "ready",
+                        "failed",
+                        "canceled"
+                      ]
+                    },
+                    "tags": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "documentId",
+                    "version",
+                    "title",
+                    "indexState"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "nextCursor": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "documents"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "operation": {
+            "const": "knowledge_base.create"
+          },
+          "outcome": {
+            "const": "succeeded"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "result": {
+            "type": "object",
+            "properties": {
+              "knowledgeBaseId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "knowledgeBaseId",
+              "name"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "operation": {
+            "const": "knowledge_base.list"
+          },
+          "outcome": {
+            "const": "succeeded"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "result": {
+            "type": "object",
+            "properties": {
+              "knowledgeBases": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "knowledgeBaseId": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "name": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "knowledgeBaseId",
+                    "name"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "nextCursor": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "knowledgeBases"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "operation": {
+            "const": "document.answer"
+          },
+          "outcome": {
+            "const": "succeeded"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "result": {
+            "type": "object",
+            "properties": {
+              "answer": {
+                "type": "string"
+              },
+              "citations": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/searchHit"
+                }
+              },
+              "evidenceSufficient": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "answer",
+              "citations",
+              "evidenceSufficient"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    }
+  ]
+}
